@@ -126,11 +126,12 @@ spend, or a model/core change without the approval stated in the charter.
   / `2026-07-10T14:38:25.508Z`. Evidence and exact command:
   [`../epoch-1-stability-observation-2026-07-10.md`](../epoch-1-stability-observation-2026-07-10.md).
 - [ ] Record 3–4 spot checks: health, post-baseline `503`/`maximum pending`
-  count, and post-baseline `re-pinning evicted core` count. Three early checks
+  count, post-baseline `re-pinning evicted core` count, and
+  `dispatcher.core_degraded`. Four early checks
   are recorded; they do not substitute for checks spread across the full window.
-- [ ] Confirm `core_degraded: false` throughout the full window. Current
-  `/api/health` responses do not expose a `core_degraded` field, so document
-  the authoritative replacement telemetry before asserting this criterion.
+- [ ] Confirm `core_degraded: false` throughout the full window via
+  `curl -fsS localhost:7070/api/overview | jq '.dispatcher.core_degraded'`.
+  Do not infer it from `/api/health`, which does not carry the field.
 - [ ] **Mark only — after the window, make the provisional core-model call:**
   keep `gpt-oss:20b` only if stable and worth its memory; otherwise choose
   the documented `qwen3:8b` fallback and record the decision.

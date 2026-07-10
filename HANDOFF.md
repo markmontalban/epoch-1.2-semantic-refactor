@@ -22,7 +22,7 @@ record. [`current-state.md`](current-state.md) is its compact entry point.
   - Full dashboard suite passed **202/202**. Lint had **0 errors** and nine
     pre-existing warnings.
 - The dashboard was restarted at `2026-07-10T14:38:25.508Z`. Its new stability
-  baseline is log line **1311**. The initial two spot checks are clean. See
+  baseline is log line **1311**. The initial four spot checks are clean. See
   [`../epoch-1-stability-observation-2026-07-10.md`](../epoch-1-stability-observation-2026-07-10.md).
 
 ## Active work
@@ -36,6 +36,7 @@ cd ~/AI-Studio/Projects/model-dashboard-live
 curl -fsS localhost:7070/api/health
 tail -n +1312 dashboard.log | grep -cE '503|maximum pending'
 tail -n +1312 dashboard.log | grep -c 're-pinning evicted core'
+curl -fsS localhost:7070/api/overview | jq '.dispatcher.core_degraded'
 ```
 
 Do not make the provisional `gpt-oss:20b` keep/swap call; that is Mark’s
@@ -75,7 +76,6 @@ Continue read-only stability checks until the 24-hour window has elapsed. Then
 report the evidence to Mark for the core-model decision. In parallel, wait for
 Mark’s evidence and approval edits; do not start Run 001 or infer approval.
 
-`/api/health` currently returns dashboard/Ollama/Hermes availability but does
-not expose the plan’s `core_degraded` field. Before claiming the full stability
-criterion, identify and document the authoritative replacement telemetry rather
-than treating a healthy HTTP response as proof of that field.
+`/api/health` does not expose the plan’s `core_degraded` field. Use
+`/api/overview` → `dispatcher.core_degraded` as the authoritative replacement
+telemetry; it was `false` at the 2026-07-10T15:00:19Z spot check.
