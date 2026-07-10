@@ -1,0 +1,4 @@
+# raw local-only inputs live OUTSIDE this repo entirely (trace-privacy amendment, charter §14)
+datasets/
+.DS_Store
+*.tmp
