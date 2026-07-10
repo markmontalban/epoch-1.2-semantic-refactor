@@ -10,6 +10,7 @@
 **sources:** Approved rows of 01-product-evidence.md only; declared founder assumptions marked as such; no unlisted inputs
 **allowed_tools_providers:** Claude (Anthropic app, external surface) only — no local router tasks, no other external providers, no web fetching beyond Mark-approved sources
 **budget:** One Claude working session (≤ 4 h); $0 external spend (DR-8; subscription usage only)
+**external_spend_cap:** $0 (DR-8)
 **stop_condition:** Stop at 5 path cards, or when the approved evidence set is exhausted, or at the 4 h budget — whichever comes first; stop immediately on any data-class ambiguity
 **review_date:** 2026-07-24 (or within 2 days of execution, whichever is earlier)
 **charter_version:** v1.1 (2026-07-10); commit recorded at execution time
