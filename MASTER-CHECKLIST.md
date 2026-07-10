@@ -1,5 +1,7 @@
 # MindfulText Epoch 1 — Master Checklist
 
+Last updated: 2026-07-10 12:05:06 PDT — edited by: Terra 5.6 High
+
 **Last reconciled:** 2026-07-10
 
 This is the execution tracker for Epoch 1. Its reference sources are:
@@ -122,21 +124,16 @@ spend, or a model/core change without the approval stated in the charter.
 ### 4. Platform stability window — gates Run 002, not Run 001
 
 - [x] Live D2/D3 changes and timestamp logging are deployed.
-- [ ] **In progress — complete a 24-hour observation** from log line **1311**
-  / `2026-07-10T14:38:25.508Z`. Evidence and exact command:
+- [ ] **Failed — 24-hour observation baseline** from log line **1311** /
+  `2026-07-10T14:38:25.508Z` recorded two core re-pins before the window
+  completed (`2026-07-10T17:25:26.063Z` and `2026-07-10T18:40:26.171Z`).
+  Evidence and exact command:
   [`../epoch-1-stability-observation-2026-07-10.md`](../epoch-1-stability-observation-2026-07-10.md).
-- [ ] Record 3–4 spot checks: health, post-baseline `503`/`maximum pending`
-  count, post-baseline `re-pinning evicted core` count, and
-  `dispatcher.core_degraded`. Four early checks
-  are recorded; they do not substitute for checks spread across the full window.
-- [ ] Confirm `core_degraded: false` throughout the full window via
-  `curl -fsS localhost:7070/api/overview | jq '.dispatcher.core_degraded'`.
-  Do not infer it from `/api/health`, which does not carry the field.
-- [ ] **Mark only — after the window, make the provisional core-model call:**
-  keep `gpt-oss:20b` only if stable and worth its memory; otherwise choose
-  the documented `qwen3:8b` fallback and record the decision.
-- [ ] If the window fails, iterate D2 only with Mark’s direction (budget 112
-  or core swap), restart the observation, and mark Run 002 blocked meanwhile.
+- [ ] **Mark only — direct the D2 response:** authorize either a D2 iteration
+  (documented options: budget 112 or core swap) or a deferral. Do not change
+  settings or core residency without that direction; Run 002 is blocked.
+- [ ] After a Mark-authorized change, restart the 24-hour observation and
+  record health, post-baseline event counts, and `dispatcher.core_degraded`.
 
 ### 5. C4 — blocks Hermes/compaction, not Run 001
 
@@ -198,8 +195,8 @@ spend, or a model/core change without the approval stated in the charter.
 
 ## Active next actions and handoff
 
-1. **Agent:** make periodic, read-only stability spot checks and append their
-   evidence to the observation record. Do not draw the core-model conclusion.
+1. **Mark:** direct the failed stability-baseline response (D2 iteration or
+   deferral); the `gpt-oss:20b` keep/swap decision remains Mark-only.
 2. **Mark:** class the four evidence candidates, then approve the rubric, team
    config, and Run 001 card in one sitting. This is the sole critical path to
    Run 001.

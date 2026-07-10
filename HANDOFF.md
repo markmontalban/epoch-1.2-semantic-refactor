@@ -1,5 +1,7 @@
 # MindfulText Epoch 1 — Agent Handoff
 
+Last updated: 2026-07-10 12:05:06 PDT — edited by: Terra 5.6 High
+
 **Written:** 2026-07-10
 
 ## Start here
@@ -22,26 +24,30 @@ record. [`current-state.md`](current-state.md) is its compact entry point.
   - Full dashboard suite passed **202/202**. Lint had **0 errors** and nine
     pre-existing warnings.
 - The dashboard was restarted at `2026-07-10T14:38:25.508Z`. Its new stability
-  baseline is log line **1311**. The initial four spot checks are clean. See
+  baseline is log line **1311**. Initial checks were clean, but the observation
+  failed when `gpt-oss:20b` re-pinned at `2026-07-10T17:25:26.063Z` and
+  `2026-07-10T18:40:26.171Z`. See
   [`../epoch-1-stability-observation-2026-07-10.md`](../epoch-1-stability-observation-2026-07-10.md).
 
 ## Active work
 
-The only agent-owned active item is the read-only 24-hour stability observation
-for Run 002. It does **not** block Run 001. For each spot check, append the UTC
-time, health result, and post-baseline counts to the observation record:
+The 24-hour stability observation for Run 002 has failed and now needs Mark’s
+D2 direction; no agent-owned configuration response is authorized. It does
+**not** block Run 001. The failed record contains the health, dispatcher, and
+post-baseline counts.
 
 ```bash
 cd ~/AI-Studio/Projects/model-dashboard-live
 curl -fsS localhost:7070/api/health
 tail -n +1312 dashboard.log | grep -cE '503|maximum pending'
 tail -n +1312 dashboard.log | grep -c 're-pinning evicted core'
+tail -n +1312 dashboard.log | grep -ci 'evict'
 curl -fsS localhost:7070/api/overview | jq '.dispatcher.core_degraded'
 ```
 
 Do not make the provisional `gpt-oss:20b` keep/swap call; that is Mark’s
-judgment after the full window. Boot noise before the line-1311 baseline is not
-part of this observation.
+judgment. Boot noise before the line-1311 baseline is not part of this
+observation.
 
 ## Critical path — Mark only
 
@@ -72,9 +78,9 @@ part of this observation.
 
 ## Safe next move for another agent
 
-Continue read-only stability checks until the 24-hour window has elapsed. Then
-report the evidence to Mark for the core-model decision. In parallel, wait for
-Mark’s evidence and approval edits; do not start Run 001 or infer approval.
+Hold stability changes pending Mark's D2 direction. After any Mark-authorized
+change, restart a new 24-hour observation. In parallel, wait for Mark’s
+evidence and approval edits; do not start Run 001 or infer approval.
 
 `/api/health` does not expose the plan’s `core_degraded` field. Use
 `/api/overview` → `dispatcher.core_degraded` as the authoritative replacement
