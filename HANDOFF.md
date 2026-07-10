@@ -1,6 +1,6 @@
 # MindfulText Epoch 1 — Agent Handoff
 
-Last updated: 2026-07-10 12:05:06 PDT — edited by: Terra 5.6 High
+Last updated: 2026-07-10 12:23:47 PDT — edited by: Terra 5.6 High
 
 **Written:** 2026-07-10
 
@@ -59,8 +59,10 @@ observation.
 3. Before any Hermes/compaction work, perform C4: inspect Hermes provider
    configuration and identify the Telegram route consumer. Agents must not
    access those dot-directory files.
-4. Choose the final lab location and a separate local-only sensitive-input
-   store; do not move the lab without Mark’s authorization.
+4. The final lab location is `~/AI-Studio/Projects/mindfultext-epoch-1/`.
+   Choose the separate local-only sensitive-input store; the Seagate volume is
+   a candidate only with a dedicated encrypted, non-Git, non-cloud-synced
+   folder. Do not move the lab without Mark’s separate authorization.
 
 ## Important constraints and reasoning
 

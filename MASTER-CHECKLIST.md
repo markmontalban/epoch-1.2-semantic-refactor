@@ -2,7 +2,7 @@
 
 Checklist ID: `E1`
 
-Last updated: 2026-07-10 12:11:20 PDT — edited by: Terra 5.6 High
+Last updated: 2026-07-10 12:23:47 PDT — edited by: Terra 5.6 High
 
 **Last reconciled:** 2026-07-10
 
@@ -85,14 +85,18 @@ Use the stable `E1-*` identifiers below when assigning or reporting work.
 - [x] `E1-DS01` LAB-SETUP scaffold, templates, workflow, privacy-safe trace schema,
   utilities, `.gitignore`, and local Git history exist (commits `fa16547`,
   `c50dc5d`).
-- [ ] `E1-DS02` **Mark only — choose final non-iCloud lab location.** Recommended:
-  `~/AI-Studio/Projects/mindfultext-epoch-1/` (DR-9). Do not move it until
-  Mark authorizes the move and no session has the lab open.
+- [x] `E1-DS02` **Mark chose the final non-iCloud lab location:**
+  `~/AI-Studio/Projects/mindfultext-epoch-1/` (DR-9), confirmed 2026-07-10.
+  The repository remains staged until Mark separately authorizes the move and
+  no session has the lab open.
 - [ ] `E1-DS03` **Mark only — choose a separate local-only store** outside any tracked
-  repository for raw sensitive material. Never initialize it as Git.
+  repository for raw sensitive material. Never initialize it as Git. Candidate
+  under consideration: `/Volumes/Seagate Desktop Drive`; before selection,
+  specify a dedicated encrypted folder and the no-fallback behavior if the
+  volume is unavailable.
 - [x] `E1-DS04` `datasets/` is ignored; no raw evidence is present in this repo.
 - [x] `E1-DS05` §6.3 new-repo waiver and non-iCloud rationale are recorded in DR-9;
-  only the final location/store decision remains.
+  only the local-only-store decision and separate move authorization remain.
 
 ### 2. Evidence inventory and external-routing approval — critical path
 
