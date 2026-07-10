@@ -12,7 +12,8 @@ record. [`current-state.md`](current-state.md) is its compact entry point.
 
 - LAB-SETUP and the Run 001 draft are on this repo’s `main` (`fa16547`,
   `c50dc5d`). The card validator reports: **valid — awaiting Mark approval**.
-- The master checklist and refreshed current state are on `main` at `218c288`.
+- The master checklist and refreshed current state are on `main` at `218c288`;
+  its requirement-by-requirement completeness pass is `c00330c`.
 - Dashboard safety/stability deployment is complete in
   `Projects/model-dashboard-live`:
   - `c7f0b32`: DR-1 per-surface gates, snapshot-first SSE implementation fix,
@@ -73,3 +74,8 @@ part of this observation.
 Continue read-only stability checks until the 24-hour window has elapsed. Then
 report the evidence to Mark for the core-model decision. In parallel, wait for
 Mark’s evidence and approval edits; do not start Run 001 or infer approval.
+
+`/api/health` currently returns dashboard/Ollama/Hermes availability but does
+not expose the plan’s `core_degraded` field. Before claiming the full stability
+criterion, identify and document the authoritative replacement telemetry rather
+than treating a healthy HTTP response as proof of that field.
