@@ -31,7 +31,7 @@ spend, or a model/core change without the approval stated in the charter.
   `c7f0b32`: external work blocks on either BLOCK; internal review retains
   lone-BLOCK-to-WARN corroboration. Run records retain the caller-declared
   `surface` for audit.
-  - [ ] **Caveat for every reviewer:** `surface` is caller-declared; a
+  - [x] **Caveat documented for every reviewer:** `surface` is caller-declared; a
     mislabeled internal call can soften a lone BLOCK to WARN. Treat that label
     as a reviewable classification claim, not a trust boundary.
 - [x] **D2/D3 configuration:** dashboard commit `72712e2` sets budget to 116
@@ -43,6 +43,35 @@ spend, or a model/core change without the approval stated in the charter.
   enables ISO-8601 log prefixes (commit `c7f0b32`).
 - [x] **Canonical charter and dated decisions:** charter v1.1 and DR-1…DR-12
   are present; superseded planning docs remain marked as such.
+
+### Charter v1.1 amendment ledger
+
+- [x] Authority hierarchy: `AGENTS.md` governs platform/safety; the canonical
+  charter governs lab roles/workflows only (charter §14.1).
+- [x] Data-class/default and local-redaction rules are adopted (charter §14.2).
+- [x] Unknown/unverified provider surfaces are external; named provider,
+  per-run cap, and Mark approval are required (charter §14.3; DR-8).
+- [x] The autonomous coding arm is parked until a level-2/3 signal plus dated
+  Mark decision (charter §14.4).
+- [x] `LAB-SETUP` and `MT-BOOTSTRAP` have their required bounded-card fields
+  (charter §14.5; Run 001 card is the current `MT-BOOTSTRAP` artifact).
+- [x] Run taxonomy (`lab-validation` / `market-test`) and required measures
+  are adopted (charter §14.6).
+- [x] Hermes sequence and C4 prerequisite are adopted (charter §14.7).
+- [x] Social intelligence is constrained to lab input, not a parallel program
+  (charter §14.8).
+- [x] Per-run privacy-safe trace requirement is adopted (charter §14.9).
+- [x] Dashboard remains stability-only and worktree triage is post-Run-003
+  (charter §14.10).
+- [x] Charter version/commit requirement is adopted (charter §14.11).
+- [x] Claude-review / Mark-approve-or-waive model and `datasets/` boundary are
+  adopted (charter §14.12).
+- [x] Path-scoring rubric v0.1 is drafted at
+  [`02-revenue-signal-scorecard.md`](02-revenue-signal-scorecard.md) (charter
+  §14.13); Mark approval remains a Run 001 gate.
+- [x] Pi remains optional-later, not the Epoch 1 control plane (charter §14.14;
+  DR-7).
+- [x] Targets are re-dated: Aug 14 packet / Sep 4 signal (charter §3; DR-6).
 
 ## Phase 1 — prepare Run 001
 
@@ -57,6 +86,8 @@ spend, or a model/core change without the approval stated in the charter.
 - [ ] **Mark only — choose a separate local-only store** outside any tracked
   repository for raw sensitive material. Never initialize it as Git.
 - [x] `datasets/` is ignored; no raw evidence is present in this repo.
+- [x] §6.3 new-repo waiver and non-iCloud rationale are recorded in DR-9;
+  only the final location/store decision remains.
 
 ### 2. Evidence inventory and external-routing approval — critical path
 
@@ -95,7 +126,11 @@ spend, or a model/core change without the approval stated in the charter.
   / `2026-07-10T14:38:25.508Z`. Evidence and exact command:
   [`../epoch-1-stability-observation-2026-07-10.md`](../epoch-1-stability-observation-2026-07-10.md).
 - [ ] Record 3–4 spot checks: health, post-baseline `503`/`maximum pending`
-  count, and post-baseline `re-pinning evicted core` count.
+  count, and post-baseline `re-pinning evicted core` count. Three early checks
+  are recorded; they do not substitute for checks spread across the full window.
+- [ ] Confirm `core_degraded: false` throughout the full window. Current
+  `/api/health` responses do not expose a `core_degraded` field, so document
+  the authoritative replacement telemetry before asserting this criterion.
 - [ ] **Mark only — after the window, make the provisional core-model call:**
   keep `gpt-oss:20b` only if stable and worth its memory; otherwise choose
   the documented `qwen3:8b` fallback and record the decision.
@@ -112,24 +147,37 @@ spend, or a model/core change without the approval stated in the charter.
 
 ## Phase 2 — Runs 001–002
 
-- [ ] **Run 001:** once the approval gate is satisfied, an authorized Claude
-  session creates 3–5 path cards, ranked scorecard, evidence-gap list, and a
+- [ ] **Run 001 — execute only after approval:** authorized Claude session
+  creates 3–5 path cards, a ranked scorecard, evidence-gap list, and a
   reference/hash-only `trace.jsonl`; stop on data-class ambiguity, five cards,
   exhausted evidence, or four hours.
-- [ ] **Mark only — review Run 001** for evidence quality, decision
-  usefulness, reproducibility, latency, and cost; then approve/amend Run 002.
-- [ ] **Run 002:** only after the stability window passes and its local-first
-  team config/card are approved. Capture pre-run platform snapshot; any
-  mid-run core eviction or 503 makes comparison inconclusive.
-- [ ] **Mark only — review Run 002** and complete the P2 boundary/privacy/
-  review-model check before Run 003.
+- [ ] Run 001 records the charter version and commit in its card at execution.
+- [ ] **Mark only — review Run 001 evidence quality and decision usefulness.**
+- [ ] **Mark only — review Run 001 latency/cost against the $0 and ≤4-hour
+  limits.**
+- [ ] **Mark only — adjust/approve the Run 002 card** based on those findings.
+- [ ] **Run 002 — pre-run snapshot:** health, models, memory, queue, and
+  re-pin state; any core eviction/503 during the run marks comparison
+  **inconclusive**.
+- [ ] **Run 002 — execute approved local-first comparison** and write its
+  reference/hash-only `trace.jsonl`.
+- [ ] **Mark only — review Run 002.**
+- [ ] **P2 amendments check before Run 003:** benchmark validity / memory bias;
+  dashboard stayed stability-only; raw `local-only` material remained outside
+  the repo; Claude reviewed Codex changes and Mark approved/waived them.
 
 ## Phase 3 — Run 003 and decision fork (by 2026-08-14)
 
-- [ ] Run 003 produces a human-reviewed signal-test packet with the same
-  snapshot and trace constraints.
-- [ ] **Mark only — decide post-Run-003:** Hermes scope, dashboard scope,
-  actual worktree triage, and whether evidence supports a manual market test.
+- [ ] Run 003 produces a human-reviewed signal-test packet, with the same
+  pre-run snapshot / inconclusive-if-unstable rule and privacy-safe trace.
+- [ ] Define whether its signal test is level 1 (reach) or level 2 (buyer
+  intent) before executing; Mark reviews the resulting packet.
+- [ ] **Mark only — decide post-Run-003:** Hermes scope (bounded operator or
+  manual), dashboard scope (expand or freeze), and actual worktree triage.
+- [ ] **Mark only — decide whether evidence supports a manual market test.**
+- [ ] If supported, define the minimum ICP-qualified level-2 conversation and
+  level-3 commitment, then draft the manual-outreach queue step.
+- [ ] **Mark only — approve or defer that market-test phase.**
 - [ ] **Mark only — confirm or amend** the Aug 14 packet target and Sep 4
   signal target; a miss triggers review/re-scope, never automation expansion.
 
@@ -138,8 +186,14 @@ spend, or a model/core change without the approval stated in the charter.
 - [ ] **Mark only — approve or defer a manual market-test phase.** No automated
   campaign is permitted.
 - [ ] If approved, conduct only Mark-approved manual outbound actions and
-  record level-2 buyer-intent / level-3 commitment signals.
-- [ ] Complete Epoch 1 retro and draft/defer Epoch 2 with Mark approval.
+  record level-2 buyer-intent / level-3 commitment signals; no automated
+  campaign is permitted.
+- [ ] **Epoch 1 retro:** usable evidence from Runs 001–003 / market test;
+  platform stability; D1 gate-rule behavior; parked coding-arm need; and spend
+  cap sufficiency or leakage.
+- [ ] **Epoch 2 planning:** draft/defer the charter; carry forward data class,
+  signal ladder, trace privacy, and review model; reassess Hermes/dashboard/
+  coding-arm authority; obtain Mark’s scope approval or deferral.
 
 ## Active next actions and handoff
 
