@@ -2,9 +2,9 @@
 
 Checklist ID: `E1`
 
-Last updated: 2026-07-10 12:23:47 PDT — edited by: Terra 5.6 High
+Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: Record Run 001 approvals
 
-**Last reconciled:** 2026-07-10
+**Last reconciled:** 2026-07-11
 
 This is the execution tracker for Epoch 1. Its reference sources are:
 
@@ -21,7 +21,9 @@ Use the stable `E1-*` identifiers below when assigning or reporting work.
 ## Guardrails — always in force
 
 - [x] `E1-G01` **$0 external-model cap and $0 sandbox cap** — DR-8. Do not raise or
-  work around either cap without a new dated Mark decision.
+  work around either cap without a new dated Mark decision. *2026-07-11 note
+  (DR-16): Mark holds a personal manual-testing spend exception — Mark-executed
+  only; it raises neither agent-side cap.*
 - [x] `E1-G02` **No outbound automation or unapproved manual outreach.** Every outbound
   action needs Mark’s approval at the point of execution.
 - [x] `E1-G03` **Data boundary:** unassigned material is `local-only`; Run 001 may use
@@ -100,33 +102,45 @@ Use the stable `E1-*` identifiers below when assigning or reporting work.
 
 ### 2. Evidence inventory and external-routing approval — critical path
 
-- [ ] `E1-EV01` **Mark only — classify or strike every candidate in
+- [x] `E1-EV01` **Mark only — classify or strike every candidate in
   [`01-product-evidence.md`](01-product-evidence.md):** validation notes,
   pilot feedback (including third-party consent), ICP one-liner, and product
-  positioning.
-- [ ] `E1-EV02` **Mark only — complete rights/consent, data class, permitted use, and
-  status** for each retained asset.
-- [ ] `E1-EV03` **Mark only — add only cleared summaries/provenance to Approved
-  evidence; put founder assumptions in their separate section.**
-- [ ] `E1-EV04` **Mark only — resolve the Run 001 collision:** set its input set to
+  positioning. *Approved by Mark 2026-07-11 — all four retained (DR-13).*
+- [x] `E1-EV02` **Mark only — complete rights/consent, data class, permitted use, and
+  status** for each retained asset. *Approved by Mark 2026-07-11 (blanket;
+  DR-13) — spot-check each actual asset at import, esp. asset 2's third-party
+  content.*
+- [x] `E1-EV03` **Mark only — add only cleared summaries/provenance to Approved
+  evidence; put founder assumptions in their separate section.** *Approved by
+  Mark 2026-07-11 (DR-13); populates when assets are physically imported.*
+- [x] `E1-EV04` **Mark only — resolve the Run 001 collision:** set its input set to
   `external-okay`, or approve a `redacted-external` derivative. If either is
-  unavailable, Run 001 must not execute.
+  unavailable, Run 001 must not execute. *Resolved by Mark 2026-07-11: input
+  set classed `external-okay` (DR-13).*
 
 ### 3. Run 001 approval — critical path
 
 - [x] `E1-R1A01` Draft card validates: `python3 tools/validate-run-card.py
   runs/run-001/run-card.md` reports “valid — awaiting Mark approval.”
-- [ ] `E1-R1A02` **Mark only — review/amend rubric v0.1** in
+- [x] `E1-R1A02` **Mark only — review/amend rubric v0.1** in
   [`02-revenue-signal-scorecard.md`](02-revenue-signal-scorecard.md), including
   the five 0–2 dimensions, disconfirming-evidence subtraction, 30-day
-  staleness rule, and direct-action WTP=2 rule.
-- [ ] `E1-R1A03` **Mark only — review/amend Team Config v0.1:** Claude-only external
-  surface, no `local-only` input, and no silent fallback.
-- [ ] `E1-R1A04` **Mark only — complete and approve Run 001 card:** set `data_class`,
+  staleness rule, and direct-action WTP=2 rule. *Approved by Mark 2026-07-11,
+  unamended (DR-14).*
+- [x] `E1-R1A03` **Mark only — review/amend Team Config v0.1:** Claude-only external
+  surface, no `local-only` input, and no silent fallback. *Approved by Mark
+  2026-07-11 **as amended**: no Claude default — Mark-named combo (Codex,
+  Claude, Hermes, etc.). Now Team Config v0.1.1; charter §14.16 (v1.2)
+  records the reconciliation with §7's Claude-only wording (DR-15). Hermes
+  stays C4-gated (E1-G04). Open: Mark names the actual provider set per run.*
+- [x] `E1-R1A04` **Mark only — complete and approve Run 001 card:** set `data_class`,
   confirm the ≤4-hour / $0 limits, stop conditions, measures, and change
-  `approval` to `APPROVED by Mark YYYY-MM-DD`.
-- [ ] `E1-R1A05` **After approval — commit the Mark-approval edits and re-run the card
-  validator.** This makes Run 001 eligible; it does not execute it.
+  `approval` to `APPROVED by Mark YYYY-MM-DD`. *Approved by Mark 2026-07-11
+  (DR-16), with a Mark-held manual-testing spend exception; agent-side caps
+  unchanged $0/$0.*
+- [x] `E1-R1A05` **After approval — commit the Mark-approval edits and re-run the card
+  validator.** This makes Run 001 eligible; it does not execute it. *Done
+  2026-07-11 by Claude Dispatch — validator: valid and approved.*
 
 ### 4. Platform stability window — gates Run 002, not Run 001
 
@@ -206,7 +220,14 @@ Use the stable `E1-*` identifiers below when assigning or reporting work.
    deferral); the `gpt-oss:20b` keep/swap decision remains Mark-only.
 2. `E1-N02` **Mark:** class the four evidence candidates, then approve the rubric, team
    config, and Run 001 card in one sitting. This is the sole critical path to
-   Run 001.
+   Run 001. *Done 2026-07-11 — see
+   [`decisions/2026-07-11-run-001-approvals.md`](decisions/2026-07-11-run-001-approvals.md).*
 3. `E1-N03` **Next agent:** read this file first, then the linked decision record and
    current observation. Execute only items whose owner and prerequisite permit
    it; never infer approval for a Mark-only item.
+4. `E1-N04` **Mark — before Run 001 executes:** (a) import the actual evidence
+   assets into `01-product-evidence.md` and spot-check each against
+   `external-okay`; (b) name Run 001's actual provider set (combo per team
+   config v0.1.1; Hermes excluded until C4); (c) confirm each participating
+   provider runs on subscription/free tier under the $0 agent-side cap
+   (DR-15/DR-16).

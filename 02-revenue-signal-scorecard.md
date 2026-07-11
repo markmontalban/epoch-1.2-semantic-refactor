@@ -1,6 +1,8 @@
 # 02 — Revenue-Signal Scorecard & Path-Scoring Rubric v0.1
 
-**Status:** DRAFT adopted 2026-07-10 (DR-5, charter §14.13) — Mark reviews/amends before Run 001 ranking.
+Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: Record Run 001 approvals
+
+**Status:** APPROVED by Mark 2026-07-11, unamended (E1-R1A02; decisions/2026-07-11-run-001-approvals.md DR-14). Adopted as draft 2026-07-10 (DR-5, charter §14.13).
 **Purpose:** the minimal path-scoring rubric required by charter §14.13. Every ROI path card is scored here before ranking.
 
 ## Rubric — score each path 0–2 per dimension (max 10)

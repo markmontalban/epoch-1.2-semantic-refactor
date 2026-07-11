@@ -1,8 +1,8 @@
 # MindfulText Epoch 1 — Agent Handoff
 
-Last updated: 2026-07-10 12:23:47 PDT — edited by: Terra 5.6 High
+Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: Record Run 001 approvals
 
-**Written:** 2026-07-10
+**Written:** 2026-07-10 (approvals update 2026-07-11)
 
 ## Start here
 
@@ -51,11 +51,18 @@ observation.
 
 ## Critical path — Mark only
 
-1. Class or strike all four evidence candidates in
-   [`01-product-evidence.md`](01-product-evidence.md), including consent and
-   permitted use; resolve the external Claude routing class.
-2. Review the rubric, Team Config v0.1, and Run 001 card in one sitting; then
-   set `data_class` and change approval to `APPROVED by Mark YYYY-MM-DD`.
+*(Items 1–2 completed 2026-07-11 — see
+[`decisions/2026-07-11-run-001-approvals.md`](decisions/2026-07-11-run-001-approvals.md).
+Run 001 is approved as amended: Mark-named external provider combo, no Claude
+default, team-config v0.1.1, charter v1.2 §14.16.)*
+
+1. ~~Class or strike all four evidence candidates~~ — done (DR-13); still
+   pending: **physically import the assets** into
+   [`01-product-evidence.md`](01-product-evidence.md) and spot-check each
+   against `external-okay`.
+2. ~~Review rubric / team config / Run 001 card~~ — done (DR-14…DR-16); still
+   pending: **name Run 001's actual provider set** (Hermes excluded until C4)
+   and confirm each provider runs under the $0 agent-side cap (E1-N04).
 3. Before any Hermes/compaction work, perform C4: inspect Hermes provider
    configuration and identify the Telegram route consumer. Agents must not
    access those dot-directory files.
@@ -66,11 +73,14 @@ observation.
 
 ## Important constraints and reasoning
 
-- No spend: external and sandbox caps are both **$0**, fail closed.
+- No agent spend: external and sandbox caps are both **$0**, fail closed.
+  Mark holds a personal manual-testing spend exception (DR-16); it raises
+  neither agent-side cap.
 - No outbound activity or automation is authorized.
-- Run 001 runs on Claude, an external surface: only `external-okay` or
-  Mark-approved `redacted-external` input may enter it. Raw `local-only`
-  material stays outside the repo.
+- Run 001 runs on a Mark-named combination of **external surfaces** (Codex,
+  Claude, Hermes, etc. — no default; Hermes C4-gated; team-config v0.1.1):
+  only `external-okay` or Mark-approved `redacted-external` input may enter
+  it. Raw `local-only` material stays outside the repo.
 - Per-surface gates: external work blocks on either gate’s BLOCK; internal
   review may downgrade an uncorroborated BLOCK to WARN. The `surface` field is
   caller-declared and stored in the run record, so an `internal` label is a
@@ -81,8 +91,9 @@ observation.
 ## Safe next move for another agent
 
 Hold stability changes pending Mark's D2 direction. After any Mark-authorized
-change, restart a new 24-hour observation. In parallel, wait for Mark’s
-evidence and approval edits; do not start Run 001 or infer approval.
+change, restart a new 24-hour observation. Run 001 is approved (2026-07-11)
+but not startable until Mark imports the evidence assets and names the
+provider set (E1-N04); do not start Run 001 or infer those from the approval.
 
 `/api/health` does not expose the plan’s `core_degraded` field. Use
 `/api/overview` → `dispatcher.core_degraded` as the authoritative replacement
