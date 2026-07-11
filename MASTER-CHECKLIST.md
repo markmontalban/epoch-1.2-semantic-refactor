@@ -2,7 +2,7 @@
 
 Checklist ID: `E1`
 
-Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: Record Run 001 approvals
+Last updated: 2026-07-11 00:56:51 PDT — edited by: Claude Dispatch — task: Execute master checklist, Run 001
 
 **Last reconciled:** 2026-07-11
 
@@ -230,4 +230,9 @@ Use the stable `E1-*` identifiers below when assigning or reporting work.
    `external-okay`; (b) name Run 001's actual provider set (combo per team
    config v0.1.1; Hermes excluded until C4); (c) confirm each participating
    provider runs on subscription/free tier under the $0 agent-side cap
-   (DR-15/DR-16).
+   (DR-15/DR-16). *Verified NOT yet done on disk 2026-07-11 00:56 PDT (Claude
+   Dispatch): inventory rows still "approved — awaiting import", Approved
+   evidence section empty, no concrete provider set named in the run card,
+   decisions, or team config. Remains open and Mark-only; Run 001 execution
+   stays blocked. Unblock packet for Mark:
+   [`runs/run-001/UNBLOCK-PACKET.md`](runs/run-001/UNBLOCK-PACKET.md).*

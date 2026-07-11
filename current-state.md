@@ -1,6 +1,6 @@
 # Current State — Compaction
 
-Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: Record Run 001 approvals
+Last updated: 2026-07-11 00:56:51 PDT — edited by: Claude Dispatch — task: Execute master checklist, Run 001
 
 **master tracker:** [`MASTER-CHECKLIST.md`](MASTER-CHECKLIST.md). Read it
 before acting; it reconciles the plan, decision record, live dashboard changes,
@@ -15,6 +15,14 @@ Hermes, etc.) → v0.1.1, charter bumped to v1.2 (§14.16); Run 001 card
 APPROVED by Mark 2026-07-11 (validator: valid and approved). A Mark-held
 personal manual-testing spend exception is recorded (DR-16); agent-side caps
 stay $0/$0 fail-closed.
+
+**verification 2026-07-11 00:56 PDT:** a dispatch reported E1-N04 (evidence
+import + provider-set naming) as done; an on-disk check found it is **not** —
+`01-product-evidence.md` rows still read "approved — awaiting import" with an
+empty Approved-evidence section, and no concrete provider set is named in the
+run card, decisions, or team config. Run 001 execution remains blocked. A
+fill-in unblock packet for Mark is at
+[`runs/run-001/UNBLOCK-PACKET.md`](runs/run-001/UNBLOCK-PACKET.md).
 
 **what is active:** Run 001 is approved and eligible but not yet executable —
 it awaits Mark's physical evidence import (with class spot-check) and Mark
