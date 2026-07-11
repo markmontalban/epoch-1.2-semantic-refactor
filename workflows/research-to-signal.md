@@ -1,7 +1,7 @@
 # Workflow: Research-to-Revenue-Signal
 
 Model-agnostic pipeline from founder-approved evidence to a ranked, testable
-revenue-path recommendation. Charter pointer: `../00-charter.md` (v1.1).
+revenue-path recommendation. Charter pointer: `../00-charter.md` (v1.2).
 
 Binding rules:
 
