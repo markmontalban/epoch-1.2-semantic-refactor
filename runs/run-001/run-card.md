@@ -1,25 +1,26 @@
 # Run Card
 
-Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: Record Run 001 approvals
+Last updated: 2026-07-12 23:54:25 PDT — edited by: Codex
 
 **run_id:** RUN-001
-**date:** 2026-07-10
+**date:** 2026-07-12
 **run_type:** lab-validation
 **path_id:** MT-BOOTSTRAP
-**question:** From the founder-approved evidence set, which 3–5 ROI paths (buyer × pain × channel × offer) are worth testing, ranked with rubric v0.1, and what is the cheapest next test for the top two?
-**owner:** Mark-named external combo (Codex, Claude, Hermes, etc. — no default provider; Hermes excluded until C4) per team-config v0.1.1 (execution); Mark (approval and path selection). Mark names the actual provider set before execution (DR-15).
-**data_class:** external-okay — set by Mark 2026-07-11 (E1-EV04, DR-13); resolves the DR-12 collision. Stop immediately if any actual input fails to match this class at import spot-check.
-**sources:** Approved rows of 01-product-evidence.md only; declared founder assumptions marked as such; no unlisted inputs
-**allowed_tools_providers:** Combination of Mark-named external providers per team-config v0.1.1 (Codex, Claude, Hermes, etc.; Hermes excluded until C4 — E1-G04) — no default provider, no silent fallback, no local router tasks, no `local-only` input, no web fetching beyond Mark-approved sources. Actual provider set named by Mark before execution (DR-15).
-**budget:** One working session (≤ 4 h) on the Mark-named provider combo; $0 agent-side external spend (DR-8; subscription usage only)
-**external_spend_cap:** $0 agent-side, fail-closed (DR-8). Mark-held exception: Mark may personally spend budget for manual testing (DR-16); this never raises the agent-side cap.
-**stop_condition:** Stop at 5 path cards, or when the approved evidence set is exhausted, or at the 4 h budget — whichever comes first; stop immediately on any data-class ambiguity
-**review_date:** 2026-07-24 (or within 2 days of execution, whichever is earlier)
-**charter_version:** v1.2 (2026-07-11, §14.16 provider-combo amendment); commit recorded at execution time
+**question:** From one Growth Hypothesis in `growth/HYPOTHESES.md`, which 3–5 buyer × pain × channel × offer paths are worth exploring, what is the cheapest validation test for the top two, and—once the ICP is behaviorally and situationally clear—what is the defensible U.S. TAM range?
+**owner:** Mark-prompted agent/provider per invocation (Codex, Claude, or Hermes) per team-config v0.1.1; Mark (approval and path selection). Mark names the actual provider in the prompt and it is recorded at execution (DR-17/DR-22).
+**data_class:** external-okay — use only the selected Growth Hypothesis and public research; never place raw sensitive material in the prompt or outputs.
+**sources:** One item from growth/HYPOTHESES.md, optional concise growth/SIGNALS.md rows, optional growth/PUBLIC-PROFILE-WATCH.md rows only when the hypothesis sets `Profile tracking: watch`, and public sources cited by the agent; declared founder and agent assumptions marked as such.
+**allowed_tools_providers:** Codex, manually named by Mark for the GH-002 invocation on 2026-07-12; no other provider or fallback, no local router tasks, and no `local-only` input. Public web research is permitted with source links; no logins, private sources, or outbound actions. The actual provider is recorded in this card and trace (DR-17/DR-23).
+**budget:** One manually prompted working session (≤ 4 h); invocation budget is supplied by the harness (DR-17)
+**external_spend_cap:** No project-level agent budget system is added; the harness controls invocation spend. Never initiate unapproved provider spend or bypass the governing harness controls.
+**stop_condition:** Stop at 5 path cards or at the 4 h budget, whichever comes first; stop if a source requires login, private data, or outbound contact.
+**review_date:** 2026-07-14
+**charter_version:** v1.9 (2026-07-12, §14.27 TAM-first market sizing); commit recorded at execution time
+**execution_record:** GH-002 expansion completed by Codex, manually named by Mark, on 2026-07-12; charter v1.9; baseline repository commit `e42a302`; no commit was created because the working tree already contained unrelated documentation changes.
 **target_signal:** N/A (lab-validation; measures evidence quality, decision usefulness, reproducibility, latency, cost)
-**output_schema:** 3–5 path cards (templates/path-card.md) in paths/; ranked scorecard table in outputs/; evidence-gap list; baseline notes on blackboard.md; trace.jsonl (references/hashes only)
+**output_schema:** 3–5 path cards (templates/path-card.md) in paths/; ranked scorecard table in outputs/; evidence-gap list; baseline notes on blackboard.md; if the ICP is clear, a cited U.S. TAM note in outputs/ with formula/range/assumptions; trace.jsonl (references/hashes only). SAM/SOM only when the run explicitly needs them.
 **pre_run_snapshot:** Not required — external-surface-only run, does not touch the local platform (snapshot rule applies from Run 002)
-**approval:** APPROVED by Mark 2026-07-11 (E1-R1A04; as amended by E1-R1A03 — recorded by Claude Dispatch from Mark's 2026-07-11 dispatch; decisions/2026-07-11-run-001-approvals.md). Execution additionally requires: evidence assets imported and spot-checked, and the provider set named by Mark (DR-15).
+**approval:** APPROVED by Mark 2026-07-11 (E1-R1A04; as amended by E1-R1A03 — recorded by Claude Dispatch from Mark's 2026-07-11 dispatch; decisions/2026-07-11-run-001-approvals.md). Prototype execution requires: one Growth Hypothesis directly entered in `growth/HYPOTHESES.md` and the provider/agent named by Mark in the manual invocation prompt (DR-17/DR-24/DR-25/DR-27).
 
 ## Usage notes
 
