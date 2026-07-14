@@ -1,0 +1,21 @@
+task_id: GO20-07-SUM03
+status: completed
+queries_used:
+  - "community behavioral health workforce grant program site:hcai.ca.gov"
+  - "SAMHSA grants for mental health and substance use"
+evidence:
+  - url: https://www.hcai.ca.gov/workforce/financial-assistance/grants/bhp/
+    source_type: official government
+    source_date: unknown
+    observed_fact: “Community Behavioral Health Workforce Grant Program” references workforce‑development for community-based providers.
+    CDP_facet: account
+    verification: search-snippet-only
+  - url: https://www.samhsa.gov/grants
+    source_type: official government
+    source_date: 2026-04-08 (article modified)
+    observed_fact: SAMHSA’s grants page lists “mental health and substance use” funding with focus on wellness, resilience, connection.
+    CDP_facet: category
+    verification: page-opened
+unknowns:
+contradiction_or_limit: None
+next_micro_question: How should the messaging differentiate “workforce development” from generic wellness terms for community providers?

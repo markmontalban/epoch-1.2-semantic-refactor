@@ -1,0 +1,790 @@
+{
+  "run_id": "RUN-004",
+  "status": "WINDOW_COMPLETE",
+  "started_at": "2026-07-14T08:28:35.217Z",
+  "ends_at": "2026-07-14T13:28:35.217Z",
+  "active": [],
+  "completed": [
+    {
+      "task_id": "GO20-01",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 5777,
+      "started_at": "2026-07-14T08:28:35.217Z",
+      "deadline_at": "2026-07-14T08:40:35.217Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-01.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-01.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-01.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-01.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-01.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-01.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:29:39.898Z",
+      "exit_code": "0",
+      "score": 6,
+      "score_note": "web 1/2; usable URLs 2/2; source fidelity 0/2 (snippet-only, no exact terms); claim discipline 2/2; schema 1/2 (preamble).",
+      "scored_at": "2026-07-14T08:30:58.266Z"
+    },
+    {
+      "task_id": "QW36-01",
+      "model": "qwen3.6:35b-a3b",
+      "lane": "QW36",
+      "stage": "initial",
+      "pid": 5971,
+      "started_at": "2026-07-14T08:28:40.000Z",
+      "deadline_at": "2026-07-14T08:40:40.000Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-01.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-01.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-01.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-01.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-01.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-01.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:29:39.900Z",
+      "exit_code": "0",
+      "score": 9,
+      "score_note": "web 2/2; usable official URLs 2/2; source fidelity 1/2 (worker used snippets, then conductor opened both); claim discipline 2/2; schema 2/2.",
+      "scored_at": "2026-07-14T08:30:58.291Z"
+    },
+    {
+      "task_id": "GO20-02",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 7232,
+      "started_at": "2026-07-14T08:30:59.128Z",
+      "deadline_at": "2026-07-14T08:42:59.128Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-02.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-02.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-02.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-02.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-02.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-02.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:32:19.219Z",
+      "exit_code": "0",
+      "score": 2,
+      "score_note": "web 0/2 (terminal command only, no search result); usable URLs 1/2; source fidelity 0/2; claim discipline 1/2; schema 0/2.",
+      "scored_at": "2026-07-14T08:32:36.465Z"
+    },
+    {
+      "task_id": "QW36-02",
+      "model": "qwen3.6:35b-a3b",
+      "lane": "QW36",
+      "stage": "initial",
+      "pid": 7284,
+      "started_at": "2026-07-14T08:30:59.834Z",
+      "deadline_at": "2026-07-14T08:42:59.834Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-02.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-02.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-02.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-02.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-02.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-02.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:32:19.220Z",
+      "exit_code": "0",
+      "score": 1,
+      "score_note": "web 0/2 (planned queries only); usable URLs 0/2; source fidelity 0/2; claim discipline 1/2; schema 0/2.",
+      "scored_at": "2026-07-14T08:32:36.490Z"
+    },
+    {
+      "task_id": "GO20-03",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 8401,
+      "started_at": "2026-07-14T08:32:37.430Z",
+      "deadline_at": "2026-07-14T08:44:37.430Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-03.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-03.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-03.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-03.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-03.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-03.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:33:29.822Z",
+      "exit_code": "0",
+      "score": 9,
+      "score_note": "web 2/2; usable URLs 2/2; source fidelity 2/2 (both pages opened); claim discipline 2/2; schema 1/2 (analysis/preamble exceeded compact response).",
+      "scored_at": "2026-07-14T08:34:48.227Z"
+    },
+    {
+      "task_id": "QW36-03",
+      "model": "qwen3.6:35b-a3b",
+      "lane": "QW36",
+      "stage": "initial",
+      "pid": 8453,
+      "started_at": "2026-07-14T08:32:37.997Z",
+      "deadline_at": "2026-07-14T08:44:37.997Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-03.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-03.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-03.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-03.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-03.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-03.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:33:29.822Z",
+      "exit_code": "0",
+      "score": 8,
+      "score_note": "web 2/2; usable official URLs 2/2; source fidelity 1/2 (worker relied on snippets, conductor opened two); claim discipline 2/2; schema 1/2 (overlong).",
+      "scored_at": "2026-07-14T08:34:48.251Z"
+    },
+    {
+      "task_id": "GO20-04",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 9319,
+      "started_at": "2026-07-14T08:34:49.438Z",
+      "deadline_at": "2026-07-14T08:46:49.438Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-04.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-04.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-04.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-04.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-04.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-04.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:46:57.737Z",
+      "exit_code": "0",
+      "score": 7,
+      "score_note": "web 2/2; usable URLs 2/2; source fidelity 0/2 (snippet-only); claim discipline 1/2; schema 2/2.",
+      "scored_at": "2026-07-14T08:47:24.567Z"
+    },
+    {
+      "task_id": "QW36-04",
+      "model": "qwen3.6:35b-a3b",
+      "lane": "QW36",
+      "stage": "initial",
+      "pid": 9377,
+      "started_at": "2026-07-14T08:34:50.138Z",
+      "deadline_at": "2026-07-14T08:46:50.138Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-04.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-04.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-04.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-04.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-04.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-04.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:46:57.738Z",
+      "exit_code": "0",
+      "score": 7,
+      "score_note": "web 2/2; usable URLs 1/2 (objective not established); source fidelity 0/2 (snippet-only); claim discipline 2/2; schema 2/2.",
+      "scored_at": "2026-07-14T08:47:24.596Z"
+    },
+    {
+      "task_id": "GO20-05",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 13942,
+      "started_at": "2026-07-14T08:47:25.151Z",
+      "deadline_at": "2026-07-14T08:59:25.151Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-05.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-05.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-05.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-05.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-05.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-05.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:48:27.562Z",
+      "exit_code": "0",
+      "score": 8,
+      "score_note": "web 2/2; usable official PDF URLs 2/2; source fidelity 0/2 (snippet-only); claim discipline 2/2 (explicit insufficient-evidence); schema 2/2.",
+      "scored_at": "2026-07-14T08:57:04.293Z"
+    },
+    {
+      "task_id": "DR32-01",
+      "model": "deepseek-r1:32b",
+      "lane": "DR32",
+      "stage": "initial",
+      "pid": 13975,
+      "started_at": "2026-07-14T08:47:25.570Z",
+      "deadline_at": "2026-07-14T08:59:25.570Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-01.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-01.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-01.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-01.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/DR32-01.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/DR32-01.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T08:56:25.045Z",
+      "exit_code": "0",
+      "score": 6,
+      "score_note": "web 2/2; usable URLs 2/2; source fidelity 0/2 (snippet-only); claim discipline 1/2 (claims exceed snippet verification); schema 1/2 (preamble and fenced response).",
+      "scored_at": "2026-07-14T08:57:04.318Z"
+    },
+    {
+      "task_id": "GO20-06",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 18795,
+      "started_at": "2026-07-14T08:58:07.226Z",
+      "deadline_at": "2026-07-14T09:10:07.226Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-06.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-06.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-06.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-06.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-06.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-06.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:01:40.595Z",
+      "exit_code": "0",
+      "score": 6,
+      "score_note": "web 2/2; usable URLs 0/2; source fidelity 0/2 (no opened public source); claim discipline 2/2 (explicit insufficient-evidence); schema 2/2.",
+      "scored_at": "2026-07-14T09:04:04.719Z"
+    },
+    {
+      "task_id": "DR32-02",
+      "model": "deepseek-r1:32b",
+      "lane": "DR32",
+      "stage": "initial",
+      "pid": 19043,
+      "started_at": "2026-07-14T08:58:16.705Z",
+      "deadline_at": "2026-07-14T09:10:16.705Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-02.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-02.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-02.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-02.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/DR32-02.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/DR32-02.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:01:40.596Z",
+      "exit_code": "0",
+      "score": 1,
+      "score_note": "web 0/2 (plan only, no tool use); usable URLs 0/2; source fidelity 0/2; claim discipline 1/2 (no unsupported evidence claim); schema 0/2.",
+      "scored_at": "2026-07-14T09:04:04.803Z"
+    },
+    {
+      "task_id": "GO20-07",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 22491,
+      "started_at": "2026-07-14T09:04:11.280Z",
+      "deadline_at": "2026-07-14T09:16:11.280Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-07.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-07.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-07.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-07.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-07.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-07.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:06:26.274Z",
+      "exit_code": "0",
+      "score": 9,
+      "score_note": "web 2/2; usable official URLs 2/2; source fidelity 1/2 (one page opened, one snippet-only); claim discipline 2/2; schema 2/2.",
+      "scored_at": "2026-07-14T09:06:47.818Z"
+    },
+    {
+      "task_id": "DR32-03",
+      "model": "deepseek-r1:32b",
+      "lane": "DR32",
+      "stage": "initial",
+      "pid": 23026,
+      "started_at": "2026-07-14T09:04:20.296Z",
+      "deadline_at": "2026-07-14T09:16:20.296Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-03.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-03.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-03.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-03.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/DR32-03.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/DR32-03.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:06:26.275Z",
+      "exit_code": "0",
+      "score": 5,
+      "score_note": "web 2/2; usable URLs 1/2; source fidelity 0/2 (snippet-only); claim discipline 1/2 (claims exceed snippets); schema 1/2 (wrong task id and fenced response).",
+      "scored_at": "2026-07-14T09:06:47.842Z"
+    },
+    {
+      "task_id": "GO20-08",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 25972,
+      "started_at": "2026-07-14T09:07:55.860Z",
+      "deadline_at": "2026-07-14T09:19:55.860Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-08.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-08.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-08.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-08.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-08.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-08.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:11:21.877Z",
+      "exit_code": "0",
+      "score": 6,
+      "score_note": "web 2/2; usable URLs 2/2; source fidelity 1/2 (HCAI opened; HRSA PDF downloaded but not parsed); claim discipline 0/2 (unsupported HRSA claim and false metadata confirmation); schema 1/2 (long preamble and malformed empty field).",
+      "scored_at": "2026-07-14T09:12:02.985Z"
+    },
+    {
+      "task_id": "GO20-09",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 27684,
+      "started_at": "2026-07-14T09:12:07.835Z",
+      "deadline_at": "2026-07-14T09:24:07.835Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-09.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-09.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-09.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-09.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-09.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-09.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:16:27.491Z",
+      "exit_code": "0",
+      "score": 4,
+      "score_note": "web 2/2; usable URLs 1/2 (two URLs appear noncanonical/unverified); source fidelity 0/2 (page-opened labels unsupported and claims not source-checked); claim discipline 0/2 (asserts report details and proposes a private clinic survey outside the public-source lane); schema 1/2 (fenced output and empty required fields).",
+      "scored_at": "2026-07-14T09:17:00.160Z"
+    },
+    {
+      "task_id": "OR35-02",
+      "model": "ornith:35b-q8",
+      "lane": "OR35",
+      "stage": "initial",
+      "pid": 28056,
+      "started_at": "2026-07-14T09:12:11.788Z",
+      "deadline_at": "2026-07-14T09:24:11.788Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-02.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-02.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-02.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-02.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/OR35-02.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/OR35-02.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:16:27.492Z",
+      "exit_code": "0",
+      "score": 5,
+      "score_note": "web 2/2 (five searches attempted); usable URLs 0/2; source fidelity 0/2 (zero findings); claim discipline 1/2 (mostly marks insufficiency but overstates that no identifiable program exists); schema 2/2.",
+      "scored_at": "2026-07-14T09:17:00.183Z"
+    },
+    {
+      "task_id": "GO20-10",
+      "model": "gpt-oss:20b",
+      "lane": "GO20",
+      "stage": "initial",
+      "pid": 30387,
+      "started_at": "2026-07-14T09:17:12.803Z",
+      "deadline_at": "2026-07-14T09:29:12.803Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-10.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-10.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-10.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-10.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-10.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-10.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:21:24.481Z",
+      "exit_code": "0",
+      "score": 5,
+      "score_note": "web 2/2 (search tool attempted across 8 calls, empty results); usable URLs 0/2; source fidelity 0/2; claim discipline 2/2 (explicit insufficient-evidence); schema 1/2 (wrong task_id and empty required sections).",
+      "scored_at": "2026-07-14T09:21:48.294Z"
+    },
+    {
+      "task_id": "OR35-03",
+      "model": "ornith:35b-q8",
+      "lane": "OR35",
+      "stage": "initial",
+      "pid": 30593,
+      "started_at": "2026-07-14T09:17:13.463Z",
+      "deadline_at": "2026-07-14T09:29:13.463Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-03.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-03.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-03.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-03.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/OR35-03.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/OR35-03.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:21:24.482Z",
+      "exit_code": "0",
+      "score": 1,
+      "score_note": "web 0/2 (planned queries only); usable URLs 0/2; source fidelity 0/2; claim discipline 1/2 (no unsupported evidence claim); schema 0/2 (wrong task id and incomplete response).",
+      "scored_at": "2026-07-14T09:21:48.317Z"
+    },
+    {
+      "task_id": "LL70-01",
+      "model": "llama3.3:70b",
+      "lane": "LL70",
+      "stage": "initial",
+      "pid": 34956,
+      "started_at": "2026-07-14T09:26:56.115Z",
+      "deadline_at": "2026-07-14T09:38:56.115Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-01.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-01.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-01.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-01.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/LL70-01.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/LL70-01.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:31:24.673Z",
+      "exit_code": "0",
+      "score": 6,
+      "score_note": "web 2/2 (one search tool attempt reflected by query plus two API calls); usable URLs 0/2; source fidelity 0/2; claim discipline 2/2 (explicit insufficient-evidence); schema 2/2.",
+      "scored_at": "2026-07-14T09:31:57.321Z"
+    },
+    {
+      "task_id": "LL70-02",
+      "model": "llama3.3:70b",
+      "lane": "LL70",
+      "stage": "initial",
+      "pid": 38873,
+      "started_at": "2026-07-14T09:32:05.662Z",
+      "deadline_at": "2026-07-14T09:44:05.662Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-02.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-02.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-02.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-02.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/LL70-02.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/LL70-02.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:36:28.734Z",
+      "exit_code": "0",
+      "score": 8,
+      "score_note": "web 2/2; usable official URLs 2/2; source fidelity 0/2 (both findings were snippet-only in the worker result); claim discipline 2/2; schema 2/2.",
+      "scored_at": "2026-07-14T09:36:59.610Z"
+    },
+    {
+      "task_id": "LL70-03",
+      "model": "llama3.3:70b",
+      "lane": "LL70",
+      "stage": "initial",
+      "pid": 45891,
+      "started_at": "2026-07-14T09:41:43.685Z",
+      "deadline_at": "2026-07-14T09:53:43.685Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-03.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-03.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-03.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-03.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/LL70-03.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/LL70-03.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:46:22.982Z",
+      "exit_code": "0",
+      "score": 8,
+      "score_note": "web 2/2; usable official URLs 2/2; source fidelity 0/2 (both findings snippet-only); claim discipline 2/2 (explicitly limits the evidence); schema 2/2.",
+      "scored_at": "2026-07-14T09:46:42.688Z"
+    },
+    {
+      "task_id": "QW36-05",
+      "model": "qwen3.6:35b-a3b",
+      "lane": "QW36",
+      "stage": "followup",
+      "pid": 51036,
+      "started_at": "2026-07-14T09:52:10.786Z",
+      "deadline_at": "2026-07-14T10:04:10.786Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-05.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-05.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-05.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-05.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-05.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-05.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T09:56:23.847Z",
+      "exit_code": "0",
+      "score": 7,
+      "score_note": "web 2/2 (three public-search API calls); usable URLs 1/2 (official but non-probative homepage/careers pages); source fidelity 0/2 (snippet-only); claim discipline 2/2 (explicit insufficient-evidence and limits); schema 2/2.",
+      "scored_at": "2026-07-14T09:56:52.785Z"
+    },
+    {
+      "task_id": "QW36-06",
+      "model": "qwen3.6:35b-a3b",
+      "lane": "QW36",
+      "stage": "followup",
+      "pid": 53279,
+      "started_at": "2026-07-14T09:56:54.599Z",
+      "deadline_at": "2026-07-14T10:08:54.599Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-06.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-06.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-06.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-06.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-06.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-06.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T10:01:24.269Z",
+      "exit_code": "0",
+      "score": 8,
+      "score_note": "web 2/2 (five public-search queries across four API calls); usable URLs 2/2 (two relevant public sources); source fidelity 0/2 (snippet-only, no pages opened); claim discipline 2/2 (explicit insufficient-evidence and clear limits); schema 2/2.",
+      "scored_at": "2026-07-14T10:01:57.657Z"
+    },
+    {
+      "task_id": "QW36-07",
+      "model": "qwen3.6:35b-a3b",
+      "lane": "QW36",
+      "stage": "reserve",
+      "pid": 56104,
+      "started_at": "2026-07-14T10:02:22.272Z",
+      "deadline_at": "2026-07-14T10:14:22.272Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-07.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-07.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-07.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-07.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-07.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-07.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T10:06:21.961Z",
+      "exit_code": "0",
+      "score": 6,
+      "score_note": "web 2/2 (five public-search queries across three API calls); usable URLs 0/2; source fidelity 0/2 (no pages opened); claim discipline 2/2 (qualified null result and indexing limit); schema 2/2.",
+      "scored_at": "2026-07-14T10:06:56.471Z"
+    },
+    {
+      "task_id": "DR32-06",
+      "model": "deepseek-r1:32b",
+      "lane": "DR32",
+      "stage": "reserve",
+      "pid": 59825,
+      "started_at": "2026-07-14T10:07:11.720Z",
+      "deadline_at": "2026-07-14T10:19:11.720Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-06.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-06.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-06.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/DR32-06.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/DR32-06.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/DR32-06.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T10:11:33.581Z",
+      "exit_code": "0",
+      "score": 7,
+      "score_note": "web 2/2 (two stated public searches); usable URLs 2/2; source fidelity 0/2 (page-opened labels not substantiated in retained trace); claim discipline 2/2 (keeps evidence at alternative/language and rejects demand inference); schema 1/2 (preamble, fenced response, malformed empty unknowns).",
+      "scored_at": "2026-07-14T10:12:48.501Z"
+    },
+    {
+      "task_id": "OR35-05",
+      "model": "ornith:35b-q8",
+      "lane": "OR35",
+      "stage": "reserve",
+      "pid": 63432,
+      "started_at": "2026-07-14T10:13:28.359Z",
+      "deadline_at": "2026-07-14T10:25:28.359Z",
+      "paths": {
+        "out": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-05.out.txt",
+        "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-05.err.txt",
+        "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-05.usage.json",
+        "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/OR35-05.exit",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/OR35-05.md",
+        "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/OR35-05.pid"
+      },
+      "status": "COMPLETED_SCORED",
+      "ended_at": "2026-07-14T10:16:27.951Z",
+      "exit_code": "0",
+      "score": 5,
+      "score_note": "web 2/2 (three stated public searches across two API calls); usable URLs 0/2; source fidelity 0/2 (no candidate pages opened); claim discipline 1/2 (deliverable is qualified, but notes overstate a null search as no match); schema 2/2.",
+      "scored_at": "2026-07-14T10:17:16.007Z"
+    }
+  ],
+  "blocked": [
+    {
+      "task_id": "OR35-01",
+      "model": "ornith:35b-q8",
+      "lane": "OR35",
+      "stage": "initial",
+      "status": "BLOCKED_PREFLIGHT",
+      "reason": "model does not fit: ornith:35b-q8",
+      "at": "2026-07-14T09:08:06.137Z",
+      "preflight": {
+        "at": "2026-07-14T09:08:05.365Z",
+        "model": "ornith:35b-q8",
+        "dashboard": true,
+        "searx": true,
+        "inventory": true,
+        "hermes_provider": true,
+        "fit": {
+          "model": "ornith:35b-q8",
+          "ok": false,
+          "available_gb": 20.4,
+          "need_gb": 43.2,
+          "staying_gb": 79.5,
+          "evicting_gb": 0,
+          "new_weights_gb": 36.9,
+          "new_kv_gb": 0.7,
+          "ctx": 32768,
+          "margin_pct": 15,
+          "sys": {
+            "total_bytes": 137438953472,
+            "free_bytes": 969949184,
+            "inactive_bytes": 19063111680,
+            "speculative_bytes": 140083200,
+            "purgeable_bytes": 266141696,
+            "wired_bytes": 89251397632,
+            "active_bytes": 18933727232,
+            "compressed_bytes": 8236335104,
+            "available_bytes": 20439285760,
+            "free_gb": 1,
+            "available_gb": 20.4,
+            "wired_gb": 89.3,
+            "active_gb": 18.9,
+            "compressed_gb": 8.2
+          }
+        },
+        "memory": {
+          "budget_gb": 116,
+          "budget_source": "settings",
+          "resident_count": 3,
+          "resident_bytes": 79495964915,
+          "resident_gb": 79.5,
+          "free_gb": 36.5,
+          "available_for_new_models_gb": 36.5,
+          "used_pct": 68.5,
+          "models": [
+            {
+              "name": "qwen3:8b",
+              "size_vram": 11796123484,
+              "expires_at": "2318-10-24T01:52:02.415442807-07:00",
+              "context_length": 40960
+            },
+            {
+              "name": "gpt-oss:20b",
+              "size_vram": 13607622409,
+              "expires_at": "2026-07-14T02:13:05.493289-07:00",
+              "context_length": 131072
+            },
+            {
+              "name": "deepseek-r1:32b",
+              "size_vram": 54092219022,
+              "expires_at": "2026-07-14T02:10:32.613435-07:00",
+              "context_length": 131072
+            }
+          ],
+          "system": {
+            "total_bytes": 137438953472,
+            "free_bytes": 978075648,
+            "inactive_bytes": 19063111680,
+            "speculative_bytes": 140083200,
+            "purgeable_bytes": 266141696,
+            "wired_bytes": 89252167680,
+            "active_bytes": 18925273088,
+            "compressed_bytes": 8236335104,
+            "available_bytes": 20447412224,
+            "free_gb": 1,
+            "available_gb": 20.4,
+            "wired_gb": 89.3,
+            "active_gb": 18.9,
+            "compressed_gb": 8.2
+          }
+        },
+        "ps": {
+          "models": [
+            {
+              "name": "qwen3:8b",
+              "model": "qwen3:8b",
+              "size": 11796123484,
+              "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "qwen3",
+                "families": [
+                  "qwen3"
+                ],
+                "parameter_size": "8.2B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2318-10-24T01:52:02.415442807-07:00",
+              "size_vram": 11796123484,
+              "context_length": 40960
+            },
+            {
+              "name": "gpt-oss:20b",
+              "model": "gpt-oss:20b",
+              "size": 13607622409,
+              "digest": "17052f91a42e97930aa6e28a6c6c06a983e6a58dbb00434885a0cf5313e376f7",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gptoss",
+                "families": [
+                  "gptoss"
+                ],
+                "parameter_size": "20.9B",
+                "quantization_level": "MXFP4"
+              },
+              "expires_at": "2026-07-14T02:13:05.493289-07:00",
+              "size_vram": 13607622409,
+              "context_length": 131072
+            },
+            {
+              "name": "deepseek-r1:32b",
+              "model": "deepseek-r1:32b",
+              "size": 54092219022,
+              "digest": "edba8017331d15236e57480eb45406c0d721db77a4cdcf234df500fc2ad3960c",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "qwen2",
+                "families": [
+                  "qwen2"
+                ],
+                "parameter_size": "32.8B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-07-14T02:10:32.613435-07:00",
+              "size_vram": 54092219022,
+              "context_length": 131072
+            }
+          ]
+        },
+        "problems": [
+          "model does not fit: ornith:35b-q8"
+        ],
+        "ok": false
+      }
+    }
+  ],
+  "next_scheduled_task": "DR32-04",
+  "evidence_digest_path": "runtime/evidence-digest.md"
+}

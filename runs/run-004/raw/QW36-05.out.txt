@@ -1,0 +1,26 @@
+```text
+task_id: QW36-05
+status: insufficient-evidence
+queries_used:
+  1. "Gulf Coast Center" "Clinical Academy" FY2026 OR 2026 RFP
+  2. "Gulf Coast Center for Youth and Families clinical academy planning implementation solicitation"
+  3. Gulf Coast Center for Youth and Families business opportunities OR solicitations OR RFP clinical
+evidence:
+  - url: https://gulfcoastcenter.org/
+    source_type: organization website (search result only)
+    source_date: unknown
+    observed_fact: GCC is a Galveston County behavioral-health provider with Business/Procurement Opportunities and Careers pages; no Clinical Academy RFP surfaced.
+    CDP_facet: account
+    verification: search-snippet-only
+  - url: https://gulfcoastcenter.org/careers/
+    source_type: organization webpage (search result only)
+    source_date: unknown
+    observed_fact: GCC lists benefits (retirement match, medical insurance); no RFP or Clinical Academy content in snippet.
+    CDP_facet: account
+    verification: search-snippet-only
+unknowns:
+  - Cannot confirm whether GCC's Business/Procurement Opportunities page actually hosts the FY2026 Clinical Academy planning and implementation RFP cited in R4-E01.
+  - No independent source outside the original run confirms this RFP listing.
+contradiction_or_limit: The digest's claim rests on a prior web session opening GCC's business-opportunities page; public search alone does not surface internal/RFP pages reliably, and my three searches returned zero hits for "Clinical Academy" tied to GCC.
+next_micro_question: Open the Business/Procurement Opportunities page at gulfcoastcenter.org directly in a browser (or grant a single page extraction) to confirm or deny the FY2026 Clinical Academy RFP listing? If you paste the URL, I can verify in one more step.
+```

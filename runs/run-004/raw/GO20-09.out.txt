@@ -1,0 +1,38 @@
+```
+task_id:
+status: completed
+queries_used:
+  - "behavioral health workforce shortage US"
+  - "community behavioral health provider stress survey"
+  - "mental wellness training providers funding"
+
+evidence:
+  - url: https://www.hrsa.gov/sites/default/files/publication/2025-hrsa-nchwa-fy25-workforce-strain.pdf
+    source_type: government
+    source_date: 2025
+    observed_fact: HRSA report cites low wages, high caseloads, burnout, and reimbursement barriers driving staff turnover in behavioral health.
+    CDP_facet: category
+    verification: page-opened
+
+  - url: https://www.hcai.org/programs/medi-cal-behavioral-health
+    source_type: official organization
+    source_date: unknown
+    observed_fact: HCAI website describes a Medi-Cal behavioral-health program that offers recruitment bonuses, supervision support, and certification assistance to improve retention.
+    CDP_facet: buyer-function
+    verification: page-opened
+
+  - url: https://www.gulfcoastcenter.org/wp-content/uploads/2024/FY25_Workforce_Development.pdf
+    source_type: government agency
+    source_date: 2025
+    observed_fact: Gulf Coast Center PDF details a Clinical Academy workforce‑development plan focused on onboarding and refresher training for behavioral health staff.
+    CDP_facet: category
+    verification: page-opened
+
+unknowns:
+concern: Lack of direct evidence that community behavioral‑health providers have explicit intent to purchase wellness or resilience solutions; budget constraints remain unverified.
+
+contradiction_or_limit: Although industry reports show workforce strain, no proven demand curves or procurement signals exist for MindfulText products.
+
+next_micro_question: Should we pilot a short anonymous survey across a sample of community behavioral-health clinics to surface their interest in virtual resilience workshops and estimate willingness-to-pay?
+
+```

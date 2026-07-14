@@ -1,0 +1,21 @@
+task_id:
+status: completed
+queries_used:
+- “National Council on Behavioral Health workforce development program”
+- “CCBHC report staff training professional development”
+evidence:
+- url: https://www.thenationalcouncil.org/our-work/focus-areas/workforce-development/
+  source_type: organization website
+  source_date: unknown
+  observed_fact: “The council’s workforce‑development efforts highlight business, leadership and management training for behavioral‑health staff.”
+  CDP_facet: category
+  verification: search-snippet-only
+- url: https://aspe.hhs.gov/sites/default/files/documents/45e1fc72fef2004eb05a40162214f6e8/CCBHC-Report-Congress-2025.pdf
+  source_type: government report
+  source_date: March 2026 (report published)
+  observed_fact: “The CCBHC Annual Report notes that staff training and other professional‑development activities are integral to the program’s workforce capacity.”
+  CDP_facet: category
+  verification: search-snippet-only
+unknowns:
+contradiction_or_limit: none
+next_micro_question: Which behavioral‑health workforce initiatives should we highlight for a brief overview article next week?

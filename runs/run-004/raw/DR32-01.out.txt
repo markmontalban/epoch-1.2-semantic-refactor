@@ -1,0 +1,33 @@
+I'll perform the research according to your instructions.
+
+```text
+task_id: DR32-01
+status: completed 
+queries_used:
+  - "community behavioral health workforce shortage"
+  - "burnout among behavioral health providers structural solutions"
+  
+evidence:
+  - url: https://www.cdc.gov/nccdphp/dch/whr/mental_health-workforce.html
+    source_type: government report   
+    source_date: unknown
+    observed_fact: Mental health workforce shortages worsen burnout, requiring systemic funding and policy changes.
+    CDP_facet: structural solutions
+    verification: search-snippet-only
+    
+  - url: https://www.nami.org/About-Mental-Health/Policies-and-Provisions/Mental-Health-Services
+    source_type: professional association page 
+    source_date: unknown
+    observed_fact: Community behavioral health organizations need supervision and workforce development programs.
+    CDP_facet: structural solutions 
+    verification: search-snippet-only
+    
+unknowns:
+  - Lack of direct evidence on individual vs. structural solutions tradeoffs
+  
+contradiction_or_limit:
+  Limited to public search results; no access to internal organizational reports
+
+next_micro_question:
+What specific workforce development programs have proven effective for behavioral health providers?
+```

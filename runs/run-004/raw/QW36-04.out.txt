@@ -1,0 +1,33 @@
+task_id: QW36-04
+status: completed
+queries_used: > "CCBHC certified community behavioral health center" retention employee wellbeing annual report
+> "community behavioral health" site:.org OR site:.gov retention OR wellbeing OR employee assistance
+> peer support worker retention community agency public report
+
+evidence:
+  - url: https://highlandrivers.org/wp-content/uploads/2024/11/Highland-Rivers-Behavioral-Health-FY2024-Annual-Report.pdf
+    source_type: annual report (non-MHA CCBHC)
+    source_date: known date | unknown  (PDF not opened — SearXNG lacks page-extraction capability)
+    observed_fact: Snippet states Highland Rivers references CCBHC transition and workforce activity in FY2024.
+    CDP_facet: account
+    verification: search-snippet-only
+
+  - url: https://www.encompasscommunitysupports.org/wp-content/uploads/2024/08/FY24-Annual-Report-FY25-Budget-Presentation.pdf
+    source_type: annual report (non-MHA CCBHC)
+    source_date: known date | unknown
+    observed_fact: Snippet references an ECS CCBHC implementation team in FY24.
+    CDP_facet: account
+    verification: search-snippet-only
+
+  - url: https://bhw.hrsa.gov/sites/default/files/bureau-health-workforce/data-research/Behavioral-Health-Workforce-Brief-2025.pdf
+    source_type: government workforce report (HRSA BHW)
+    source_date: known date | unknown
+    observed_fact: HRSA 2025 behavioral health workforce brief covering CCBHC-wide retention and burnout.
+    CDP_facet: account
+    verification: search-snippet-only
+
+unknowns: No PDF was opened to confirm actual workforce-wellbeing/retention claims or employee-support program details within each annual report. The snippets only indicate "CCBHC transition" mentions, not specific retention or wellbeing interventions or funding signals.
+
+contradiction_or_limit: SearXNG backend cannot extract page content from PDFs — only indexed snippets are available. This blocks verification of whether the FY reports contain explicit workforce-wellbeing, retention, or EAP-type programs.
+
+next_micro_question: Should I (a) look for HTML-based careers/benefits pages at named providers instead, (b) accept snippet-only findings and move to mapping them on R2-R4 dimensions, or (c) shift the source pool (e.g., CAMHP/CALHE provider listings)?

@@ -1,0 +1,30 @@
+Cannot fetch full due to blocking.
+
+Given inability to open sources, we may need to fall back to search-snippet-only evidence. Is that acceptable? The format requires verification: page-opened or search-snippet-only. We can provide snippet evidence. That should be fine.
+
+We will produce task output with status completed and citations of two sources.
+
+Let's draft.```
+task_id: GO20-01
+status: completed
+queries_used:
+  - "community behavioral health workforce retention \"workforce resilience\""
+  - "\"community behavioral health\" \"workforce retention\""
+evidence:
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12027410/
+    source_type: academic
+    source_date: 2025
+    observed_fact: Article proposes a roadmap for systemic reforms to strengthen workforce resilience and improve retention in community mental health settings.
+    CDP_facet: category
+    verification: search-snippet-only
+  - url: https://eleos.health/blog-posts/behavioral-health-workforce-retention-tips/
+    source_type: news
+    source_date: 2025-09-30
+    observed_fact: Blog cites community behavioral health faces added limitations; retention is especially difficult for community-based providers.
+    CDP_facet: category
+    verification: search-snippet-only
+unknowns:
+  - Difficulty retrieving full page content for more detailed terminology.
+contradiction_or_limit: None
+next_micro_question: What specific staff support interventions are recommended in these sources?
+```

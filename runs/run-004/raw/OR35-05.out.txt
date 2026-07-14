@@ -1,0 +1,28 @@
+## Result
+
+```text
+task_id: OR35-05
+status: completed
+queries_used: "Gulf Coast Center" behavioral health workforce 2025; site:gulfcoastcenter.org clinical academy RFP FY2026; Gulf Coast Center HR procurement quality improvement
+evidence:
+  (no new findings)
+unknowns:
+  Whether Gulf Coast Center has a publicly posted strategic plan,
+  workforce report, or RFP portal listing beyond the ones already cited.
+contradiction_or_limit:
+  None identified on public surfaces; none identified against prior evidence.
+next_micro_question:
+  Apply OR35-04/06 to Santé Group and Heritage Behavioral Health next?
+```
+
+## Notes (outside deliverable summary)
+
+All three search queries returned zero results. The high-priority account in the digest — Gulf Coast Center for Human Services, St. Petersburg, FL — is not a match on public surfaces under any of the role/capability keywords I searched.
+
+There is no new evidence to extract for OR35-05 beyond what's already in EVIDENCE_DIGEST R4-E01:
+- Annual report (FY25): workforce-development signals found previously, no update surfaced on search.
+- Business-opportunities page: Clinical Academy planning/implementation RFP already recorded previously, no new procurement action found on public surfaces today.
+
+Two of the three accounts in EVIDENCE_DIGEST are behavioral-health community providers whose prior research covered HR-adjacent language but yielded only employer-practice signals (wellness days, retention bonuses, mobile-crisis culture). Neither surfaced demand for MindfulText, nor a named buyer, authority, or purchase path. The HCAI public source in the digest is state-regulatory context only; not an employee-wellness program requirement.
+
+No new contradiction with prior evidence. No additional sources were opened because none of three search queries returned candidate URLs worth inspecting.

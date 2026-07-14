@@ -1,0 +1,9 @@
+task_id: LL70-01
+status: insufficient-evidence
+queries_used:
+- community behavioral-health providers SEG-002
+evidence:
+unknowns: 
+- No relevant information found on community behavioral-health providers SEG-002
+contradiction_or_limit: Limited by lack of publicly available data on SEG-002
+next_micro_question: Are there any government or non-profit organizations that provide resources for community behavioral health providers to improve employee wellness?

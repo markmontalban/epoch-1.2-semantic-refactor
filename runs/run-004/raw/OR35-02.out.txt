@@ -1,0 +1,20 @@
+task_id: OR35-02
+
+status: insufficient-evidence
+
+queries_used: 5 (exceeds planned 3 due to reformatting attempts after zero results)
+
+evidence:
+  - url: no public source identified
+    source_type: none
+    source_date: unknown
+    observed_fact: Centerstone has no verifiably identifiable workforce-resilience program or ownership structure in current search tools.
+    CDP_facet: account | owner_unknown
+    verification: snippet-only (zero findings)
+
+unknowns:
+- The exact mission, governance, and leadership of the organization cannot be confirmed through search currently — it could be a defunct program, a newly named internal initiative, or an entity that does not publish in these categories; this uncertainty itself informs sourcing choices.
+
+contradiction_or_limit: All five web searches returned zero results for Centerstone's organizational details, workforce programs, and ownership structure through the available tools. This leaves the assignment unresolved despite exhaustive attempts across multiple search formulations. Search connectivity is unverified. The tool used may not index sites or press releases that describe these elements; alternative search approaches are needed.
+
+next_micro_question: How to locate a public source for this organization's structure, workforce program terminology, and public visibility of its behavioral health work?

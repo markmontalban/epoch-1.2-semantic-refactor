@@ -1,0 +1,20 @@
+task_id: LL70-03
+status: completed
+queries_used:
+  - community behavioral health providers workforce development challenges
+evidence:
+  - url: https://nashp.org/trends-in-state-strategies-to-improve-the-behavioral-health-workforce/
+    source_type: Official website of the National Academy for State Health Policy (NASHP)
+    source_date: unknown
+    observed_fact: chronic shortages and maldistribution of behavioral health providers.
+    CDP_facet: category
+    verification: search-snippet-only
+  - url: https://bhw.hrsa.gov/sites/default/files/bureau-health-workforce/data-research/Behavioral-Health-Workforce-Brief-2025.pdf 
+    source_type: Government report from the US Health Resources and Services Administration (HRSA)
+    source_date: 2025
+    observed_fact: Behavioral health providers face challenges including excessive caseloads, long hours, and burnout.
+    CDP_facet: category
+    verification: search-snippet-only
+unknowns:
+contradiction_or_limit: The current evidence does not provide information about the specific workforce development challenges faced by community behavioral health providers.
+next_micro_question: What specific strategies are being implemented to address the workforce development challenges in community behavioral health?

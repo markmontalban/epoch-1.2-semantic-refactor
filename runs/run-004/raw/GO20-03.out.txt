@@ -1,0 +1,29 @@
+Now we have description meta. Good.
+
+We still need second source for behavioral health workforce retention program; first page maybe enough. We also might open PDF from other search list but it's fine.
+
+Let's compile evidence: we have two sources pages: https://hcai.ca.gov/... and https://health.calm.com/... Provide observed facts 25 words max.
+
+Need CDP_facet categories: for workforce retention program, account? Actually the snippet indicates recruitment & retention bonuses; that's benefit for providers. It's buyer intent? It's about program that provides bonuses to practitioners— may be 'account' or 'language'? The requirement: "without claiming demand, efficacy, buyer intent, budget, or readiness." We must provide evidence but not claim those. So we can state facts. CDP_facet: category maybe "category" with word retention or "buyer-function"? We'll assign as "category".
+
+Now format.task_id:
+status: completed
+queries_used:
+- "behavioral health workforce retention program"
+- "behavioral health staff wellness app workshop"
+evidence:
+  - url: https://hcai.ca.gov/workforce/initiatives/behavioral-health-bh-connect/mbhrrp/
+    source_type: official organization website
+    source_date: 2026‑07‑02 (page modified)
+    observed_fact: "Medi-Cal Behavioral Health Recruitment and Retention Program offers recruitment bonuses, supervision support, licensure assistance to help retain behavioral health practitioners."
+    CDP_facet: category
+    verification: page-opened
+  - url: https://health.calm.com/calm-workshops/
+    source_type: official organization website
+    source_date: 2026‑01‑14 (post published)
+    observed_fact: "Calm Workshops delivers virtual, interactive sessions designed to build workplace resilience, connection and mental wellness."
+    CDP_facet: language
+    verification: page-opened
+unknowns:
+contradiction_or_limit: none identified
+next_micro_question: None

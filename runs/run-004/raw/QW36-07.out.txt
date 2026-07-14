@@ -1,0 +1,18 @@
+Five search calls across two turns yielded zero results for all queries targeting named accounts (Santé Group, Heritage Community Foundation, Calm Health, HCAI) and the broader term "low-downtime" for behavioral-health/community-provider contexts with shift or schedule references. No page was opened beyond the sprint instructions (no new pages were warranted).
+
+```text
+task_id: QW36-07
+status: insufficient-evidence
+queries_used:
+  1. site:santegroup.com "shift" OR "low-downtime" OR "24/7"
+  2. heritage community foundation behavioral health workforce schedule shift OR downtime
+  3. site:calmhealth.com OR site:hcai.org "shift work" OR "downtime" employee wellbeing
+  4. "low-downtime" behavioral health community provider
+  5. site:calmhealth.com workforce shift schedule wellbeing
+evidence:
+  (none found; all queries returned zero results)
+unknowns:
+  - Named accounts in the digest have no publicly searchable explicit low-downtime or shift-work constraint language as of this research window. This may reflect search-engine indexing gaps rather than true absence.
+contradiction_or_limit: none identified — null result across broad and narrow queries.
+next_micro_question: Should I broaden to adjacent terms (e.g. "24/7", "night shift", "on-call", "extended-hour clinic") or target a different account from the digest?
+```

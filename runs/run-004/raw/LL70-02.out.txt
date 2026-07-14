@@ -1,0 +1,23 @@
+task_id: LL70-02 
+status: completed 
+queries_used: 
+  - community behavioral-health providers workforce development
+  - Heritage Behavioral Health staff wellbeing programs
+  - Santé Group staff wellness initiatives 
+evidence:
+  - url: https://thesantegroup.org/sante-supportive-work-environment-behavioral-health/
+    source_type: organization website
+    source_date: unknown
+    observed_fact: Santé reinforces commitment to supportive work environment for behavioral health
+    CDP_facet: account 
+    verification: search-snippet-only 
+  - url: https://www.heritagenet.org/wellnessdays
+    source_type: organization webpage
+    source_date: unknown
+    observed_fact: Heritage Behavioral Health Center offers wellness days program for employees
+    CDP_facet: buyer-function 
+    verification: search-snippet-only 
+unknowns:
+  - Which of these two organizations has clearer public workforce context, based on the provided sources.
+contradiction_or_limit: Evidence did not establish demand or intent to purchase MindfulText services. 
+next_micro_question: Compare workforce context descriptions for both Santé Group and Heritage Behavioral Health, focusing on publicly available information about staff wellness initiatives and behavioral health workforce development programs.

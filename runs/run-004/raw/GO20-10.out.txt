@@ -1,0 +1,18 @@
+The web_search results all show empty 'web' arrays. That indicates no matching results? Perhaps remote search blocked. Since we cannot retrieve pages, cannot provide evidence.
+
+We must comply with instruction: if evidence missing, say insufficient public evidence. Provide format accordingly.
+
+Let's produce output with task_id presumably GO20-10? Actually assigned sprint says GO20-10 but here we're focusing on SEG-002 research. The user requested to help research community behavioral-health providers without claiming demand etc. We must produce a report with queries used and evidence.
+
+Given no evidence, we output insufficient-evidence.
+
+task_id: <not applicable>
+status: insufficient-evidence
+queries_used:
+  - "HRSA behavioral health workforce survey phrases"
+  - "behavioral health workforce development recruitment phrases public hospitals"
+  - "CDC behavioral health workforce development training flyer language"
+evidence:
+unknowns:
+contradiction_or_limit: Unable to retrieve any public web pages matching the queries; search tools returned no results. No primary or official source could be opened, so no factual paraphrases are available.
+next_micro_question: None

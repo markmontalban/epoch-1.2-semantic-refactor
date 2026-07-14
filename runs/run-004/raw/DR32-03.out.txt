@@ -1,0 +1,25 @@
+```text
+task_id: DR32-01
+status: completed
+queries_used:
+  - "behavioral health provider wellness procurement"
+  - "CCBHC staff support vendor requirements"
+  - "employee mental health and privacy behavioral health"
+evidence:
+  - url: https://www.hrsa.gov/behavioralhealthworkforce/
+    source_type: official government
+    source_date: unknown
+    observed_fact: HRSA reports CCBHCs face challenges retaining staff, with limited organizational support.
+    CDP_facet: account | buyer-function 
+    verification: search-snippet-only
+  - url: https://www.cbhassociates.com/workforce/
+    source_type: behavioral health consultant
+    source_date: unknown
+    observed_fact: CCBHCs increasingly include staff wellness as a key metric in vendor RFPs.
+    CDP_facet: buyer-function 
+    verification: search-snippet-only
+unknowns:
+  - Specific procurement requirements for mental health wellness vendors remain unclear.
+contradiction_or_limit: While CCBHCs publicly acknowledge workforce strain, evidence of concrete wellness-related procurement needs is limited.
+next_micro_question: Can we find a public RFP or vendor requirements document from any CCBHC explicitly mentioning staff wellness programs?
+```

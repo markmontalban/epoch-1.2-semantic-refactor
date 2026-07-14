@@ -1,0 +1,29 @@
+```text
+task_id: QW36-01
+status: completed
+queries_used:
+1. "Gulf Coast Center" "employee wellness"
+2. site:gulfcoastcenter.org "Clinical Academy" OR "workforce development"
+3. "Gulf Coast Center" workforce support programs
+evidence:
+  - url: https://gulfcoastcenter.org/business-opportunities/
+    source_type: official organization (RFP page)
+    source_date: FY2026 posting date unknown
+    observed_fact: GCC issued an RFP for "Clinical Academy Planning and Implementation FY2026."
+    CDP_facet: account
+    verification: search-snippet-only
+  - url: https://gulfcoastcenter.org/wp-content/uploads/2025/12/POSTING-FY25-Annual-Report-1.pdf
+    source_type: official organization (FY25 Annual Report)
+    source_date: unknown
+    observed_fact: FY25 report lists "Workforce Development: Enhanced" including onboarding, refresher training, staff growth. Clinical Academy development noted following new employee onboarding launch in late July 2025.
+    CDP_facet: account
+    verification: search-snippet-only
+unknowns:
+- Exact FY2026 Clinical Academy launch timeline and scope
+- Employee wellness program breadth beyond internal workforce (e.g., client-facing vs. staff-facing)
+- Current direct-care staffing levels and turnover metrics
+contradiction_or_limit:
+Search results for GCC "employee wellness" were sparse; most hits referenced a different entity (Gulf Coast VA or GCC of Galveston/Brazoria crisis hotline). FY25 report was the strongest single-source confirmation of workforce-priority emphasis at GCC.
+next_micro_question:
+Do you want a deeper look into GCC's Clinical Academy RFP scope, or to examine a second provider for cross-comparison on QW36-01 objectives?
+```

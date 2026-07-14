@@ -1,0 +1,39 @@
+```text
+task_id: QW36-03
+status: completed
+queries_used:
+  - "Sante Group" staff wellness
+  - site:thesantegroup.org workforce OR "employee wellbeing" OR wellness
+  - Sante Group "employee wellness" benefits workplace
+evidence:
+  - url: https://thesantegroup.org/sante-supportive-work-environment-behavioral-health/
+    source_type: organization-published blog/news article (thesantegroup.org)
+    source_date: unknown
+    observed_fact: Title frames workforce care as a commitment to behavioral health professionals; snippet mentions wellness practices and ensuring employees feel valued and supported.
+    CDP_facet: account
+    verification: search-snippet-only
+
+  - url: https://thesantegroup.org/our-priorities/wellness-services/
+    source_type: organization service page (thesantegroup.org)
+    source_date: unknown
+    observed_fact: Two Wellness and Recovery Centers at Silver Spring and Germantown offer resources, socialization, activities for consumers; does not address internal staff wellness explicitly.
+    CDP_facet: category
+    verification: search-snippet-only
+  - url: https://thesantegroup.org/our-culture/join-our-team/
+    source_type: organization careers page (thesantegroup.org)
+    source_date: unknown
+    observed_fact: Describes front-line mental health work requiring agility and grit; mentions competitive salaries, exceptional benefits, unique workforce-development opportunities.
+    CDP_facet: buyer-function
+    verification: search-snippet-only
+
+unknowns:
+  - Whether Santé Group operates any UK wellness-insurance subsidiary (santegroup.co.uk) as part of the same organization or separately from the Maryland behavioral-health Santé Group (thesantegroup.org).
+  - Exact employee headcount, turnover rate, or formal EAP/mental-health benefits program for staff.
+  - Whether "wellness practices" in the supportive-work-environment article refers to programs, partnerships, policies, or aspirational language.
+  - Publication date of the supportive-work-environment article and its authorship/endorsement chain.
+
+contradiction_or_limit: UK-based santegroup.co.uk appears to be a separate health-insurance/wellness-benefits broker from Maryland-based thesantegroup.org behavioral-health provider; search results conflate them under identical branding, creating potential identity confusion. SearXNG web backend (current config) does not support page extraction, limiting direct-content verification to snippets only.
+
+next_micro_question:
+  Should we verify whether uk.santegroup.co.uk and thesantegroup.org are distinct legal entities before proceeding with SEG-002 targeting?
+```

@@ -1,0 +1,21 @@
+task_id: GO20-05
+status: insufficient-evidence
+queries_used:
+  - "behavioral health workforce strain report 2023"
+  - "State of the Behavioral Health Workforce, 2025 pdf"
+evidence:
+  - url: https://bhw.hrsa.gov/sites/default/files/bureau-health-workforce/Behavioral-Health-Workforce-Brief-2023.pdf
+    source_type: government report
+    source_date: Dec 11 2023
+    observed_fact: "Low wages put a strain on behavioral health providers and discourage them from staying in the workforce."
+    CDP_facet: category
+    verification: search-snippet-only
+  - url: https://bhw.hrsa.gov/sites/default/files/bureau-health-workforce/data-research/Behavioral-Health-Workforce-Brief-2025.pdf
+    source_type: government report
+    source_date: Dec 2 2025
+    observed_fact: "Chronic shortages and maldistribution of behavioral health providers are noted, worsened by the pandemic."
+    CDP_facet: category
+    verification: search-snippet-only
+unknowns:
+contradiction_or_limit: Unable to open PDF sources due to backend limitations; content not verified beyond search snippet.
+next_micro_question: Would you like me to retrieve a different public document that specifically discusses workforce strain in the behavioral‑health sector (e.g., a state agency press release or academic study) and confirm its details?

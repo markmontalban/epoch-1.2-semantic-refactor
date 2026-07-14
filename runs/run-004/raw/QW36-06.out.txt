@@ -1,0 +1,37 @@
+Two subsequent searches returned zero results. The first batch gave only search snippets (no pages could be opened — no extraction backend available). The Pierce County snippet mentions both "retention" and "wellbeing" in the same workforce report context but does not show how community behavioral health providers distinguish these three categories as separate program domains externally. The NCSL result conflates "workforce mental health" (worker wellbeing) with policy entry-barriers (workforce development), which is a different use pattern than what the sprint requires.
+
+I cannot open source pages directly, so I cannot confirm exact terminology usage in situ. Two more searches returned nothing useful.
+
+```text
+task_id: QW36-06
+status: insufficient-evidence
+queries_used:
+  - "'workforce development' 'employee wellness' retention site:hcai.ca.gov OR site:.samhsa.gov behavioral health"
+  - "county behavioral health 'workforce development' vs 'wellness' versus 'retention'"
+  - "community mental health provider 'workforce development' AND NOT retention wellbeing wellness"
+  - "'workforce development' AND 'wellness' AND 'retention' community behavioral health program terminology"
+  - "Pierce County WA behavioral health workforce report PDF distinction retention wellness development"
+evidence:
+  - url: https://www.piercecountywa.gov/DocumentCenter/View/122744/BH-Workforce-Report
+    source_type: government (county agency)
+    source_date: unknown
+    observed_fact: Report mentions recruitment and retention alongside employee wellbeing in behavioral health workforce context.
+    CDP_facet: language
+    verification: search-snippet-only
+  - url: https://www.ncsl.org/labor-and-employment/mental-health-matters-policy-framework-on-workforce-mental-health
+    source_type: association/policy (NCSL)
+    source_date: unknown
+    observed_fact: NCSL covers removing barriers to behavioral health workforce and training pathways, a workforce-development frame.
+    CDP_facet: category
+    verification: search-snippet-only
+unknowns:
+  - Do community behavioral health providers use "employee wellness" as a distinct program category from retention?
+  - Which associations (NAMHP, MCHSA) use each term in published frameworks?
+  - What exact terminology do county CMOs use for each pillar in publicly posted RFPs or strategic plans?
+contradiction_or_limit:
+  No extraction backend available — zero pages opened. Snippets alone cannot confirm how organizations categorically distinguish these terms rather than using them interchangeably. Two further searches returned no structured results.
+next_micro_question:
+  Should we deploy a web extractor (FIRECRAWL_API_KEY or TAVILY_API_KEY) to enable page opens, or should we re-target queries toward specific association publications known to carry this taxonomy?
+```
+
+Recommendation: Enable `web.extract_backend` (set one of `FIRECRAWL_API_KEY`, `TAVILY_API_KEY`, or `EXA_API_KEY`) so future workers can open source pages and confirm exact terminology in situ. Without that, every research worker is limited to search-snippet evidence for this sprint.
