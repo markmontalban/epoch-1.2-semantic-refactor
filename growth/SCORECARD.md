@@ -1,6 +1,6 @@
-# 02 — Revenue-Signal Scorecard & Path-Scoring Rubric v0.1
+# Growth — Scorecard & Path-Scoring Rubric
 
-Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: Record Run 001 approvals
+Last updated: 2026-07-12 23:13:16 PDT — edited by: Codex
 
 **Status:** APPROVED by Mark 2026-07-11, unamended (E1-R1A02; decisions/2026-07-11-run-001-approvals.md DR-14). Adopted as draft 2026-07-10 (DR-5, charter §14.13).
 **Purpose:** the minimal path-scoring rubric required by charter §14.13. Every ROI path card is scored here before ranking.
@@ -10,7 +10,7 @@ Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: R
 | Dimension | 0 | 1 | 2 |
 |---|---|---|---|
 | Pain severity & urgency | hypothesis only | corroborated annoyance | evidenced, urgent, budgeted pain |
-| Evidence strength | model hypothesis only | founder assumption with partial support | independent evidence with provenance |
+| Evidence strength | agent hypothesis only | founder assumption with partial support | independent evidence with provenance |
 | Buyer reachability | unknown channel | plausible channel, untested | named channel with existing access |
 | Willingness-to-pay signal | none | indirect (comparables, analogies) | direct **action** (reply, signup, payment) |
 | MindfulText fit & effort | major build needed | moderate adaptation | ships with current product within Mark's capacity |
@@ -21,7 +21,12 @@ Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: R
 - **Actions beat sentiment:** WTP = 2 requires a real action by a prospect, never volume of positive chatter (ops-plan §4 anti-hype guardrail).
 - **Staleness decay:** evidence older than 30 days drops the dimension to the lower band until re-verified.
 - Every scored path must name its **target signal** (ladder below) and its **cheapest next test**; ties break toward the cheaper test.
-- Provenance tags from path cards apply: `evidence` > `founder-assumption` > `model-hypothesis`.
+- Provenance tags from path cards apply: `evidence` > `founder-assumption` > `agent-hypothesis`.
+- **Research contributes; it does not decide:** public community or profile
+  research can strengthen Pain, Evidence strength, or Buyer reachability. It
+  cannot by itself establish willingness to pay above an indirect signal.
+- **TAM is context, not proof:** a cited U.S. market-size range can determine
+  whether deeper work is worthwhile; it does not raise WTP or validate a path.
 
 ## Signal ladder (charter §3)
 

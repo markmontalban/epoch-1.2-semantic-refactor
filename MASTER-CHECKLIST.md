@@ -1,238 +1,276 @@
 # MindfulText Epoch 1 — Master Checklist
 
-Checklist ID: `E1`
+Position scheme: top-level sections use `A`, `B`, `C`; checklist items use
+`A1`, `A1a`, `A1b`, etc. Items are named by their visible document position.
 
-Last updated: 2026-07-11 00:56:51 PDT — edited by: Claude Dispatch — task: Execute master checklist, Run 001
+Last updated: 2026-07-14 06:46:58 PDT — edited by: Codex
 
-**Last reconciled:** 2026-07-11
+**Last reconciled:** 2026-07-12
 
-This is the execution tracker for Epoch 1. Its reference sources are:
+This is the Epoch 1 execution tracker; the [context map](CONTEXT-MAP.md) provides the Mark-facing re-entry summary and dependency diagrams.
 
-1. [`../epoch-1-next-steps-plan.md`](../epoch-1-next-steps-plan.md) — scope and full dependency plan.
-2. [`../epoch-1-decision-record-2026-07-10.md`](../epoch-1-decision-record-2026-07-10.md) — dated decisions; it wins on conflicts.
-3. [`current-state.md`](current-state.md) and dated observation records — current evidence.
+Its reference sources are:
+
+1. [`planning/next-steps-plan.md`](planning/next-steps-plan.md) — historical scope and full dependency plan.
+2. [`decisions/2026-07-10-epoch-1-foundation.md`](decisions/2026-07-10-epoch-1-foundation.md) — foundation decisions; linked decision records win on conflicts.
+3. [`status/CURRENT-STATE.md`](status/CURRENT-STATE.md) and dated observation records — current evidence.
+4. [`CONTEXT-MAP.md`](CONTEXT-MAP.md) — re-entry dependency maps and reference
+   index; explanatory only, never an execution authority.
+5. [`CHARTER.md`](CHARTER.md) — canonical Epoch 1 authority and amendments.
+6. [`decisions/DECISION-REGISTER.md`](decisions/DECISION-REGISTER.md) — the
+   canonical decision index; linked dated decision records retain approval
+   authority.
 
 Status labels: **Done** = evidenced; **In progress** = active, not yet proven;
 **Mark only** = requires Mark’s judgment or explicit approval; **Deferred** = not
 eligible before its named gate. No item authorizes outbound activity, provider
 spend, or a model/core change without the approval stated in the charter.
-Use the stable `E1-*` identifiers below when assigning or reporting work.
+Use the document-position references below when assigning or reporting work.
+Line numbers are optional current navigation hints only.
+
+## Mark summary
+
+- **Run 001 is ready to draft:** Add one growth hypothesis, name the agent in your prompt, and receive editable researched paths. The four original assets can strengthen them later. [Run 001 packet](runs/run-001/UNBLOCK-PACKET.md)
+- **Care-delivery development has a plan:** `CDP-001` connects `SEG-001`, focused branch `SEG-002`, `GH-004`, and `GTM-001`; it identifies the next bounded intelligence and marketing-opportunity work without authorizing external action. [DR-31](decisions/2026-07-14-customer-development-plan.md)
+- **Core direction is live:** Mark authorized the prototype to move from `gpt-oss:20b` to `qwen3:8b`; dashboard commit `7b1cec0` passed 202 tests/lint and live health shows `core_degraded: false`. [DR-19](decisions/2026-07-12-mark-directions.md#dr-19--mindfultext-local-model-core)
+- **Hermes is in scope:** Mark may manually prompt Hermes for bounded prototype work. Telegram is not part of the workflow. [DR-22](decisions/2026-07-12-prototype-run-first.md)
 
 ## Guardrails — always in force
 
-- [x] `E1-G01` **$0 external-model cap and $0 sandbox cap** — DR-8. Do not raise or
+- [x] `A1` **$0 external-model cap and $0 sandbox cap** — DR-8. Do not raise or
   work around either cap without a new dated Mark decision. *2026-07-11 note
-  (DR-16): Mark holds a personal manual-testing spend exception — Mark-executed
-  only; it raises neither agent-side cap.*
-- [x] `E1-G02` **No outbound automation or unapproved manual outreach.** Every outbound
+  (DR-16): Mark's personal manual testing is controlled by the existing
+  OpenRouter account limits — Mark-executed only; it raises neither agent-side
+  cap.*
+- [x] `A2` **No outbound automation or unapproved manual outreach.** Every outbound
   action needs Mark’s approval at the point of execution.
-- [x] `E1-G03` **Data boundary:** unassigned material is `local-only`; Run 001 may use
+- [x] `A3` **Data boundary:** unassigned material is `local-only`; Run 001 may use
   only `external-okay` material or a Mark-approved `redacted-external`
   derivative.
-- [x] `E1-G04` **Hermes is unavailable for Epoch 1 work until C4 is completed by Mark.**
-- [x] `E1-G05` **Dashboard scope is stability-only through Run 003.**
+- [x] `A4` **Hermes may be used for manually prompted prototype work; Telegram and autonomous task creation are out of scope.**
+- [x] `A5` **Dashboard scope is stability-only through Run 003.**
 
 ## Phase 0 — reconcile platform and governance
 
-- [x] `E1-P001` **D1 gate rule:** per-surface behavior is live in dashboard commit
+- [x] `B1` **D1 gate rule:** per-surface behavior is live in dashboard commit
   `c7f0b32`: external work blocks on either BLOCK; internal review retains
   lone-BLOCK-to-WARN corroboration. Run records retain the caller-declared
   `surface` for audit.
-  - [x] `E1-P001A` **Caveat documented for every reviewer:** `surface` is caller-declared; a
+  - [x] `B1a` **Caveat documented for every reviewer:** `surface` is caller-declared; a
     mislabeled internal call can soften a lone BLOCK to WARN. Treat that label
     as a reviewable classification claim, not a trust boundary.
-- [x] `E1-P002` **D2/D3 configuration:** dashboard commit `72712e2` sets budget to 116
+- [x] `B2` **D2/D3 configuration:** dashboard commit `72712e2` sets budget to 116
   GB and disables `babysitter` and `window_watch` for Epoch 1.
-- [x] `E1-P003` **D4 documentation:** root `AGENTS.md` now names the live dashboard
-  path, the provisional `gpt-oss:20b` core, `ornith:35b-q8`, disabled watcher
-  routes, residency configuration, and the per-surface gate rule.
-- [x] `E1-P004` **Log observability:** dashboard restart at `2026-07-10T14:38:25.508Z`
+- [x] `B3` **D4 documentation:** root `AGENTS.md` names the live dashboard
+  path and the active router/residency/gate rules; the dashboard's configured
+  MindfulText core is now `qwen3:8b` (DR-19).
+- [x] `B4` **Log observability:** dashboard restart at `2026-07-10T14:38:25.508Z`
   enables ISO-8601 log prefixes (commit `c7f0b32`).
-- [x] `E1-P005` **Canonical charter and dated decisions:** charter v1.1 and DR-1…DR-12
+- [x] `B5` **Canonical charter and dated decisions:** charter v1.1 and DR-1…DR-12
   are present; superseded planning docs remain marked as such.
 
 ### Charter v1.1 amendment ledger
 
-- [x] `E1-L01` Authority hierarchy: `AGENTS.md` governs platform/safety; the canonical
+- [x] `B6a` Authority hierarchy: `AGENTS.md` governs platform/safety; the canonical
   charter governs lab roles/workflows only (charter §14.1).
-- [x] `E1-L02` Data-class/default and local-redaction rules are adopted (charter §14.2).
-- [x] `E1-L03` Unknown/unverified provider surfaces are external; named provider,
+- [x] `B6b` Data-class/default and local-redaction rules are adopted (charter §14.2).
+- [x] `B6c` Unknown/unverified provider surfaces are external; named provider,
   per-run cap, and Mark approval are required (charter §14.3; DR-8).
-- [x] `E1-L04` The autonomous coding arm is parked until a level-2/3 signal plus dated
+- [x] `B6d` The autonomous coding arm is parked until a level-2/3 signal plus dated
   Mark decision (charter §14.4).
-- [x] `E1-L05` `LAB-SETUP` and `MT-BOOTSTRAP` have their required bounded-card fields
+- [x] `B6e` `LAB-SETUP` and `MT-BOOTSTRAP` have their required bounded-card fields
   (charter §14.5; Run 001 card is the current `MT-BOOTSTRAP` artifact).
-- [x] `E1-L06` Run taxonomy (`lab-validation` / `market-test`) and required measures
+- [x] `B6f` Run taxonomy (`lab-validation` / `market-test`) and required measures
   are adopted (charter §14.6).
-- [x] `E1-L07` Hermes sequence and C4 prerequisite are adopted (charter §14.7).
-- [x] `E1-L08` Social intelligence is constrained to lab input, not a parallel program
+- [x] `B6g` Hermes sequence is adopted; C4 is deferred by the prototype
+  run-first amendment (charter §14.7, §14.22).
+- [x] `B6h` Social intelligence is constrained to lab input, not a parallel program
   (charter §14.8).
-- [x] `E1-L09` Per-run privacy-safe trace requirement is adopted (charter §14.9).
-- [x] `E1-L10` Dashboard remains stability-only and worktree triage is post-Run-003
+- [x] `B6i` Per-run privacy-safe trace requirement is adopted (charter §14.9).
+- [x] `B6j` Dashboard remains stability-only and worktree triage is post-Run-003
   (charter §14.10).
-- [x] `E1-L11` Charter version/commit requirement is adopted (charter §14.11).
-- [x] `E1-L12` Claude-review / Mark-approve-or-waive model and `datasets/` boundary are
+- [x] `B6k` Charter version/commit requirement is adopted (charter §14.11).
+- [x] `B6l` Claude-review / Mark-approve-or-waive model and `datasets/` boundary are
   adopted (charter §14.12).
-- [x] `E1-L13` Path-scoring rubric v0.1 is drafted at
-  [`02-revenue-signal-scorecard.md`](02-revenue-signal-scorecard.md) (charter
+- [x] `B6m` Path-scoring rubric v0.1 is drafted at
+  [`growth/SCORECARD.md`](growth/SCORECARD.md) (charter
   §14.13); Mark approval remains a Run 001 gate.
-- [x] `E1-L14` Pi remains optional-later, not the Epoch 1 control plane (charter §14.14;
+- [x] `B6n` Pi remains optional-later, not the Epoch 1 control plane (charter §14.14;
   DR-7).
-- [x] `E1-L15` Targets are re-dated: Aug 14 packet / Sep 4 signal (charter §3; DR-6).
+- [x] `B6o` Targets are re-dated: Aug 14 packet / Sep 4 signal (charter §3; DR-6).
 
 ## Phase 1 — prepare Run 001
 
 ### 1. Lab and data store
 
-- [x] `E1-DS01` LAB-SETUP scaffold, templates, workflow, privacy-safe trace schema,
+- [x] `C1a` LAB-SETUP scaffold, templates, workflow, privacy-safe trace schema,
   utilities, `.gitignore`, and local Git history exist (commits `fa16547`,
   `c50dc5d`).
-- [x] `E1-DS02` **Mark chose the final non-iCloud lab location:**
+- [x] `C1b` **Mark chose the final non-iCloud lab location:**
   `~/AI-Studio/Projects/mindfultext-epoch-1/` (DR-9), confirmed 2026-07-10.
   The repository remains staged until Mark separately authorizes the move and
   no session has the lab open.
-- [ ] `E1-DS03` **Mark only — choose a separate local-only store** outside any tracked
-  repository for raw sensitive material. Never initialize it as Git. Candidate
-  under consideration: `/Volumes/Seagate Desktop Drive`; before selection,
-  specify a dedicated encrypted folder and the no-fallback behavior if the
-  volume is unavailable.
-- [x] `E1-DS04` `datasets/` is ignored; no raw evidence is present in this repo.
-- [x] `E1-DS05` §6.3 new-repo waiver and non-iCloud rationale are recorded in DR-9;
+- [x] `C1c` **Mark only — choose a separate local-only store** outside any tracked
+  repository for raw sensitive material. Mark selected
+  `/Volumes/Seagate Desktop Drive/MindfulText-local-only/`: encrypted, non-Git,
+  non-cloud-synced, and no fallback if unavailable (DR-20).
+- [x] `C1d` `datasets/` is ignored; no raw evidence is present in this repo.
+- [x] `C1e` §6.3 new-repo waiver and non-iCloud rationale are recorded in DR-9;
   only the local-only-store decision and separate move authorization remain.
 
 ### 2. Evidence inventory and external-routing approval — critical path
 
-- [x] `E1-EV01` **Mark only — classify or strike every candidate in
-  [`01-product-evidence.md`](01-product-evidence.md):** validation notes,
+- [x] `C2a` **Mark only — classify or strike every candidate in
+  [`growth/HYPOTHESES.md`](growth/HYPOTHESES.md):** validation notes,
   pilot feedback (including third-party consent), ICP one-liner, and product
   positioning. *Approved by Mark 2026-07-11 — all four retained (DR-13).*
-- [x] `E1-EV02` **Mark only — complete rights/consent, data class, permitted use, and
+- [x] `C2b` **Mark only — complete rights/consent, data class, permitted use, and
   status** for each retained asset. *Approved by Mark 2026-07-11 (blanket;
   DR-13) — spot-check each actual asset at import, esp. asset 2's third-party
   content.*
-- [x] `E1-EV03` **Mark only — add only cleared summaries/provenance to Approved
+- [x] `C2c` **Mark only — add only cleared summaries/provenance to Approved
   evidence; put founder assumptions in their separate section.** *Approved by
   Mark 2026-07-11 (DR-13); populates when assets are physically imported.*
-- [x] `E1-EV04` **Mark only — resolve the Run 001 collision:** set its input set to
+- [x] `C2d` **Mark only — resolve the Run 001 collision:** set its input set to
   `external-okay`, or approve a `redacted-external` derivative. If either is
   unavailable, Run 001 must not execute. *Resolved by Mark 2026-07-11: input
   set classed `external-okay` (DR-13).*
 
 ### 3. Run 001 approval — critical path
 
-- [x] `E1-R1A01` Draft card validates: `python3 tools/validate-run-card.py
+- [x] `C3a` Draft card validates: `python3 tools/validate-run-card.py
   runs/run-001/run-card.md` reports “valid — awaiting Mark approval.”
-- [x] `E1-R1A02` **Mark only — review/amend rubric v0.1** in
-  [`02-revenue-signal-scorecard.md`](02-revenue-signal-scorecard.md), including
+- [x] `C3b` **Mark only — review/amend rubric v0.1** in
+  [`growth/SCORECARD.md`](growth/SCORECARD.md), including
   the five 0–2 dimensions, disconfirming-evidence subtraction, 30-day
   staleness rule, and direct-action WTP=2 rule. *Approved by Mark 2026-07-11,
   unamended (DR-14).*
-- [x] `E1-R1A03` **Mark only — review/amend Team Config v0.1:** Claude-only external
+- [x] `C3c` **Mark only — review/amend Team Config v0.1:** Claude-only external
   surface, no `local-only` input, and no silent fallback. *Approved by Mark
-  2026-07-11 **as amended**: no Claude default — Mark-named combo (Codex,
-  Claude, Hermes, etc.). Now Team Config v0.1.1; charter §14.16 (v1.2)
-  records the reconciliation with §7's Claude-only wording (DR-15). Hermes
-  stays C4-gated (E1-G04). Open: Mark names the actual provider set per run.*
-- [x] `E1-R1A04` **Mark only — complete and approve Run 001 card:** set `data_class`,
-  confirm the ≤4-hour / $0 limits, stop conditions, measures, and change
-  `approval` to `APPROVED by Mark YYYY-MM-DD`. *Approved by Mark 2026-07-11
-  (DR-16), with a Mark-held manual-testing spend exception; agent-side caps
-  unchanged $0/$0.*
-- [x] `E1-R1A05` **After approval — commit the Mark-approval edits and re-run the card
+  2026-07-11 **as amended**: Mark manually names the provider/agent for each
+  invocation (Codex, Claude, or Hermes). Team Config v0.1.1 now records the
+  DR-17/DR-22 manual prototype policy; Telegram stays out of the workflow.*
+- [x] `C3d` **Mark only — complete and approve Run 001 card:** set `data_class`,
+  confirm the ≤4-hour stop condition, harness-controlled invocation budget,
+  stop conditions, measures, and change `approval` to `APPROVED by Mark
+  YYYY-MM-DD`. *Approved by Mark 2026-07-11 (DR-16); clarified by DR-17 on
+  2026-07-12.*
+- [x] `C3e` **After approval — commit the Mark-approval edits and re-run the card
   validator.** This makes Run 001 eligible; it does not execute it. *Done
   2026-07-11 by Claude Dispatch — validator: valid and approved.*
 
-### 4. Platform stability window — gates Run 002, not Run 001
+### 4. Platform stability telemetry — background learning
 
-- [x] `E1-ST01` Live D2/D3 changes and timestamp logging are deployed.
-- [ ] `E1-ST02` **Failed — 24-hour observation baseline** from log line **1311** /
+- [x] `C4a` Live D2/D3 changes and timestamp logging are deployed.
+- [x] `C4b` **Concluded failed — 24-hour observation baseline** from log line **1311** /
   `2026-07-10T14:38:25.508Z` recorded two core re-pins before the window
   completed (`2026-07-10T17:25:26.063Z` and `2026-07-10T18:40:26.171Z`).
   Evidence and exact command:
-  [`../epoch-1-stability-observation-2026-07-10.md`](../epoch-1-stability-observation-2026-07-10.md).
-- [ ] `E1-ST03` **Mark only — direct the D2 response:** authorize either a D2 iteration
-  (documented options: budget 112 or core swap) or a deferral. Do not change
-  settings or core residency without that direction; Run 002 is blocked.
-- [ ] `E1-ST04` After a Mark-authorized change, restart the 24-hour observation and
-  record health, post-baseline event counts, and `dispatcher.core_degraded`.
+  [`observations/2026-07-10-stability-observation.md`](observations/2026-07-10-stability-observation.md).
+- [x] `C4c` **Mark only — direct the D2 response:** Mark authorized and Codex
+  deployed the core swap from `gpt-oss:20b` to `qwen3:8b` (DR-19; dashboard
+  commit `7b1cec0`). Live health confirms `core_degraded: false`; DR-22 makes
+  `C4d` background telemetry rather than a Run 002 gate.
+- [ ] `C4d` **Deferred background telemetry:** when convenient, record a fresh
+  24-hour observation with health, event counts, and `dispatcher.core_degraded`.
+  It does not gate Run 001 or Run 002 (DR-22).
 
-### 5. C4 — blocks Hermes/compaction, not Run 001
+### 5. C5 — deferred Telegram/Hermes integration checks
 
-- [ ] `E1-C401` **Mark only — inspect `~/.hermes/config.yaml`** to verify the provider
-  boundary. Agents must not read dot-directory configuration.
-- [ ] `E1-C402` **Mark only — identify the router `telegram` consumer** and write a
-  dated decision note. Inbound Telegram remains untrusted and cannot create
-  task cards.
+- [ ] `C5a` **Deferred:** inspect Hermes provider configuration only if a future
+  autonomous or Telegram-integrated workflow is proposed.
+- [ ] `C5b` **Deferred:** identify the router `telegram` consumer only if Telegram
+  is introduced. Inbound Telegram cannot create task cards in the current mode.
 
 ## Phase 2 — Runs 001–002
 
-- [ ] `E1-P201` **Run 001 — execute only after approval:** authorized Claude session
-  creates 3–5 path cards, a ranked scorecard, evidence-gap list, and a
-  reference/hash-only `trace.jsonl`; stop on data-class ambiguity, five cards,
-  exhausted evidence, or four hours.
-- [ ] `E1-P202` Run 001 records the charter version and commit in its card at execution.
-- [ ] `E1-P203` **Mark only — review Run 001 evidence quality and decision usefulness.**
-- [ ] `E1-P204` **Mark only — review Run 001 latency/cost against the $0 and ≤4-hour
-  limits.**
-- [ ] `E1-P205` **Mark only — adjust/approve the Run 002 card** based on those findings.
-- [ ] `E1-P206` **Run 002 — pre-run snapshot:** health, models, memory, queue, and
-  re-pin state; any core eviction/503 during the run marks comparison
-  **inconclusive**.
-- [ ] `E1-P207` **Run 002 — execute approved local-first comparison** and write its
-  reference/hash-only `trace.jsonl`.
-- [ ] `E1-P208` **Mark only — review Run 002.**
-- [ ] `E1-P209` **P2 amendments check before Run 003:** benchmark validity / memory bias;
-  dashboard stayed stability-only; raw `local-only` material remained outside
-  the repo; Claude reviewed Codex changes and Mark approved/waived them.
+### Post–Run 001 review and Run 002 sequence
+
+The seven steps below move from Mark’s review of Run 001 to a bounded local comparison; the checklist items remain the execution authority and no Mark-only approval is implied by this summary.
+
+#### D3–D4 — Review Run 001
+
+- **Assess evidence usefulness:** Mark found the organization-sponsored direction useful once the founder-supplied MHA Dutchess case-study/testimonial context was considered. It is prioritization evidence, not broad validation. [EV-001](growth/EVIDENCE-REGISTER.md), [ranked scorecard](runs/run-001/outputs/GH-002-ranked-scorecard.md)
+- **Check run cost and latency:** The Run 001 trace records bounded completion but no reliable harness duration/usage figure. Record that gap; do not add a second project budget system. [Run 001 card](runs/run-001/run-card.md)
+
+#### D5 — Approve Run 002
+
+- **Choose the research scope:** Mark approved Run 002 for `SEG-001 — Care-delivery organizations`, using public account intelligence and local research evaluation rather than a pure model comparison. [Run 002 card](runs/run-002/run-card.md), [DR-29](decisions/2026-07-13-segment-linked-runs.md)
+
+#### D6–D7 — Run segment intelligence
+
+- **Capture local-work state:** Record dashboard health, resident models, memory, queue, and re-pin state before any local task; there is no 24-hour precondition. [Operations reference](../../Projects/model-dashboard-live/docs/OPERATIONS-REFERENCE.md)
+- **Execute and trace safely:** Produce cited public segment/account/buyer/language/category research and a reference/hash-only trace. An eviction or `503` makes only the local-work evaluation inconclusive; public research may continue. [Run 002 card](runs/run-002/run-card.md)
+
+#### D8 — Review Run 002
+
+- **Judge the research:** Mark reviews whether the segment/account research narrowed the target and whether local work earned its operational value before selecting one atomic hypothesis for Run 003. [Run Index](runs/README.md#run-002--segment-intelligence--local-research-evaluation)
+
+#### D9 — Check Run 003 readiness
+
+- **Select one testable claim:** Before Run 003, select one atomic hypothesis with a named segment/ICP/buyer role, bounded claim, evidence gap, and pass/fail/stop condition. Confirm stability-only dashboard scope, local-only data remaining outside the repo, and review requirements. [Run Index](runs/README.md#run-003--validation-packet-for-one-selected-test)
+
+- [x] `D1` **Run 001 — hypothesis exploration (DR-24/DR-25/DR-27/DR-28):** a Mark-prompted agent starts from
+  one Growth Hypothesis directly entered in `growth/HYPOTHESES.md`, follows its optional research and
+  profile-tracking controls, fills missing fields with cited public research, then creates 3–5 editable path cards, a ranked scorecard,
+  evidence-gap list, and a reference/hash-only `trace.jsonl`. Once the agent
+  has a clear behavioral/situational ICP, it adds a transparent U.S. TAM
+  range; SAM/SOM are not default outputs. It uses the primary `ICP-###` from
+  `growth/ICP-REGISTRY.md` when known, preserves it on paths and signals, and
+  distinguishes a buyer from a channel or research audience. Label agent-filled claims
+  `agent-hypothesis`; stop at five cards or four hours. *Completed 2026-07-12 by Codex for GH-002: five paths, ranking, gaps, public-profile watch, and a cited U.S. TAM note are linked from the hypothesis; no outbound activity occurred.*
+- [x] `D2` Run 001 records the charter version and commit in its card at execution. *Recorded 2026-07-12 in `runs/run-001/run-card.md`: charter v1.9; baseline commit `e42a302`; Codex named by Mark for the GH-002 invocation.*
+- [x] `D3` **Mark — review Run 001 evidence quality and decision usefulness.** The MHA Dutchess context makes the organization-sponsored direction useful enough to prioritize, while transferability remains unproven (DR-29).
+- [x] `D4` **Mark — review Run 001 usage record.** Five paths were completed within the card's bounded session; the trace does not supply a reliable duration/usage figure. That gap is recorded and does not create another project budget system (DR-29).
+- [x] `D5` **Mark — approve Run 002:** segment intelligence and local research evaluation for `SEG-001`, not a pure model benchmark (DR-29).
+- [x] `D6` **Run 002 — pre-run snapshot:** dashboard/Ollama healthy; `qwen3:8b` resident; `core_degraded: false`; no Dispatcher queue; 102.43 GB dashboard capacity available for new models. No 24-hour precondition applied.
+- [x] `D7` **Run 002 — execute public segment intelligence:** cited account, buyer-group, market-language, category, contradiction, and `GH-004` outputs are present. The local `task:classify` check returned no usable response, so local-work evaluation is **inconclusive**; public research remains usable. [Run 002 blackboard](runs/run-002/blackboard.md)
+- [x] `D8` **Mark — review Run 002 research and local-work value.** Mark advanced the focused community-behavioral-health branch; the local check was inconclusive and does not determine the market result (DR-30).
+- [x] `D9` **Select one Run 003 test:** `GH-004` / `SEG-002` is selected for a paired local/frontier validation packet. The frontier provider/model must be named before that arm runs; both arms use the same frozen input and no outreach is authorized (DR-30).
 
 ## Phase 3 — Run 003 and decision fork (by 2026-08-14)
 
-- [ ] `E1-P301` Run 003 produces a human-reviewed signal-test packet, with the same
-  pre-run snapshot / inconclusive-if-unstable rule and privacy-safe trace.
-- [ ] `E1-P302` Define whether its signal test is level 1 (reach) or level 2 (buyer
-  intent) before executing; Mark reviews the resulting packet.
-- [ ] `E1-P303` **Mark only — decide post-Run-003:** Hermes scope (bounded operator or
+- [x] `E1` **Run 003 — paired validation packet:** `CMP-001-F` and `CMP-001-L` both completed with the frozen input; the scorecard records the captured local result and the safer frontier packet. Mark review remains required and neither output authorizes outreach (DR-30).
+- [x] `E2` **Define the selected test:** the frontier packet defines a level-2 buyer-intent signal, pass/fail/stop conditions, and the prerequisite public account qualification. Mark still decides whether any manual conversation is warranted (DR-30).
+- [x] `E2a` **Create segment-linked customer-development plan:** `CDP-001` links parent `SEG-001`, focused branch `SEG-002`, `GH-004`, and `GTM-001`. It maps bounded target intelligence and marketing opportunities but authorizes no research run, outreach, publication, monitoring, or manual conversation (DR-31).
+- [x] `E2b` **Complete — RUN-004 CDP-001 local-research sprint program:** 27
+  bounded public-search local workers completed and one Ornith attempt was
+  blocked by the memory-fit gate. The run retained six source-checked context
+  cards and a model-utility record; it did not authorize CRM work, monitoring,
+  outreach, publishing, provider fallback, or a residency change (DR-32).
+- [ ] `E3` **Mark only — decide post-Run-003:** Hermes scope (bounded operator or
   manual), dashboard scope (expand or freeze), and actual worktree triage.
-- [ ] `E1-P304` **Mark only — decide whether evidence supports a manual market test.**
-- [ ] `E1-P305` If supported, define the minimum ICP-qualified level-2 conversation and
+- [ ] `E4` **Mark only — decide whether evidence supports a manual market test.**
+- [ ] `E5` If supported, define the minimum ICP-qualified level-2 conversation and
   level-3 commitment, then draft the manual-outreach queue step.
-- [ ] `E1-P306` **Mark only — approve or defer that market-test phase.**
-- [ ] `E1-P307` **Mark only — confirm or amend** the Aug 14 packet target and Sep 4
+- [ ] `E6` **Mark only — approve or defer that market-test phase.**
+- [ ] `E7` **Mark only — confirm or amend** the Aug 14 packet target and Sep 4
   signal target; a miss triggers review/re-scope, never automation expansion.
 
 ## Phase 4 — manual market test and closeout
 
-- [ ] `E1-P401` **Mark only — approve or defer a manual market-test phase.** No automated
+- [ ] `F1` **Mark only — approve or defer a manual market-test phase.** No automated
   campaign is permitted.
-- [ ] `E1-P402` If approved, conduct only Mark-approved manual outbound actions and
+- [ ] `F2` If approved, conduct only Mark-approved manual outbound actions and
   record level-2 buyer-intent / level-3 commitment signals; no automated
   campaign is permitted.
-- [ ] `E1-P403` **Epoch 1 retro:** usable evidence from Runs 001–003 / market test;
+- [ ] `F3` **Epoch 1 retro:** usable evidence from Runs 001–003 / market test;
   platform stability; D1 gate-rule behavior; parked coding-arm need; and spend
   cap sufficiency or leakage.
-- [ ] `E1-P404` **Epoch 2 planning:** draft/defer the charter; carry forward data class,
+- [ ] `F4` **Epoch 2 planning:** draft/defer the charter; carry forward data class,
   signal ladder, trace privacy, and review model; reassess Hermes/dashboard/
   coding-arm authority; obtain Mark’s scope approval or deferral.
 
 ## Active next actions and handoff
 
-1. `E1-N01` **Mark:** direct the failed stability-baseline response (D2 iteration or
-   deferral); the `gpt-oss:20b` keep/swap decision remains Mark-only.
-2. `E1-N02` **Mark:** class the four evidence candidates, then approve the rubric, team
+1. `G1` **Optional background telemetry:** the `qwen3:8b` core is live. Record a
+   24-hour baseline when convenient; it does not block the learning loop.
+2. `G2` **Mark:** class the four evidence candidates, then approve the rubric, team
    config, and Run 001 card in one sitting. This is the sole critical path to
    Run 001. *Done 2026-07-11 — see
    [`decisions/2026-07-11-run-001-approvals.md`](decisions/2026-07-11-run-001-approvals.md).*
-3. `E1-N03` **Next agent:** read this file first, then the linked decision record and
+3. `G3` **Next agent:** read this file first, then the linked decision record and
    current observation. Execute only items whose owner and prerequisite permit
    it; never infer approval for a Mark-only item.
-4. `E1-N04` **Mark — before Run 001 executes:** (a) import the actual evidence
-   assets into `01-product-evidence.md` and spot-check each against
-   `external-okay`; (b) name Run 001's actual provider set (combo per team
-   config v0.1.1; Hermes excluded until C4); (c) confirm each participating
-   provider runs on subscription/free tier under the $0 agent-side cap
-   (DR-15/DR-16). *Verified NOT yet done on disk 2026-07-11 00:56 PDT (Claude
-   Dispatch): inventory rows still "approved — awaiting import", Approved
-   evidence section empty, no concrete provider set named in the run card,
-   decisions, or team config. Remains open and Mark-only; Run 001 execution
-   stays blocked. Unblock packet for Mark:
-   [`runs/run-001/UNBLOCK-PACKET.md`](runs/run-001/UNBLOCK-PACKET.md).*
+4. `G4` **Mark — review Run 002 (D8):** assess `SEG-002` research, the candidate-account universe, `GH-004`, and whether local work added enough value to retry. [Run 002 blackboard](runs/run-002/blackboard.md), [accounts](growth/ACCOUNT-INTELLIGENCE.md).
+5. `G5` **Next execution gate:** create a separately approved public-research run for the highest-priority `CDP-001` accounts, or defer it. A manual discovery conversation remains a later Mark-only decision. [CDP-001](growth/CDP-001.md), [accounts](growth/ACCOUNT-INTELLIGENCE.md)

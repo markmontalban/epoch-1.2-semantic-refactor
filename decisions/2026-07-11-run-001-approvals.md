@@ -1,8 +1,8 @@
 # Epoch 1 — Decision Record — 2026-07-11 — Run 001 approvals
 
-Last updated: 2026-07-11 00:46:13 PDT — edited by: Claude Dispatch — task: Record Run 001 approvals
+Last updated: 2026-07-12 22:25:32 PDT — edited by: Codex
 
-**decision_id:** DR-13 … DR-16 (continues the series in `../../epoch-1-decision-record-2026-07-10.md`)
+**decision_id:** DR-13 … DR-16 (continues the series in `2026-07-10-epoch-1-foundation.md`)
 **date:** 2026-07-11
 **decider:** Mark
 **recorded by:** Claude Dispatch, per Mark's 2026-07-11 dispatch message, quoted verbatim:
@@ -18,14 +18,14 @@ Last updated: 2026-07-11 00:46:13 PDT — edited by: Claude Dispatch — task: R
 
 ## DR-13 — E1-EV01…E1-EV04: evidence candidates approved
 
-**decision:** All four candidates in `../01-product-evidence.md` (validation notes, pilot feedback, ICP one-liner, positioning docs) are retained — none struck. Rights/consent affirmed by Mark, including the asset-2 third-party consent check. The Run 001 input set is classed **`external-okay`** (E1-EV04's first option), resolving the DR-12 collision.
+**decision:** All four candidates in `../growth/HYPOTHESES.md` (validation notes, pilot feedback, ICP one-liner, positioning docs) are retained — none struck. Rights/consent affirmed by Mark, including the asset-2 third-party consent check. The Run 001 input set is classed **`external-okay`** (E1-EV04's first option), resolving the DR-12 collision.
 **caveats recorded by the scribe:** Mark's approval was blanket, not per-asset. No asset has been physically imported yet — the inventory rows are still placeholders. At import, Mark should spot-check that each actual asset (especially asset 2's third-party content) matches the `external-okay` class before it enters a run. Anything that doesn't match stops the run (data-class-ambiguity stop condition).
-**affected_docs:** `../01-product-evidence.md`, `../runs/run-001/run-card.md` (`data_class`).
+**affected_docs:** `../growth/HYPOTHESES.md`, `../runs/run-001/run-card.md` (`data_class`).
 
 ## DR-14 — E1-R1A02: rubric v0.1 approved
 
-**decision:** Path-scoring rubric v0.1 in `../02-revenue-signal-scorecard.md` is approved unamended — five 0–2 dimensions, disconfirming-evidence subtraction, 30-day staleness rule, direct-action WTP=2 rule.
-**affected_docs:** `../02-revenue-signal-scorecard.md`.
+**decision:** Path-scoring rubric v0.1 in `../growth/SCORECARD.md` is approved unamended — five 0–2 dimensions, disconfirming-evidence subtraction, 30-day staleness rule, direct-action WTP=2 rule.
+**affected_docs:** `../growth/SCORECARD.md`.
 
 ## DR-15 — E1-R1A03: team config approved AS AMENDED — no Claude default
 
@@ -42,12 +42,12 @@ Last updated: 2026-07-11 00:46:13 PDT — edited by: Claude Dispatch — task: R
 2. **Confirm $0 compatibility per provider:** DR-8's note covered Mark's Claude subscription. Confirm Codex (and any "etc." provider) also runs on subscription/free tier, or raise the cap by dated record before it participates.
 3. **Optional:** whether charter §7's body text gets rewritten at the next charter revision (the §14.16 amendment already governs).
 
-**affected_docs:** `../team-configs/v0.1.1.md` (new), `../team-configs/v0.1.md` (superseded), `../runs/run-001/run-card.md`, `../01-product-evidence.md`, `../../epoch-1-planning-codex-claude/mindfultext-epoch-1-charter.md` (v1.2, §14.16), `../MASTER-CHECKLIST.md`.
+**affected_docs:** `../team-configs/v0.1.1.md` (new), `../team-configs/v0.1.md` (superseded), `../runs/run-001/run-card.md`, `../growth/HYPOTHESES.md`, `../CHARTER.md` (v1.2, §14.16), `../MASTER-CHECKLIST.md`.
 
 ## DR-16 — E1-R1A04: Run 001 card approved; Mark-held manual-testing budget exception
 
 **decision:** The Run 001 card is completed and approved — `data_class: external-okay` (DR-13), ≤4-hour session, stop conditions and measures confirmed, `approval: APPROVED by Mark 2026-07-11`.
-**budget caveat (Mark-held exception):** Mark may personally spend some budget for manual testing in this area. This is a **Mark-held, Mark-executed exception only**. Agent-side caps are unchanged: **$0 external / $0 sandbox, fail-closed (DR-8)**. No agent may spend, authorize spend, or treat Mark's personal spending as raising either cap; any agent-side spend still requires a new dated Mark decision.
+**budget caveat (Mark-held exception):** Mark may personally spend for manual testing in this area, within the existing OpenRouter account limits. This is a **Mark-held, Mark-executed exception only**. Agent-side caps are unchanged: **$0 external / $0 sandbox, fail-closed (DR-8)**. No agent may spend, authorize spend, or treat Mark's personal spending as raising either cap; any agent-side spend still requires a new dated Mark decision.
 **affected_docs:** `../runs/run-001/run-card.md`, `../MASTER-CHECKLIST.md` (note under E1-G01).
 
 ---
@@ -58,4 +58,4 @@ Interpreted as covering the sub-parts of the items Mark listed (E1-EV01–04, E1
 
 ## Effect on Run 001
 
-Run 001 is **approved and eligible** (E1-R1A05 satisfied: validator run post-edit, edits committed). It is **not yet executable** until (a) Mark imports the actual evidence assets into `01-product-evidence.md` and spot-checks their class, and (b) Mark names the execution provider set (DR-15 item 1).
+Run 001 is **approved and eligible** (E1-R1A05 satisfied: validator run post-edit, edits committed). It is **not yet executable** until (a) Mark imports the actual evidence assets into `growth/HYPOTHESES.md` and spot-checks their class, and (b) Mark names the execution provider set (DR-15 item 1).

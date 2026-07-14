@@ -1,14 +1,16 @@
 # MindfulText Epoch 1 — Agent Handoff
 
-Last updated: 2026-07-11 00:47:16 PDT — edited by: Claude Dispatch — task: Record Run 001 approvals
+Last updated: 2026-07-12 22:25:32 PDT — edited by: Codex
 
-**Written:** 2026-07-10 (approvals update 2026-07-11)
+**Written:** 2026-07-10 (Mark directions update 2026-07-12)
 
 ## Start here
 
-Read [`MASTER-CHECKLIST.md`](MASTER-CHECKLIST.md) first. It is the active
-execution tracker, synthesized from the next-steps plan and dated decision
-record. [`current-state.md`](current-state.md) is its compact entry point.
+Read [`README.md`](../README.md) first for the authority map. Then read
+[`MASTER-CHECKLIST.md`](../MASTER-CHECKLIST.md) for active execution status and
+[`decisions/DECISION-REGISTER.md`](../decisions/DECISION-REGISTER.md) to find the
+approval record behind any `DR-*` reference. [`CURRENT-STATE.md`](CURRENT-STATE.md)
+is the compact Mark-facing entry point.
 
 ## What is complete and evidenced
 
@@ -25,16 +27,16 @@ record. [`current-state.md`](current-state.md) is its compact entry point.
     pre-existing warnings.
 - The dashboard was restarted at `2026-07-10T14:38:25.508Z`. Its new stability
   baseline is log line **1311**. Initial checks were clean, but the observation
-  failed when `gpt-oss:20b` re-pinned at `2026-07-10T17:25:26.063Z` and
+  failed when the provisional core re-pinned at `2026-07-10T17:25:26.063Z` and
   `2026-07-10T18:40:26.171Z`. See
-  [`../epoch-1-stability-observation-2026-07-10.md`](../epoch-1-stability-observation-2026-07-10.md).
+  [`observations/2026-07-10-stability-observation.md`](../observations/2026-07-10-stability-observation.md).
 
 ## Active work
 
-The 24-hour stability observation for Run 002 has failed and now needs Mark’s
-D2 direction; no agent-owned configuration response is authorized. It does
-**not** block Run 001. The failed record contains the health, dispatcher, and
-post-baseline counts.
+The former 24-hour stability observation failed, then the core moved to
+`qwen3:8b` (DR-19; dashboard commit `7b1cec0`). In prototype run-first mode,
+stability is background telemetry: Run 001 and a later local comparison may
+run now, with any instability recorded as learning (DR-22).
 
 ```bash
 cd ~/AI-Studio/Projects/model-dashboard-live
@@ -45,40 +47,38 @@ tail -n +1312 dashboard.log | grep -ci 'evict'
 curl -fsS localhost:7070/api/overview | jq '.dispatcher.core_degraded'
 ```
 
-Do not make the provisional `gpt-oss:20b` keep/swap call; that is Mark’s
-judgment. Boot noise before the line-1311 baseline is not part of this
+Boot noise before the line-1311 baseline is not part of this failed
 observation.
 
 ## Critical path — Mark only
 
 *(Items 1–2 completed 2026-07-11 — see
-[`decisions/2026-07-11-run-001-approvals.md`](decisions/2026-07-11-run-001-approvals.md).
-Run 001 is approved as amended: Mark-named external provider combo, no Claude
-default, team-config v0.1.1, charter v1.2 §14.16.)*
+[`decisions/2026-07-11-run-001-approvals.md`](../decisions/2026-07-11-run-001-approvals.md).
+Run 001 is approved as amended: Mark-prompted provider/agent, no default,
+team-config v0.1.1, charter v1.3 §14.17.)*
 
 1. ~~Class or strike all four evidence candidates~~ — done (DR-13); still
    pending: **physically import the assets** into
-   [`01-product-evidence.md`](01-product-evidence.md) and spot-check each
+   [`growth/HYPOTHESES.md`](../growth/HYPOTHESES.md) and spot-check each
    against `external-okay`.
-2. ~~Review rubric / team config / Run 001 card~~ — done (DR-14…DR-16); still
-   pending: **name Run 001's actual provider set** (Hermes excluded until C4)
-   and confirm each provider runs under the $0 agent-side cap (E1-N04).
-3. Before any Hermes/compaction work, perform C4: inspect Hermes provider
-   configuration and identify the Telegram route consumer. Agents must not
-   access those dot-directory files.
+2. ~~Review rubric / team config / Run 001 card~~ — done. Fill the five-bullet
+   founder brief and name the provider/agent in Mark's manual invocation prompt.
+3. Hermes can perform manually prompted Run 001 work. Telegram is not in this
+   workflow; defer C4 until a Telegram or autonomous integration is proposed.
 4. The final lab location is `~/AI-Studio/Projects/mindfultext-epoch-1/`.
-   Choose the separate local-only sensitive-input store; the Seagate volume is
-   a candidate only with a dedicated encrypted, non-Git, non-cloud-synced
-   folder. Do not move the lab without Mark’s separate authorization.
+   The Seagate volume is selected for the separate local-only sensitive-input
+   store; create its dedicated encrypted, non-Git, non-cloud-synced folder and
+   stop if it is unavailable. Do not move the lab without Mark’s separate
+   authorization.
 
 ## Important constraints and reasoning
 
-- No agent spend: external and sandbox caps are both **$0**, fail closed.
-  Mark holds a personal manual-testing spend exception (DR-16); it raises
-  neither agent-side cap.
+- Run 001 invocation budget is supplied by the harness; Epoch 1 adds no second
+  project budget system. Mark manually prompts the agent/provider and the
+  run's ≤4-hour stop condition remains active.
 - No outbound activity or automation is authorized.
-- Run 001 runs on a Mark-named combination of **external surfaces** (Codex,
-  Claude, Hermes, etc. — no default; Hermes C4-gated; team-config v0.1.1):
+- Run 001 runs on a Mark-prompted **external surface** (Codex, Claude, or
+  Hermes; no default; team-config v0.1.1):
   only `external-okay` or Mark-approved `redacted-external` input may enter
   it. Raw `local-only` material stays outside the repo.
 - Per-surface gates: external work blocks on either gate’s BLOCK; internal
@@ -90,10 +90,9 @@ default, team-config v0.1.1, charter v1.2 §14.16.)*
 
 ## Safe next move for another agent
 
-Hold stability changes pending Mark's D2 direction. After any Mark-authorized
-change, restart a new 24-hour observation. Run 001 is approved (2026-07-11)
-but not startable until Mark imports the evidence assets and names the
-provider set (E1-N04); do not start Run 001 or infer those from the approval.
+Run 001 is ready once Mark fills the five-bullet founder brief and names the
+provider in the manual invocation prompt. Produce editable hypothesis paths,
+then use later evidence import and local telemetry to improve them.
 
 `/api/health` does not expose the plan’s `core_degraded` field. Use
 `/api/overview` → `dispatcher.core_degraded` as the authoritative replacement

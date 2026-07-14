@@ -1,9 +1,14 @@
 # Run Card
 
+Last updated: 2026-07-13 21:37:17 PDT — edited by: Codex
+
 **run_id:** RUN-XXX
 **date:** TBD
 **run_type:** lab-validation
 **path_id:** TBD
+**segment_id:** TBD
+**hypothesis_ids:** TBD
+**gtm_ids:** TBD
 **question:** TBD
 **owner:** TBD
 **data_class:** TBD
@@ -25,7 +30,9 @@
 - Every run records the charter version it ran under.
 - One privacy-safe trace.jsonl per run — references/hashes only, no raw sensitive content.
 - run_type allowed values: lab-validation | market-test.
-- path_id: a path card id, or LAB-SETUP / MT-BOOTSTRAP for non-path runs.
+- path_id: a path card id, a `SEG-###` research scope, or LAB-SETUP /
+  MT-BOOTSTRAP for non-path runs. segment_id, hypothesis_ids, and gtm_ids make
+  the run's reusable market links explicit when applicable.
 - data_class: local-only | redacted-external | external-okay; unassigned defaults to local-only.
 - target_signal: required for market-test runs; signal ladder 0-3. N/A is fine for lab-validation.
 - pre_run_snapshot: health/models/memory/queue state before execution, for runs touching
