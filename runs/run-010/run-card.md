@@ -1,33 +1,34 @@
 # Run Card
 
-Last updated: 2026-07-14 23:45:39 PDT — edited by: Codex
+Last updated: 2026-07-15 16:16:22 PDT — edited by: Codex
 
-**run_id:** RUN-XXX
-**date:** TBD
-**workflow_id:** TBD
-**workflow_version:** TBD
+**run_id:** RUN-010
+**date:** 2026-07-15
+**workflow_id:** epoch-1-corpus-lineage
+**workflow_version:** v0.1
 **execution_kind:** initial
 **parent_run:** N/A
-**subject_refs:** TBD
+**subject_refs:** Epoch-1-corpus; RUN-001..RUN-009; SEG-*; GH-*; ICP-*; GTM-*; CDP-*; ACC-*; CMP-*; DR-*
 **run_type:** lab-validation
-**path_id:** TBD
-**segment_id:** TBD
-**hypothesis_ids:** TBD
-**gtm_ids:** TBD
-**question:** TBD
-**owner:** TBD
-**data_class:** TBD
-**sources:** TBD
-**allowed_tools_providers:** TBD
-**budget:** TBD
+**path_id:** EPOCH-1-CORPUS
+**segment_id:** SEG-001; SEG-002; SEG-003; SEG-004; SEG-005; SEG-006
+**hypothesis_ids:** GH-001; GH-002; GH-003; GH-004
+**gtm_ids:** GTM-001
+**question:** Can the retained Epoch 1 corpus be represented as a source-linked hierarchy of entities, identifiers, raw artifacts, and dependency relationships without synthesizing findings or making strategic recommendations?
+**owner:** Codex; Mark approved execution 2026-07-15 (X3)
+**data_class:** external-okay — existing repository records and already-retained public-source references only; no fresh source opening, private data, or local-only material.
+**sources:** Canonical Epoch 1 growth records, decision register, run cards and retained outputs for RUN-001 through RUN-009, and their linked registries only.
+**allowed_tools_providers:** Local filesystem inspection and deterministic text/CSV extraction only; no web, local-model invocation, paid provider, external-system write, scraper, CRM, monitoring, or outreach.
+**budget:** One bounded local documentation pass; stop after source-linked maps and validation are complete.
 **external_spend_cap:** $0
-**stop_condition:** TBD
-**review_date:** TBD
-**charter_version:** TBD
+**stop_condition:** Stop if a required relationship cannot be traced to a retained artifact or source record; label it unresolved rather than inferring or reconciling it.
+**review_date:** 2026-07-15
+**charter_version:** v1.9
 **target_signal:** N/A
-**output_schema:** TBD
-**pre_run_snapshot:** TBD
-**approval:** PENDING
+**output_schema:** `EPOCH-1-HIERARCHY-DATA-LINEAGE.md` with eight requested maps; references to canonical CSV registries and raw run artifacts; privacy-safe trace.
+**pre_run_snapshot:** 2026-07-15 16:16 PDT — local filesystem documentation work only; no model or external system is in scope. Dispatcher card #517 recorded as RUNNING.
+**approval:** APPROVED by Mark 2026-07-15 (X3)
+**closure:** Completed 2026-07-15 16:16 PDT — source-linked hierarchy, segment map, account-lineage index, buyer taxonomy map, artifact graph, ID registry, adjacency map, and privacy-safe trace retained; no external action occurred.
 
 ## Usage notes
 

@@ -1,18 +1,23 @@
 # MindfulText Epoch 1 — Context Map & Reference Index
 
-Last updated: 2026-07-14 06:46:58 PDT — edited by: Codex
+Last updated: 2026-07-17 01:12:20 PDT — edited by: Codex
 
-Use this map to re-enter Epoch 1, understand its dependencies, and reopen the
-authoritative sources without treating this index as a competing plan.
+Use this map to understand Epoch 1 dependencies and reopen the authoritative
+sources without treating this index as a competing plan. For Mark's compact
+next-decision view, use [Current State](status/CURRENT-STATE.md); for corpus ID
+grammar and run-to-artifact lineage, use the [Lineage Map](EPOCH-1-HIERARCHY-DATA-LINEAGE.md).
 
 ## Current position
 
-You are at the first real learning loop—not a systems build. Enter one growth
-thought; the agent turns it into editable paths and research-backed questions.
-Everything else is optional evidence or background telemetry.
+You are in an expanded learning loop—not a systems build. Market evidence now
+extends through RUN-011; social ideas enter through a lightweight ledger and
+become hypotheses, GTM motions, signals, or bounded runs only when their
+decision and evidence justify it. `RUN-011` advanced `SOC-008` only to a
+separately gated manual-baseline decision.
 
 Daily growth work is in `growth/`; re-entry and agent handoff are in `status/`.
-The root holds only the project authorities. [DR-26](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/2026-07-12-folder-organization.md)
+The root holds project authorities plus named project-level references such as
+the non-authoritative lineage map. [DR-26](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/2026-07-12-folder-organization.md)
 
 ### Run 001 — start here
 
@@ -56,6 +61,106 @@ The root holds only the project authorities. [DR-26](/Users/mgzm-studio/AI-Studi
   cards plus a model-utility record. It did not perform outreach or tracking;
   its next choice is a separate manual source-opening pass or a pause.
   [Report](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/outputs/RUN-004-REPORT.md) · [DR-32](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/2026-07-14-run-004-cdp-local-research.md)
+
+### Run 005 — Care-delivery organization registry
+
+- **A durable public account universe now exists:** `RUN-005` retained 56
+  source-normalized organization records, an evidence ledger, and a buyer-
+  function/title taxonomy for `SEG-001` and its `SEG-002` branch. It is not a
+  CRM, contact list, buyer-intent signal, or outreach authorization.
+  [Report](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-005/outputs/RUN-005-REPORT.md) · [Registry](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/growth/account-registry/README.md) · [DR-33](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/2026-07-15-run-005-care-delivery-registry.md)
+- **Freshness remains explicit:** Six accounts have additional public
+  workforce/operating context; directory-only entries need a fresh first-party
+  source opening before they can be ranked more strongly or proposed for any
+  separate manual discovery step.
+
+### Run 006 — Care-delivery one-degree market map
+
+- **Map the immediate ecosystem:** `RUN-006` retained 50 source-backed nodes
+  directly under, beside, or above `SEG-001`, with segments and organizations
+  separated by relationship and node type. [Map](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-006/outputs/one-degree-map.csv)
+- **Keep one research surface:** The map and source ledger live together under
+  `runs/run-006/outputs/`; the run did not create a code fork, merge code, or
+  create a second data system. [DR-34](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/2026-07-15-run-006-one-degree-map.md)
+- **Retain the next branch:** `SEG-002 / CCBHCs` remains the lead branch and
+  `SEG-003 / FQHC integrated behavioral health` is the first comparison; home
+  health, hospice, and aging services remain separate adjacent hypotheses.
+  [Report](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-006/outputs/RUN-006-REPORT.md)
+
+### Run 007 — Care-delivery influence map
+
+- **Map the public influence layer:** `RUN-007` retained 50 public-source-backed
+  journalists, trade publications, blogs, newsletters, podcasts, associations,
+  workforce channels, and creators across `SEG-001`. [Report](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-007/outputs/RUN-007-REPORT.md)
+- **Keep influence separate from buyers:** The registry is a research shortlist,
+  not a contact list, buyer-intent signal, monitoring process, publishing plan,
+  or outreach authorization. [Registry](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-007/outputs/influence-registry.csv)
+- **Choose a narrower comparison next:** Compare `operator-specialist` channels
+  with `workforce-storytelling` channels only after Mark selects the branch and
+  approves a subsequent bounded run.
+
+### Run 008 — Care-delivery narrative and pain map
+
+- **Rank the public narratives:** `RUN-008` forked `RUN-007`, attempted all 50
+  public sources, and retained narrative, pain-point, term, and timeline outputs
+  for `SEG-001` with comparisons to `SEG-002` and `SEG-003`. [Report](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-008/outputs/RUN-008-REPORT.md)
+- **Lead finding:** The public conversation centers on structural care capacity:
+  workforce/retention, funding, administrative friction, access, coordination,
+  rural constraints, and conditional technology adoption. [Pain ranking](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-008/outputs/pain-point-ranking.csv)
+- **Keep evidence bounded:** Recurrence is source-profile coding, not article
+  frequency, audience prevalence, buyer intent, or demand validation; 3 lead-only
+  sources remain explicitly excluded from the strongest conclusions. [Gaps](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-008/outputs/coverage-gaps.md)
+- **Next smallest test:** Select one care-delivery branch and map one concrete
+  workflow or handoff before any market test, content action, or outreach.
+
+### Run 009 — Direct Support Professional ICP qualification
+
+- **New audience lead:** `RUN-009` finds that Direct Support Professionals are
+  distinct enough from LCSWs to warrant a candidate ICP, but not yet a separate
+  market segment. The likely user is frontline DSP staff; the possible sponsor
+  is a provider workforce, operations, program, or executive leader. [Report](runs/run-009/outputs/RUN-009-REPORT.md)
+- **Keep the boundary:** MHA material is a terminology/context anchor and the
+  founder-supplied MHA Dutchess case is prioritization evidence only; neither
+  validates DSP demand, engagement, efficacy, or transferability.
+- **Next decision:** Mark reviews whether to create candidate `ICP-022` and
+  chooses one DSP setting for a narrower public provider/workflow pass. No
+  canonical ICP or segment record was changed by this run.
+
+### Gap-analysis roadmap and feature backlog
+
+- **Keep a de-risking view:** The roadmap applies the FourthWave method to
+  MindfulText without replacing the approved path scorecard or the Master
+  Checklist. Its 1–4 view measures evidence maturity, not company quality.
+  [Roadmap](checklists/GAP-ANALYSIS-ROADMAP.md) · [DR-35](decisions/2026-07-15-gap-analysis-roadmap-and-feature-backlog.md)
+- **Start with market truth:** Buyer-path/budget and
+  alternatives/differentiation maps are the first proposal items; each informs
+  the existing `E4` manual-market-test decision.
+- **Preserve all gates:** Pilot design, trust/procurement answers, and
+  capability/capital planning stay deferred until their named `E4`–`F4` entry
+  conditions are satisfied. The backlog authorizes no build or external action.
+
+### Run 010 — Epoch 1 hierarchy and data lineage
+
+- **Map the retained corpus:** `RUN-010` records the source-linked hierarchy,
+  ID registry, account lineage, buyer taxonomy, artifact graph, and adjacency
+  relationships through RUN-009. It does not synthesize findings or make
+  strategic recommendations. [Run card](runs/run-010/run-card.md)
+
+### Social Learning Lane — first theme route qualified
+
+- **Preserve ideas before promotion:** `SOC-001`–`SOC-008` capture Mark's
+  Reddit/Pulse, content-mechanic, theme, founder-brand, AI-assistance, and
+  unfinished playbook thoughts without pretending that each is evidence or a
+  growth hypothesis. [Idea ledger](growth/SOCIAL-IDEA-LEDGER.md)
+- **Recommended placement:** keep one Epoch 1 lab and use Pulse/n8n/Replit as
+  replaceable adapters; do not create another epoch, clone, or worktree until a
+  bounded execution establishes a distinct objective, owner, data boundary,
+  and recurring maintenance need. [Lane outline](checklists/SOCIAL-LEARNING-LANE.md)
+- **Approval boundary:** DR-36 records the founder direction and recommendation,
+  and Mark selected the cross-cutting lane plus a first internal theme pass.
+  RUN-011 treats mindfulness-plus-comedy as a founder-theme route, not demand
+  evidence or an external action. A manual baseline still needs a new card and
+  specific approval. [Concept packet](runs/run-011/outputs/SOC-008-CONCEPT-PACKET.md) · [DR-36](decisions/2026-07-16-social-intelligence-founder-content-direction.md)
 
 ### Hermes — manual helper, no Telegram
 
@@ -171,6 +276,7 @@ flowchart LR
 | [Project entry point](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/README.md) | Reading order and authority map for agents and Mark. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/README.md` |
 | [Current state](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/status/CURRENT-STATE.md) | What is true now, what has been verified, and the next approved action. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/status/CURRENT-STATE.md` |
 | [Master checklist](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/MASTER-CHECKLIST.md) | Canonical status of every position-referenced item (`A1`, `B1a`, `C4b`, etc.). | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/MASTER-CHECKLIST.md` |
+| [Gap-analysis roadmap & feature backlog](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/checklists/GAP-ANALYSIS-ROADMAP.md) | Proposal-only company de-risking queue: current gaps, smallest proof, and the existing gate each item informs. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/checklists/GAP-ANALYSIS-ROADMAP.md` |
 | [Agent handoff](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/status/HANDOFF.md) | Concise task handoff, safeguards, and operator context. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/status/HANDOFF.md` |
 | [This context map](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/CONTEXT-MAP.md) | Dependency diagrams and this reference index. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/CONTEXT-MAP.md` |
 
@@ -179,7 +285,7 @@ flowchart LR
 | Resource | Authority / use | Folder / path |
 | --- | --- | --- |
 | [AI-Studio operating instructions](/Users/mgzm-studio/AI-Studio/AGENTS.md) | Platform operation, routing, gates, memory, Dispatcher, and documentation protocol. | `/Users/mgzm-studio/AI-Studio/AGENTS.md` |
-| [Canonical charter v1.8](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/CHARTER.md) | Lab authority, data rules, run lifecycle, and amendments. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/CHARTER.md` |
+| [Canonical charter v1.9](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/CHARTER.md) | Lab authority, data rules, run lifecycle, and amendments. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/CHARTER.md` |
 | [Decision Register](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/DECISION-REGISTER.md) | Canonical index from every `DR-*` identifier to its source record and current checklist mapping; it is not approval authority. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/DECISION-REGISTER.md` |
 | [Decision record DR-1…DR-12](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/2026-07-10-epoch-1-foundation.md) | Original Epoch 1 decisions: D1–D4, caps, lab location, C4, and evidence policy. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/2026-07-10-epoch-1-foundation.md` |
 | [Run 001 approvals DR-13…DR-16](/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/2026-07-11-run-001-approvals.md) | Evidence approval, rubric approval, no-default-provider amendment, and OpenRouter-bounded Mark manual-testing exception. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/decisions/2026-07-11-run-001-approvals.md` |

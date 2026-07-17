@@ -36,7 +36,15 @@ REQUIRED = [
     "review_date",
     "charter_version",
 ]
+EXECUTION_FIELDS = [
+    "workflow_id",
+    "workflow_version",
+    "execution_kind",
+    "parent_run",
+    "subject_refs",
+]
 RUN_TYPES = ("lab-validation", "market-test")
+EXECUTION_KINDS = ("initial", "replay", "fork", "refresh")
 UNSET = {"", "TBD", "PENDING"}
 
 
@@ -72,6 +80,30 @@ def main():
     for name in REQUIRED:
         if is_unset(fields.get(name, "")):
             problems.append("missing required field: {}".format(name))
+
+    run_id = fields.get("run_id", "")
+    run_match = re.fullmatch(r"RUN-(\d+)", run_id, re.IGNORECASE)
+    requires_execution_fields = bool(
+        run_match and int(run_match.group(1)) >= 5
+    ) or any(name in fields for name in EXECUTION_FIELDS)
+    if requires_execution_fields:
+        for name in EXECUTION_FIELDS:
+            allow_na = name == "parent_run"
+            if is_unset(fields.get(name, ""), na_is_unset=not allow_na):
+                problems.append("missing required field: {}".format(name))
+
+        execution_kind = fields.get("execution_kind", "").strip().lower()
+        if execution_kind and not is_unset(execution_kind) and execution_kind not in EXECUTION_KINDS:
+            problems.append(
+                "invalid execution_kind: '{}' (allowed: initial | replay | fork | refresh)".format(
+                    execution_kind
+                )
+            )
+        parent_run = fields.get("parent_run", "").strip()
+        if execution_kind == "initial" and parent_run.upper() not in ("N/A", "NONE"):
+            problems.append("parent_run must be N/A for an initial execution")
+        if execution_kind in ("replay", "fork", "refresh") and is_unset(parent_run):
+            problems.append("parent_run is required for {} executions".format(execution_kind))
 
     run_type = fields.get("run_type", "").strip()
     if run_type and not is_unset(run_type) and run_type not in RUN_TYPES:

@@ -1,33 +1,33 @@
 # Run Card
 
-Last updated: 2026-07-14 23:45:39 PDT — edited by: Codex
+Last updated: 2026-07-15 00:56:08 PDT — edited by: Codex
 
-**run_id:** RUN-XXX
-**date:** TBD
-**workflow_id:** TBD
-**workflow_version:** TBD
+**run_id:** RUN-006
+**date:** 2026-07-15
+**workflow_id:** care_delivery_one_degree_map
+**workflow_version:** 0.1
 **execution_kind:** initial
 **parent_run:** N/A
-**subject_refs:** TBD
+**subject_refs:** SEG-001, SEG-002, SEG-003, CDP-001, ICP-019, GH-004
 **run_type:** lab-validation
-**path_id:** TBD
-**segment_id:** TBD
-**hypothesis_ids:** TBD
-**gtm_ids:** TBD
-**question:** TBD
-**owner:** TBD
-**data_class:** TBD
-**sources:** TBD
-**allowed_tools_providers:** TBD
-**budget:** TBD
+**path_id:** SEG-001
+**segment_id:** SEG-001; direct relationships include SEG-002 and SEG-003
+**hypothesis_ids:** GH-004
+**gtm_ids:** GTM-001
+**question:** Which market segments, organization types, ecosystem actors, and system-level entities sit within one direct relationship of care-delivery organizations, and which up to 50 nodes most deserve further MindfulText research?
+**owner:** Codex conducts and records bounded public research; Mark retains approval for every external or customer-facing action.
+**data_class:** external-okay — public organization pages, government sources, sector-body pages, public reports, and concise internal references only. No private data, logins, personal contact information, raw customer material, or local-only content.
+**sources:** SEG-001; SEG-002; SEG-003; CDP-001; ICP-019; GH-004; RUN-002; RUN-004; RUN-005; official organization, government, and sector-body public sources opened during this run.
+**allowed_tools_providers:** Codex public web search and direct public-page review only. No paid database, scraper, monitoring tool, contact-enrichment provider, CRM, outbound provider, local-model worker, or external-system write.
+**budget:** Four-hour wall-clock ceiling; up to 50 normalized map nodes; at least one direct public source per retained node when available, with two or more for priority nodes where available.
 **external_spend_cap:** $0
-**stop_condition:** TBD
-**review_date:** TBD
-**charter_version:** TBD
+**stop_condition:** Stop at 50 nodes, at the four-hour boundary, or earlier if public evidence cannot support a clear relationship classification. Stop immediately if work requires login/private material, personal-contact collection, scraping, monitoring, outreach, paid-provider use, CRM write, publishing, or a claim of buyer intent, budget, efficacy, or outcome.
+**review_date:** 2026-07-15
+**charter_version:** v1.9 plus DR-29, DR-31, DR-33, and the RUN-006 approval record
 **target_signal:** N/A
-**output_schema:** TBD
-**pre_run_snapshot:** TBD
-**approval:** PENDING
+**output_schema:** `outputs/one-degree-map.csv` with stable node IDs; `outputs/source-ledger.csv`; `outputs/segment-adjacency-summary.md`; `outputs/RUN-006-REPORT.md`; privacy-safe trace. Reviewed implications may be proposed for `SEG-001` and related records; no CRM or outreach queue is created.
+**pre_run_snapshot:** 2026-07-15 00:51 PDT — no local-model work or external system write is in scope; public research may proceed.
+**approval:** APPROVED by Mark 2026-07-15
 
 ## Usage notes
 

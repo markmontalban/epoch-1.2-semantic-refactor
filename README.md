@@ -1,6 +1,6 @@
 # MindfulText Epoch 1 — Project Entry Point
 
-Last updated: 2026-07-13 13:34:26 PDT — edited by: Codex
+Last updated: 2026-07-16 21:15:25 PDT — edited by: Codex
 
 Start here to locate the current work, the governing decision behind it, and
 the document that has authority for each kind of claim.
@@ -27,10 +27,12 @@ the document that has authority for each kind of claim.
 | Folder / file | Use it for |
 | --- | --- |
 | `growth/` | Your ICP registry, hypotheses, scorecard, signals, and optional profile watch. Start at the [Growth Index](growth/README.md). |
+| [`EPOCH-1-HIERARCHY-DATA-LINEAGE.md`](EPOCH-1-HIERARCHY-DATA-LINEAGE.md) | Corpus ID grammar, nesting, run-to-artifact lineage, and raw-artifact entry points. This is a reference map, not task-status or approval authority. |
 | `paths/` | Reusable opportunity/test-route cards. Start at the [Path Index](paths/README.md). |
 | `status/` | Current state for Mark and handoff for an incoming agent. |
 | `runs/` | Run cards, prompts, notes, outputs, and traces. Start at the [Run Index](runs/README.md) to see each run and its linked `GH-###` work. |
 | `decisions/` | Dated Mark decisions and the Decision Register. |
+| `checklists/` | Supplementary proposal or topic checklists. The [Gap-Analysis Roadmap & Feature Backlog](checklists/GAP-ANALYSIS-ROADMAP.md) is a de-risking queue; the Master Checklist retains execution authority. |
 | `workflows/`, `templates/`, `team-configs/` | Agent operating material. |
 | `planning/`, `observations/`, `datasets/` | Historical plan, telemetry, and later learning material. |
 

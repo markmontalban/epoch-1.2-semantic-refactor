@@ -4,6 +4,9 @@
 Usage:
     python3 tools/new-run.py [--type lab-validation|market-test]
                              [--path-id ID] [--title "..."]
+                             [--workflow-id ID] [--workflow-version VERSION]
+                             [--execution-kind initial|replay|fork|refresh]
+                             [--parent-run RUN-NNN] [--subject-refs "..."]
 
 The lab root is resolved as the parent of the tools/ directory containing
 this script, so the tool also works when invoked from elsewhere.
@@ -60,7 +63,22 @@ def main():
     )
     parser.add_argument("--path-id", dest="path_id", default=None)
     parser.add_argument("--title", default=None)
+    parser.add_argument("--workflow-id", dest="workflow_id", default=None)
+    parser.add_argument("--workflow-version", dest="workflow_version", default=None)
+    parser.add_argument(
+        "--execution-kind",
+        dest="execution_kind",
+        choices=["initial", "replay", "fork", "refresh"],
+        default="initial",
+    )
+    parser.add_argument("--parent-run", dest="parent_run", default=None)
+    parser.add_argument("--subject-refs", dest="subject_refs", default=None)
     args = parser.parse_args()
+
+    if args.execution_kind == "initial" and args.parent_run:
+        parser.error("--parent-run is not allowed for an initial execution")
+    if args.execution_kind in ("replay", "fork", "refresh") and not args.parent_run:
+        parser.error("--parent-run is required for {} executions".format(args.execution_kind))
 
     if not TEMPLATE.is_file():
         sys.exit("error: template not found: {}".format(TEMPLATE))
@@ -77,7 +95,15 @@ def main():
     card = TEMPLATE.read_text(encoding="utf-8")
     card = set_field(card, "run_id", run_id)
     card = set_field(card, "date", today)
+    card = set_field(card, "execution_kind", args.execution_kind)
+    card = set_field(card, "parent_run", args.parent_run or "N/A")
     card = set_field(card, "run_type", args.run_type)
+    if args.workflow_id:
+        card = set_field(card, "workflow_id", args.workflow_id)
+    if args.workflow_version:
+        card = set_field(card, "workflow_version", args.workflow_version)
+    if args.subject_refs:
+        card = set_field(card, "subject_refs", args.subject_refs)
     if args.path_id:
         card = set_field(card, "path_id", args.path_id)
 

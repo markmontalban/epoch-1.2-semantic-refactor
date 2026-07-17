@@ -1,6 +1,6 @@
 # MindfulText Epoch 1 — Decision Register
 
-Last updated: 2026-07-14 06:46:58 PDT — edited by: Codex
+Last updated: 2026-07-17 01:12:20 PDT — edited by: Codex
 
 This is the canonical index for finding Epoch 1 decisions. It is not an
 approval authority: the linked dated decision-record files retain the exact
@@ -48,10 +48,14 @@ is authoritative even when the decision record describes an earlier state.
 | [DR-30](2026-07-13-run-003-paired-model-comparison.md#dr-30--run-003-paired-localfrontier-validation-packet-comparison) | 2026-07-13 / Codex | Select GH-004 for a paired local/frontier Run 003 validation packet. | Mark-approved; both packets completed; the scorecard records the captured local result and safer frontier packet. | `D8`, `D9`, `E1`–`E2`, `G5` — completed; next work follows DR-31. | Paired outputs use frozen input; each concrete model, latency, output reference, and frontier cost when available are traced. |
 | [DR-31](2026-07-14-customer-development-plan.md#dr-31--segment-linked-customer-development-plan) | 2026-07-14 / Codex | Create `CDP-001` for segment-linked care-delivery customer development. | Mark-directed; planning record created, no execution or external activity authorized. | `E2a` — Done; later research/test cards remain separately approved. | Links `SEG-001` parent, `SEG-002` focus, `GH-004`, and `GTM-001`; preserves DR-29 boundaries. |
 | [DR-32](2026-07-14-run-004-cdp-local-research.md#dr-32--run-004-cdp-001-local-research-sprint-program) | 2026-07-14 / Codex | Execute a bounded five-hour local-model public-research dogfood run for CDP-001. | Mark-approved and executed: 27 worker results, one memory-fit block, six source-checked context cards; no external action. | `E2b` — Done. | Model scorecard is routing evidence only. Extends DR-31 and preserves DR-29 boundaries. |
+| [DR-33](2026-07-15-run-005-care-delivery-registry.md#dr-33--run-005-care-delivery-organization-registry) | 2026-07-15 / Codex | Execute RUN-005: a 50–75 organization public care-delivery registry with buyer-function/title research. | Mark-approved and executed: 56 organization records, 16-source ledger, role taxonomy; no external action. | `E2c` — Done. | Extends DR-31; preserves DR-29/DR-32 no-outbound boundaries. Directory status is not buyer intent. |
+| [DR-34](2026-07-15-run-006-one-degree-map.md#dr-34--run-006-one-degree-care-delivery-market-map) | 2026-07-15 / Codex | Execute RUN-006: a 50-node, one-degree map around care-delivery organizations. | Mark-approved and executed: 50 source-backed nodes across under/beside/above relationships; no external action. | `E2d` — Done. | New run in the existing sequence; no code fork or second data system. Extends DR-31/DR-33 and preserves DR-29 boundaries. |
+| [DR-35](2026-07-15-gap-analysis-roadmap-and-feature-backlog.md#dr-35--gap-analysis-roadmap-and-feature-backlog) | 2026-07-15 / Codex | Create a FourthWave-inspired gap-analysis roadmap and feature backlog. | Mark-directed; proposal-only roadmap record created, with no new execution or external authority. | `E2h` — Done; `E3`–`F4` gates unchanged. | Adds a de-risking view beside the approved path scorecard; does not authorize its backlog items. |
+| [DR-36](2026-07-16-social-intelligence-founder-content-direction.md#dr-36--social-intelligence-and-founder-content-exploration-direction) | 2026-07-16 / Codex | Record Mark's social-intelligence and founder-content exploration direction; preserve ideas and outline bounded validation paths. | Mark selected the cross-cutting one-lab lane and founder-theme route; `RUN-011` completed the internal `SOC-008` positioning pass. The manual social baseline and every build, monitoring, publishing, or outreach action remain separately gated. | `E2j`, `E2k` — Done; `E2l`, `E2m` open. | Extends the DR-5/charter social-intelligence boundary and DR-24/DR-25/DR-28 linking model without creating a parallel program. |
 
 ## Maintenance rule
 
-The next available Epoch 1 decision number is `DR-33`. Before creating it,
+The next available Epoch 1 decision number is `DR-37`. Before creating it,
 inspect this register and the dated source files, then claim the documentation
 work. Create the full record in a dated file in this `decisions/` folder and
 add one register row in the same change. Do not add `DR-*` headings to this

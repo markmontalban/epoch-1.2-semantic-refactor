@@ -1,0 +1,31 @@
+term_id,term_family,term,status,plain_language_meaning,contexts,signal_type,research_use
+TERM-001,capacity,workforce shortage,persistent,Not enough qualified people for the required care volume,"all settings",core problem,Use as broad umbrella only after naming role and setting.
+TERM-002,capacity,workforce pipeline,persistent,Training and recruitment pathways that replenish roles,"rural; FQHC; hospital; nursing",response frame,Distinguish training supply from employer retention.
+TERM-003,capacity,capacity constraint,emerging,The organization cannot add service volume with current people, money, or infrastructure,"hospital; rural; behavioral health",system frame,High-value bridge from staffing to access.
+TERM-004,capacity,retention,persistent,Keeping qualified workers in the organization or field,"all settings",operating pain,Pair with workload, pay, safety, and career path.
+TERM-005,capacity,turnover,persistent,Loss of staff that disrupts continuity and raises replacement cost,"hospital; nursing; behavioral health",operating consequence,Ask for role-level and unit-level effect.
+TERM-006,worker experience,burnout,persistent,Work-related exhaustion and reduced ability to sustain care,"all settings",worker frame,Do not use as a sufficient diagnosis.
+TERM-007,worker experience,moral injury,persistent-to-emerging,Distress when systems prevent people from acting according to care values,"hospital; nursing; behavioral health",worker frame,Useful for values/system mismatch discovery.
+TERM-008,worker experience,workplace violence,persistent,Threats or violence that damage safety and retention,"hospital; behavioral health; nursing",safety frame,Separate from wellness and generic stress.
+TERM-009,worker experience,psychological safety,emerging,Ability to raise concerns or recover without interpersonal punishment,"hospital; nursing; behavioral health",culture frame,Potential intervention language; needs role-specific proof.
+TERM-010,operations,administrative burden,persistent,Nonclinical work required to document, authorize, report, or bill care,"primary care; hospital; behavioral health",system pain,Strong current discovery term.
+TERM-011,operations,prior authorization,persistent,Insurer approval work before treatment or service,"hospital; primary care; behavioral health",specific task,High-specificity workflow research target.
+TERM-012,operations,documentation burden,persistent,Time and cognitive load spent producing required records,"all clinical settings",specific task,Ask which note or form creates the burden.
+TERM-013,operations,care-model redesign,emerging,Changing roles, teams, and pathways to fit demand and workforce reality,"hospital; rural; FQHC",response frame,Potential category language for operator audiences.
+TERM-014,operations,AI-assisted documentation,emerging,Technology that drafts or structures clinical documentation,"hospital; FQHC; physician practice",response frame,Requires governance, workflow, and trust questions.
+TERM-015,operations,interoperability,persistent,Systems and organizations being able to exchange usable information,"all integrated settings",infrastructure pain,Relevant to handoffs and automation feasibility.
+TERM-016,access,access to care,persistent,Ability to receive timely and affordable needed care,"all settings",patient-facing frame,Use to link internal pain to mission impact.
+TERM-017,access,care gap,persistent,Needed service or population not reached by the current system,"FQHC; rural; behavioral health",equity frame,Name specific population and service.
+TERM-018,access,service closure,persistent-to-emerging,Loss or reduction of a local care service,"rural; hospital; maternity; post-acute",visible consequence,High urgency but not a universal buyer pain.
+TERM-019,behavioral,CCBHC,emerging,Certified model requiring broad access, crisis response, coordination, and reporting,"community behavioral health",model term,Important SEG-002 operating context.
+TERM-020,behavioral,integrated behavioral health,persistent-to-emerging,Behavioral care embedded with primary or other medical care,"FQHC; primary care; hospital",model term,Connects SEG-001 to SEG-002/003.
+TERM-021,behavioral,crisis continuum,emerging,Services spanning prevention, 988, stabilization, and ongoing care,"behavioral health; hospital",system frame,Map handoffs and staffing by stage.
+TERM-022,delivery,care coordination,persistent,Organizing services and information across people and organizations,"all complex-care settings",operating requirement,Ask where coordination fails in practice.
+TERM-023,delivery,care transitions,persistent,Movement between hospital, home, post-acute, and community services,"hospital; SNF; home health",specific workflow,Good bounded research wedge.
+TERM-024,delivery,community health worker,persistent-to-emerging,Nontraditional or community-based role addressing navigation and social needs,"FQHC; rural; behavioral health",workforce response,Research scope, supervision, and reimbursement.
+TERM-025,finance,thin margins,persistent,Little financial room for wage, technology, or service shocks,"FQHC; rural; hospice; home health",operator frame,Often paired with funding and access.
+TERM-026,finance,sustainable reimbursement,persistent,Payment that supports the actual cost and complexity of care,"behavioral health; FQHC; rural; hospice",system requirement,Important but not proof of budget.
+TERM-027,finance,Medicaid exposure,persistent,Dependence on Medicaid rules, rates, and coverage continuity,"FQHC; behavioral health; rural",policy frame,Track alongside funding and access.
+TERM-028,accountability,minimum staffing,emerging,Regulatory floor for staffing intensity in long-term care,"SNF; nursing homes",policy conflict,Map quality benefit versus feasibility burden.
+TERM-029,accountability,quality reporting,persistent,Structured measurement and reporting required for accountability or payment,"CCBHC; FQHC; hospital; SNF",operating burden,Ask who performs it and what changes.
+TERM-030,accountability,trustworthy AI,emerging,AI with explainability, safety, privacy, and human accountability,"all technology-adopting settings",governance frame,Not a pain point until tied to workflow.

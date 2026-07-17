@@ -1,35 +1,37 @@
 # MindfulText Epoch 1 — Current State
 
-This is the current Epoch 1 re-entry summary for Mark.
+Last updated: 2026-07-16 21:15:25 PDT — edited by: Codex
 
-Last updated: 2026-07-14 06:46:58 PDT — edited by: Codex
+This is Mark's compact decision-oriented re-entry summary; use the Master Checklist, not this page, for executable task status.
 
 ## Current position
 
-- **Run 001 has informed the next direction:** Founder-supplied MHA Dutchess case-study/testimonial context makes the organization-sponsored direction useful enough to prioritize, while transferability remains unproven. `GH-002` stays historical umbrella research; later work will create atomic child hypotheses. [Evidence](../growth/EVIDENCE-REGISTER.md), [ranking](../runs/run-001/outputs/GH-002-ranked-scorecard.md)
-- **Signals stay attached to ideas:** Add a short signal under its hypothesis; use the optional signal log only when repeated sources make it helpful. [Signal log](../growth/SIGNALS.md)
-- **Agents fill and size:** Public research may strengthen or contradict an idea; after it establishes a behavior-and-situation-defined ICP, it can add a cited U.S. TAM range. Agent work stays hypothesis until customer feedback says otherwise. [DR-27](../decisions/2026-07-12-tam-first-market-sizing.md)
-- **Research defaults to autonomous:** Leave `Research: auto` for agent-selected public research, or set a source/question/score line; profile research is opt-in per hypothesis. [Growth Hypotheses](../growth/HYPOTHESES.md), [Public Profile Watch](../growth/PUBLIC-PROFILE-WATCH.md)
-- **Provider policy is simple:** Mark manually prompts Codex, Claude, or Hermes. Telegram is not part of this workflow. [Team Config v0.1.1](../team-configs/v0.1.1.md)
+- **Corpus current through RUN-011:** Eleven bounded runs now cover opportunity framing, care-delivery research, organization and influence registries, narrative coding, DSP qualification, corpus lineage, and the `SOC-008` founder-theme pass. [Run Index](../runs/README.md)
+- **Care-delivery spine remains intact:** `SEG-001` contains focused `SEG-002`, comparison branch `SEG-003`, and workforce branch `SEG-008`; `CDP-001`, `GH-004`, and `GTM-001` retain the learning path without claiming market validation. [Segment Map](../growth/SEGMENTS.md) · [CDP-001](../growth/CDP-001.md)
+- **Organization research is structured:** `RUN-005` retains 56 organization records and buyer-function hypotheses, including six qualify-first accounts; none is a buyer-intent signal, named-person lead, or outreach authorization. [Registry](../growth/account-registry/README.md)
+- **DSP remains unpromoted:** `RUN-009` supports Direct Support Professionals as a candidate frontline audience under `SEG-001`, but `ICP-022` is not canonical and no setting has been selected for the next qualification pass. [Run 009 report](../runs/run-009/outputs/RUN-009-REPORT.md)
+- **Founder theme reached one gate:** `RUN-011` advances `SOC-008` as a coherent constructive-comedy theme route, not as evidence of resonance, demand, health outcomes, or a GTM motion. [Concept packet](../runs/run-011/outputs/SOC-008-CONCEPT-PACKET.md)
 
-## Platform position
+## Decisions Mark can make next
 
-- **Dashboard is currently healthy:** The local dashboard and Ollama are reachable, with `core_degraded: false` and no queued Dispatcher work. [Model Ops project](/Users/mgzm-studio/AI-Studio/Projects/model-dashboard-live/)
-- **Care-delivery development is now structured:** `CDP-001` links `SEG-001` to focused branch `SEG-002`, `GH-004`, and `GTM-001`. It starts with six cited public candidate accounts and maps future target intelligence and marketing opportunities without treating any account as a buyer. [CDP-001](../growth/CDP-001.md), [accounts](../growth/ACCOUNT-INTELLIGENCE.md)
-- **RUN-004 is complete:** The five-hour local-model public-research sprint
-  program closed with 27 completed workers, one fail-closed memory block, six
-  source-checked context cards, and a model-utility record. It did not validate
-  demand or authorize any external action. [Report](../runs/run-004/outputs/RUN-004-REPORT.md), [scorecard](../runs/run-004/outputs/MODEL-UTILITY-SCORECARD.md)
+- **Choose the social baseline:** Approve, revise, or park a separately carded manual test of `SOC-008`; if approved, name one platform, one primary lens, a post/time ceiling, and a voice rubric. No publishing is authorized yet. [Concept packet §E](../runs/run-011/outputs/SOC-008-CONCEPT-PACKET.md#e-next-smallest-test--separate-approval-required)
+- **Resolve workflow posture:** After an asset audit, decide whether to keep, narrow, or replace Replit and establish a private, credential-safe Git/export routine for the unversioned n8n workflow folder. `MASTER-CHECKLIST.md:E2l` is Mark-only. [Master Checklist](../MASTER-CHECKLIST.md)
+- **Complete device continuity:** Configure and verify the intended second-device checkpoint/restore path independently of social strategy. `MASTER-CHECKLIST.md:E2m` is Mark-only. [Master Checklist](../MASTER-CHECKLIST.md)
+- **Review the DSP candidate:** Decide whether to create canonical `ICP-022` and, if so, select one DSP setting for a narrower provider/workflow qualification pass. [Run 009 report](../runs/run-009/outputs/RUN-009-REPORT.md)
+- **Decide the market-test gate:** Determine whether current evidence supports a manual market test; `E4`/`F1` remain separate Mark approvals and no automated campaign is permitted. [Gap-Analysis Roadmap](../checklists/GAP-ANALYSIS-ROADMAP.md)
 
-## Open Mark decisions
+## Boundaries still in force
 
-- **D2 response live:** Use `qwen3:8b` as the new local core; the stability observation is background telemetry. [DR-22](../decisions/2026-07-12-prototype-run-first.md)
-- **Local-only store selected:** Use a dedicated encrypted folder on the Seagate volume with no fallback; lab relocation remains separately authorized. [DR-20](../decisions/2026-07-12-mark-directions.md#dr-20--local-only-sensitive-input-store)
-- **C4 is deferred:** Hermes can be manually prompted now; revisit its provider boundary and Telegram only if you introduce autonomy or Telegram integration. [DR-22](../decisions/2026-07-12-prototype-run-first.md)
-- **Next gate is explicit:** A separately approved public-research run can refine the highest-priority accounts; a manual conversation, marketing experiment, or external activity still requires Mark's specific approval. [DR-31](../decisions/2026-07-14-customer-development-plan.md)
+- **Research is not validation:** Public-source recurrence, directory inclusion, account qualification, and completed runs do not establish demand, buyer intent, budget, efficacy, or transferability.
+- **People are not yet leads:** Buyer titles are function hypotheses; Epoch 1 contains no approved named-person lead registry, contact queue, CRM, or relationship-monitoring system.
+- **External action stays gated:** Posting, commenting, messaging, outreach, monitoring, scraping, scheduling, and automation require their own bounded scope and Mark approval.
+- **Sensitive data stays local:** Raw sensitive material remains in the approved local-only store; shared records and traces use safe summaries, references, or hashes. [Charter](../CHARTER.md)
+- **Task authority stays singular:** The Master Checklist owns status, dated `DR-*` records own approvals, and the Decision Register only makes those records findable.
 
-## Re-entry references
+## Re-entry order
 
-- **Start with the project entry:** It names the authority for tasks, decisions, and navigation. [Project entry point](../README.md)
-- **Then check the map and status:** Use the Context Map for dependencies and the Master Checklist for current positional references such as `A1`, `B1a`, and `C4b`. [Context map](../CONTEXT-MAP.md), [Master checklist](../MASTER-CHECKLIST.md)
-- **Then resolve decisions:** The Decision Register connects every `DR-*` identifier to its dated approval source. [Decision Register](../decisions/DECISION-REGISTER.md)
+- **Decide from this page:** Use this summary to see the small set of choices currently in front of Mark.
+- **Understand dependencies next:** Use the Context Map for the current-position narrative and links among durable records, runs, decisions, and proposals. [Context Map](../CONTEXT-MAP.md)
+- **Check executable status:** Use positional references such as `E2k`, `E2l`, and `E4` only from the Master Checklist. [Master Checklist](../MASTER-CHECKLIST.md)
+- **Inspect corpus structure:** Use the lineage map for ID grammar, hierarchy, run-to-artifact dependencies, and raw artifact locations—not live task status. [Hierarchy & Data Lineage](../EPOCH-1-HIERARCHY-DATA-LINEAGE.md)
+- **Resolve approval wording:** Follow any `DR-*` reference through the Decision Register to its dated source record. [Decision Register](../decisions/DECISION-REGISTER.md)

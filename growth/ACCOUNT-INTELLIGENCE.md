@@ -1,6 +1,6 @@
 # Growth — Account Intelligence
 
-Last updated: 2026-07-13 21:47:28 PDT — edited by: Codex
+Last updated: 2026-07-15 00:50:44 PDT — edited by: Codex
 
 This is a public-research workspace for named organizations once a qualifying
 hypothesis enters a bounded research run. It is not a CRM, contact list,
@@ -45,3 +45,12 @@ intent. [DR-29](../decisions/2026-07-13-segment-linked-runs.md)
 
 **Last checked:** 2026-07-13. Scores rank research attention only; none is a
 purchase-intent score or authorization to contact an organization.
+
+## RUN-005 account registry
+
+`RUN-005` preserves this six-account summary and extends it into a durable,
+source-normalized 56-record public registry. The registry records stable
+`ACC-###` identifiers, source references, buyer-function/title profiles,
+confidence, and explicit current-status gaps. It does not create a CRM,
+contact list, monitoring system, or outreach queue. [Registry guide](account-registry/README.md)
+· [Organizations](account-registry/organizations.csv) · [Sources](account-registry/sources.csv)

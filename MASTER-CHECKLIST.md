@@ -3,9 +3,9 @@
 Position scheme: top-level sections use `A`, `B`, `C`; checklist items use
 `A1`, `A1a`, `A1b`, etc. Items are named by their visible document position.
 
-Last updated: 2026-07-14 06:46:58 PDT — edited by: Codex
+Last updated: 2026-07-17 01:12:20 PDT — edited by: Codex
 
-**Last reconciled:** 2026-07-12
+**Last reconciled:** 2026-07-17
 
 This is the Epoch 1 execution tracker; the [context map](CONTEXT-MAP.md) provides the Mark-facing re-entry summary and dependency diagrams.
 
@@ -30,10 +30,24 @@ Line numbers are optional current navigation hints only.
 
 ## Mark summary
 
-- **Run 001 is ready to draft:** Add one growth hypothesis, name the agent in your prompt, and receive editable researched paths. The four original assets can strengthen them later. [Run 001 packet](runs/run-001/UNBLOCK-PACKET.md)
-- **Care-delivery development has a plan:** `CDP-001` connects `SEG-001`, focused branch `SEG-002`, `GH-004`, and `GTM-001`; it identifies the next bounded intelligence and marketing-opportunity work without authorizing external action. [DR-31](decisions/2026-07-14-customer-development-plan.md)
-- **Core direction is live:** Mark authorized the prototype to move from `gpt-oss:20b` to `qwen3:8b`; dashboard commit `7b1cec0` passed 202 tests/lint and live health shows `core_degraded: false`. [DR-19](decisions/2026-07-12-mark-directions.md#dr-19--mindfultext-local-model-core)
-- **Hermes is in scope:** Mark may manually prompt Hermes for bounded prototype work. Telegram is not part of the workflow. [DR-22](decisions/2026-07-12-prototype-run-first.md)
+- **Corpus reaches RUN-011:** Runs 005–009 retain the care-delivery account,
+  adjacency, influence, narrative/pain, and candidate-DSP evidence; RUN-010
+  indexes the corpus and RUN-011 qualifies one internal founder-theme route.
+  None establishes demand or authorizes outreach or publishing. [Current state](status/CURRENT-STATE.md)
+- **Care-delivery language stays bounded:** RUN-008 recurrence is source-profile
+  coding, not audience prevalence or demand evidence, and RUN-009's candidate
+  `ICP-022` still needs Mark review before any canonical addition or narrower
+  workflow pass. [RUN-008 report](runs/run-008/outputs/RUN-008-REPORT.md)
+- **Lineage is now checkable:** RUN-010 maps retained entities, IDs, artifacts,
+  and dependencies through RUN-009 without adding strategic recommendations.
+  [Lineage map](EPOCH-1-HIERARCHY-DATA-LINEAGE.md)
+- **First social route is complete:** Mark selected the cross-cutting one-lab
+  lane and founder-theme route; RUN-011 advanced `SOC-008` only to a separately
+  gated manual-baseline decision. [DR-36](decisions/2026-07-16-social-intelligence-founder-content-direction.md)
+- **Next decisions remain human:** Mark separately chooses the DSP candidate,
+  manual social baseline, and whether existing market evidence supports `E4`;
+  the local-core, no-Telegram, and no-unapproved-external-action boundaries
+  remain unchanged. [DR-22](decisions/2026-07-12-prototype-run-first.md)
 
 ## Guardrails — always in force
 
@@ -199,7 +213,9 @@ The seven steps below move from Mark’s review of Run 001 to a bounded local co
 
 #### D6–D7 — Run segment intelligence
 
-- **Capture local-work state:** Record dashboard health, resident models, memory, queue, and re-pin state before any local task; there is no 24-hour precondition. [Operations reference](../../Projects/model-dashboard-live/docs/OPERATIONS-REFERENCE.md)
+- **Capture local-work state:** Record dashboard health, resident models,
+  memory, queue, and re-pin state before any local task; there is no 24-hour
+  precondition. [Control-plane reference](../../Projects/model-dashboard-live/docs/EPOCH1-CONTROL-PLANE.md)
 - **Execute and trace safely:** Produce cited public segment/account/buyer/language/category research and a reference/hash-only trace. An eviction or `503` makes only the local-work evaluation inconclusive; public research may continue. [Run 002 card](runs/run-002/run-card.md)
 
 #### D8 — Review Run 002
@@ -238,6 +254,63 @@ The seven steps below move from Mark’s review of Run 001 to a bounded local co
   blocked by the memory-fit gate. The run retained six source-checked context
   cards and a model-utility record; it did not authorize CRM work, monitoring,
   outreach, publishing, provider fallback, or a residency change (DR-32).
+- [x] `E2c` **Complete — RUN-005 care-delivery organization registry:** 56
+  public organization records, a normalized source ledger, and buyer-
+  function/title taxonomy are retained under `growth/account-registry/`. Six
+  accounts have additional public workforce/operating context; directory
+  status remains a research lead, not buyer intent or authorization to contact
+  any organization (DR-33).
+- [x] `E2d` **Complete — RUN-006 care-delivery one-degree map:** 50 source-backed
+  nodes are retained in `runs/run-006/outputs/` with explicit `under`, `beside`,
+  and `above` relationships. `SEG-002 / CCBHCs` remains the lead branch;
+  `SEG-003 / FQHC integrated behavioral health` is the first comparison. No
+  code fork, code merge, CRM write, or external action occurred (DR-34).
+- [x] `E2e` **Complete — RUN-007 care-delivery influence map:** 50 public
+  source/profile records (45 direct page-opened; 5 search-snippet-only) are retained across operator media, behavioral health,
+  FQHC/rural, post-acute, workforce, and creator channels. The report recommends
+  an operator-specialist versus workforce-storytelling comparison; no external
+  action is authorized.
+- [x] `E2f` **Complete — RUN-008 narrative and pain map:** Approved fork of
+  RUN-007 attempted all 50 public sources and retained a narrative registry,
+  ranked pain points, term taxonomy, historical timeline, and source ledger. The
+  leading coded pains are workforce capacity, retention/burnout, funding, and
+  administrative/payer friction; this is not article-frequency, buyer-intent, or
+  demand evidence. [Report](runs/run-008/outputs/RUN-008-REPORT.md)
+- [x] `E2g` **Complete — RUN-009 Direct Support Professional ICP qualification:**
+  Prior Epoch 1 evidence plus bounded public research supports a candidate DSP
+  ICP under `SEG-001`, distinct from LCSWs but not yet a separate segment. The
+  report keeps the worker/user separate from the possible provider sponsor and
+  identifies one bounded provider/workflow pass as the next evidence step; no
+  canonical ICP or segment record was changed. [Report](runs/run-009/outputs/RUN-009-REPORT.md)
+- [x] `E2h` **Record the gap-analysis roadmap and feature backlog:** the
+  FourthWave-inspired map records current market, differentiation, pilot,
+  trust/procurement, and later capability/capital unknowns. It is a
+  proposal-only de-risking queue; it changes none of the `E3`–`F4` gates and
+  authorizes no build or external action. [Roadmap](checklists/GAP-ANALYSIS-ROADMAP.md)
+  (DR-35).
+- [x] `E2i` **Complete — RUN-010 Epoch 1 hierarchy and data lineage:** the
+  source-linked map inventories retained entities, identifiers, artifacts, and
+  dependencies through RUN-009 without synthesizing findings or making
+  strategic recommendations. [Run card](runs/run-010/run-card.md)
+- [x] `E2j` **Record social-intelligence and founder-content direction:**
+  `SOC-001`–`SOC-007`, the one-lab architecture recommendation, human-touch
+  boundary, and conditional run outlines are retained. This records direction
+  only; no run card, build, monitoring, publishing, or outreach is authorized.
+  [Lane outline](checklists/SOCIAL-LEARNING-LANE.md) (DR-36).
+- [x] `E2k` **Complete — Mark chose the social placement and first decision:**
+  retain the cross-cutting Epoch 1 lane, select the founder-theme route, and
+  execute the `SOC-008` internal positioning pass by X3. RUN-011 advances a
+  constructive comedy movement only to a separately gated manual-baseline
+  decision; it authorizes no publishing, monitoring, automation, or outreach.
+  [Concept packet](runs/run-011/outputs/SOC-008-CONCEPT-PACKET.md) (DR-36).
+- [ ] `E2l` **Mark only — resolve Replit and workflow operational posture:**
+  after the asset audit, keep, narrow, or replace Replit; choose a private,
+  credential-safe Git home/export routine for the currently unversioned n8n
+  workflow folder. No migration or workflow activation is authorized.
+- [ ] `E2m` **Mark only — complete second-device Git continuity transfer:**
+  configure and verify the intended checkpoint/restore path on the other
+  device as a separate internal operation; do not treat Replit file history or
+  agent checkpoints as the only long-term source history.
 - [ ] `E3` **Mark only — decide post-Run-003:** Hermes scope (bounded operator or
   manual), dashboard scope (expand or freeze), and actual worktree triage.
 - [ ] `E4` **Mark only — decide whether evidence supports a manual market test.**
@@ -274,3 +347,4 @@ The seven steps below move from Mark’s review of Run 001 to a bounded local co
    it; never infer approval for a Mark-only item.
 4. `G4` **Mark — review Run 002 (D8):** assess `SEG-002` research, the candidate-account universe, `GH-004`, and whether local work added enough value to retry. [Run 002 blackboard](runs/run-002/blackboard.md), [accounts](growth/ACCOUNT-INTELLIGENCE.md).
 5. `G5` **Next execution gate:** create a separately approved public-research run for the highest-priority `CDP-001` accounts, or defer it. A manual discovery conversation remains a later Mark-only decision. [CDP-001](growth/CDP-001.md), [accounts](growth/ACCOUNT-INTELLIGENCE.md)
+6. `G6` **Mark — review RUN-006:** decide whether the one-degree map warrants an atomic `SEG-003` comparison hypothesis, a focused channel/association study, or a pause. [RUN-006 report](runs/run-006/outputs/RUN-006-REPORT.md), [map](runs/run-006/outputs/one-degree-map.csv)
