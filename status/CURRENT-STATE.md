@@ -1,20 +1,22 @@
 # MindfulText Epoch 1 — Current State
 
-Last updated: 2026-07-16 21:15:25 PDT — edited by: Codex
+Last updated: 2026-07-28 10:44:41 PDT — edited by: Codex
 
 This is Mark's compact decision-oriented re-entry summary; use the Master Checklist, not this page, for executable task status.
 
 ## Current position
 
-- **Corpus current through RUN-011:** Eleven bounded runs now cover opportunity framing, care-delivery research, organization and influence registries, narrative coding, DSP qualification, corpus lineage, and the `SOC-008` founder-theme pass. [Run Index](../runs/README.md)
+- **Corpus current through [[runs/run-019/RUN-019-Pulse-Public-Asset-Audit|RUN-019]]:** Nineteen bounded runs cover opportunity framing, care-delivery research, founder/product positioning, and the social-learning lane. [Run Index](../runs/README.md)
 - **Care-delivery spine remains intact:** `SEG-001` contains focused `SEG-002`, comparison branch `SEG-003`, and workforce branch `SEG-008`; `CDP-001`, `GH-004`, and `GTM-001` retain the learning path without claiming market validation. [Segment Map](../growth/SEGMENTS.md) · [CDP-001](../growth/CDP-001.md)
 - **Organization research is structured:** `RUN-005` retains 56 organization records and buyer-function hypotheses, including six qualify-first accounts; none is a buyer-intent signal, named-person lead, or outreach authorization. [Registry](../growth/account-registry/README.md)
 - **DSP remains unpromoted:** `RUN-009` supports Direct Support Professionals as a candidate frontline audience under `SEG-001`, but `ICP-022` is not canonical and no setting has been selected for the next qualification pass. [Run 009 report](../runs/run-009/outputs/RUN-009-REPORT.md)
-- **Founder theme reached one gate:** `RUN-011` advances `SOC-008` as a coherent constructive-comedy theme route, not as evidence of resonance, demand, health outcomes, or a GTM motion. [Concept packet](../runs/run-011/outputs/SOC-008-CONCEPT-PACKET.md)
+- **Founder Social Studio is defined, not tested:** [[runs/run-018/RUN-018-Mindfulness-Social-Studio|RUN-018]] makes mindfulness the worldview root for concrete human-systems stories, assigns channel and agent roles, and recommends the existing AI account pair as provisional public surface. It does not establish resonance, demand, health outcomes, a GTM motion, or authority to act. [Operating model](../runs/run-018/outputs/SOCIAL-STUDIO-OPERATING-MODEL.md)
+- **Pulse is private pending provenance:** [[runs/run-019/RUN-019-Pulse-Public-Asset-Audit|RUN-019]] found the retained prototype promising but unqualified for a public asset, landing page, searchable archive, quotes, trends, or 10K/40K scale claim. [Qualification](../runs/run-019/outputs/PULSE-PUBLIC-ASSET-QUALIFICATION.md)
 
 ## Decisions Mark can make next
 
-- **Choose the social baseline:** Approve, revise, or park a separately carded manual test of `SOC-008`; if approved, name one platform, one primary lens, a post/time ceiling, and a voice rubric. No publishing is authorized yet. [Concept packet §E](../runs/run-011/outputs/SOC-008-CONCEPT-PACKET.md#e-next-smallest-test--separate-approval-required)
+- **Choose the social baseline:** Approve, revise, or park a separately carded six-story manual baseline for [[growth/SOCIAL-IDEA-LEDGER|SOC-009]] on the existing AI account pair; if approved, name one primary non-vanity signal, a time ceiling, and a voice rubric. No publishing is authorized yet. [Operating model](../runs/run-018/outputs/SOCIAL-STUDIO-OPERATING-MODEL.md#smallest-next-manual-baseline--not-yet-authorized)
+- **Resolve Pulse provenance:** Approve or park a strictly read-only, local-only provenance inventory before considering any public Pulse asset. No source data, workflow, or landing page work is authorized. [Qualification](../runs/run-019/outputs/PULSE-PUBLIC-ASSET-QUALIFICATION.md#smallest-next-run-local-only-provenance-inventory)
 - **Resolve workflow posture:** After an asset audit, decide whether to keep, narrow, or replace Replit and establish a private, credential-safe Git/export routine for the unversioned n8n workflow folder. `MASTER-CHECKLIST.md:E2l` is Mark-only. [Master Checklist](../MASTER-CHECKLIST.md)
 - **Complete device continuity:** Configure and verify the intended second-device checkpoint/restore path independently of social strategy. `MASTER-CHECKLIST.md:E2m` is Mark-only. [Master Checklist](../MASTER-CHECKLIST.md)
 - **Review the DSP candidate:** Decide whether to create canonical `ICP-022` and, if so, select one DSP setting for a narrower provider/workflow qualification pass. [Run 009 report](../runs/run-009/outputs/RUN-009-REPORT.md)
