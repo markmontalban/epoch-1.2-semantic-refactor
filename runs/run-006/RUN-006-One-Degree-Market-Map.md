@@ -7,6 +7,14 @@ status: completed
 area: market-research
 focus: Map the immediate ecosystem around care-delivery organizations and retain the strongest adjacent nodes.
 next_decision: Keep CCBHCs as the lead route and FQHC integrated behavioral health as the comparison.
+date: 2026-07-15
+product: PROD-001
+threads: [TRK-001, TRK-002]
+workflow: WF-003
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-002, RUN-004, RUN-005]
+result_updates: [SEG-002, SEG-003]
 ---
 
 # Run Card

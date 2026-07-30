@@ -6,6 +6,14 @@ status: completed
 area: social-learning
 focus: Define one mindfulness-rooted social operating model, channel roles, and agent boundaries before any publishing or account change.
 next_decision: Mark selects the first manual baseline route and whether to use the existing AI accounts as the provisional public account.
+date: 2026-07-28
+product: PROD-001
+threads: [TRK-006]
+workflow: WF-008
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-011, RUN-017]
+result_updates: [BRD-001]
 ---
 
 # RUN-018 — Mindfulness Social Studio

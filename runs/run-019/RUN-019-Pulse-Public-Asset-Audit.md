@@ -6,6 +6,14 @@ status: completed
 area: social-learning
 focus: Qualify whether retained Pulse materials can support a future public insight asset without exposing community data or making unsupported scale, methodology, or rights claims.
 next_decision: Keep Pulse as a private research/prototype asset; approve a separate local-only provenance inventory before considering an aggregated public report.
+date: 2026-07-28
+product: PROD-001
+threads: [TRK-006]
+workflow: WF-006
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-018]
+result_updates: []
 ---
 
 # RUN-019 — Pulse Public Asset Audit

@@ -15,9 +15,11 @@ the document that has authority for each kind of claim.
 ## Start here
 
 1. [Current State](status/CURRENT-STATE.md) — what to do now.
-2. [Growth Index](growth/README.md) — ideas, audiences, signals, and
+2. [Semantic Map Overview](SEMANTIC-MAP-OVERVIEW.canvas) — curated product,
+   learning-thread, workflow, and current-state entry points.
+3. [Growth Index](growth/README.md) — ideas, audiences, signals, and
    the link from each `GH-###` to its work.
-3. [Run Index](runs/README.md) — each execution and all of its outputs.
+4. [Run Index](runs/README.md) — each execution and all of its outputs.
 
 ## Authority map
 
@@ -35,6 +37,9 @@ the document that has authority for each kind of claim.
 | --- | --- |
 | `growth/` | Your ICP registry, hypotheses, scorecard, signals, and optional profile watch. Start at the [Growth Index](growth/README.md). |
 | `product/` | Product opportunities and preliminary portfolio ranking. Start at the [Product Opportunity Ledger](product/PRODUCT-IDEAS.md); a `PRO-###` record is not delivery approval. |
+| `portfolio/`, `threads/` | Product roots and coherent learning questions across hypotheses, segments, workflows, runs, evidence, and decisions. Start at [PROD-001](portfolio/PROD-001-MindfulText.md). |
+| `playbooks/` | Reusable commercial core plus segment, ICP, thread, and optional account-level overlays. Historical full playbooks remain in their originating runs. |
+| `graph-explorer/` | Local-only interactive semantic explorer generated from Markdown. Its JSON index is build output, not a second database. |
 | Learning Lab | Local-agent learning work is recorded in its dated [decision records](decisions/2026-07-21-learning-lab-local-agents.md) until a repository folder is created. |
 | [Hierarchy & Data Lineage](EPOCH-1-HIERARCHY-DATA-LINEAGE.md) | Corpus ID grammar, nesting, run-to-artifact lineage, and raw-artifact entry points. This is a reference map, not task-status or approval authority. |
 | `paths/` | Reusable opportunity/test-route cards. Start at the [Path Index](paths/README.md). |
@@ -42,7 +47,8 @@ the document that has authority for each kind of claim.
 | `runs/` | Run cards, prompts, notes, outputs, and traces. Start at the [Run Index](runs/README.md) to see each run and its linked `GH-###` work. |
 | `decisions/` | Dated Mark decisions and the Decision Register. |
 | `checklists/` | Supplementary proposal or topic checklists. The [Gap-Analysis Roadmap & Feature Backlog](checklists/GAP-ANALYSIS-ROADMAP.md) is a de-risking queue; the Master Checklist retains execution authority. |
-| `workflows/`, `templates/`, `team-configs/` | Agent operating material. |
+| `workflows/` | Versioned reusable learning procedures with inputs, outputs, gates, stop conditions, and replay/fork behavior. |
+| `templates/`, `team-configs/` | Agent operating material. |
 | `planning/`, `observations/`, `datasets/` | Historical plan, telemetry, and later learning material. |
 
 ## Reference grammar

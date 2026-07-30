@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import fnmatch
 import re
+import subprocess
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -20,17 +21,48 @@ EXEMPTIONS = ROOT / "tools" / "obsidian-link-exemptions.txt"
 FENCE_RE = re.compile(r"```.*?```", re.DOTALL)
 INLINE_CODE_RE = re.compile(r"`[^`]*`", re.DOTALL)
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]*)?\]\]")
+WIKILINK_ANCHOR_RE = re.compile(
+    r"\[\[([^\]|#]+)#([^\]|]+)(?:\|[^\]]*)?\]\]"
+)
 MARKDOWN_LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
+MARKDOWN_ANCHOR_RE = re.compile(r"\[[^\]]*\]\(([^)#]+)#([^)]+)\)")
 ANY_LINK_RE = re.compile(r"\[\[[^\]]+\]\]|\[[^\]]*\]\([^)]+\)")
 ID_RE = re.compile(r"\b(?:SEG|GH|GTM|CDP|ICP|SOC|PRO|EV|ACC|RUN|DR|CMP)-\d{1,3}\b")
 HEADING_RE = re.compile(r"^#{1,6}\s+(.*)$", re.MULTILINE)
+FRONTMATTER_RE = re.compile(r"\A---\n.*?\n---\n", re.DOTALL)
+IGNORED_ROOTS = {"graph-explorer"}
+IGNORED_PARTS = {".git", ".obsidian", ".next", ".wrangler", "dist", "node_modules"}
+
+
+def checkout_roots():
+    """List live checkouts so sibling links can resolve from any worktree."""
+    roots = [ROOT]
+    try:
+        output = subprocess.run(
+            ["git", "-C", str(ROOT), "worktree", "list", "--porcelain"],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return roots
+    for line in output.splitlines():
+        if line.startswith("worktree "):
+            candidate = Path(line.removeprefix("worktree ")).resolve()
+            if candidate not in roots and candidate.exists():
+                roots.append(candidate)
+    return roots
+
+
+CHECKOUT_ROOTS = checkout_roots()
 
 
 def vault_files():
     return {
         path.resolve()
         for path in ROOT.rglob("*.md")
-        if ".git" not in path.parts and ".obsidian" not in path.parts
+        if not any(part in IGNORED_PARTS for part in path.relative_to(ROOT).parts)
+        and path.relative_to(ROOT).parts[0] not in IGNORED_ROOTS
     }
 
 
@@ -53,9 +85,26 @@ def is_exempt(path, patterns):
 
 
 def heading_slug(heading):
+    heading = re.sub(r"\[\[[^\]|]+\|([^\]]+)\]\]", r"\1", heading)
+    heading = re.sub(
+        r"\[\[([^\]]+)\]\]",
+        lambda match: Path(match.group(1)).name,
+        heading,
+    )
+    heading = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", heading)
+    heading = re.sub(r"[*_`~]", "", heading)
     heading = heading.lower().replace(" — ", "--")
     heading = re.sub(r"[^a-z0-9\s-]", "", heading)
-    return re.sub(r"\s+", "-", heading.strip())
+    return re.sub(r"\s", "-", heading.strip())
+
+
+def anchor_matches(anchor, slugs):
+    """Accept the single/double-hyphen variants used by legacy link writers."""
+    anchor = anchor.lower()
+    if anchor in slugs:
+        return True
+    normalized = re.sub(r"-+", "-", anchor)
+    return any(re.sub(r"-+", "-", slug) == normalized for slug in slugs)
 
 
 def canonical_files(files):
@@ -114,7 +163,15 @@ def markdown_targets(source, text):
         raw = raw.strip().strip("<>").split("#", 1)[0]
         if not raw or re.match(r"(?:https?|mailto|obsidian):", raw):
             continue
-        targets.append((source.parent / raw).resolve())
+        target = (source.parent / raw).resolve()
+        if not target.exists():
+            relative_source = source.resolve().relative_to(ROOT)
+            for checkout in CHECKOUT_ROOTS:
+                checkout_target = ((checkout / relative_source).parent / raw).resolve()
+                if checkout_target.exists():
+                    target = checkout_target
+                    break
+        targets.append(target)
     return targets
 
 
@@ -122,13 +179,22 @@ def main():
     files = vault_files()
     exemptions = load_exemptions()
     canonical = canonical_files(files)
+    heading_slugs = {
+        path: {
+            heading_slug(heading)
+            for heading in HEADING_RE.findall(
+                path.read_text(encoding="utf-8", errors="replace")
+            )
+        }
+        for path in files
+    }
     unresolved = []
     unlinked_ids = []
     degree = defaultdict(int)
 
     for source in sorted(files):
         text = source.read_text(encoding="utf-8", errors="replace")
-        visible = FENCE_RE.sub("", text)
+        visible = FENCE_RE.sub("", FRONTMATTER_RE.sub("", text))
         prose = INLINE_CODE_RE.sub("", visible)
         exempt = is_exempt(source, exemptions)
 
@@ -149,6 +215,18 @@ def main():
             elif candidate not in files and not exempt:
                 unresolved.append((relative(source), "[[{}]]".format(raw)))
 
+        for raw, anchor in WIKILINK_ANCHOR_RE.findall(prose):
+            candidates = wiki_targets(source, "[[{}]]".format(raw), files)
+            if len(candidates) != 1 or exempt:
+                continue
+            if not anchor_matches(anchor, heading_slugs[candidates[0]]):
+                unresolved.append(
+                    (
+                        relative(source),
+                        "[[{}#{}]] (missing heading)".format(raw, anchor),
+                    )
+                )
+
         for target in markdown_targets(source, prose):
             if not target.exists() and not exempt:
                 try:
@@ -159,6 +237,24 @@ def main():
             elif target in files:
                 degree[source] += 1
                 degree[target] += 1
+
+        for raw, anchor in MARKDOWN_ANCHOR_RE.findall(prose):
+            if re.match(r"(?:https?|mailto|obsidian):", raw.strip()):
+                continue
+            candidates = markdown_targets(
+                source,
+                "[target]({})".format(raw.strip().strip("<>")),
+            )
+            if len(candidates) != 1 or exempt:
+                continue
+            target = candidates[0]
+            if target in heading_slugs and not anchor_matches(anchor, heading_slugs[target]):
+                unresolved.append(
+                    (
+                        relative(source),
+                        "{}#{} (missing heading)".format(raw, anchor),
+                    )
+                )
 
         protected = ANY_LINK_RE.sub("", prose)
         for match in ID_RE.finditer(protected):

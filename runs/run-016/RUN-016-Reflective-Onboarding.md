@@ -7,6 +7,14 @@ status: completed
 area: product
 focus: Shape a testable, nonclinical reflective-onboarding concept with clear privacy and claim boundaries.
 next_decision: Decide whether to approve a separate clickable-prototype effort.
+date: 2026-07-21
+product: PROD-001
+threads: [TRK-005]
+workflow: WF-007
+run_type: lab-validation
+execution_kind: initial
+input_runs: []
+result_updates: [GH-005, PRO-014, PRO-015, PRO-016]
 ---
 
 # Run Card

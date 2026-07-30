@@ -1,0 +1,30 @@
+filters:
+  - 'record_type == "workflow"'
+properties:
+  id:
+    displayName: Workflow
+  title:
+    displayName: Title
+  version:
+    displayName: Version
+  status:
+    displayName: Status
+  stage:
+    displayName: Stage
+  next_decision:
+    displayName: Reuse trigger
+views:
+  - type: cards
+    name: "Workflow catalog"
+    groupBy:
+      property: note.stage
+      direction: ASC
+    order:
+      - note.id
+  - type: table
+    name: "Workflow register"
+    order:
+      - note.id
+      - note.title
+      - note.version
+      - note.stage

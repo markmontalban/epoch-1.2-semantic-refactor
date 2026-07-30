@@ -6,6 +6,14 @@ status: completed
 area: product-market
 focus: Pick the alpha specialization among blood-pressure reduction, sleep, and burnout by sizing each bottom-up and scoring access speed and claims exposure as separate axes, without treating a fast integration path as market evidence.
 next_decision: Review the recommended alpha focus and record a dated approval, revision, or park decision pending dogfood evidence.
+date: 2026-07-30
+product: PROD-001
+threads: [TRK-007]
+workflow: WF-007
+run_type: lab-validation
+execution_kind: initial
+input_runs: []
+result_updates: []
 ---
 
 # RUN-021 — Wearable Roadmap, Sizing, and Alpha Focus Pick

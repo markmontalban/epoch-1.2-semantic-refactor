@@ -7,6 +7,14 @@ status: completed
 area: opportunity-discovery
 focus: Generate and rank buyer, pain, channel, and offer paths from one growth hypothesis.
 next_decision: Review evidence quality and decide whether a bounded follow-on test is warranted.
+date: 2026-07-12
+product: PROD-001
+threads: [TRK-004]
+workflow: WF-001
+run_type: lab-validation
+execution_kind: initial
+input_runs: []
+result_updates: [GH-002, ICP-018, ICP-019, ICP-020]
 ---
 
 # Run Card

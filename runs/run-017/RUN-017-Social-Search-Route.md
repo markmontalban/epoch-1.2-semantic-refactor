@@ -7,6 +7,14 @@ status: completed
 area: social-search
 focus: Qualify a transparent character-account and people-first owned-asset route without deceptive or unsupported claims.
 next_decision: Consider a separately approved manual baseline; no account, post, or site change is authorized.
+date: 2026-07-21
+product: PROD-001
+threads: [TRK-006]
+workflow: WF-008
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-011, RUN-014]
+result_updates: []
 ---
 
 # Run Card

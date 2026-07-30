@@ -7,6 +7,14 @@ status: completed
 area: audience-research
 focus: Qualify Direct Support Professionals as a possible frontline audience while keeping the sponsor separate.
 next_decision: Mark may create [[growth/ICP-REGISTRY|ICP-022]] and choose one setting for narrower qualification.
+date: 2026-07-15
+product: PROD-001
+threads: [TRK-003, TRK-004]
+workflow: WF-002
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-001, RUN-005, RUN-006, RUN-008]
+result_updates: [SEG-008]
 ---
 
 # RUN-009 — Direct Support Professional ICP qualification

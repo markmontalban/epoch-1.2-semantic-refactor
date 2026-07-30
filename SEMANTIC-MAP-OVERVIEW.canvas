@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {"id":"product","type":"file","file":"portfolio/PROD-001-MindfulText.md","x":0,"y":0,"width":400,"height":260},
+    {"id":"threads-group","type":"group","label":"Learning threads — what is being developed","x":560,"y":-420,"width":1040,"height":1060,"color":"4"},
+    {"id":"trk1","type":"file","file":"threads/TRK-001-CCBHC-Workforce.md","x":620,"y":-330,"width":400,"height":220},
+    {"id":"trk2","type":"file","file":"threads/TRK-002-FQHC-Comparison.md","x":1080,"y":-330,"width":400,"height":220},
+    {"id":"trk3","type":"file","file":"threads/TRK-003-DSP-Qualification.md","x":620,"y":-50,"width":400,"height":220},
+    {"id":"trk4","type":"file","file":"threads/TRK-004-LCSW-Opportunity.md","x":1080,"y":-50,"width":400,"height":220},
+    {"id":"trk5","type":"file","file":"threads/TRK-005-Personal-Product-Experience.md","x":620,"y":230,"width":400,"height":220},
+    {"id":"trk6","type":"file","file":"threads/TRK-006-Founder-Social-Studio.md","x":1080,"y":230,"width":400,"height":220},
+    {"id":"trk7","type":"file","file":"threads/TRK-007-Wearable-Alpha.md","x":850,"y":500,"width":400,"height":220},
+    {"id":"workflow","type":"file","file":"workflows/README.md","x":1810,"y":-120,"width":420,"height":260},
+    {"id":"runs","type":"file","file":"runs/README.md","x":1810,"y":240,"width":420,"height":260},
+    {"id":"playbooks","type":"file","file":"playbooks/README.md","x":1810,"y":600,"width":420,"height":240},
+    {"id":"current","type":"file","file":"status/CURRENT-STATE.md","x":0,"y":410,"width":400,"height":240}
+  ],
+  "edges": [
+    {"id":"e-product-trk1","fromNode":"product","toNode":"trk1","label":"contains"},
+    {"id":"e-product-trk2","fromNode":"product","toNode":"trk2","label":"contains"},
+    {"id":"e-product-trk3","fromNode":"product","toNode":"trk3","label":"contains"},
+    {"id":"e-product-trk4","fromNode":"product","toNode":"trk4","label":"contains"},
+    {"id":"e-product-trk5","fromNode":"product","toNode":"trk5","label":"contains"},
+    {"id":"e-product-trk6","fromNode":"product","toNode":"trk6","label":"contains"},
+    {"id":"e-product-trk7","fromNode":"product","toNode":"trk7","label":"contains"},
+    {"id":"e-trk1-workflow","fromNode":"trk1","toNode":"workflow","label":"uses"},
+    {"id":"e-trk6-workflow","fromNode":"trk6","toNode":"workflow","label":"uses"},
+    {"id":"e-trk7-workflow","fromNode":"trk7","toNode":"workflow","label":"uses"},
+    {"id":"e-workflow-runs","fromNode":"workflow","toNode":"runs","label":"executed as"},
+    {"id":"e-trk1-playbooks","fromNode":"trk1","toNode":"playbooks","label":"composes"},
+    {"id":"e-current-product","fromNode":"current","toNode":"product","label":"summarizes"}
+  ]
+}

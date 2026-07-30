@@ -7,6 +7,14 @@ status: completed
 area: positioning
 focus: Define a claim-safe CCBHC landing-page, proof, founder-voice, and asset sequence.
 next_decision: Mark must separately approve any publication, live-site change, or outreach.
+date: 2026-07-20
+product: PROD-001
+threads: [TRK-001]
+workflow: WF-006
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-013]
+result_updates: []
 ---
 
 # Run Card

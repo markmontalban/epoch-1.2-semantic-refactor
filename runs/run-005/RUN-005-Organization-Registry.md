@@ -7,6 +7,14 @@ status: completed
 area: account-research
 focus: Build a public-source organization registry with workforce context and buyer-function hypotheses.
 next_decision: Use the registry only for a separately approved qualification or discovery decision.
+date: 2026-07-15
+product: PROD-001
+threads: [TRK-001, TRK-002]
+workflow: WF-003
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-002, RUN-004]
+result_updates: [SEG-001, SEG-002, SEG-003, ICP-019]
 ---
 
 # Run Card

@@ -7,6 +7,15 @@ status: completed
 area: market-research
 focus: Rank recurring narratives, operating pains, terms, and topic shifts in care delivery.
 next_decision: Choose one setting-specific workflow study before any market test or outreach.
+date: 2026-07-15
+product: PROD-001
+threads: [TRK-001, TRK-002]
+workflow: WF-003
+run_type: lab-validation
+execution_kind: fork
+parent_run: RUN-007
+input_runs: [RUN-007]
+result_updates: [SEG-001, SEG-002, SEG-003]
 ---
 
 # Run Card

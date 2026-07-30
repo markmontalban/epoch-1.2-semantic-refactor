@@ -7,6 +7,14 @@ status: completed
 area: market-research
 focus: Test bounded local research against public account, buyer, category, and language questions.
 next_decision: Choose a separate manual source-opening pass or pause the branch.
+date: 2026-07-14
+product: PROD-001
+threads: [TRK-001]
+workflow: WF-003
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-002, RUN-003]
+result_updates: [CDP-001]
 ---
 
 # RUN-004 — [[growth/CDP-001|CDP-001]] local-research sprint program

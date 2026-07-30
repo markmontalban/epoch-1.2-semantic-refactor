@@ -1,0 +1,33 @@
+filters:
+  - 'record_type == "run-card"'
+properties:
+  date:
+    displayName: Date
+  run:
+    displayName: Run
+  title:
+    displayName: Title
+  threads:
+    displayName: Threads
+  workflow:
+    displayName: Workflow
+  execution_kind:
+    displayName: Execution
+  input_runs:
+    displayName: Inputs
+  result_updates:
+    displayName: Updates
+  next_decision:
+    displayName: Next decision
+views:
+  - type: table
+    name: "Logic timeline"
+    order:
+      - note.date
+      - note.run
+      - note.title
+      - note.workflow
+      - note.threads
+      - note.execution_kind
+      - note.input_runs
+      - note.result_updates

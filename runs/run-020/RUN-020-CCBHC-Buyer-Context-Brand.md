@@ -6,6 +6,15 @@ status: completed
 area: care-delivery
 focus: Revalidate the CCBHC operating context and translate the general MindfulText worldview into a bounded, buyer-aware brand and voice record without treating category evidence as demand evidence.
 next_decision: Review and either retain, revise, or park the provisional [[growth/BRAND-DIRECTION|BRD-002]] translation before using it in a future asset or market-test decision.
+date: 2026-07-29
+product: PROD-001
+threads: [TRK-001]
+workflow: WF-006
+run_type: lab-validation
+execution_kind: fork
+parent_run: RUN-014
+input_runs: [RUN-013, RUN-014, RUN-015, RUN-018]
+result_updates: [BRD-002]
 ---
 
 # RUN-020 — CCBHC Buyer Context Brand Translation

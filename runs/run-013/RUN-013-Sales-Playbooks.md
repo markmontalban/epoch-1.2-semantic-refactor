@@ -7,6 +7,15 @@ status: completed
 area: sales-research
 focus: Translate ranked market contexts into internal sponsor, wedge, proof, and evidence-gap playbooks.
 next_decision: Use a playbook only after a separate decision selects a market context for more evidence.
+date: 2026-07-20
+product: PROD-001
+threads: [TRK-001, TRK-002, TRK-003, TRK-004]
+workflow: WF-005
+run_type: lab-validation
+execution_kind: fork
+parent_run: RUN-012
+input_runs: [RUN-005, RUN-008, RUN-009, RUN-012]
+result_updates: []
 ---
 
 # Run Card

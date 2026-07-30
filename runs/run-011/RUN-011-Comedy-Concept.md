@@ -7,6 +7,14 @@ status: completed
 area: founder-positioning
 focus: Turn the founder theme into a bounded, claim-safe internal concept packet.
 next_decision: Mark may approve, revise, or park a separately carded manual social baseline.
+date: 2026-07-16
+product: PROD-001
+threads: [TRK-006]
+workflow: WF-008
+run_type: lab-validation
+execution_kind: initial
+input_runs: []
+result_updates: [SOC-008]
 ---
 
 # Run Card

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "description": "Transitional typed relationships that cannot be added safely to a historical canonical record. New records must declare their own relationships.",
+  "relations": [
+    {
+      "source": "SEG-002",
+      "type": "compares_with",
+      "target": "SEG-003",
+      "note": "RUN-002 and the later prioritization work preserve this cross-segment comparison without making either segment the owner of the other."
+    }
+  ]
+}

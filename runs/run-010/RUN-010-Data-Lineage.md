@@ -7,6 +7,14 @@ status: completed
 area: corpus-architecture
 focus: Map retained entities, identifiers, artifacts, and dependencies through [[runs/run-009/RUN-009-DSP-Qualification|RUN-009]].
 next_decision: Keep the lineage map current when a durable family or closed-run relationship changes.
+date: 2026-07-15
+product: PROD-001
+threads: []
+workflow: WF-010
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-001, RUN-002, RUN-003, RUN-004, RUN-005, RUN-006, RUN-007, RUN-008, RUN-009]
+result_updates: []
 ---
 
 # Run Card

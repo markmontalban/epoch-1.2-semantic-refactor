@@ -7,6 +7,14 @@ status: completed
 area: model-evaluation
 focus: Compare local and frontier approaches against one frozen validation-packet input.
 next_decision: Mark reviews the paired packets before authorizing any manual market test.
+date: 2026-07-13
+product: PROD-001
+threads: [TRK-001]
+workflow: WF-006
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-002]
+result_updates: []
 ---
 
 # Run 003 — Model Validation Comparison — [[growth/HYPOTHESES|GH-004]] paired local/frontier validation packet

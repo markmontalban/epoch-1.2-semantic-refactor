@@ -6,6 +6,15 @@ status: draft
 area: TBD
 focus: TBD
 next_decision: TBD
+date: TBD
+product: PROD-001
+threads: []
+workflow: TBD
+run_type: lab-validation
+execution_kind: initial
+parent_run:
+input_runs: []
+result_updates: []
 ---
 
 # Run Card Template
@@ -57,6 +66,10 @@ Last updated: 2026-07-14 23:45:39 PDT — edited by: Codex
 - parent_run is required for replay, fork, and refresh; it is N/A for an
   initial execution. subject_refs lists the relevant `GH-###`, `SEG-###`,
   `GTM-###`, `CDP-###`, or non-market scope IDs without replacing them.
+- Frontmatter `product`, `threads`, and `workflow` power the semantic explorer.
+  `input_runs` records broader evidence dependencies; `result_updates` names
+  canonical records changed by the run. Keep the legacy body fields because
+  historical tools and frozen run outputs still use them.
 - One privacy-safe trace.jsonl per run — references/hashes only, no raw sensitive content.
 - run_type allowed values: lab-validation | market-test.
 - path_id: a path card id, a `SEG-###` research scope, or LAB-SETUP /

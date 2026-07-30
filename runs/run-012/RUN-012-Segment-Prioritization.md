@@ -7,6 +7,14 @@ status: completed
 area: market-prioritization
 focus: Compare ten buyer and workflow contexts using retained evidence and limited current public research.
 next_decision: Approve, revise, or defer a matched CCBHC and FQHC qualification pass.
+date: 2026-07-20
+product: PROD-001
+threads: [TRK-001, TRK-002, TRK-003, TRK-004]
+workflow: WF-004
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-001, RUN-002, RUN-005, RUN-006, RUN-008, RUN-009]
+result_updates: [SEG-002, SEG-003]
 ---
 
 # Run Card

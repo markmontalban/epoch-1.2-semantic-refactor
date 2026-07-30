@@ -2,7 +2,7 @@
 
 **decision_id:** [[decisions/DECISION-REGISTER|DR-39]]
 
-## Decision
+## DR-39 — Learning Lab local agents
 
 Amend [[decisions/DECISION-REGISTER|DR-38]] to authorize three bounded local Learning Lab agent roles: a daily
 `qwen3:8b` tagging pass, a daily `deepseek-r1:32b` final question-review pass,

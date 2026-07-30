@@ -1,0 +1,35 @@
+filters:
+  - 'record_type == "learning-thread"'
+properties:
+  id:
+    displayName: Thread
+  title:
+    displayName: Title
+  product:
+    displayName: Product
+  status:
+    displayName: Status
+  stage:
+    displayName: Stage
+  next_decision:
+    displayName: Next decision
+  last_review:
+    displayName: Last review
+views:
+  - type: cards
+    name: "Learning threads"
+    groupBy:
+      property: note.stage
+      direction: ASC
+    order:
+      - note.id
+  - type: table
+    name: "Thread register"
+    groupBy:
+      property: note.status
+      direction: ASC
+    order:
+      - note.id
+      - note.title
+      - note.stage
+      - note.next_decision

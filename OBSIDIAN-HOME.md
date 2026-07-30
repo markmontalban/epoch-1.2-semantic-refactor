@@ -8,8 +8,10 @@
 ## Start here
 
 1. [Current State](status/CURRENT-STATE.md) — the compact view of the choices in front of Mark.
-2. [Epoch 1 Overview Canvas](EPOCH-1-OVERVIEW.canvas) — the stable visual architecture of this vault.
-3. [Project Entry Point](README.md) — folder-level navigation and the authority map.
+2. [Semantic Map Overview](SEMANTIC-MAP-OVERVIEW.canvas) — products, learning threads, workflows, runs, and playbooks.
+3. [Learning Threads](threads/LEARNING-THREADS.base) — active paths, stages, and next decisions.
+4. [Epoch 1 Overview Canvas](EPOCH-1-OVERVIEW.canvas) — the authority architecture of this vault.
+5. [Project Entry Point](README.md) — folder-level navigation and the authority map.
 
 ## Current decisions and execution
 
@@ -33,11 +35,14 @@
 
 - [Run Index](runs/README.md) — bounded executions and their outputs.
 - [Runs at a Glance](runs/RUNS-AT-A-GLANCE.base) — card and table views of each run's status, focus, and next decision.
+- [Logic Timeline](runs/LOGIC-TIMELINE.base) — runs ordered with workflow, thread, lineage, inputs, and result updates.
 - [Evidence Register](growth/EVIDENCE-REGISTER.md) — retained evidence pointers and gaps.
 - A run card defines one bounded execution; its report and outputs retain what that execution found. Run cards and working notes now use descriptive filenames prefixed by their run ID.
 
 ## Visual views
 
+- Use the [Semantic Map Overview](SEMANTIC-MAP-OVERVIEW.canvas) to enter the product/thread/workflow model.
+- Use [Learning Threads](threads/LEARNING-THREADS.base) for current paths and [Workflow Catalog](workflows/WORKFLOWS.base) for reusable procedures.
 - Use the [Overview Canvas](EPOCH-1-OVERVIEW.canvas) for a stable, curated high-level map.
 - Use the global Graph to discover broad clusters, not to determine authority.
 - Use a Local Graph at depth 1–2 when following one current-state item, decision, hypothesis, or run.

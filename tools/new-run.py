@@ -5,6 +5,10 @@ Usage:
     python3 tools/new-run.py [--type lab-validation|market-test]
                              [--path-id ID] [--title "..."]
                              [--workflow-id ID] [--workflow-version VERSION]
+                             --semantic-workflow WF-NNN
+                             [--product PROD-NNN] [--threads TRK-NNN,...]
+                             [--input-runs RUN-NNN,...]
+                             [--result-updates ID,...]
                              [--execution-kind initial|replay|fork|refresh]
                              [--parent-run RUN-NNN] [--subject-refs "..."]
 
@@ -67,6 +71,14 @@ def filename_label(title, word_limit):
     return "-".join(words[:word_limit] or ["Untitled"])
 
 
+def inline_list(value):
+    """Normalize a comma-separated CLI value as a YAML inline list."""
+    if not value:
+        return "[]"
+    items = [item.strip() for item in value.split(",") if item.strip()]
+    return "[{}]".format(", ".join(items))
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Create the next runs/run-NNN scaffold from templates/Run-Card-Template.md."
@@ -83,6 +95,15 @@ def main():
     parser.add_argument("--workflow-id", dest="workflow_id", default=None)
     parser.add_argument("--workflow-version", dest="workflow_version", default=None)
     parser.add_argument(
+        "--semantic-workflow",
+        required=True,
+        help="Stable workflow catalog owner, for example WF-007",
+    )
+    parser.add_argument("--product", default="PROD-001")
+    parser.add_argument("--threads", default="")
+    parser.add_argument("--input-runs", dest="input_runs", default="")
+    parser.add_argument("--result-updates", dest="result_updates", default="")
+    parser.add_argument(
         "--execution-kind",
         dest="execution_kind",
         choices=["initial", "replay", "fork", "refresh"],
@@ -96,6 +117,10 @@ def main():
         parser.error("--parent-run is not allowed for an initial execution")
     if args.execution_kind in ("replay", "fork", "refresh") and not args.parent_run:
         parser.error("--parent-run is required for {} executions".format(args.execution_kind))
+    if not re.fullmatch(r"WF-\d{3}", args.semantic_workflow):
+        parser.error("--semantic-workflow must use WF-NNN")
+    if not re.fullmatch(r"PROD-\d{3}", args.product):
+        parser.error("--product must use PROD-NNN")
 
     if not TEMPLATE.is_file():
         sys.exit("error: template not found: {}".format(TEMPLATE))
@@ -113,6 +138,15 @@ def main():
     card = TEMPLATE.read_text(encoding="utf-8")
     card = set_property(card, "run", run_id)
     card = set_property(card, "title", title)
+    card = set_property(card, "date", today)
+    card = set_property(card, "product", args.product)
+    card = set_property(card, "threads", inline_list(args.threads))
+    card = set_property(card, "workflow", args.semantic_workflow)
+    card = set_property(card, "run_type", args.run_type)
+    card = set_property(card, "execution_kind", args.execution_kind)
+    card = set_property(card, "parent_run", args.parent_run or "")
+    card = set_property(card, "input_runs", inline_list(args.input_runs))
+    card = set_property(card, "result_updates", inline_list(args.result_updates))
     card = re.sub(
         r"^# Run Card Template$",
         "# {} — {}".format(run_id, title),

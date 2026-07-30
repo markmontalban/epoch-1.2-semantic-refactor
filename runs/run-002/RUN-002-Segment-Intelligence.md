@@ -7,6 +7,14 @@ status: completed
 area: market-research
 focus: Map care-delivery contexts, buyer roles, language, category approaches, and candidate accounts.
 next_decision: Use the retained evidence to choose or defer one narrower follow-on hypothesis.
+date: 2026-07-13
+product: PROD-001
+threads: [TRK-001, TRK-002]
+workflow: WF-002
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-001]
+result_updates: [SEG-001, SEG-002, SEG-003, GH-004, GTM-001]
 ---
 
 # Run 002 — Segment Intelligence + Local Research Evaluation

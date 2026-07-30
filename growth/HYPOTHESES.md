@@ -99,6 +99,30 @@ starting thought may leave either field blank; the agent labels new claims
 
 - EXP-20260713-01 — depth: standard; tactic: Run 002 public segment intelligence for `SEG-002`; profiles: discover; outputs: [Run 002 blackboard](../runs/run-002/RUN-002-Segment-Research-Notes.md), [account intelligence](ACCOUNT-INTELLIGENCE.md), [GTM-001](GTM-MOTIONS.md#gtm-001--account-led-buyer-discovery); result: community behavioral health is a focused first branch under care delivery, with public workforce signals but no account-level buyer intent; next question: which public account has sufficient workforce context and buyer-role visibility to justify one manual discovery packet?
 
+### GH-005 — Reflective onboarding to a personalized MindfulText rhythm
+
+> Canonical entry restored 2026-07-30 from [[runs/run-016/RUN-016-Reflective-Onboarding|RUN-016]]
+> and [[decisions/2026-07-21-product-opportunity-ledger|DR-37]]. This repairs the
+> previously referenced but missing owner; it does not add evidence or change
+> the historical run result.
+
+- Starting thought: **founder-assumption** — A short, value-giving guided reflection may help a prospective member experience MindfulText before commitment and configure one personally relevant practice focus.
+- Product: MindfulText
+- Segment ID:
+- Segment: Direct-to-consumer personal experience; no organization segment is asserted.
+- ICP ID: [[growth/ICP-REGISTRY|ICP-021]]
+- ICP: Adults who are not seeking therapy but may be open to a private, text-based, nonclinical mindfulness practice.
+- Vertical / context: Product-led acquisition and activation. The reflection and resulting personal page must not diagnose, treat, infer sensitive traits, or imply clinical personalization.
+- Angle: **founder-assumption** — “Your MindfulText Rhythm” can turn a guided reflection into a transparent, member-controlled starting practice without requiring an opaque AI profile.
+- GTM strategy: **agent-hypothesis** — Compare reflective onboarding with a generic trial path only after a separately approved prototype and participant-test decision.
+- GTM IDs:
+- Pain: **agent-hypothesis** — A generic trial may ask for commitment before a prospective member understands the experience or sees personal relevance.
+- Signals: [[runs/run-016/outputs/RUN-016-REPORT|RUN-016]] found the concept coherent enough for an internal prototype decision. It did not test prospective-member value, conversion, retention, or willingness to pay.
+- Offer-Outcome: Test reflection completion, trial start, first practice, and seven-day use separately. Do not infer paid demand, retention, or therapeutic benefit from prototype engagement.
+- Research: bounded internal concept validation completed in [[runs/run-016/RUN-016-Reflective-Onboarding|RUN-016]]
+- Profile tracking: off
+- Status: exploring
+
 ### GH-006 — Game-break web mindfulness challenge via AppLovin
 
 - Starting thought: **founder-assumption** — A short web-based game or challenge that helps a person practice mindfulness may fit the moment immediately after a mobile-game break; AppLovin could test whether that moment creates useful discovery for MindfulText.

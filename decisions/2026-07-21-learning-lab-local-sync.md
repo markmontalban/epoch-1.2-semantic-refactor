@@ -2,7 +2,7 @@
 
 **decision_id:** [[decisions/DECISION-REGISTER|DR-38]]
 
-## Decision
+## DR-38 — Local Learning Lab sync
 
 Create the local-only MindfulText Learning Lab as a private founder tool. It
 may read the explicitly approved Markdown corpus, store question drafts,

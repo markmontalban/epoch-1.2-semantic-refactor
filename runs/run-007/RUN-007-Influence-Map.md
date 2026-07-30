@@ -7,6 +7,14 @@ status: completed
 area: influence-research
 focus: Identify public channels and sources shaping care-delivery and workforce-stress conversation.
 next_decision: Select a narrower channel comparison only after Mark chooses the branch.
+date: 2026-07-15
+product: PROD-001
+threads: [TRK-001, TRK-002]
+workflow: WF-003
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-005, RUN-006]
+result_updates: []
 ---
 
 # Run Card

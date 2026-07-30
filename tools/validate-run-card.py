@@ -19,6 +19,7 @@ import sys
 from pathlib import Path
 
 FIELD_RE = re.compile(r"^\s*(?:-\s*)?\*\*([^:*]+?):\*\*\s*(.*?)\s*$")
+PROPERTY_RE = re.compile(r"^([A-Za-z0-9_-]+):\s*(.*?)\s*$")
 
 REQUIRED = [
     "run_id",
@@ -57,6 +58,20 @@ def parse_fields(path):
     return fields
 
 
+def parse_properties(path):
+    properties = {}
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines or lines[0] != "---":
+        return properties
+    for line in lines[1:]:
+        if line == "---":
+            break
+        match = PROPERTY_RE.match(line)
+        if match:
+            properties[match.group(1)] = match.group(2)
+    return properties
+
+
 def is_unset(value, na_is_unset=True):
     v = value.strip().upper()
     if v in UNSET:
@@ -72,16 +87,42 @@ def main():
     path = Path(sys.argv[1])
     try:
         fields = parse_fields(path)
+        properties = parse_properties(path)
     except OSError as exc:
         print("error: cannot read {}: {}".format(path, exc), file=sys.stderr)
         sys.exit(1)
 
     problems = []
+    for name in (
+        "record_type",
+        "run",
+        "date",
+        "product",
+        "threads",
+        "workflow",
+        "run_type",
+        "execution_kind",
+        "input_runs",
+        "result_updates",
+    ):
+        if name not in properties or properties[name].strip().upper() == "TBD":
+            problems.append("missing semantic frontmatter property: {}".format(name))
+
+    if properties.get("record_type") != "run-card":
+        problems.append("record_type must be run-card")
+    if properties.get("product") and not re.fullmatch(r"PROD-\d{3}", properties["product"]):
+        problems.append("product must use PROD-NNN")
+    if properties.get("workflow") and not re.fullmatch(r"WF-\d{3}", properties["workflow"]):
+        problems.append("workflow must use WF-NNN")
+    if properties.get("date") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", properties["date"]):
+        problems.append("date frontmatter must use YYYY-MM-DD")
     for name in REQUIRED:
         if is_unset(fields.get(name, "")):
             problems.append("missing required field: {}".format(name))
 
     run_id = fields.get("run_id", "")
+    if properties.get("run", "").upper() != run_id.upper():
+        problems.append("frontmatter run must match body run_id")
     run_match = re.fullmatch(r"RUN-(\d+)", run_id, re.IGNORECASE)
     requires_execution_fields = bool(
         run_match and int(run_match.group(1)) >= 5

@@ -7,3 +7,8 @@ __pycache__/
 learning-lab/node_modules/
 learning-lab/dist/
 learning-lab/data/
+graph-explorer/node_modules/
+graph-explorer/dist/
+graph-explorer/.next/
+graph-explorer/.wrangler/
+graph-explorer/public/graph-index.json

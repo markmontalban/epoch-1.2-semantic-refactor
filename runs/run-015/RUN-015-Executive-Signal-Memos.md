@@ -7,6 +7,14 @@ status: completed
 area: account-research
 focus: Test whether public organization research can produce a useful executive signal memo.
 next_decision: Consider Gulf Coast Center only for a separately approved manual test; no outreach is authorized.
+date: 2026-07-21
+product: PROD-001
+threads: [TRK-001]
+workflow: WF-006
+run_type: lab-validation
+execution_kind: initial
+input_runs: [RUN-005, RUN-008, RUN-012, RUN-014]
+result_updates: []
 ---
 
 # Run Card

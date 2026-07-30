@@ -13,6 +13,18 @@ properties:
     displayName: Focus
   next_decision:
     displayName: Next decision
+  product:
+    displayName: Product
+  threads:
+    displayName: Learning threads
+  workflow:
+    displayName: Workflow
+  run_type:
+    displayName: Run type
+  execution_kind:
+    displayName: Execution
+  date:
+    displayName: Date
   file.mtime:
     displayName: Last modified
 views:
@@ -31,3 +43,8 @@ views:
     order:
       - note.run
       - note.title
+      - note.product
+      - note.threads
+      - note.workflow
+      - note.execution_kind
+      - note.date
