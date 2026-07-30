@@ -11,10 +11,10 @@ Use `growth/HYPOTHESES.md` as the working **Growth Hypotheses** entry
 point. A new `GH-###` begins directly as `exploring`; there is no inbox state,
 queue, or intake stage. Mark may add only a starting thought and leave every
 other field blank. The selected agent can then immediately fill gaps, research
-public sources, and draft paths under DR-23's safeguards.
+public sources, and draft paths under [[decisions/2026-07-12-growth-hypothesis-inbox#dr-23--growth-hypothesis-inbox-and-agent-assisted-exploration|DR-23]]'s safeguards.
 
-This supersedes the active workflow use of “Growth Hypothesis Inbox” in DR-23.
-DR-23 remains the authority for agent-assisted research, `agent-hypothesis`
+This supersedes the active workflow use of “Growth Hypothesis Inbox” in [[decisions/2026-07-12-growth-hypothesis-inbox#dr-23--growth-hypothesis-inbox-and-agent-assisted-exploration|DR-23]].
+[[decisions/2026-07-12-growth-hypothesis-inbox#dr-23--growth-hypothesis-inbox-and-agent-assisted-exploration|DR-23]] remains the authority for agent-assisted research, `agent-hypothesis`
 labeling, and eventual validation through real customer feedback.
 
 **Status:** Mark-approved 2026-07-12; applied to the current entry point,

@@ -2,7 +2,7 @@
 
 Last updated: 2026-07-12 23:13:16 PDT — edited by: Codex
 
-**Status:** APPROVED by Mark 2026-07-11, unamended (E1-R1A02; decisions/2026-07-11-run-001-approvals.md DR-14). Adopted as draft 2026-07-10 (DR-5, charter §14.13).
+**Status:** APPROVED by Mark 2026-07-11, unamended (E1-R1A02; decisions/2026-07-11-run-001-approvals.md [[decisions/2026-07-11-run-001-approvals#dr-14--e1-r1a02-rubric-v01-approved|DR-14]]). Adopted as draft 2026-07-10 ([[decisions/2026-07-10-epoch-1-foundation#dr-5--charter-amendments-adopted-v11|DR-5]], charter §14.13).
 **Purpose:** the minimal path-scoring rubric required by charter §14.13. Every ROI path card is scored here before ranking.
 
 ## Rubric — score each path 0–2 per dimension (max 10)

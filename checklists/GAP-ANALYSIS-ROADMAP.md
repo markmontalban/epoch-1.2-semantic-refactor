@@ -3,7 +3,7 @@
 Last updated: 2026-07-15 14:12:05 PDT — edited by: Codex
 
 **Status:** Mark-directed planning reference — proposal backlog only (`E2h`,
-`DR-35`). It does not replace the [Master Checklist](../MASTER-CHECKLIST.md),
+[[decisions/2026-07-15-gap-analysis-roadmap-and-feature-backlog#dr-35--gap-analysis-roadmap-and-feature-backlog|DR-35]]). It does not replace the [Master Checklist](../MASTER-CHECKLIST.md),
 approve any build or market test, authorize outreach, change the spend caps,
 or establish a product claim.
 
@@ -34,7 +34,7 @@ repeatable, decision-ready evidence. No row is a total score.
 
 | Ref | VC lens translated for MindfulText | Current assessment | Primary unknown | Gate it informs |
 | --- | --- | --- | --- | --- |
-| `B1` | Market and buyer | **2** — `SEG-001`, `SEG-002`, registry, and public pain context exist. | Which buyer owns a live problem, budget, and evaluation path? | `E4` |
+| `B1` | Market and buyer | **2** — [[growth/SEGMENTS#seg-001--care-delivery-organizations|SEG-001]], [[growth/SEGMENTS#seg-002--community-behavioral-health-providers|SEG-002]], registry, and public pain context exist. | Which buyer owns a live problem, budget, and evaluation path? | `E4` |
 | `B2` | Product and differentiation | **1** — the low-disruption, nonclinical text-support concept is clear. | When is it additive rather than redundant to EAPs, wellness apps, training, or structural fixes? | `E4` |
 | `B3` | Adoption and pilot plan | **1** — Run 003 supplies a draft discovery packet. | Who uses it, how it fits the workday, and what result would make a pilot worthwhile? | `E5`–`E6` |
 | `B4` | Trust, claims, and procurement | **1** — nonclinical boundaries are stated. | What privacy, security, implementation, and claim questions would block a responsible evaluation? | `E5`–`E6` |

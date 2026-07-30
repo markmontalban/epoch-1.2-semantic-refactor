@@ -1,14 +1,14 @@
-# DR-36 — Social intelligence and founder-content exploration direction
+# [[decisions/DECISION-REGISTER|DR-36]] — Social intelligence and founder-content exploration direction
 
-Last updated: 2026-07-17 01:12:20 PDT — edited by: Codex
+Last updated: 2026-07-20 10:50:00 PDT — edited by: Codex
 
-**decision_id:** DR-36\\
+**decision_id:** [[decisions/DECISION-REGISTER|DR-36]]\\
 **date:** 2026-07-16\\
 **decider:** Mark\\
 **recorded_by:** Codex\\
 **status:** Founder direction recorded; Mark selected the cross-cutting Epoch 1
 lane and founder-theme route, then approved and completed the internal
-`SOC-008` positioning pass as `RUN-011`. The manual social baseline and every
+[[growth/SOCIAL-IDEA-LEDGER|SOC-008]] positioning pass as [[runs/run-011/RUN-011-Comedy-Concept|RUN-011]]. The manual social baseline and every
 build, monitoring process, publishing action, or outreach action remain
 unapproved.
 
@@ -47,7 +47,7 @@ human-in-the-loop automation without flattening founder intuition or voice.
 - `C1` Mark later selected one Epoch 1 lab with a cross-cutting **Social
   Learning Lane**, plus the founder-theme route as the first internal decision.
   This extends charter §14.8, where social intelligence is a lab input rather
-  than a parallel program. `RUN-011` completed the `SOC-008` internal
+  than a parallel program. [[runs/run-011/RUN-011-Comedy-Concept|RUN-011]] completed the [[growth/SOCIAL-IDEA-LEDGER|SOC-008]] internal
   positioning pass without authorizing a manual baseline or external action.
 - `C2` Treat Git-tracked Epoch records as the learning source of truth. Treat
   Pulse, n8n, Replit, Sheets, databases, and platform saves as replaceable
@@ -64,7 +64,7 @@ human-in-the-loop automation without flattening founder intuition or voice.
 - `D1` The lane placement and first internal decision are resolved. A manual
   social baseline remains a separate open decision requiring a new bounded run
   card and Mark's specific approval.
-- `D2` `RUN-011` qualified a founder-theme route only. No public social channel,
+- `D2` [[runs/run-011/RUN-011-Comedy-Concept|RUN-011]] qualified a founder-theme route only. No public social channel,
   cadence, metric, account strategy, or publishable content is selected.
 - `D3` No Reddit collector reactivation, topic repointing, automated monitoring,
   or commercial use is authorized. Current Reddit API/developer terms and each
@@ -81,7 +81,9 @@ human-in-the-loop automation without flattening founder intuition or voice.
   `growth/SOCIAL-IDEA-LEDGER.md`, and
   `checklists/SOCIAL-LEARNING-LANE.md`.
 - **Related reconciliation:** `runs/README.md` now includes the already-
-  completed RUN-010 and RUN-011 work noted in the updated Master Checklist.
-- **Checklist mapping:** `E2j` and `E2k` are done; `E2l` and `E2m` remain open.
+  completed [[runs/run-010/RUN-010-Data-Lineage|RUN-010]] and [[runs/run-011/RUN-011-Comedy-Concept|RUN-011]] work noted in the updated Master Checklist.
+- **Checklist mapping:** `E2j` through `E2l` are done; `E2m` and `E2n` remain
+  open. `E2l` records the later [[runs/run-012/RUN-012-Segment-Prioritization|RUN-012]] segment-prioritization pass and does
+  not amend this social-direction decision.
 - **Review trigger:** a proposed manual social baseline or a materially changed
   platform, data, or compliance boundary.

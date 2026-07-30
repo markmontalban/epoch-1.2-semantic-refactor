@@ -66,9 +66,9 @@ Adopt all P1 amendments from Doc B §6 **except** its gate-rule claim (§3), whi
 - [ ] Bootstrap rule: `LAB-SETUP` for scaffolding; `MT-BOOTSTRAP` for Runs 001–002; both carry data class, owner, budget, stop condition, review date
 - [ ] Run taxonomy: `lab-validation` (evidence quality, reproducibility, cost) vs `market-test` (stated signal level)
 - [ ] Hermes sequence: compaction/manual support only through Runs 001–002; reassess after Run 003
-- [x] Targets re-dated (DR-6): lab-success criterion (three runs + packet) **2026-08-14** (was Jul 23); level-2/3 revenue target **2026-09-04** (was Aug 8). Confirmed by Mark 2026-07-10; amendable by dated decision record
+- [x] Targets re-dated ([[decisions/2026-07-10-epoch-1-foundation#dr-6--targets-re-dated|DR-6]]): lab-success criterion (three runs + packet) **2026-08-14** (was Jul 23); level-2/3 revenue target **2026-09-04** (was Aug 8). Confirmed by Mark 2026-07-10; amendable by dated decision record
 - [ ] Social intelligence is an **input to the lab**, not a parallel program (Doc A §3.5 / Doc B §5.1); no parallel social-intel build in Epoch 1
-- [ ] Pi's Epoch-1 role: optional-later (charter §5) stands — recorded in DR-7
+- [ ] Pi's Epoch-1 role: optional-later (charter §5) stands — recorded in [[decisions/2026-07-10-epoch-1-foundation#dr-7--pis-epoch-1-role|DR-7]]
 - [ ] Minimal path-scoring rubric (Doc A §3.9) adopted as `growth/SCORECARD.md`; required before Run 001 ranking
 - [ ] One privacy-safe `trace.jsonl` per run (references/hashes, not raw inputs)
 - [ ] Post-Run-003 evaluation: Hermes logging vs dashboard expansion; dashboard work is stability-only until then
@@ -79,7 +79,7 @@ Adopt all P1 amendments from Doc B §6 **except** its gate-rule claim (§3), whi
 - [x] `../../archive/epoch-1/epoch-1-scope-DRAFT.md` carries the Superseded banner (2026-07-09)
 - [x] `../../archive/epoch-1/mindfultext-epoch-1-finalization-brief.md` archived 2026-07-10 (banner added)
 - [x] P1/P2 amendments applied to `../CHARTER.md` → **v1.1**, the single canonical Epoch 1 doc (new §14)
-- [x] Dated decision record: `../decisions/2026-07-10-epoch-1-foundation.md` (DR-1…DR-12)
+- [x] Dated decision record: `../decisions/2026-07-10-epoch-1-foundation.md` ([[decisions/2026-07-10-epoch-1-foundation#dr-1--d1-gate-rule-option-c-per-surface|DR-1]]…[[decisions/2026-07-10-epoch-1-foundation#dr-12--evidence-the-run-001-data-class|DR-12]])
 
 > Remaining Phase 0 work is on-Mac only: apply D2/D3 (dashboard settings, watchers, log timestamps) and align `gates.js`/AGENTS.md to D1/D4. Docs-side Phase 0 is complete.
 
@@ -100,12 +100,12 @@ Adopt all P1 amendments from Doc B §6 **except** its gate-rule claim (§3), whi
 
 ### 1.2 — LAB-SETUP: scaffold the lab *(executed 2026-07-10)*
 
-- [x] Folder contract per charter §10 at `Docs/mindfultext-epoch-1/` (staging; final location = DR-9, pending Mark)
+- [x] Folder contract per charter §10 at `Docs/mindfultext-epoch-1/` (staging; final location = [[decisions/2026-07-10-epoch-1-foundation#dr-9--lab-location|DR-9]], pending Mark)
 - [x] Four templates: run-card, path-card, decision, compaction
 - [x] Team config v0.1 (Run 001 = Claude-only; v0.2/v0.3 stubs for Runs 002/003)
 - [x] Workflow `workflows/research-to-signal.md` + privacy-safe `trace.jsonl` schema
 - [x] Utilities `tools/new-run.py` and `tools/validate-run-card.py`, tested
-- [x] `datasets/` gitignored; local git repo initialized (no remote), bootstrap commit (DR-10)
+- [x] `datasets/` gitignored; local git repo initialized (no remote), bootstrap commit ([[decisions/2026-07-10-epoch-1-foundation#dr-10--git-bootstrap-exception|DR-10]])
 
 ### 1.3 — Evidence inventory (founder-approved) & import
 
@@ -120,8 +120,8 @@ Before Run 001, record for every input asset:
 
 ### 1.4 — Spending caps
 
-- [x] Per-run external-model spending cap: **$0** (fail-closed default, DR-8; Mark raises by dated record)
-- [x] Sandbox spending cap: **$0** (DR-8)
+- [x] Per-run external-model spending cap: **$0** (fail-closed default, [[decisions/2026-07-10-epoch-1-foundation#dr-8--spending-caps|DR-8]]; Mark raises by dated record)
+- [x] Sandbox spending cap: **$0** ([[decisions/2026-07-10-epoch-1-foundation#dr-8--spending-caps|DR-8]])
 - [x] Recorded in the decision record. Note: Run 001 via Mark's Claude subscription incurs no per-run provider spend, so it fits under the $0 cap
 
 ### 1.5 — Platform stability check *(gates Run 002 only — Run 001 proceeds in parallel)*
@@ -140,7 +140,7 @@ Before Run 001, record for every input asset:
 
 ### 1.7 — Run 001 card & rubric
 
-- [x] Run 001 card drafted (`runs/run-001/run-card.md`, via `new-run.py`): `run_type: lab-validation`, `path_id: MT-BOOTSTRAP`, owner, budget, stop condition, review date, charter v1.1 — data class pending Mark (§1.3)
+- [x] Run 001 card drafted (`runs/run-001/RUN-001-Growth-Path-Ranking.md`, via `new-run.py`): `run_type: lab-validation`, `path_id: MT-BOOTSTRAP`, owner, budget, stop condition, review date, charter v1.1 — data class pending Mark (§1.3)
 - [x] Rubric v0.1 drafted (`growth/SCORECARD.md`) — Mark reviews before Run 001 ranking
 - [ ] Define what Run 001 measures: evidence quality, decision usefulness, reproducibility, latency, cost (fields present in card; confirm at approval)
 - [ ] Mark reviews Run 001 card → approve or amend
@@ -216,8 +216,8 @@ This is the fork in the road. After Run 003, Mark decides:
 
 ### 3.4 — Confirm or amend target dates
 
-- [ ] Aug 14 packet target (re-dated from Jul 23, DR-6): was it met? If not, trigger review/re-scope (never expanded automation)
-- [ ] Sep 4 signal target (re-dated from Aug 8, DR-6): realistic given Run 003 outcomes? Mark confirms or amends
+- [ ] Aug 14 packet target (re-dated from Jul 23, [[decisions/2026-07-10-epoch-1-foundation#dr-6--targets-re-dated|DR-6]]): was it met? If not, trigger review/re-scope (never expanded automation)
+- [ ] Sep 4 signal target (re-dated from Aug 8, [[decisions/2026-07-10-epoch-1-foundation#dr-6--targets-re-dated|DR-6]]): realistic given Run 003 outcomes? Mark confirms or amends
 
 **Phase 3 exit criteria:** Run 003 complete, post-run evaluation done, Mark has made the platform-expansion and market-test-path decisions with dated records.
 
@@ -284,7 +284,7 @@ Run 001 ──► Run 002 ──► Run 003 ──► Post-Run-003 eval
 | Evidence inventory | Mark assigns/approves |
 | Hermes execution surface | Mark |
 | Run card approval | Mark |
-| Pi's Epoch-1 role | Mark (default optional-later, recorded DR-7 2026-07-10) |
+| Pi's Epoch-1 role | Mark (default optional-later, recorded [[decisions/2026-07-10-epoch-1-foundation#dr-7--pis-epoch-1-role|DR-7]] 2026-07-10) |
 | Merge review | Claude reviews Codex; Mark approves or waives |
 | Code changes | Codex/Claude implement; Mark approves |
 | Outbound actions | Mark at the point of execution — always |

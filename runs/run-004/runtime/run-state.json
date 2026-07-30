@@ -18,7 +18,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-01.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-01.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-01.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-01.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-01-Category-Problem-Language.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-01.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -41,7 +41,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-01.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-01.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-01.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-01.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-01-Gulf-Coast-Workforce.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-01.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -64,7 +64,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-02.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-02.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-02.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-02.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-02-Wellness-Offer-Categories.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-02.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -87,7 +87,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-02.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-02.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-02.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-02.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-02-Centerstone-Workforce.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-02.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -110,7 +110,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-03.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-03.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-03.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-03.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-03-Alternative-Delivery-Formats.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-03.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -133,7 +133,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-03.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-03.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-03.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-03.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-03-Sante-Workforce-Context.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-03.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -156,7 +156,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-04.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-04.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-04.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-04.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-04-CCBHC-Workforce-Language.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-04.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -179,7 +179,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-04.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-04.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-04.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-04.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-04-Workforce-Signal-Accounts.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-04.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -202,7 +202,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-05.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-05.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-05.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-05.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-05-Workforce-Strain-Sources.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-05.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -248,7 +248,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-06.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-06.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-06.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-06.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-06-Structural-Change-Messaging.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-06.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -294,7 +294,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-07.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-07.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-07.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-07.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-07-Terminology-Mismatch.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-07.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -340,7 +340,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-08.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-08.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-08.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-08.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-08-Unsupported-Competitor-Claims.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-08.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -363,7 +363,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-09.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-09.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-09.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-09.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-09-Marketing-Opportunity-Record.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-09.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -409,7 +409,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-10.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-10.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/GO20-10.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-10.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/GO20-10-Verified-Language-Map.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/GO20-10.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -455,7 +455,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-01.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-01.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-01.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/LL70-01.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/LL70-01-Account-Evidence-Comparison.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/LL70-01.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -478,7 +478,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-02.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-02.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-02.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/LL70-02.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/LL70-02-Workforce-Context-Comparison.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/LL70-02.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -501,7 +501,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-03.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-03.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/LL70-03.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/LL70-03.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/LL70-03-Top-Account-Challenge.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/LL70-03.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -524,7 +524,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-05.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-05.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-05.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-05.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-05-Target-Claim-Verification.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-05.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -547,7 +547,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-06.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-06.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-06.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-06.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-06-Workforce-Terms.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-06.pid"
       },
       "status": "COMPLETED_SCORED",
@@ -570,7 +570,7 @@
         "err": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-07.err.txt",
         "usage": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-07.usage.json",
         "exit": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/raw/QW36-07.exit",
-        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-07.md",
+        "prompt": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/prompts/QW36-07-Shift-Work-Constraints.md",
         "pid": "/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/runs/run-004/runtime/pids/QW36-07.pid"
       },
       "status": "COMPLETED_SCORED",

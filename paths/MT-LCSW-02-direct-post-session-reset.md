@@ -4,8 +4,8 @@ Last updated: 2026-07-12 23:54:25 PDT — edited by: Codex
 
 **path_id:** MT-LCSW-02
 **status:** candidate
-**hypothesis_id:** GH-002
-**icp_id:** ICP-018
+**hypothesis_id:** [[growth/HYPOTHESES#gh-002--mindfultext-for-elevated-stress-lcsws|GH-002]]
+**icp_id:** [[growth/ICP-REGISTRY|ICP-018]]
 **buyer:** Individual LCSW.
 **user:** The same individual LCSW who self-identifies as experiencing elevated occupational stress.
 **vertical_context:** Client-facing clinical social-work practice, including an optional between-session or end-of-day context.

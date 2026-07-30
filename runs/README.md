@@ -245,3 +245,28 @@ inventory; no source data, runtime, credential, workflow, or external system was
 accessed or changed. [Run card](run-019/RUN-019-Pulse-Public-Asset-Audit.md) ·
 [Qualification](run-019/outputs/PULSE-PUBLIC-ASSET-QUALIFICATION.md) ·
 [Report](run-019/outputs/RUN-019-REPORT.md)
+
+## Run 020 — CCBHC buyer-context brand translation
+
+Run 020 revalidated the CCBHC operating context using current public sources,
+then created a provisional route-specific translation of the general MindfulText
+worldview in [[growth/BRAND-DIRECTION|BRD-002]]. It distinguishes public
+operating facts from stakeholder-role hypotheses and explicitly does not
+establish buyer demand, budget, authority, clinical impact, public resonance,
+or a ready-to-publish message. [Run card](run-020/RUN-020-CCBHC-Buyer-Context-Brand.md)
+· [Stakeholder map](run-020/outputs/CCBHC-STAKEHOLDER-DAY-IN-THE-LIFE.md)
+· [BRD-002 critique](run-020/outputs/BRD-002-CRITIQUE.md)
+· [Report](run-020/outputs/RUN-020-REPORT.md)
+
+## Run 021 — Wearable roadmap and alpha-focus pick
+
+Run 021 compared blood-pressure reduction, sleep, and burnout across bottom-up
+sizing, access speed, and claims exposure. Sizing did not separate the
+candidates and access was effectively tied at alpha scale; the run recommends
+sleep first because its bounded promise fits a lower-risk general-wellness
+posture. Burnout remains second and blood pressure third. The recommendation
+requires a separate dated founder decision and authorizes no product, external
+action, clinical claim, contact, or spend.
+[Run card](run-021/RUN-021-Wearable-Roadmap-Alpha-Focus.md) ·
+[Decision matrix](run-021/outputs/FOCUS-DECISION-MATRIX.md) ·
+[Report](run-021/outputs/RUN-021-REPORT.md)

@@ -62,11 +62,11 @@ source ID.
 
 | Change | Plain-English meaning | Current authority |
 | --- | --- | --- |
-| `RUN-010` closed | The original lineage pass is now a completed historical run rather than an active generation step. | [Run 010 card](runs/run-010/run-card.md) |
+| `RUN-010` closed | The original lineage pass is now a completed historical run rather than an active generation step. | [Run 010 card](runs/run-010/RUN-010-Data-Lineage.md) |
 | `SEG-007` and `SEG-008` appeared | The segment map now separately represents higher-support community mental-health participants and the workforce supporting them. They were added after the original map's snapshot and have no separate originating run recorded. | [Segment Map](growth/SEGMENTS.md) |
 | `DR-36` was recorded | Mark's social-intelligence and founder-content ideas received a durable direction record; Mark later selected the cross-cutting lane and founder-theme route. | [DR-36](decisions/2026-07-16-social-intelligence-founder-content-direction.md) |
 | `SOC-001`–`SOC-008` were created | Eight social/content/workflow thoughts can be preserved without prematurely turning each one into a hypothesis or GTM motion. | [Social Idea Ledger](growth/SOCIAL-IDEA-LEDGER.md) |
-| `RUN-011` closed | The internal `SOC-008` pass produced a positioning packet and advanced the theme only to a separately gated manual-baseline decision. It performed no publishing, monitoring, automation, or outreach. | [Run 011 card](runs/run-011/run-card.md) |
+| `RUN-011` closed | The internal `SOC-008` pass produced a positioning packet and advanced the theme only to a separately gated manual-baseline decision. It performed no publishing, monitoring, automation, or outreach. | [Run 011 card](runs/run-011/RUN-011-Comedy-Concept.md) |
 | Folder roles were clarified | Root files hold project authorities plus named project-level references; reusable business records live in `growth/`; executions live in `runs/`; proposals live in `checklists/`; approvals live in `decisions/`; re-entry material lives in `status/`. | [Project entry point](README.md) |
 
 There has still been **no social-media external execution**. `RUN-011` was an
@@ -176,7 +176,7 @@ SOC-### founder idea
 This is a coverage cue, not a priority ranking. “Named only” means the segment
 exists canonically but does not yet own a segment-specific run.
 
-| Segment | Coverage through RUN-011 | Artifact trail |
+| Segment | Coverage through [[runs/run-011/RUN-011-Comedy-Concept|RUN-011]] | Artifact trail |
 | --- | --- | --- |
 | `SEG-001 — Care-delivery organizations` | **Researched** — root or subject in `RUN-002` and `RUN-004…RUN-009` | Segment-linked research, durable accounts, ecosystem, influence, narrative, and DSP qualification artifacts |
 | `SEG-002 — Community behavioral-health providers` | **Researched** — focused branch in `RUN-002…RUN-008` | `GH-004`, `GTM-001`, `CDP-001`, account and buyer-function records |
@@ -274,90 +274,90 @@ state without requiring the reader to decode a graph first.
 
 ### D1. Runs 001–003 — From founder belief to one test packet
 
-> **RUN-001 — Explore the elevated-stress LCSW opportunity**<br>
+> **[[runs/run-001/RUN-001-Growth-Path-Ranking|RUN-001]] — Explore the elevated-stress LCSW opportunity**<br>
 > *Job: turn one founder belief into several concrete buyer × pain × channel × offer paths.*<br>
 > **Started with:** `GH-002 — MindfulText for elevated-stress LCSWs`, founder assumptions, and bounded public research.<br>
 > **Produced:** five `MT-LCSW-*` path cards, a ranked scorecard, evidence gaps, a U.S. TAM note, and `PP-001…PP-005`.<br>
 > **Fed forward into:** `RUN-002`, later `RUN-009`, and the organization-sponsored path.<br>
-> **State:** Complete; no outbound action. [Run card](runs/run-001/run-card.md) · [Path index](paths/README.md)
+> **State:** Complete; no outbound action. [Run card](runs/run-001/RUN-001-Growth-Path-Ranking.md) · [Path index](paths/README.md)
 
-> **RUN-002 — Map the care-delivery market and first buyer branch**<br>
+> **[[runs/run-002/RUN-002-Segment-Intelligence|RUN-002]] — Map the care-delivery market and first buyer branch**<br>
 > *Job: convert a broad organization-sponsored idea into a segment, account, buyer-role, language, and category map.*<br>
 > **Started with:** `SEG-001 — Care-delivery organizations`, historical `GH-002`, and `EV-001`.<br>
 > **Produced:** focused `SEG-002`, atomic `GH-004`, `GTM-001`, candidate-account intelligence, buyer groups, and category/contradiction research.<br>
 > **Fed forward into:** `RUN-003`, `CDP-001`, and the later account registry.<br>
-> **State:** Public research complete; local classify work was inconclusive; no outreach. [Run card](runs/run-002/run-card.md) · [Account intelligence](growth/ACCOUNT-INTELLIGENCE.md)
+> **State:** Public research complete; local classify work was inconclusive; no outreach. [Run card](runs/run-002/RUN-002-Segment-Intelligence.md) · [Account intelligence](growth/ACCOUNT-INTELLIGENCE.md)
 
-> **RUN-003 — Compare two validation-packet approaches**<br>
+> **[[runs/run-003/RUN-003-Model-Validation-Comparison|RUN-003]] — Compare two validation-packet approaches**<br>
 > *Job: create one safe discovery-test packet for `GH-004` using the same frozen input in a local and frontier arm.*<br>
 > **Started with:** `SEG-002`, `GH-004`, `GTM-001`, `EV-001`, and `RUN-002` outputs.<br>
 > **Produced:** `CMP-001-L`, `CMP-001-F`, and a comparison scorecard covering the buyer group, claim, proof, discovery questions, and stop rules.<br>
 > **Fed forward into:** the `E4` manual-market-test decision and `CDP-001`.<br>
-> **State:** Both packets complete; Mark review remains the authority for any test. [Run card](runs/run-003/run-card.md) · [Comparison scorecard](runs/run-003/CMP-001-SCORECARD.md)
+> **State:** Both packets complete; Mark review remains the authority for any test. [Run card](runs/run-003/RUN-003-Model-Validation-Comparison.md) · [Comparison scorecard](runs/run-003/CMP-001-Comparison-Scorecard.md)
 
 ### D2. Runs 004–006 — Build a durable market corpus
 
-> **RUN-004 — Exercise the customer-development plan with local research**<br>
+> **[[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]] — Exercise the customer-development plan with local research**<br>
 > *Job: test whether bounded local-model workers could contribute source-checkable context to `CDP-001`.*<br>
 > **Started with:** `CDP-001`, a fixed fifty-prompt catalog, public sources, and a twenty-eight-sprint ceiling.<br>
 > **Produced:** 27 completed worker results, one safe memory-fit block, six source-checked context cards, and a model-utility record.<br>
 > **Fed forward into:** later care-delivery research and routing evidence.<br>
 > **State:** Complete; no monitoring, CRM work, outreach, or publishing. [Run report](runs/run-004/outputs/RUN-004-REPORT.md)
 
-> **RUN-005 — Create the care-delivery organization registry**<br>
+> **[[runs/run-005/RUN-005-Organization-Registry|RUN-005]] — Create the care-delivery organization registry**<br>
 > *Job: turn scattered organization research into one durable, source-normalized account universe.*<br>
 > **Started with:** `SEG-001`, focused `SEG-002`, `CDP-001`, existing account intelligence, and current public sources.<br>
 > **Produced:** `ACC-001…ACC-056`, a 16-row source ledger, and the two `BGP-*` buyer-title profiles.<br>
 > **Fed forward into:** `RUN-006`, `RUN-007`, `RUN-009`, and future account refresh decisions.<br>
-> **State:** Complete; registry status is not buyer intent. [Run card](runs/run-005/run-card.md) · [Registry guide](growth/account-registry/README.md)
+> **State:** Complete; registry status is not buyer intent. [Run card](runs/run-005/RUN-005-Organization-Registry.md) · [Registry guide](growth/account-registry/README.md)
 
-> **RUN-006 — Map the one-degree care-delivery ecosystem**<br>
+> **[[runs/run-006/RUN-006-One-Degree-Market-Map|RUN-006]] — Map the one-degree care-delivery ecosystem**<br>
 > *Job: show what sits directly under, beside, or above the care-delivery market family.*<br>
 > **Started with:** `SEG-001`, `SEG-002`, `SEG-003`, `CDP-001`, `GH-004`, and `RUN-002`/`004`/`005`.<br>
 > **Produced:** `MAP-001…MAP-050`, a run-local source ledger, and a segment-adjacency summary.<br>
 > **Fed forward into:** the influence study, narrative study, and the `SEG-003` comparison option.<br>
-> **State:** Complete; ecosystem membership does not imply target-account status. [Run card](runs/run-006/run-card.md) · [One-degree map](runs/run-006/outputs/one-degree-map.csv)
+> **State:** Complete; ecosystem membership does not imply target-account status. [Run card](runs/run-006/RUN-006-One-Degree-Market-Map.md) · [One-degree map](runs/run-006/outputs/one-degree-map.csv)
 
 ### D3. Runs 007–009 — Map conversations, pains, and another audience
 
-> **RUN-007 — Map the public influence layer**<br>
+> **[[runs/run-007/RUN-007-Influence-Map|RUN-007]] — Map the public influence layer**<br>
 > *Job: identify which public sources shape care-delivery, workforce, and behavioral-health conversation.*<br>
 > **Started with:** `SEG-001`–`SEG-003`, `CDP-001`, `GH-004`, `GTM-001`, and `RUN-005`/`006`.<br>
 > **Produced:** `INFL-001…INFL-050`, a source ledger, report, and coverage gaps.<br>
 > **Fed forward into:** the frozen source universe for `RUN-008` and the later Social Learning Lane context.<br>
-> **State:** Complete; influence sources are not buyers or an outreach list. [Run card](runs/run-007/run-card.md) · [Influence registry](runs/run-007/outputs/influence-registry.csv)
+> **State:** Complete; influence sources are not buyers or an outreach list. [Run card](runs/run-007/RUN-007-Influence-Map.md) · [Influence registry](runs/run-007/outputs/influence-registry.csv)
 
-> **RUN-008 — Decode recurring narratives and operating pains**<br>
+> **[[runs/run-008/RUN-008-Narrative-Pain-Map|RUN-008]] — Decode recurring narratives and operating pains**<br>
 > *Job: organize what the 50 influence sources discuss across recent and historical windows.*<br>
 > **Started with:** the `RUN-007` registry plus `SEG-001`–`SEG-003`, `CDP-001`, `GH-004`, and `GTM-001`.<br>
 > **Produced:** `NAR-001…NAR-010`, `PAIN-001…PAIN-010`, `TERM-001…TERM-030`, a 12-period timeline, source ledger, report, and coverage gaps.<br>
 > **Fed forward into:** setting-specific workflow options, `RUN-009`, and social/content idea context.<br>
-> **State:** Complete; coded recurrence is not demand or buyer intent. [Run card](runs/run-008/run-card.md) · [Narrative registry](runs/run-008/outputs/narrative-registry.csv)
+> **State:** Complete; coded recurrence is not demand or buyer intent. [Run card](runs/run-008/RUN-008-Narrative-Pain-Map.md) · [Narrative registry](runs/run-008/outputs/narrative-registry.csv)
 
-> **RUN-009 — Qualify Direct Support Professionals as a possible ICP**<br>
+> **[[runs/run-009/RUN-009-DSP-Qualification|RUN-009]] — Qualify Direct Support Professionals as a possible ICP**<br>
 > *Job: decide whether DSPs are distinct enough from LCSWs to warrant a focused audience record.*<br>
 > **Started with:** `SEG-001`, `ICP-006`, `ICP-019`, `GH-002`, `GH-004`, `EV-001`, and outputs from `RUN-001`, `005`, `006`, and `008`.<br>
 > **Produced:** a source ledger, report, and candidate `ICP-022` note separating the frontline user from the possible organizational sponsor.<br>
 > **Fed forward into:** an open Mark decision on whether to create canonical `ICP-022` and which DSP setting to study.<br>
-> **State:** Complete; `ICP-022` is not yet in the canonical ICP Registry. [Run card](runs/run-009/run-card.md) · [Run report](runs/run-009/outputs/RUN-009-REPORT.md)
+> **State:** Complete; `ICP-022` is not yet in the canonical ICP Registry. [Run card](runs/run-009/RUN-009-DSP-Qualification.md) · [Run report](runs/run-009/outputs/RUN-009-REPORT.md)
 
 ### D4. Run 010 — Index the corpus
 
-> **RUN-010 — Build the Epoch 1 hierarchy and lineage map**<br>
+> **[[runs/run-010/RUN-010-Data-Lineage|RUN-010]] — Build the Epoch 1 hierarchy and lineage map**<br>
 > *Job: make the retained entity, ID, artifact, and dependency structure auditable without adding recommendations.*<br>
 > **Started with:** canonical Epoch 1 records and retained outputs through `RUN-009`; no fresh web research.<br>
 > **Produced:** the first version of this root-level reference document and a privacy-safe trace; the Run 010 card explicitly named the root path as its output schema.<br>
 > **Fed forward into:** the Run Index, Master Checklist `E2i`, and this founder-readable refresh.<br>
-> **State:** Complete; it opened no external source and made no external change. [Run card](runs/run-010/run-card.md)
+> **State:** Complete; it opened no external source and made no external change. [Run card](runs/run-010/RUN-010-Data-Lineage.md)
 
 ### D5. Run 011 — Qualify the first founder-theme route internally
 
-> **RUN-011 — Shape `SOC-008` as a constructive-comedy movement concept**<br>
+> **[[runs/run-011/RUN-011-Comedy-Concept|RUN-011]] — Shape `SOC-008` as a constructive-comedy movement concept**<br>
 > *Job: test whether the founder theme is internally coherent enough to reach a separately approved manual baseline.*<br>
 > **Started with:** `SOC-008`, related `SOC-003` and `SOC-006`, the Social Learning Lane, `DR-36`, and Charter v1.9.<br>
 > **Produced:** one `SOC-008` concept packet with positioning, boundaries, three internal format cards, audience lenses, unknowns, and the next approval boundary.<br>
 > **Fed forward into:** a separate Mark decision to approve, revise, park, or card a bounded manual social baseline.<br>
-> **State:** Complete; no fresh research, demand evidence, GTM promotion, publishing, monitoring, automation, or outreach. [Run card](runs/run-011/run-card.md) · [Concept packet](runs/run-011/outputs/SOC-008-CONCEPT-PACKET.md)
+> **State:** Complete; no fresh research, demand evidence, GTM promotion, publishing, monitoring, automation, or outreach. [Run card](runs/run-011/RUN-011-Comedy-Concept.md) · [Concept packet](runs/run-011/outputs/SOC-008-CONCEPT-PACKET.md)
 
 The major dependency chain now reads:
 

@@ -5,12 +5,19 @@ Last updated: 2026-07-16 21:15:25 PDT — edited by: Codex
 Start here to locate the current work, the governing decision behind it, and
 the document that has authority for each kind of claim.
 
+> [!info] Document role
+> **Role:** project entry point and folder-level navigation. **Authority:** it
+> explains where authority lives; it is not the authority itself. **Use this
+> when:** you need to orient yourself in the vault. **Do not use it for:** live
+> task status, approvals, or evidence conclusions. For a visual overview, open
+> [Obsidian Home](OBSIDIAN-HOME.md).
+
 ## Start here
 
-1. [`status/CURRENT-STATE.md`](status/CURRENT-STATE.md) — what to do now.
-2. [`growth/README.md`](growth/README.md) — ideas, audiences, signals, and
+1. [Current State](status/CURRENT-STATE.md) — what to do now.
+2. [Growth Index](growth/README.md) — ideas, audiences, signals, and
    the link from each `GH-###` to its work.
-3. [`runs/README.md`](runs/README.md) — each execution and all of its outputs.
+3. [Run Index](runs/README.md) — each execution and all of its outputs.
 
 ## Authority map
 
@@ -27,7 +34,9 @@ the document that has authority for each kind of claim.
 | Folder / file | Use it for |
 | --- | --- |
 | `growth/` | Your ICP registry, hypotheses, scorecard, signals, and optional profile watch. Start at the [Growth Index](growth/README.md). |
-| [`EPOCH-1-HIERARCHY-DATA-LINEAGE.md`](EPOCH-1-HIERARCHY-DATA-LINEAGE.md) | Corpus ID grammar, nesting, run-to-artifact lineage, and raw-artifact entry points. This is a reference map, not task-status or approval authority. |
+| `product/` | Product opportunities and preliminary portfolio ranking. Start at the [Product Opportunity Ledger](product/PRODUCT-IDEAS.md); a `PRO-###` record is not delivery approval. |
+| Learning Lab | Local-agent learning work is recorded in its dated [decision records](decisions/2026-07-21-learning-lab-local-agents.md) until a repository folder is created. |
+| [Hierarchy & Data Lineage](EPOCH-1-HIERARCHY-DATA-LINEAGE.md) | Corpus ID grammar, nesting, run-to-artifact lineage, and raw-artifact entry points. This is a reference map, not task-status or approval authority. |
 | `paths/` | Reusable opportunity/test-route cards. Start at the [Path Index](paths/README.md). |
 | `status/` | Current state for Mark and handoff for an incoming agent. |
 | `runs/` | Run cards, prompts, notes, outputs, and traces. Start at the [Run Index](runs/README.md) to see each run and its linked `GH-###` work. |
@@ -38,7 +47,7 @@ the document that has authority for each kind of claim.
 
 ## Reference grammar
 
-Use both identifiers when the work has an associated decision: `C3c (DR-15)`.
+Use both identifiers when the work has an associated decision: C3c ([[decisions/2026-07-11-run-001-approvals#dr-15--e1-r1a03-team-config-approved-as-amended--no-claude-default|DR-15]]).
 `DR-*` is the durable decision identity; `A1`, `B1a`, and similar codes are
 the current position of an actionable item in the Master Checklist. Historical
 `E1-*` values are aliases only and must not be used for new assignments.

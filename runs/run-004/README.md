@@ -1,9 +1,9 @@
-# RUN-004 — Operator guide
+# [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]] — Operator guide
 
 Last updated: 2026-07-14 01:17:24 PDT — edited by: Codex
 
-This folder is the execution record for the five-hour `CDP-001` local-model
-public-research sprint program. Start with the [run card](run-card.md), then
+This folder is the execution record for the five-hour [[growth/CDP-001|CDP-001]] local-model
+public-research sprint program. Start with the [run card](RUN-004-Local-Research-Sprints.md), then
 the [prompt catalog](PROMPT-CATALOG.md). The runner writes raw output and
 usage to `raw/`, compact runtime facts to `runtime/`, and only reviewed public
 findings to `evidence-cards/` and `outputs/`.

@@ -4,9 +4,9 @@ Last updated: 2026-07-12 23:13:16 PDT — edited by: Codex
 
 **Purpose:** Run 001 starts directly from one Growth Hypothesis and a manually
 selected agent/provider. Enter one sentence or any partial fields; the agent
-researches and fills the rest as working hypotheses (DR-23/DR-24).
+researches and fills the rest as working hypotheses ([[decisions/2026-07-12-growth-hypothesis-inbox#dr-23--growth-hypothesis-inbox-and-agent-assisted-exploration|DR-23]]/[[decisions/2026-07-12-direct-growth-hypotheses#dr-24--direct-growth-hypotheses-start|DR-24]]).
 
-## Fast-start input — one growth hypothesis (DR-23)
+## Fast-start input — one growth hypothesis ([[decisions/2026-07-12-growth-hypothesis-inbox#dr-23--growth-hypothesis-inbox-and-agent-assisted-exploration|DR-23]])
 
 In `growth/HYPOTHESES.md`, add a starting thought under a `GH-###` item. It
 starts as `exploring`; there is no inbox step. You
@@ -26,7 +26,7 @@ may enter only that thought, or add any of these optional fields:
 The idea must be safe to give the chosen external agent. Agent-filled content
 is labeled `agent-hypothesis` and can be changed, parked, or killed later.
 
-## Blocker 2 — manually name the provider at invocation (E1-N04b/c; DR-17)
+## Blocker 2 — manually name the provider at invocation (E1-N04b/c; [[decisions/2026-07-12-mark-directions#dr-17--run-001-manual-invocation-policy|DR-17]])
 
 The provider is selected by Mark's manual prompt, not by a project default.
 Before starting, write the actual agent/provider into the run card's
@@ -42,16 +42,16 @@ Before starting, write the actual agent/provider into the run card's
 ```text
 You are the manually selected MindfulText Run 001 agent: <Codex | Claude | Hermes>.
 
-Work in /Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/.
+Work in the current MindfulText Epoch 1 vault root.
 Read growth/HYPOTHESES.md, growth/SCORECARD.md,
-runs/run-001/run-card.md, workflows/research-to-signal.md, and templates/path-card.md.
+runs/run-001/RUN-001-Growth-Path-Ranking.md, workflows/research-to-signal.md, and templates/path-card.md.
 
 Use the selected GH-### item to infer missing fields. If `Research` is blank or
 `auto`, select and cite relevant public sources without waiting for more input.
 If it supplies source/community/question/score controls, follow them. Identify
 alternatives and contradictions, then create 3–5 editable path cards in paths/,
 a ranked scorecard and evidence-gap list in runs/run-001/outputs/, working notes
-in runs/run-001/blackboard.md, and a privacy-safe trace.jsonl. Once you can
+in runs/run-001/RUN-001-Growth-Research-Notes.md, and a privacy-safe trace.jsonl. Once you can
 state the ICP as role/group + current behavior/alternative + situation or
 constraint, add `runs/run-001/outputs/<GH-###>-tam.md`: a cited U.S. TAM
 low/base/high range with formula, inclusions/exclusions, assumptions, and
@@ -72,7 +72,7 @@ the two highest-leverage evidence gaps, and the recommended status.
 
 ## Then
 
-1. `python3 tools/validate-run-card.py runs/run-001/run-card.md` — must stay
+1. `python3 tools/validate-run-card.py runs/run-001/RUN-001-Growth-Path-Ranking.md` — must stay
    valid and approved.
 2. Commit the edits.
 3. Any agent session on the named provider may then execute Run 001 per its

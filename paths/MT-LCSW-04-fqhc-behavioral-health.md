@@ -4,8 +4,8 @@ Last updated: 2026-07-12 23:54:25 PDT — edited by: Codex
 
 **path_id:** MT-LCSW-04
 **status:** candidate
-**hypothesis_id:** GH-002
-**icp_id:** ICP-019
+**hypothesis_id:** [[growth/HYPOTHESES#gh-002--mindfultext-for-elevated-stress-lcsws|GH-002]]
+**icp_id:** [[growth/ICP-REGISTRY|ICP-019]]
 **buyer:** **agent-hypothesis** — FQHC CEO, integrated behavioral-health leader, workforce/HR leader, or quality leader.
 **user:** LCSWs within a multidisciplinary community-health-center behavioral-health team.
 **vertical_context:** Federally qualified/community health centers with integrated behavioral-health services.

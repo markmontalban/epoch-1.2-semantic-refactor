@@ -4,8 +4,8 @@ Last updated: 2026-07-12 23:54:25 PDT — edited by: Codex
 
 **path_id:** MT-LCSW-01
 **status:** candidate
-**hypothesis_id:** GH-002
-**icp_id:** ICP-019
+**hypothesis_id:** [[growth/HYPOTHESES#gh-002--mindfultext-for-elevated-stress-lcsws|GH-002]]
+**icp_id:** [[growth/ICP-REGISTRY|ICP-019]]
 **buyer:** **agent-hypothesis** — CEO/executive director, chief clinical officer, workforce/HR leader, or quality/outcomes leader at a non-MHA community behavioral-health provider with a qualified LCSW cohort.
 **user:** LCSWs experiencing self-identified elevated client-facing work stress.
 **vertical_context:** Community behavioral health, CCBHC, or FQHC behavioral-health team.

@@ -6,7 +6,7 @@ Last updated: 2026-07-13 13:34:26 PDT — edited by: Codex
 and does not authorize outreach; it is the specific route a future approved
 run or manual test could examine.
 
-## GH-002 paths
+## [[growth/HYPOTHESES#gh-002--mindfultext-for-elevated-stress-lcsws|GH-002]] paths
 
 | Rank | Path | Route |
 | --- | --- | --- |

@@ -1,16 +1,16 @@
-# RUN-008 Report — Care-delivery Narratives, Pain Points, Terms, and Topic History
+# [[runs/run-008/RUN-008-Narrative-Pain-Map|RUN-008]] Report — Care-delivery Narratives, Pain Points, Terms, and Topic History
 
 Last updated: 2026-07-15 03:10:00 PDT — edited by: Codex
 
 ## Result
 
-The 50-source RUN-007 influence map is talking about one connected problem: care-delivery organizations are being asked to expand access and complexity while their workforce, funding, workflow time, and local infrastructure remain constrained. The strongest recurring narrative is no longer simply “healthcare has a staffing shortage.” It is “capacity is structurally limited, and organizations must redesign work and funding around that reality.”
+The 50-source [[runs/run-007/RUN-007-Influence-Map|RUN-007]] influence map is talking about one connected problem: care-delivery organizations are being asked to expand access and complexity while their workforce, funding, workflow time, and local infrastructure remain constrained. The strongest recurring narrative is no longer simply “healthcare has a staffing shortage.” It is “capacity is structurally limited, and organizations must redesign work and funding around that reality.”
 
 The highest-ranked pain is insufficient workforce capacity, followed by retention/burnout, funding volatility, and administrative/payer friction. The most promising next research wedge is a setting-specific workflow where one of those pains becomes observable—especially a CCBHC coordination/crisis workflow, FQHC integrated behavioral-health workflow, or post-acute transition workflow.
 
 ## Method and evidence boundary
 
-The run attempted all 50 public sources in the RUN-007 registry across six groups: hospital/business media, behavioral health, FQHC/community/rural health, home/post-acute care, workforce/nursing, and creators. The ledger contains 37 item-sampled sources, 10 channel-only sources, and 3 lead-only sources. “Recurrence” means a coded mention in a source profile or sampled public item; it is not article volume, audience size, market prevalence, or buyer intent.
+The run attempted all 50 public sources in the [[runs/run-007/RUN-007-Influence-Map|RUN-007]] registry across six groups: hospital/business media, behavioral health, FQHC/community/rural health, home/post-acute care, workforce/nursing, and creators. The ledger contains 37 item-sampled sources, 10 channel-only sources, and 3 lead-only sources. “Recurrence” means a coded mention in a source profile or sampled public item; it is not article volume, audience size, market prevalence, or buyer intent.
 
 The recent window is **2026-01-15 through 2026-07-15**. The historical comparison window is **2023-07-15 through 2026-01-14**. The run used public page review and search only; it did not use paid databases, private accounts, scraping, contact enrichment, outreach, or CRM writes.
 
@@ -66,5 +66,22 @@ This run supports narrower research only. It does not validate demand, willingne
 - [Topic timeline](topic-timeline.csv)
 - [Source ledger](source-ledger.csv)
 - [Coverage gaps](coverage-gaps.md)
-- [Run card](../run-card.md)
+- [Run card](../RUN-008-Narrative-Pain-Map.md)
 - [Privacy-safe trace](../trace.jsonl)
+
+## Related records
+
+- [[runs/run-008/RUN-008-Narrative-Pain-Map|RUN-008-Narrative-Pain-Map]]
+- [[runs/run-007/RUN-007-Influence-Map|RUN-007]]
+- [[growth/SEGMENTS|SEG-001]]
+- [[growth/SEGMENTS|SEG-002]]
+- [[growth/SEGMENTS|SEG-003]]
+- [[growth/CDP-001|CDP-001]]
+- [[growth/ICP-REGISTRY|ICP-019]]
+- [[growth/HYPOTHESES|GH-004]]
+- [[growth/GTM-MOTIONS|GTM-001]]
+- [[decisions/2026-07-13-segment-linked-runs|DR-29]]
+- [[decisions/2026-07-14-customer-development-plan|DR-31]]
+- [[decisions/2026-07-15-run-005-care-delivery-registry|DR-33]]
+- [[decisions/2026-07-15-run-006-one-degree-map|DR-34]]
+- [[runs/run-008/RUN-008-Narrative-Pain-Map|RUN-008]]

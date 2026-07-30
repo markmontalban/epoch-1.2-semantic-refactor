@@ -1,4 +1,4 @@
-# RUN-004 — Frozen prompt catalog
+# [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]] — Frozen prompt catalog
 
 Last updated: 2026-07-14 01:23:53 PDT — edited by: Codex
 

@@ -50,3 +50,66 @@ contact, or spend. Those require their own evidence and approvals.
 
 **Downstream use:** Link this record from any later `GH-###`, `PRO-###`,
 `GTM-###`, or content/theme record that adopts or tests part of this direction.
+
+## BRD-002 — CCBHC Buyer-Context Brand Translation
+
+**Status:** Provisional route-specific translation; not audience resonance,
+buyer intent, clinical validation, or a replacement for `BRD-001`.
+
+**Owner:** [[runs/run-020/RUN-020-CCBHC-Buyer-Context-Brand|RUN-020]].
+
+**Purpose:** Make the founder-set `BRD-001` worldview intelligible in a CCBHC
+review context without narrowing the broader MindfulText mission to healthcare.
+The retained principle is that mindfulness is good for the world and worth
+proliferating across many domains; this record addresses only a responsible
+delivery and learning frame for one organizational route.
+
+**Operating insight:** A CCBHC exists within formal staffing, access,
+coordination, scope, quality/reporting, and governance obligations. That
+supports cautious language about attention and implementation burden; it does
+not establish a need, budget, buyer, or outcome for MindfulText. See the
+[[runs/run-020/outputs/CCBHC-STAKEHOLDER-DAY-IN-THE-LIFE|stakeholder map]] and
+[[runs/run-020/outputs/SOURCES|source boundaries]].
+
+**Provisional position:** MindfulText is an optional, text-based mindfulness
+practice that an organization may consider as a small staff-support complement
+when it has a voluntary cohort and a protected non-care moment. It is not
+therapy, crisis support, clinical care, patient engagement, documentation,
+care coordination, quality reporting, a staffing plan, or a promise of
+retention or workforce outcomes.
+
+**Voice rules:**
+
+- Start by acknowledging the structural conditions of care work; do not turn a
+  personal practice into an answer to structural problems.
+- Be concrete, calm, and specific about the offer's small role, data boundary,
+  and optional use moment.
+- Prefer “may fit,” “consider,” “optional,” and “complement” to outcome claims
+  or inevitability.
+- Sound humane without becoming sentimental, clinical, heroic, or managerial.
+- Do not ask staff to carry responsibility for an organization’s staffing,
+  supervision, compensation, or care-quality failures.
+
+**Vocabulary:** Use *optional staff support*, *brief practice*, *protected
+non-care moment*, *alongside existing workforce support*, and *no patient
+data*. Avoid *solve burnout*, *improve retention*, *reduce turnover*,
+*transform care*, *CCBHC-ready*, *resilience program*, and *seamless* unless
+specific evidence and review support the wording.
+
+**Example:** “Care teams deserve structural support first. Where an
+organization has a voluntary staff group and a protected non-care moment,
+MindfulText may offer a brief, private practice alongside—not inside—its
+existing workforce support.”
+
+**Open questions:** Whether this language resonates; what reviewers actually
+need to assess fit; what data or procurement review is required; and how the
+general `BRD-001` worldview should evolve outside this CCBHC translation.
+
+## Related records
+
+- [[runs/run-020/RUN-020-CCBHC-Buyer-Context-Brand|RUN-020]]
+- [[runs/run-014/outputs/CCBHC-FOUNDER-SITE-STRATEGY|RUN-014 site strategy]]
+- [[growth/SEGMENTS|SEG-002]]
+- [[growth/ICP-REGISTRY|ICP-019]]
+- [[growth/HYPOTHESES|GH-004]]
+- [[growth/GTM-MOTIONS|GTM-001]]

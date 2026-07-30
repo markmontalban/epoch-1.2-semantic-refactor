@@ -53,6 +53,7 @@ segment rather than duplicating its definition. [DR-29](../decisions/2026-07-13-
   workforce development, and organizational support are visible category
   concerns, but a low-disruption program must complement—never stand in for—
   staffing, pay, workload, supervision, and operational change.
+- Discovery and formalization: [[runs/run-001/RUN-001-Growth-Research-Notes|Run 001 working notes]] first preserved the care-delivery direction; [[runs/run-002/RUN-002-Segment-Intelligence|RUN-002]] formalized this focused segment record.
 
 ### SEG-003 — FQHCs with integrated behavioral health
 
@@ -65,6 +66,7 @@ segment rather than duplicating its definition. [DR-29](../decisions/2026-07-13-
 - Why it is separate: FQHC workforce-wellbeing research shows similar strain,
   but governance, care delivery, and buyer context may differ from community
   behavioral-health providers.
+- Discovery and formalization: [[paths/MT-LCSW-04-fqhc-behavioral-health|Run 001's FQHC candidate path]] is the first retained FQHC route; [[runs/run-002/RUN-002-Segment-Intelligence|RUN-002]] formalized it as the `SEG-003` comparison branch.
 
 ### SEG-004 — Neurodivergent people
 

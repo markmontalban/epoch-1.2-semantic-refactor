@@ -18,7 +18,7 @@ Source → concise signal record → linked ICP / hypothesis / path → revise r
 
 Use one row when something changes your view of a pain, offer, ICP, or path.
 Summarize rather than copying raw messages, PII, or sensitive material.
-Use the stable `ICP-###` value from [ICP Registry](ICP-REGISTRY.md) when it is
+Use the stable `ICP-###` value from [PUBLIC-PROFILE-WATCH.md](PUBLIC-PROFILE-WATCH.md) when it is
 known; a GTM strategy result is meaningful only for that linked audience and
 hypothesis/path.
 

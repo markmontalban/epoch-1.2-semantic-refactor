@@ -4,8 +4,8 @@ Last updated: 2026-07-12 23:54:25 PDT — edited by: Codex
 
 **path_id:** MT-LCSW-05
 **status:** candidate
-**hypothesis_id:** GH-002
-**icp_id:** ICP-019
+**hypothesis_id:** [[growth/HYPOTHESES#gh-002--mindfultext-for-elevated-stress-lcsws|GH-002]]
+**icp_id:** [[growth/ICP-REGISTRY|ICP-019]]
 **buyer:** The same potential organization buyer as MT-LCSW-01, only after a stress-first program is understood.
 **user:** LCSWs with a defined, self-reported support goal beyond stress reduction.
 **vertical_context:** An organization-sponsored or association cohort program with one clearly measured secondary outcome.

@@ -1,10 +1,10 @@
-# RUN-009 Report — Direct Support Professional ICP qualification
+# [[runs/run-009/RUN-009-DSP-Qualification|RUN-009]] Report — Direct Support Professional ICP qualification
 
 Last updated: 2026-07-15 08:30:00 PDT — edited by: Codex
 
 ## Result
 
-**Pass, with a bounded recommendation:** DSPs are distinct enough from LCSWs to warrant a candidate ICP, but not yet a separate market segment. The best current framing is a frontline user audience within `SEG-001 — Care-delivery organizations`, with the provider organization as the potential sponsor/buyer.
+**Pass, with a bounded recommendation:** DSPs are distinct enough from LCSWs to warrant a candidate ICP, but not yet a separate market segment. The best current framing is a frontline user audience within [[growth/SEGMENTS#seg-001--care-delivery-organizations|SEG-001]] — Care-delivery organizations, with the provider organization as the potential sponsor/buyer.
 
 ## What the evidence establishes
 
@@ -22,11 +22,11 @@ Last updated: 2026-07-15 08:30:00 PDT — edited by: Codex
 | Likely user pain | Clinical emotional load and occupational stress | Emotional load, safety/complexity, shift or coverage pressure, low autonomy, retention strain |
 | Likely sponsor | Clinical, workforce, HR, or executive leader | Workforce/HR, operations, program, residential, or executive leader |
 | Product boundary | Non-clinical stress-regulation support | Non-clinical, low-disruption reset/support; never a substitute for staffing, pay, supervision, crisis response, or clinical care |
-| Evidence status | Candidate ICP-018 with prior research | New candidate audience; no direct MindfulText evidence yet |
+| Evidence status | Candidate [[growth/ICP-REGISTRY|ICP-018]] with prior research | New candidate audience; no direct MindfulText evidence yet |
 
 ## Recommended registry treatment
 
-Add a future `ICP-022` candidate after Mark review, scoped to DSPs in IDD, behavioral-health, or home/community-based support settings. Keep the provider buyer separate from the worker audience. Do not add `SEG-004` yet: the evidence supports a distinct role, but not a distinct buyer/workflow boundary from `SEG-001`.
+Add a future [[growth/ICP-REGISTRY|ICP-022]] candidate after Mark review, scoped to DSPs in IDD, behavioral-health, or home/community-based support settings. Keep the provider buyer separate from the worker audience. Do not add [[growth/SEGMENTS#seg-004--neurodivergent-people|SEG-004]] yet: the evidence supports a distinct role, but not a distinct buyer/workflow boundary from [[growth/SEGMENTS#seg-001--care-delivery-organizations|SEG-001]].
 
 ## Highest-leverage unknowns
 
@@ -43,4 +43,27 @@ Add a future `ICP-022` candidate after Mark review, scoped to DSPs in IDD, behav
 
 ## Decision after completion
 
-Advance to a separate, narrower public account/workflow qualification run only if Mark accepts `ICP-022` as a candidate and selects one DSP setting. Otherwise retain this as a research lead under `SEG-001` and compare it against the existing CCBHC/FQHC branches.
+Advance to a separate, narrower public account/workflow qualification run only if Mark accepts [[growth/ICP-REGISTRY|ICP-022]] as a candidate and selects one DSP setting. Otherwise retain this as a research lead under [[growth/SEGMENTS#seg-001--care-delivery-organizations|SEG-001]] and compare it against the existing CCBHC/FQHC branches.
+
+## Related records
+
+- [[runs/run-009/RUN-009-DSP-Qualification|RUN-009-DSP-Qualification]]
+- [[growth/ICP-REGISTRY|ICP-022]]
+- [[growth/SEGMENTS|SEG-001]]
+- [[growth/ICP-REGISTRY|ICP-006]]
+- [[growth/ICP-REGISTRY|ICP-019]]
+- [[growth/HYPOTHESES|GH-002]]
+- [[growth/HYPOTHESES|GH-004]]
+- [[runs/run-001/RUN-001-Growth-Path-Ranking|RUN-001]]
+- [[runs/run-005/RUN-005-Organization-Registry|RUN-005]]
+- [[runs/run-006/RUN-006-One-Degree-Market-Map|RUN-006]]
+- [[runs/run-008/RUN-008-Narrative-Pain-Map|RUN-008]]
+- [[growth/EVIDENCE-REGISTER|EV-001]]
+- [[growth/GTM-MOTIONS|GTM-001]]
+- [[decisions/2026-07-13-segment-linked-runs|DR-29]]
+- [[decisions/2026-07-14-customer-development-plan|DR-31]]
+- [[decisions/2026-07-15-run-005-care-delivery-registry|DR-33]]
+- [[decisions/2026-07-15-run-006-one-degree-map|DR-34]]
+- [[runs/run-009/RUN-009-DSP-Qualification|RUN-009]]
+- [[growth/ICP-REGISTRY|ICP-018]]
+- [[growth/SEGMENTS|SEG-004]]

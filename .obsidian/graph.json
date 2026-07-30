@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "-path:\"runs/run-004/runtime\" -path:templates -path:team-configs",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "[record_type:run-card]",
+      "color": {
+        "a": 1,
+        "rgb": 5265663
+      }
+    },
+    {
+      "query": "path:decisions",
+      "color": {
+        "a": 1,
+        "rgb": 16753920
+      }
+    },
+    {
+      "query": "path:growth",
+      "color": {
+        "a": 1,
+        "rgb": 4382763
+      }
+    },
+    {
+      "query": "path:product",
+      "color": {
+        "a": 1,
+        "rgb": 11342935
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -2.5,
+  "nodeSizeMultiplier": 3.17993923611111,
+  "lineSizeMultiplier": 0.532152777777778,
+  "collapse-forces": false,
+  "centerStrength": 0,
+  "repelStrength": 20,
+  "linkStrength": 1,
+  "linkDistance": 500,
+  "scale": 0.01296892874648814,
+  "close": false
+}

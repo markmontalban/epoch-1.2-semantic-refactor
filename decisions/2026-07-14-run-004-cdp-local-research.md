@@ -1,14 +1,14 @@
-# MindfulText Epoch 1 — Decision Record — 2026-07-14 — RUN-004 local research sprint program
+# MindfulText Epoch 1 — Decision Record — 2026-07-14 — [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]] local research sprint program
 
 Last updated: 2026-07-14 06:46:58 PDT — edited by: Codex
 
-## DR-32 — RUN-004 CDP-001 local-research sprint program
+## DR-32 — [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]] [[growth/CDP-001|CDP-001]] local-research sprint program
 
-**Decision:** Mark approved `RUN-004`, a five-hour, public-research-only
-local-model dogfood run under `CDP-001`. It uses bounded Hermes one-shot
+**Decision:** Mark approved [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]], a five-hour, public-research-only
+local-model dogfood run under [[growth/CDP-001|CDP-001]]. It uses bounded Hermes one-shot
 workers to evaluate selected local models on public search tasks that can add
 account, buyer-function, category-language, and contradiction evidence for
-`SEG-002 — Community behavioral-health providers`.
+[[growth/SEGMENTS#seg-002--community-behavioral-health-providers|SEG-002]] — Community behavioral-health providers.
 
 **Model and provider boundary:** Each worker names the `ollama` provider and
 one concrete local model. Hermes’ OpenRouter default is excluded. The worker
@@ -36,4 +36,4 @@ The model scorecard is routing evidence only; it does not validate demand or
 authorize a next market action.
 
 **Status:** Mark-approved and executed 2026-07-14. This decision extends
-`DR-31` and preserves `DR-29`’s segment-first and no-outbound constraints.
+[[decisions/2026-07-14-customer-development-plan#dr-31--segment-linked-customer-development-plan|DR-31]] and preserves [[decisions/2026-07-13-segment-linked-runs#dr-29--segment-first-linked-research-model-and-run-002003-amendment|DR-29]]’s segment-first and no-outbound constraints.

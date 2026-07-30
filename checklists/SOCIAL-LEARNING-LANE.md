@@ -54,7 +54,7 @@ Mark selects `X2`; execute only after `X3`.
 
 | Ref | Candidate workflow | One decision it resolves | Minimum inputs | Gate / dependency |
 | --- | --- | --- | --- | --- |
-| `C1` | `social-learning-architecture-audit` v0.1 | Can the existing Pulse/n8n/Replit assets serve as replaceable adapters inside one Epoch 1 lane, and what should be reused, revised, or parked? | Local code/workflow exports, `SOC-001`–`SOC-007`, current official platform terms. | Recommended first; local/public research only, no build or reactivation. |
+| `C1` | `social-learning-architecture-audit` v0.1 | Can the existing Pulse/n8n/Replit assets serve as replaceable adapters inside one Epoch 1 lane, and what should be reused, revised, or parked? | Local code/workflow exports, [[growth/SOCIAL-IDEA-LEDGER|SOC-001]]–[[growth/SOCIAL-IDEA-LEDGER|SOC-007]], current official platform terms. | Recommended first; local/public research only, no build or reactivation. |
 | `C2` | `founder-theme-portfolio` v0.1 | Which one primary theme/audience/platform pair, with at most two parked alternatives, best connects Mark's range to a revenue-learning goal? | Ledger, existing account history, permitted saved-example pointers, current GH/GTM records. | After C1 or independently if Mark wants strategy before technology. |
 | `C3` | `manual-social-baseline` v0.1 | Does one focused, Mark-authored channel test produce enough qualified resonance and sustainable cadence to continue? | One C2 route, baseline metrics, fixed time/post ceiling, Mark-owned publishing. | Separate market-test approval; no automated posting. |
 | `C4` | `viral-pattern-transfer` v0.1 | Does an original adaptation of one proven content mechanic outperform the C3 baseline for the same audience and theme? | Small permitted pattern set and frozen evaluation rubric. | Only after a baseline; test the mechanic, never promise virality or copy expression. |
@@ -67,7 +67,7 @@ Mark selects `X2`; execute only after `X3`.
 | Ref | Draft |
 | --- | --- |
 | `R1` | Decide whether Pulse/n8n/Replit can be a modular adapter set for one Epoch 1 Social Learning Lane, and identify the smallest next validation step. |
-| `R2` | Link `DR-36`, `SOC-001`–`SOC-007`, `SEG-001`, possible `ICP-006`, `GTM-001`, `CDP-001`, `RUN-007`, `RUN-008`, and the two named local project surfaces. |
+| `R2` | Link [[decisions/2026-07-16-social-intelligence-founder-content-direction#dr-36--social-intelligence-and-founder-content-exploration-direction|DR-36]], [[growth/SOCIAL-IDEA-LEDGER|SOC-001]]–[[growth/SOCIAL-IDEA-LEDGER|SOC-007]], [[growth/SEGMENTS#seg-001--care-delivery-organizations|SEG-001]], possible [[growth/ICP-REGISTRY|ICP-006]], [[growth/GTM-MOTIONS#gtm-001--account-led-buyer-discovery|GTM-001]], [[growth/CDP-001|CDP-001]], [[runs/run-007/RUN-007-Influence-Map|RUN-007]], [[runs/run-008/RUN-008-Narrative-Pain-Map|RUN-008]], and the two named local project surfaces. |
 | `R3` | `workflow_id: social-learning-architecture-audit`; `workflow_version: v0.1`; use one evidence-first architecture audit, not a platform build. |
 | `R4` | `execution_kind: initial`; `parent_run: N/A`; `run_type: lab-validation`. |
 | `R5` | Map current data flow/dependencies; define the minimal record and human-touch contract; compare one-lab/separate-epoch/standalone-system placements; return reuse/revise/park decisions and a dependency-ordered run portfolio. |

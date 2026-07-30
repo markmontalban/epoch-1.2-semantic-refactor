@@ -1,13 +1,13 @@
-# MindfulText Epoch 1 — Decision Record — 2026-07-15 — RUN-005 care-delivery organization registry
+# MindfulText Epoch 1 — Decision Record — 2026-07-15 — [[runs/run-005/RUN-005-Organization-Registry|RUN-005]] care-delivery organization registry
 
 Last updated: 2026-07-15 00:50:44 PDT — edited by: Codex
 
-## DR-33 — RUN-005 care-delivery organization registry
+## DR-33 — [[runs/run-005/RUN-005-Organization-Registry|RUN-005]] care-delivery organization registry
 
-**Decision:** Mark approved `RUN-005`, an initial, public-research-only,
-four-hour lab-validation run for `SEG-001 — Care-delivery organizations`.
+**Decision:** Mark approved [[runs/run-005/RUN-005-Organization-Registry|RUN-005]], an initial, public-research-only,
+four-hour lab-validation run for [[growth/SEGMENTS#seg-001--care-delivery-organizations|SEG-001]] — Care-delivery organizations.
 The run will identify and normalize 50–75 U.S. care-delivery organizations,
-compare relevant subsegments including `SEG-002` and `SEG-003`, and retain a
+compare relevant subsegments including [[growth/SEGMENTS#seg-002--community-behavioral-health-providers|SEG-002]] and [[growth/SEGMENTS#seg-003--fqhcs-with-integrated-behavioral-health|SEG-003]], and retain a
 durable public organization registry for later reviewed research.
 
 **Registry boundary:** The registry holds organizations, stable `ACC-###`
@@ -37,5 +37,5 @@ the remaining directory-backed records explicitly retain their first-party
 verification gap. No external action occurred.
 
 **Status:** Mark-approved and executed 2026-07-15. This decision extends
-`DR-31` and preserves `DR-29` and `DR-32` public-research and no-outbound
+[[decisions/2026-07-14-customer-development-plan#dr-31--segment-linked-customer-development-plan|DR-31]] and preserves [[decisions/2026-07-13-segment-linked-runs#dr-29--segment-first-linked-research-model-and-run-002003-amendment|DR-29]] and [[decisions/2026-07-14-run-004-cdp-local-research#dr-32--run-004-cdp-001-local-research-sprint-program|DR-32]] public-research and no-outbound
 boundaries.

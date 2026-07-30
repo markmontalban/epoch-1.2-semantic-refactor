@@ -20,7 +20,7 @@ from pathlib import Path
 
 LAB_ROOT = Path(__file__).resolve().parent.parent
 RUNS_DIR = LAB_ROOT / "runs"
-TEMPLATE = LAB_ROOT / "templates" / "run-card.md"
+TEMPLATE = LAB_ROOT / "templates" / "Run-Card-Template.md"
 
 RUN_DIR_RE = re.compile(r"^run-(\d+)$")
 
@@ -50,9 +50,26 @@ def set_field(text, field, value):
     return replaced
 
 
+def set_property(text, field, value):
+    """Replace one YAML frontmatter property."""
+    pattern = re.compile(r"^{}:.*$".format(re.escape(field)), re.MULTILINE)
+    replaced, count = pattern.subn(
+        "{}: {}".format(field, value), text, count=1
+    )
+    if count == 0:
+        sys.exit("error: property '{}' not found in {}".format(field, TEMPLATE))
+    return replaced
+
+
+def filename_label(title, word_limit):
+    """Return a filesystem-safe title fragment with at most word_limit words."""
+    words = re.findall(r"[A-Za-z0-9]+", title)
+    return "-".join(words[:word_limit] or ["Untitled"])
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Create the next runs/run-NNN scaffold from templates/run-card.md."
+        description="Create the next runs/run-NNN scaffold from templates/Run-Card-Template.md."
     )
     parser.add_argument(
         "--type",
@@ -92,7 +109,17 @@ def main():
         )
 
     today = datetime.date.today().isoformat()
+    title = args.title or "Untitled Run"
     card = TEMPLATE.read_text(encoding="utf-8")
+    card = set_property(card, "run", run_id)
+    card = set_property(card, "title", title)
+    card = re.sub(
+        r"^# Run Card Template$",
+        "# {} — {}".format(run_id, title),
+        card,
+        count=1,
+        flags=re.MULTILINE,
+    )
     card = set_field(card, "run_id", run_id)
     card = set_field(card, "date", today)
     card = set_field(card, "execution_kind", args.execution_kind)
@@ -107,26 +134,27 @@ def main():
     if args.path_id:
         card = set_field(card, "path_id", args.path_id)
 
-    title = args.title or "Run {:03d}".format(number)
-    blackboard = (
-        "# {} — {}\n\n"
+    notes = (
+        "# {} — {} Notes\n\n"
         "**run_id:** {}\n"
         "**date:** {}\n\n"
         "## Working notes\n\n"
         "- (append notes here; references only, no raw local-only content)\n"
-    ).format(title, run_id, run_id, today)
+    ).format(run_id, title, run_id, today)
+    card_name = "{}-{}.md".format(run_id, filename_label(title, 4))
+    notes_name = "{}-{}-Notes.md".format(run_id, filename_label(title, 3))
 
     (run_dir / "outputs").mkdir(parents=True)
-    (run_dir / "run-card.md").write_text(card, encoding="utf-8")
-    (run_dir / "blackboard.md").write_text(blackboard, encoding="utf-8")
+    (run_dir / card_name).write_text(card, encoding="utf-8")
+    (run_dir / notes_name).write_text(notes, encoding="utf-8")
     (run_dir / "outputs" / ".gitkeep").write_text("", encoding="utf-8")
     (run_dir / "trace.jsonl").write_text("", encoding="utf-8")
 
     print("created:")
     for path in (
         run_dir,
-        run_dir / "run-card.md",
-        run_dir / "blackboard.md",
+        run_dir / card_name,
+        run_dir / notes_name,
         run_dir / "outputs",
         run_dir / "trace.jsonl",
     ):

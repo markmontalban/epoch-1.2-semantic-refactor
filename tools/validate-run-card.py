@@ -2,7 +2,7 @@
 """Validate a MindfulText Epoch 1 run card.
 
 Usage:
-    python3 tools/validate-run-card.py path/to/run-card.md
+    python3 tools/validate-run-card.py path/to/RUN-NNN-Topic.md
 
 Parses lines of the form '**field:** value' (leading '- ' tolerated; field
 names case-insensitive). Empty, TBD, and PENDING count as unset. N/A counts
@@ -66,7 +66,7 @@ def is_unset(value, na_is_unset=True):
 
 def main():
     if len(sys.argv) != 2:
-        print("usage: python3 tools/validate-run-card.py path/to/run-card.md",
+        print("usage: python3 tools/validate-run-card.py path/to/RUN-NNN-Topic.md",
               file=sys.stderr)
         sys.exit(1)
     path = Path(sys.argv[1])

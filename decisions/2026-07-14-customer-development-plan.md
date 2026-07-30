@@ -22,5 +22,5 @@ fresh research or external activity requires its own bounded run/test and the
 applicable Mark approval.
 
 **Status:** Mark-directed 2026-07-14; `CDP-001` created. This preserves
-DR-29's segment model and all existing data, provider, and no-outbound
+[[decisions/2026-07-13-segment-linked-runs|DR-29]]'s segment model and all existing data, provider, and no-outbound
 controls.

@@ -1,4 +1,4 @@
-# RUN-004 — Local model utility scorecard
+# [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]] — Local model utility scorecard
 
 Last updated: 2026-07-14 06:46:58 PDT — edited by: Codex
 
@@ -21,3 +21,15 @@ eligible for the specified follow-up; it did not make its facts verified.
 the requested model did not fit alongside the then-resident models. Full
 per-task score components, output paths, and failure notes are in the
 [runtime state](../runtime/run-state.json); raw transcripts remain noncanonical.
+
+## Related records
+
+- [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004-Local-Research-Sprints]]
+- [[growth/CDP-001|CDP-001]]
+- [[growth/SEGMENTS|SEG-002]]
+- [[growth/HYPOTHESES|GH-004]]
+- [[growth/GTM-MOTIONS|GTM-001]]
+- [[decisions/2026-07-13-segment-linked-runs|DR-29]]
+- [[decisions/2026-07-14-customer-development-plan|DR-31]]
+- [[decisions/2026-07-14-run-004-cdp-local-research|DR-32]]
+- [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]]

@@ -297,21 +297,21 @@ Before doing work in this lab, an agent must:
 - **2026-07-11:** v1.2 — added §14.16 (Run 001 execution surface is a
   Mark-named external provider combination, not Claude-only) per Mark's
   2026-07-11 approval message, recorded in
-  `Docs/mindfultext-epoch-1/decisions/2026-07-11-run-001-approvals.md` (DR-15).
-- **2026-07-12:** v1.3 — added §14.17–§14.21 for DR-17–DR-21: manual
+  `Docs/mindfultext-epoch-1/decisions/2026-07-11-run-001-approvals.md` ([[decisions/2026-07-11-run-001-approvals#dr-15--e1-r1a03-team-config-approved-as-amended--no-claude-default|DR-15]]).
+- **2026-07-12:** v1.3 — added §14.17–§14.21 for [[decisions/2026-07-12-mark-directions#dr-17--run-001-manual-invocation-policy|DR-17]]–[[decisions/2026-07-12-mark-directions#dr-21--hermes-included-in-epoch-1-scope|DR-21]]: manual
   invocation control, confirmed evidence direction, the `qwen3:8b` local
   core, Seagate local-only storage, and Hermes Epoch 1 scope.
-- **2026-07-12:** v1.4 — added §14.22 for DR-22: a founder-brief, run-first
+- **2026-07-12:** v1.4 — added §14.22 for [[decisions/2026-07-12-prototype-run-first#dr-22--prototype-run-first-workflow|DR-22]]: a founder-brief, run-first
   prototype loop; Telegram/C4 and 24-hour stability are deferred controls.
-- **2026-07-12:** v1.5 — added §14.23 for DR-23: one Growth Hypothesis entry
+- **2026-07-12:** v1.5 — added §14.23 for [[decisions/2026-07-12-growth-hypothesis-inbox#dr-23--growth-hypothesis-inbox-and-agent-assisted-exploration|DR-23]]: one Growth Hypothesis entry
   point with agent-assisted public research and evidence development.
-- **2026-07-12:** v1.6 — added §14.24 for DR-24: a hypothesis begins directly
+- **2026-07-12:** v1.6 — added §14.24 for [[decisions/2026-07-12-direct-growth-hypotheses#dr-24--direct-growth-hypotheses-start|DR-24]]: a hypothesis begins directly
   as `exploring`; no inbox state or intake stage.
-- **2026-07-12:** v1.7 — added §14.25 for DR-25: optional agent-directed
+- **2026-07-12:** v1.7 — added §14.25 for [[decisions/2026-07-12-research-controls-and-profile-watch#dr-25--research-controls-and-public-profile-watch|DR-25]]: optional agent-directed
   research controls and an opt-in public-profile watch.
-- **2026-07-12:** v1.8 — added §14.26 for DR-26: a simplified folder layout
+- **2026-07-12:** v1.8 — added §14.26 for [[decisions/2026-07-12-folder-organization#dr-26--folder-organization|DR-26]]: a simplified folder layout
   with growth and status documents grouped by purpose.
-- **2026-07-12:** v1.9 — added §14.27 for DR-27: size a clear ICP with U.S.
+- **2026-07-12:** v1.9 — added §14.27 for [[decisions/2026-07-12-tam-first-market-sizing#dr-27--tam-first-market-sizing|DR-27]]: size a clear ICP with U.S.
   TAM first; use SAM/SOM only when they change the next decision.
 
 ## 14. Amendments — 2026-07-10 (v1.1)
@@ -329,7 +329,7 @@ with older body text, the amendment governs.
 3. **External-provider failure mode:** an unknown or unverified provider
    surface is external. No spend or external-model use without a named
    provider, a per-run monetary cap, and Mark approval. Caps recorded
-   2026-07-10: **$0 external, $0 sandbox** until raised by dated record (DR-8).
+   2026-07-10: **$0 external, $0 sandbox** until raised by dated record ([[decisions/2026-07-10-epoch-1-foundation#dr-8--spending-caps|DR-8]]).
 4. **Parked coding arm:** the autonomous build-and-deploy lane is parked;
    revival requires a level-2/3 signal plus a dated Mark decision record
    (supersedes ops-plan §4's "fully autonomous" choice).
@@ -355,13 +355,13 @@ with older body text, the amendment governs.
     waives. `datasets/` is gitignored or PII-free by construction.
 13. **Path-scoring rubric:** minimal rubric v0.1 lives in
     `growth/SCORECARD.md`; required for Run 001 ranking.
-14. **Pi's Epoch-1 role:** optional-later (per §5) stands — recorded DR-7.
+14. **Pi's Epoch-1 role:** optional-later (per §5) stands — recorded [[decisions/2026-07-10-epoch-1-foundation#dr-7--pis-epoch-1-role|DR-7]].
 15. **Gate rule (D1 = option C, per-surface):** corroboration (lone BLOCK →
     WARN) for internal artifacts; **either-BLOCKs → BLOCK** for anything
     outbound, customer-facing, paid, or irreversible. §8's external-action
     gate stands unchanged. Code/doc alignment (`gates.js` + its header
-    comment + AGENTS.md §Dual-gate) is a pending on-Mac task (DR-1).
-16. **Run 001 execution surface (v1.2, approved by Mark 2026-07-11, DR-15):**
+    comment + AGENTS.md §Dual-gate) is a pending on-Mac task ([[decisions/2026-07-10-epoch-1-foundation#dr-1--d1-gate-rule-option-c-per-surface|DR-1]]).
+16. **Run 001 execution surface (v1.2, approved by Mark 2026-07-11, [[decisions/2026-07-11-run-001-approvals#dr-15--e1-r1a03-team-config-approved-as-amended--no-claude-default|DR-15]]):**
     Run 001 is executed by a **Mark-named combination of external providers
     (Codex, Claude, Hermes, etc.) with no default provider** — Team Config
     v0.1.1 — superseding §7's "Claude synthesizes" wording and the Claude-only
@@ -369,26 +369,26 @@ with older body text, the amendment governs.
     surface, so the §6/§14.2 data-class rules apply as before; no silent
     fallback; $0 agent-side caps (§14.3)
     stand, with a Mark-held personal manual-testing spend exception recorded
-    in DR-16 that raises no agent-side cap. Mark names the actual provider
+    in [[decisions/2026-07-11-run-001-approvals#dr-16--e1-r1a04-run-001-card-approved-mark-held-manual-testing-budget-exception|DR-16]] that raises no agent-side cap. Mark names the actual provider
     set on the run card before execution.
-17. **Manual invocation control (DR-17):** Mark manually prompts each Run 001
+17. **Manual invocation control ([[decisions/2026-07-12-mark-directions#dr-17--run-001-manual-invocation-policy|DR-17]]):** Mark manually prompts each Run 001
     invocation and names its provider/agent. The harness controls the
     invocation budget; Epoch 1 does not add a second project budget system.
-18. **Evidence confirmation (DR-18):** Mark confirmed the four retained
+18. **Evidence confirmation ([[decisions/2026-07-12-mark-directions#dr-18--run-001-evidence-confirmation|DR-18]]):** Mark confirmed the four retained
     candidates for `external-okay` use; physical import and spot-check remain
     prerequisites, especially for third-party pilot feedback.
-19. **MindfulText local core (DR-19):** the configured dashboard core is
+19. **MindfulText local core ([[decisions/2026-07-12-mark-directions#dr-19--mindfultext-local-model-core|DR-19]]):** the configured dashboard core is
     `qwen3:8b`, already used by the lightweight classification routes. The
     router remains the source of task-to-model assignments; the dashboard's
     memory budget is distinct from harness agent spend.
-20. **Local-only store (DR-20):** raw sensitive inputs use a dedicated
+20. **Local-only store ([[decisions/2026-07-12-mark-directions#dr-20--local-only-sensitive-input-store|DR-20]]):** raw sensitive inputs use a dedicated
     encrypted, non-Git, non-cloud-synced folder on the Seagate volume, with no
     fallback copy when it is unavailable. Lab relocation remains separately
     authorized.
-21. **Hermes scope (DR-21):** Hermes may perform bounded, manually prompted
+21. **Hermes scope ([[decisions/2026-07-12-mark-directions#dr-21--hermes-included-in-epoch-1-scope|DR-21]]):** Hermes may perform bounded, manually prompted
     Epoch 1 work. This does not authorize autonomous Telegram task creation,
     arbitrary shell work, provider/config changes, or external action.
-22. **Prototype run-first mode (DR-22):** use a small founder brief—product,
+22. **Prototype run-first mode ([[decisions/2026-07-12-prototype-run-first#dr-22--prototype-run-first-workflow|DR-22]]):** use a small founder brief—product,
     buyer, pain, proof, and tentative offer—to draft 3–5 opportunity paths,
     then let Mark edit/rank and choose the next test. The original four
     evidence assets are helpful enrichment, not a prerequisite for draft
@@ -397,7 +397,7 @@ with older body text, the amendment governs.
     deferred. The 24-hour local stability observation is background telemetry;
     local comparisons run with a snapshot and become inconclusive on failure,
     rather than being blocked in advance.
-23. **Growth Hypothesis entry (DR-23):** `growth/HYPOTHESES.md` is the
+23. **Growth Hypothesis entry ([[decisions/2026-07-12-growth-hypothesis-inbox#dr-23--growth-hypothesis-inbox-and-agent-assisted-exploration|DR-23]]):** `growth/HYPOTHESES.md` is the
     single entry point. Mark may enter one sentence or partial fields; Product
     defaults to MindfulText, with a named sub-offering, prototype, or MVP as a
     valid variation. Agents may infer missing fields, research public sources,
@@ -405,12 +405,12 @@ with older body text, the amendment governs.
     additions are `agent-hypothesis`, not proof; real customer feedback decides
     whether a hypothesis is validated, parked, or killed. Detailed
     source/owner/rights/data-class intake is deferred for this prototype loop.
-24. **Direct Growth Hypotheses start (DR-24):** Rename the working entry point
+24. **Direct Growth Hypotheses start ([[decisions/2026-07-12-direct-growth-hypotheses#dr-24--direct-growth-hypotheses-start|DR-24]]):** Rename the working entry point
     to **Growth Hypotheses**. Every new `GH-###` begins directly as
     `exploring`; there is no `inbox` status, queue, or preliminary handoff.
     The selected agent may immediately fill blanks and develop the hypothesis
     under §14.23.
-25. **Research controls and profile watch (DR-25):** Each hypothesis may leave
+25. **Research controls and profile watch ([[decisions/2026-07-12-research-controls-and-profile-watch#dr-25--research-controls-and-public-profile-watch|DR-25]]):** Each hypothesis may leave
     `Research` blank/`auto` so its selected agent independently chooses cited
     public sources, or use a compact line to set a model preference, sources,
     research question, and desired score contribution. `Profile tracking` is
@@ -419,12 +419,12 @@ with older body text, the amendment governs.
     `growth/PUBLIC-PROFILE-WATCH.md`. This is manual public research only—not
     monitoring, scraping, contact discovery, or outreach—and it never records
     private contact details, sensitive traits, or raw personal messages.
-26. **Folder organization (DR-26):** root-level documents are limited to the
+26. **Folder organization ([[decisions/2026-07-12-folder-organization#dr-26--folder-organization|DR-26]]):** root-level documents are limited to the
     project entry point, charter, Context Map, and Master Checklist. Daily
     growth work lives in `growth/`; current status and handoff live in
     `status/`. The old numbered root files and `00-charter.md` pointer are
     retired. Links and operational instructions use the new paths.
-27. **TAM-first market sizing (DR-27):** once an agent can define an ICP by
+27. **TAM-first market sizing ([[decisions/2026-07-12-tam-first-market-sizing#dr-27--tam-first-market-sizing|DR-27]]):** once an agent can define an ICP by
     role/group, observable behavior or current alternative, and relevant
     situation/constraint, it may calculate a cited U.S. TAM range. The note
     states `eligible U.S. ICP count × annual pricing assumption`, its date,

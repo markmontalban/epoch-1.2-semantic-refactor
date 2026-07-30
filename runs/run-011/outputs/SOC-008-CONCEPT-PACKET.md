@@ -1,4 +1,4 @@
-# SOC-008 — Constructive Comedy Movement Concept Packet
+# [[growth/SOCIAL-IDEA-LEDGER|SOC-008]] — Constructive Comedy Movement Concept Packet
 
 Last updated: 2026-07-16 11:50:49 PDT — edited by: Codex
 
@@ -31,7 +31,7 @@ This packet converts Mark's direction into a clear, internally testable founder-
 ## D. What is known, assumed, and still unknown
 
 - **Founder direction:** Mark believes people want an influencer who seeks to make a positive difference; he sees mindfulness plus comedy as a possible non-disruptive way to invite action.
-- **Retained project context:** `SOC-003` already frames the focused-theme versus broad-founder tradeoff, and `SOC-006` preserves the need for a stable mindfulness worldview with enough focus for followers to understand it.
+- **Retained project context:** [[growth/SOCIAL-IDEA-LEDGER|SOC-003]] already frames the focused-theme versus broad-founder tradeoff, and [[growth/SOCIAL-IDEA-LEDGER|SOC-006]] preserves the need for a stable mindfulness worldview with enough focus for followers to understand it.
 - **Agent hypothesis:** Broad identity plus a small number of lived-context lenses is more coherent than launching three audience-specific accounts. It preserves range while giving each post a legible point of view.
 - **Unknown resonance:** No baseline metrics, examples, audience interviews, posting history, or public-source evidence was used in this run. The idea is unvalidated.
 - **Unknown commercial bridge:** The packet does not yet show how this movement connects to MindfulText revenue learning; that bridge must be explicit before it is treated as an active GTM motion.
@@ -42,4 +42,13 @@ This packet converts Mark's direction into a clear, internally testable founder-
 - **Minimal setup:** Choose one platform, one primary lens for the first baseline, a fixed post/time ceiling, and a Mark-authored voice/values rubric. The other lenses remain comparators, not simultaneous channels.
 - **Useful signals:** Look for relevant reflection, constructive stories, thoughtful disagreement, or repeat attention from a defined audience; raw views and likes alone are diagnostic, not proof.
 - **Disconfirming signals:** Repeated “preachy,” “unclear,” “too generic,” “mean,” or “funny but empty” reactions would require revision or parking. Absence of evidence is not a reason to automate or increase cadence.
-- **Approval boundary:** No posting, commenting, messaging, monitoring, scraping, scheduling, or automation is authorized by RUN-011. Any manual test requires a new explicit Mark approval.
+- **Approval boundary:** No posting, commenting, messaging, monitoring, scraping, scheduling, or automation is authorized by [[runs/run-011/RUN-011-Comedy-Concept|RUN-011]]. Any manual test requires a new explicit Mark approval.
+
+## Related records
+
+- [[runs/run-011/RUN-011-Comedy-Concept|RUN-011-Comedy-Concept]]
+- [[growth/SOCIAL-IDEA-LEDGER|SOC-008]]
+- [[growth/SOCIAL-IDEA-LEDGER|SOC-003]]
+- [[growth/SOCIAL-IDEA-LEDGER|SOC-006]]
+- [[decisions/DECISION-REGISTER|DR-36]]
+- [[runs/run-011/RUN-011-Comedy-Concept|RUN-011]]

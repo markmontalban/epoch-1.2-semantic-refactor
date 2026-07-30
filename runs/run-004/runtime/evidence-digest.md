@@ -1,4 +1,4 @@
-# RUN-004 rolling evidence digest
+# [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]] rolling evidence digest
 
 Last updated: 2026-07-14 02:37:00 PDT — edited by: Codex
 

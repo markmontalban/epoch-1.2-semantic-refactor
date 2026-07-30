@@ -6,10 +6,10 @@ Last updated: 2026-07-12 22:25:32 PDT — edited by: Codex
 
 ## Start here
 
-Read [`README.md`](../README.md) first for the authority map. Then read
-[`MASTER-CHECKLIST.md`](../MASTER-CHECKLIST.md) for active execution status and
-[`decisions/DECISION-REGISTER.md`](../decisions/DECISION-REGISTER.md) to find the
-approval record behind any `DR-*` reference. [`CURRENT-STATE.md`](CURRENT-STATE.md)
+Read [Project Entry Point](../README.md) first for the authority map. Then read
+[Master Checklist](../MASTER-CHECKLIST.md) for active execution status and
+[Decision Register](../decisions/DECISION-REGISTER.md) to find the
+approval record behind any `DR-*` reference. [Current State](CURRENT-STATE.md)
 is the compact Mark-facing entry point.
 
 ## What is complete and evidenced
@@ -20,7 +20,7 @@ is the compact Mark-facing entry point.
   its requirement-by-requirement completeness pass is `c00330c`.
 - Dashboard safety/stability deployment is complete in
   `Projects/model-dashboard-live`:
-  - `c7f0b32`: DR-1 per-surface gates, snapshot-first SSE implementation fix,
+  - `c7f0b32`: [[decisions/2026-07-10-epoch-1-foundation#dr-1--d1-gate-rule-option-c-per-surface|DR-1]] per-surface gates, snapshot-first SSE implementation fix,
     ISO-timestamp logging.
   - `72712e2`: 116 GB budget; `babysitter` and `window_watch` disabled.
   - Full dashboard suite passed **202/202**. Lint had **0 errors** and nine
@@ -29,14 +29,14 @@ is the compact Mark-facing entry point.
   baseline is log line **1311**. Initial checks were clean, but the observation
   failed when the provisional core re-pinned at `2026-07-10T17:25:26.063Z` and
   `2026-07-10T18:40:26.171Z`. See
-  [`observations/2026-07-10-stability-observation.md`](../observations/2026-07-10-stability-observation.md).
+  [Stability Observation](../observations/2026-07-10-stability-observation.md).
 
 ## Active work
 
 The former 24-hour stability observation failed, then the core moved to
-`qwen3:8b` (DR-19; dashboard commit `7b1cec0`). In prototype run-first mode,
+`qwen3:8b` ([[decisions/2026-07-12-mark-directions#dr-19--mindfultext-local-model-core|DR-19]]; dashboard commit `7b1cec0`). In prototype run-first mode,
 stability is background telemetry: Run 001 and a later local comparison may
-run now, with any instability recorded as learning (DR-22).
+run now, with any instability recorded as learning ([[decisions/2026-07-12-prototype-run-first#dr-22--prototype-run-first-workflow|DR-22]]).
 
 ```bash
 cd ~/AI-Studio/Projects/model-dashboard-live
@@ -53,13 +53,13 @@ observation.
 ## Critical path — Mark only
 
 *(Items 1–2 completed 2026-07-11 — see
-[`decisions/2026-07-11-run-001-approvals.md`](../decisions/2026-07-11-run-001-approvals.md).
+[Run 001 Approvals](../decisions/2026-07-11-run-001-approvals.md).
 Run 001 is approved as amended: Mark-prompted provider/agent, no default,
 team-config v0.1.1, charter v1.3 §14.17.)*
 
-1. ~~Class or strike all four evidence candidates~~ — done (DR-13); still
+1. ~~Class or strike all four evidence candidates~~ — done ([[decisions/2026-07-11-run-001-approvals#dr-13--e1-ev01e1-ev04-evidence-candidates-approved|DR-13]]); still
    pending: **physically import the assets** into
-   [`growth/HYPOTHESES.md`](../growth/HYPOTHESES.md) and spot-check each
+   [Growth Hypotheses](../growth/HYPOTHESES.md) and spot-check each
    against `external-okay`.
 2. ~~Review rubric / team config / Run 001 card~~ — done. Fill the five-bullet
    founder brief and name the provider/agent in Mark's manual invocation prompt.

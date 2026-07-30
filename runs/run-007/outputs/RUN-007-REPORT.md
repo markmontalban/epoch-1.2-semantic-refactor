@@ -1,4 +1,4 @@
-# RUN-007 Report — U.S. Care-delivery Influence Map
+# [[runs/run-007/RUN-007-Influence-Map|RUN-007]] Report — U.S. Care-delivery Influence Map
 
 Last updated: 2026-07-15 01:25:00 PDT — edited by: Codex
 
@@ -24,7 +24,7 @@ The strongest first learning route is a layered channel strategy: begin with spe
 
 These are priority research candidates, not outreach recommendations:
 
-1. **Behavioral Health Business** — strongest direct operator fit for `SEG-002`, with publication and podcast formats.
+1. **Behavioral Health Business** — strongest direct operator fit for [[growth/SEGMENTS#seg-002--community-behavioral-health-providers|SEG-002]], with publication and podcast formats.
 2. **Home Health Care News / Disrupt** — strong home-based-care operator and workforce coverage.
 3. **Hospice News / Inside Hospice** — strong specialist trade and named-editor route for post-acute care.
 4. **ASHHRA Podcast** — direct healthcare HR/workforce lens that may illuminate ownership and language.
@@ -48,7 +48,7 @@ These are priority research candidates, not outreach recommendations:
 - **Influence is not buying authority.** A source may reach care-delivery workers or leaders without having access to a budget owner.
 - **Publisher reach is unevenly evidenced.** Some audience figures are first-party claims; many small sources publish no reliable reach metrics.
 - **Association media is not independent journalism.** AHA, NACHC, NRHA, AACN, and similar channels may be highly relevant but are member- or advocacy-oriented.
-- **Consumer creators are adjacent.** Kati Morton, Dr Tracey Marks, and Steph Anya are relevant to mental-health language but should not be treated as direct `SEG-001` channels without a separate audience-fit test.
+- **Consumer creators are adjacent.** Kati Morton, Dr Tracey Marks, and Steph Anya are relevant to mental-health language but should not be treated as direct [[growth/SEGMENTS#seg-001--care-delivery-organizations|SEG-001]] channels without a separate audience-fit test.
 - **Completeness is bounded.** This was a four-hour/50-record sweep; it did not claim to find every local journalist, newsletter, YouTube channel, TikTok account, LinkedIn creator, or regional association.
 
 ## Decision
@@ -67,5 +67,22 @@ No external action is authorized by this report. Any content submission, sponsor
 - [Influence registry](influence-registry.csv)
 - [Source ledger](source-ledger.csv)
 - [Coverage gaps](coverage-gaps.md)
-- [Run card](../run-card.md)
+- [Run card](../RUN-007-Influence-Map.md)
 - [Privacy-safe trace](../trace.jsonl)
+
+## Related records
+
+- [[runs/run-007/RUN-007-Influence-Map|RUN-007-Influence-Map]]
+- [[growth/SEGMENTS|SEG-001]]
+- [[growth/SEGMENTS|SEG-002]]
+- [[growth/SEGMENTS|SEG-003]]
+- [[growth/CDP-001|CDP-001]]
+- [[growth/ICP-REGISTRY|ICP-019]]
+- [[growth/HYPOTHESES|GH-004]]
+- [[growth/GTM-MOTIONS|GTM-001]]
+- [[runs/run-005/RUN-005-Organization-Registry|RUN-005]]
+- [[runs/run-006/RUN-006-One-Degree-Market-Map|RUN-006]]
+- [[decisions/2026-07-13-segment-linked-runs|DR-29]]
+- [[decisions/2026-07-14-customer-development-plan|DR-31]]
+- [[decisions/2026-07-15-run-005-care-delivery-registry|DR-33]]
+- [[runs/run-007/RUN-007-Influence-Map|RUN-007]]

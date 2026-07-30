@@ -32,6 +32,6 @@ not a Run 001 or Run 002 gate. A local-first comparison may run with its
 ordinary pre-run snapshot; any core eviction, 503, or other instability simply
 makes that comparison inconclusive and informs the next optimization.
 
-**Status:** Mark-approved 2026-07-12. `DR-11`, `DR-13`, and the failed
+**Status:** Mark-approved 2026-07-12. [[decisions/2026-07-10-epoch-1-foundation#dr-11--c4-verifications-blocking-for-any-hermes-use|DR-11]], [[decisions/2026-07-11-run-001-approvals#dr-13--e1-ev01e1-ev04-evidence-candidates-approved|DR-13]], and the failed
 stability observation remain useful history, but their corresponding
 verification/import/stability gates no longer block prototype learning runs.

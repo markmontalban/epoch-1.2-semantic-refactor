@@ -4,8 +4,8 @@ Last updated: 2026-07-12 23:54:25 PDT — edited by: Codex
 
 **path_id:** MT-LCSW-03
 **status:** candidate
-**hypothesis_id:** GH-002
-**icp_id:** ICP-020
+**hypothesis_id:** [[growth/HYPOTHESES#gh-002--mindfultext-for-elevated-stress-lcsws|GH-002]]
+**icp_id:** [[growth/ICP-REGISTRY|ICP-020]]
 **buyer:** **agent-hypothesis** — executive, membership, continuing-education, program, or conference leader at an LCSW association or peer community.
 **user:** LCSW members or community participants with self-identified elevated work stress.
 **vertical_context:** Professional association, peer community, or continuing-education-adjacent cohort.

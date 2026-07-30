@@ -1,0 +1,33 @@
+filters:
+  - 'record_type == "run-card"'
+properties:
+  run:
+    displayName: Run
+  title:
+    displayName: Title
+  status:
+    displayName: Status
+  area:
+    displayName: Area
+  focus:
+    displayName: Focus
+  next_decision:
+    displayName: Next decision
+  file.mtime:
+    displayName: Last modified
+views:
+  - type: cards
+    name: "Runs at a glance"
+    groupBy:
+      property: note.area
+      direction: ASC
+    order:
+      - note.run
+  - type: table
+    name: "Run register"
+    groupBy:
+      property: note.status
+      direction: ASC
+    order:
+      - note.run
+      - note.title

@@ -32,6 +32,28 @@ const SCHEDULE = [
   'QW36-09','DR32-08','OR35-07','LL70-06','QW36-10','DR32-09','OR35-08','LL70-07',
   'DR32-10','OR35-09','LL70-08','OR35-10','LL70-09','LL70-10'
 ];
+const PROMPT_FILENAMES = {
+  'GO20-01': 'GO20-01-Category-Problem-Language.md',
+  'GO20-02': 'GO20-02-Wellness-Offer-Categories.md',
+  'GO20-03': 'GO20-03-Alternative-Delivery-Formats.md',
+  'GO20-04': 'GO20-04-CCBHC-Workforce-Language.md',
+  'GO20-05': 'GO20-05-Workforce-Strain-Sources.md',
+  'GO20-06': 'GO20-06-Structural-Change-Messaging.md',
+  'GO20-07': 'GO20-07-Terminology-Mismatch.md',
+  'GO20-08': 'GO20-08-Unsupported-Competitor-Claims.md',
+  'GO20-09': 'GO20-09-Marketing-Opportunity-Record.md',
+  'GO20-10': 'GO20-10-Verified-Language-Map.md',
+  'LL70-01': 'LL70-01-Account-Evidence-Comparison.md',
+  'LL70-02': 'LL70-02-Workforce-Context-Comparison.md',
+  'LL70-03': 'LL70-03-Top-Account-Challenge.md',
+  'QW36-01': 'QW36-01-Gulf-Coast-Workforce.md',
+  'QW36-02': 'QW36-02-Centerstone-Workforce.md',
+  'QW36-03': 'QW36-03-Sante-Workforce-Context.md',
+  'QW36-04': 'QW36-04-Workforce-Signal-Accounts.md',
+  'QW36-05': 'QW36-05-Target-Claim-Verification.md',
+  'QW36-06': 'QW36-06-Workforce-Terms.md',
+  'QW36-07': 'QW36-07-Shift-Work-Constraints.md',
+};
 
 function now() { return new Date().toISOString(); }
 function loadJson(file) { return JSON.parse(readFileSync(file, 'utf8')); }
@@ -44,7 +66,8 @@ function outputPaths(id) {
   return {
     out: path.join(P.raw, `${id}.out.txt`), err: path.join(P.raw, `${id}.err.txt`),
     usage: path.join(P.raw, `${id}.usage.json`), exit: path.join(P.raw, `${id}.exit`),
-    prompt: path.join(P.prompts, `${id}.md`), pid: path.join(P.pids, `${id}.pid`),
+    prompt: path.join(P.prompts, PROMPT_FILENAMES[id] || `${id}.md`),
+    pid: path.join(P.pids, `${id}.pid`),
   };
 }
 async function getJson(url) {

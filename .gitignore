@@ -2,3 +2,8 @@
 datasets/
 .DS_Store
 *.tmp
+__pycache__/
+.obsidian/workspace*.json
+learning-lab/node_modules/
+learning-lab/dist/
+learning-lab/data/

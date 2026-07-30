@@ -1,4 +1,4 @@
-# GH-002 — U.S. TAM Note: Elevated-stress LCSWs
+# [[growth/HYPOTHESES|GH-002]] — U.S. TAM Note: Elevated-stress LCSWs
 
 Last updated: 2026-07-12 23:54:25 PDT — edited by: Codex
 
@@ -31,3 +31,14 @@ This is sufficiently defined for a preliminary U.S. TAM range. It is not suffici
 - The count may include credential categories that do not exactly match the label “LCSW” and excludes unlicensed social workers; it is a transparent proxy, not a census of every potential user.
 - The range includes individual and organization-sponsored use; it does not identify who pays, what share is addressable through channels, or how much implementation/support would cost.
 - No SAM/SOM is calculated because a narrower number would not yet change the immediate decision: first qualify one buyer path and verify the existing customer evidence.
+
+## Related records
+
+- [[runs/run-001/RUN-001-Growth-Path-Ranking|RUN-001-Growth-Path-Ranking]]
+- [[growth/HYPOTHESES|GH-002]]
+- [[decisions/2026-07-12-mark-directions|DR-17]]
+- [[decisions/2026-07-12-prototype-run-first|DR-22]]
+- [[decisions/2026-07-12-growth-hypothesis-inbox|DR-23]]
+- [[decisions/2026-07-12-direct-growth-hypotheses|DR-24]]
+- [[decisions/2026-07-12-research-controls-and-profile-watch|DR-25]]
+- [[decisions/2026-07-12-tam-first-market-sizing|DR-27]]

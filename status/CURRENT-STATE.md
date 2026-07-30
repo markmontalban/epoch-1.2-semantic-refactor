@@ -1,12 +1,12 @@
 # MindfulText Epoch 1 — Current State
 
-Last updated: 2026-07-28 10:44:41 PDT — edited by: Codex
+Last updated: 2026-07-30 PDT — edited by: Codex
 
 This is Mark's compact decision-oriented re-entry summary; use the Master Checklist, not this page, for executable task status.
 
 ## Current position
 
-- **Corpus current through [[runs/run-019/RUN-019-Pulse-Public-Asset-Audit|RUN-019]]:** Nineteen bounded runs cover opportunity framing, care-delivery research, founder/product positioning, and the social-learning lane. [Run Index](../runs/README.md)
+- **Corpus current through [[runs/run-021/RUN-021-Wearable-Roadmap-Alpha-Focus|RUN-021]]:** Twenty-one bounded runs cover opportunity framing, care-delivery research, founder/product positioning, the social-learning lane, and a wearable alpha-focus comparison. `RUN-021` recommends sleep first on the claims axis, with burnout second and blood pressure third; the recommendation still requires a dated founder decision and establishes no market demand, clinical efficacy, or external-action authority. [Run Index](../runs/README.md)
 - **Care-delivery spine remains intact:** `SEG-001` contains focused `SEG-002`, comparison branch `SEG-003`, and workforce branch `SEG-008`; `CDP-001`, `GH-004`, and `GTM-001` retain the learning path without claiming market validation. [Segment Map](../growth/SEGMENTS.md) · [CDP-001](../growth/CDP-001.md)
 - **Organization research is structured:** `RUN-005` retains 56 organization records and buyer-function hypotheses, including six qualify-first accounts; none is a buyer-intent signal, named-person lead, or outreach authorization. [Registry](../growth/account-registry/README.md)
 - **DSP remains unpromoted:** `RUN-009` supports Direct Support Professionals as a candidate frontline audience under `SEG-001`, but `ICP-022` is not canonical and no setting has been selected for the next qualification pass. [Run 009 report](../runs/run-009/outputs/RUN-009-REPORT.md)
@@ -15,6 +15,7 @@ This is Mark's compact decision-oriented re-entry summary; use the Master Checkl
 
 ## Decisions Mark can make next
 
+- **Review the wearable alpha recommendation:** Approve, revise, or park [[runs/run-021/RUN-021-Wearable-Roadmap-Alpha-Focus|RUN-021]]'s sleep-first sequence. Sizing was inconclusive, access was effectively tied at alpha scale, and the recommendation rests on the lower claims exposure of a purely wellness sleep posture. [Run report](../runs/run-021/outputs/RUN-021-REPORT.md)
 - **Choose the social baseline:** Approve, revise, or park a separately carded six-story manual baseline for [[growth/SOCIAL-IDEA-LEDGER|SOC-009]] on the existing AI account pair; if approved, name one primary non-vanity signal, a time ceiling, and a voice rubric. No publishing is authorized yet. [Operating model](../runs/run-018/outputs/SOCIAL-STUDIO-OPERATING-MODEL.md#smallest-next-manual-baseline--not-yet-authorized)
 - **Resolve Pulse provenance:** Approve or park a strictly read-only, local-only provenance inventory before considering any public Pulse asset. No source data, workflow, or landing page work is authorized. [Qualification](../runs/run-019/outputs/PULSE-PUBLIC-ASSET-QUALIFICATION.md#smallest-next-run-local-only-provenance-inventory)
 - **Resolve workflow posture:** After an asset audit, decide whether to keep, narrow, or replace Replit and establish a private, credential-safe Git/export routine for the unversioned n8n workflow folder. `MASTER-CHECKLIST.md:E2l` is Mark-only. [Master Checklist](../MASTER-CHECKLIST.md)

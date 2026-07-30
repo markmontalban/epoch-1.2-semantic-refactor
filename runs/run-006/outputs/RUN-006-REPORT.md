@@ -1,4 +1,4 @@
-# RUN-006 — Care-delivery one-degree market map report
+# [[runs/run-006/RUN-006-One-Degree-Market-Map|RUN-006]] — Care-delivery one-degree market map report
 
 Last updated: 2026-07-15 00:55:00 PDT — edited by: Codex
 
@@ -57,3 +57,22 @@ No login, private data, personal contact data, scraping, monitoring, outreach,
 CRM write, publishing, paid provider, local-model worker, or external spend was
 used. Any future discovery conversation or market test requires a separate
 approval.
+
+## Related records
+
+- [[runs/run-006/RUN-006-One-Degree-Market-Map|RUN-006-One-Degree-Market-Map]]
+- [[growth/SEGMENTS|SEG-001]]
+- [[growth/SEGMENTS|SEG-002]]
+- [[growth/SEGMENTS|SEG-003]]
+- [[growth/CDP-001|CDP-001]]
+- [[growth/ICP-REGISTRY|ICP-019]]
+- [[growth/HYPOTHESES|GH-004]]
+- [[growth/GTM-MOTIONS|GTM-001]]
+- [[runs/run-002/RUN-002-Segment-Intelligence|RUN-002]]
+- [[paths/MT-LCSW-04-fqhc-behavioral-health|Run 001 FQHC candidate path]]
+- [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]]
+- [[runs/run-005/RUN-005-Organization-Registry|RUN-005]]
+- [[decisions/2026-07-13-segment-linked-runs|DR-29]]
+- [[decisions/2026-07-14-customer-development-plan|DR-31]]
+- [[decisions/2026-07-15-run-005-care-delivery-registry|DR-33]]
+- [[runs/run-006/RUN-006-One-Degree-Market-Map|RUN-006]]

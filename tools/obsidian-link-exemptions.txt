@@ -1,0 +1,9 @@
+# Vault-relative Markdown paths intentionally allowed to have no graph edge.
+# Add a comment explaining every new exemption.
+templates/*
+# Historical runtime prompt snapshots retain original relative paths and ID examples.
+runs/run-004/runtime/**
+# Empty legacy filename; retained without a graph relationship.
+..md
+# Empty legacy filename; retained without a graph relationship.
+Users/mgzm-studio/AI-Studio/Projects/model-dashboard-live.md

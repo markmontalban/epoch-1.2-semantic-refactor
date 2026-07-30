@@ -32,7 +32,7 @@ intent. [DR-29](../decisions/2026-07-13-segment-linked-runs.md)
 - Candidate accounts from Run 002 will appear below with citations and a
   `last_checked` date.
 
-## Run 002 candidate accounts — SEG-002 / GH-004
+## Run 002 candidate accounts — [[growth/SEGMENTS|SEG-002]] / [[growth/HYPOTHESES|GH-004]]
 
 | Account | Public evidence and relevance | Buyer roles to qualify | Priority | Next question |
 | --- | --- | --- | ---: | --- |
@@ -46,7 +46,7 @@ intent. [DR-29](../decisions/2026-07-13-segment-linked-runs.md)
 **Last checked:** 2026-07-13. Scores rank research attention only; none is a
 purchase-intent score or authorization to contact an organization.
 
-## RUN-005 account registry
+## [[runs/run-005/RUN-005-Organization-Registry|RUN-005]] account registry
 
 `RUN-005` preserves this six-account summary and extends it into a durable,
 source-normalized 56-record public registry. The registry records stable

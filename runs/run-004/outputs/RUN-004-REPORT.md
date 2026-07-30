@@ -1,8 +1,8 @@
-# RUN-004 — CDP-001 local research report
+# [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]] — [[growth/CDP-001|CDP-001]] local research report
 
 Last updated: 2026-07-14 06:46:58 PDT — edited by: Codex
 
-RUN-004 closed at its five-hour cutoff with bounded public research only; it is
+[[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]] closed at its five-hour cutoff with bounded public research only; it is
 a local-model routing observation, not market validation or authorization to
 contact, market to, or track any organization.
 
@@ -59,6 +59,18 @@ contact, market to, or track any organization.
 
 - **Choose the next research method:** Either conduct a small, manual
   source-opening pass against the six account cards with the existing public
-  web tools, or pause `SEG-002` account research. Do not add a new extraction
+  web tools, or pause [[growth/SEGMENTS#seg-002--community-behavioral-health-providers|SEG-002]] account research. Do not add a new extraction
   provider, outreach, tracking, campaign, or buyer-conversation step without
   a separate Mark decision.
+
+## Related records
+
+- [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004-Local-Research-Sprints]]
+- [[growth/CDP-001|CDP-001]]
+- [[growth/SEGMENTS|SEG-002]]
+- [[growth/HYPOTHESES|GH-004]]
+- [[growth/GTM-MOTIONS|GTM-001]]
+- [[decisions/2026-07-13-segment-linked-runs|DR-29]]
+- [[decisions/2026-07-14-customer-development-plan|DR-31]]
+- [[decisions/2026-07-14-run-004-cdp-local-research|DR-32]]
+- [[runs/run-004/RUN-004-Local-Research-Sprints|RUN-004]]

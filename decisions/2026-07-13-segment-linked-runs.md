@@ -36,7 +36,7 @@ they are not the root of the hierarchy.
 
 ### Run amendment
 
-`RUN-002` is amended from a pure local-first comparison to **Segment
+[[runs/run-002/RUN-002-Segment-Intelligence|RUN-002]] is amended from a pure local-first comparison to **Segment
 Intelligence + Local Research Evaluation**. It begins only for a named
 hypothesis that scores at least 6/10 with Pain, Evidence, Buyer reachability,
 and MindfulText fit each at least 1. It uses public sources only and produces
@@ -44,7 +44,7 @@ segment, account, buyer-group, market-language, and category-positioning
 research. Local research work may be evaluated for traceability, usefulness,
 and latency, but that evaluation is not the run's only business output.
 
-`RUN-003` is amended to **Validation Packet for One Selected Test**. It takes
+[[runs/run-003/RUN-003-Model-Validation-Comparison|RUN-003]] is amended to **Validation Packet for One Selected Test**. It takes
 one atomic hypothesis and one test at a time; it does not require multiple
 hypotheses and does not execute outreach. Its packet defines the buyer group,
 claim, proof needed, discovery questions, claim-risk boundaries, success/fail
@@ -68,8 +68,8 @@ applicable attribution, consent, and usage rights.
 
 ### Initial application
 
-Create `SEG-001 — Care-delivery organizations` as the parent segment and use
-`GH-002` as historical umbrella evidence for the first Run 002. Run 002 may
+Create [[growth/SEGMENTS#seg-001--care-delivery-organizations|SEG-001]] — Care-delivery organizations as the parent segment and use
+[[growth/HYPOTHESES#gh-002--mindfultext-for-elevated-stress-lcsws|GH-002]] as historical umbrella evidence for the first Run 002. Run 002 may
 propose smaller, atomic hypotheses after segment research; no hypothesis is
 validated merely by public research.
 

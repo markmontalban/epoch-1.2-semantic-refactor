@@ -1,4 +1,4 @@
-# GH-002 — Ranked Path Scorecard
+# [[growth/HYPOTHESES#gh-002--mindfultext-for-elevated-stress-lcsws|GH-002]] — Ranked Path Scorecard
 
 Last updated: 2026-07-12 23:54:25 PDT — edited by: Codex
 
@@ -23,3 +23,14 @@ This is an editable, evidence-aware ranking under the approved [0–10 rubric](.
 - Social-work mindfulness studies are not all uniformly positive on stress/anxiety outcomes, and key direct studies are small or non-U.S.
 - SAMHSA cautions that organizational conditions drive burnout; an individual practice cannot substitute for workload, staffing, supervision, or culture changes.
 - Direct public research establishes neither organization budget nor LCSW willingness to pay.
+
+## Related records
+
+- [[runs/run-001/RUN-001-Growth-Path-Ranking|RUN-001-Growth-Path-Ranking]]
+- [[growth/HYPOTHESES|GH-002]]
+- [[decisions/2026-07-12-mark-directions|DR-17]]
+- [[decisions/2026-07-12-prototype-run-first|DR-22]]
+- [[decisions/2026-07-12-growth-hypothesis-inbox|DR-23]]
+- [[decisions/2026-07-12-direct-growth-hypotheses|DR-24]]
+- [[decisions/2026-07-12-research-controls-and-profile-watch|DR-25]]
+- [[decisions/2026-07-12-tam-first-market-sizing|DR-27]]
