@@ -1,5 +1,7 @@
 # Lab tools (python3, stdlib only)
 
+Last updated: 2026-08-14 07:28:23 PDT — edited by: Codex
+
 Both scripts locate the lab root from their own location; run them from anywhere.
 
 `new-run.py` — scaffold the next `runs/run-NNN/`: a descriptively named run card
@@ -12,8 +14,3 @@ Exit codes: 0 created; 1 error (target exists, template missing, bad args).
 Usage: `python3 tools/validate-run-card.py runs/run-001/RUN-001-Growth-Path-Ranking.md`
 Exit codes: 0 valid and approved; 1 missing/invalid required fields or
 unreadable file; 2 valid — awaiting Mark approval.
-
-`validate-obsidian-links.py` — read-only vault audit for unresolved links,
-plain-text stable IDs, and Markdown notes with no graph edge.
-Usage: `python3 tools/validate-obsidian-links.py`
-Exempt intentional standalone notes in `tools/obsidian-link-exemptions.txt`.

@@ -19,7 +19,7 @@ result_updates: []
 
 # Run Card Template
 
-Last updated: 2026-07-14 23:45:39 PDT — edited by: Codex
+Last updated: 2026-08-14 07:28:23 PDT — edited by: Codex
 
 **run_id:** RUN-XXX
 **date:** TBD
@@ -50,10 +50,11 @@ Last updated: 2026-07-14 23:45:39 PDT — edited by: Codex
 
 ## Related records
 
-- Add Obsidian wikilinks for every stable subject ID, approval decision,
-  predecessor run, working note, and Markdown output. Link row-only registry
-  IDs to their owning readable registry or report.
-- Validate the finished run with `python3 tools/validate-obsidian-links.py`.
+- Add direct source links only when they help readers reach the relevant
+  subject, approval decision, predecessor run, working note, or output.
+- Before closing a run, verify its required fields and approval status with
+  `validate-run-card.py`; add direct source references only where they help a
+  reader understand the run's evidence or decision.
 
 ## Usage notes
 

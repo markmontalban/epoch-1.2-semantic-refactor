@@ -1,5 +1,7 @@
 # MindfulText Epoch 1 — Obsidian Home
 
+Last updated: 2026-08-14 07:28:23 PDT — edited by: Codex
+
 > [!info] How to use this vault
 > This is a navigation layer for reading the project. It does not replace the
 > Master Checklist for execution status, dated decision records for approvals,
@@ -7,17 +9,20 @@
 
 ## Start here
 
-1. [Current State](status/CURRENT-STATE.md) — the compact view of the choices in front of Mark.
-2. [Semantic Map Overview](SEMANTIC-MAP-OVERVIEW.canvas) — products, learning threads, workflows, runs, and playbooks.
-3. [Learning Threads](threads/LEARNING-THREADS.base) — active paths, stages, and next decisions.
-4. [Epoch 1 Overview Canvas](EPOCH-1-OVERVIEW.canvas) — the authority architecture of this vault.
-5. [Project Entry Point](README.md) — folder-level navigation and the authority map.
+1. [Growth Ordered Task Map](planning/GROWTH-SYSTEM-ORDERED-TASK-MAP.md) — current founder roadmap.
+2. [Growth Master Checklist](planning/GROWTH-SYSTEM-MASTER-CHECKLIST.md) — current task status and evidence.
+3. [Historical Epoch 1 Current State](status/CURRENT-STATE.md) — retained research/run view only.
+4. [Semantic Map Overview](SEMANTIC-MAP-OVERVIEW.canvas) — products, learning threads, workflows, runs, and playbooks.
+5. [Learning Threads](threads/LEARNING-THREADS.base) — research paths, stages, and decisions.
+6. [Epoch 1 Overview Canvas](EPOCH-1-OVERVIEW.canvas) — the authority architecture of this vault.
+7. [Project Entry Point](README.md) — folder-level navigation and the authority map.
 
-## Current decisions and execution
+## Current Growth decisions and execution
 
-- [Current State](status/CURRENT-STATE.md) is the re-entry summary: use it to decide what to examine now.
-- [Master Checklist](MASTER-CHECKLIST.md) is the single execution tracker: use it for done, open, deferred, and Mark-only work.
+- [Growth Ordered Task Map](planning/GROWTH-SYSTEM-ORDERED-TASK-MAP.md) is the current founder-facing roadmap.
+- [Growth Master Checklist](planning/GROWTH-SYSTEM-MASTER-CHECKLIST.md) is the current Growth execution tracker.
 - [Decision Register](decisions/DECISION-REGISTER.md) makes dated `DR-*` records findable; the linked dated record remains the approval source.
+- [Historical Epoch 1 Current State](status/CURRENT-STATE.md) and the root [Master Checklist](MASTER-CHECKLIST.md) retain the earlier research/run scope only.
 
 ## Project authority
 
@@ -53,8 +58,8 @@
 
 - [Supplementary checklists](checklists/GAP-ANALYSIS-ROADMAP.md) are proposals or topic-specific queues. They never replace the Master Checklist.
 
-For notes that are useful working artifacts but had no native graph edge, use the [Vault Link Index](OBSIDIAN-LINK-INDEX.md). It contains explicit Obsidian wikilinks to their canonical run or output context.
-- Relationship convention: link stable IDs with Obsidian wikilinks; link CCBHC/FQHC conclusions to their segment and discovery lineage. Run `python3 tools/validate-obsidian-links.py` before treating a graph update as complete.
+For notes that are useful working artifacts but had no native graph edge, use the [Vault Link Index](OBSIDIAN-LINK-INDEX.md). It contains retained historical links to their canonical run or output context.
+- When a relationship needs to be stated, prefer a direct reference to the relevant source record. Graph connections are optional navigation, not a completion condition.
 - [Redundancy Audit](OBSIDIAN-REDUNDANCY-AUDIT.md) explains the intended roles of overlapping navigation, status, and historical documents.
 - `workflows/`, `templates/`, and `team-configs/` support the operating system of the project; they are not the current business or execution view.
 - `planning/` and `observations/` preserve history and rationale. Read them when needed, not as the primary re-entry path.
@@ -63,8 +68,9 @@ For notes that are useful working artifacts but had no native graph edge, use th
 
 | If you need to know… | Use… | It is not… |
 | --- | --- | --- |
-| What Mark should consider now | [Current State](status/CURRENT-STATE.md) | Executable task status |
-| What is actually open, done, or Mark-only | [Master Checklist](MASTER-CHECKLIST.md) | The approval record |
+| What Mark should consider in current Growth work | [Growth Ordered Task Map](planning/GROWTH-SYSTEM-ORDERED-TASK-MAP.md) | Detailed acceptance evidence |
+| What is actually open, done, or Mark-only in current Growth work | [Growth Master Checklist](planning/GROWTH-SYSTEM-MASTER-CHECKLIST.md) | The approval record |
+| What the earlier Epoch 1 research/run scope found | [Historical Current State](status/CURRENT-STATE.md) | Current Growth status |
 | What Mark approved or amended | The linked dated `DR-*` record | A live task tracker |
 | How documents and dependencies fit together | [Context Map](CONTEXT-MAP.md) | A competing plan |
 | How the retained corpus nests and connects | [Hierarchy & Data Lineage](EPOCH-1-HIERARCHY-DATA-LINEAGE.md) | Current operating status |
