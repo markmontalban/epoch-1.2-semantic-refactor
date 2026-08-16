@@ -1,6 +1,6 @@
 # W3 — Growth API Contract Proposal (v1)
 
-Last updated: 2026-08-13 21:50:12 PDT — edited by: Codex
+Last updated: 2026-08-14 17:14:43 PDT — edited by: Codex
 
 > **Status: proposed, not frozen.** This is a planning-only interface proposal
 > for W3. It creates no records, credentials, providers, or implementation
@@ -102,11 +102,12 @@ relationship data without the visitor's disclosed choice.
 
 ## Endpoints
 
-### `GET /v1/public/routes/{token}` — resolve an opaque recipient route
+### `GET /v1/public/routes/{experience}/{handle}` — resolve an opaque recipient route
 
 The visitor reaches this resolver through a subtle same-domain experience path
-such as `/care-team-fit/{opaque-token}`. The token is random and contains no
-PII or encoded metadata. Growth Ops privately owns its recipient/campaign/page
+such as `/team-alignment/{opaque-word-handle}`. The semantic `experience` slug
+comes from a controlled approved vocabulary; the random word-only `handle`
+contains no PII, encoded metadata, or digits. Growth Ops privately owns its recipient/campaign/page
 mapping and pause, revoke, expire, and destination-change state; the public URL
 does not change.
 
