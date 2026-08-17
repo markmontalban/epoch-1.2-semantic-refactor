@@ -1,9 +1,13 @@
 # MindfulText Epoch 1 — Project Entry Point
 
-Last updated: 2026-07-16 21:15:25 PDT — edited by: Codex
+Last updated: 2026-08-17 15:50:22 PDT — edited by: Claude Dispatch
 
 Start here to locate the current work, the governing decision behind it, and
 the document that has authority for each kind of claim.
+
+> Historical-scope notice: this repository-root entry point remains for the
+> Epoch 1 research/run record. It is not the active MindfulText Growth
+> execution system. For current Growth work, read the [[planning/GROWTH-SYSTEM-ORDERED-TASK-MAP|Ordered Task Map]], then the [[planning/GROWTH-SYSTEM-MASTER-CHECKLIST|Master Checklist]], then the applicable dated decision record.
 
 > [!info] Document role
 > **Role:** project entry point and folder-level navigation. **Authority:** it
@@ -14,18 +18,22 @@ the document that has authority for each kind of claim.
 
 ## Start here
 
-1. [Current State](status/CURRENT-STATE.md) — what to do now.
-2. [Semantic Map Overview](SEMANTIC-MAP-OVERVIEW.canvas) — curated product,
+1. [Growth Ordered Task Map](planning/GROWTH-SYSTEM-ORDERED-TASK-MAP.md) — current founder-facing Growth roadmap.
+2. [Growth Master Checklist](planning/GROWTH-SYSTEM-MASTER-CHECKLIST.md) — current Growth task status and evidence.
+3. [Historical Epoch 1 Current State](status/CURRENT-STATE.md) — retained research/run re-entry, not current Growth work.
+4. [Semantic Map Overview](SEMANTIC-MAP-OVERVIEW.canvas) — curated product,
    learning-thread, workflow, and current-state entry points.
-3. [Growth Index](growth/README.md) — ideas, audiences, signals, and
+5. [Growth Index](growth/README.md) — ideas, audiences, signals, and
    the link from each `GH-###` to its work.
-4. [Run Index](runs/README.md) — each execution and all of its outputs.
+6. [Run Index](runs/README.md) — each execution and all of its outputs.
 
 ## Authority map
 
 | Need | Source of truth | Use it for |
 | --- | --- | --- |
-| Current task status | `MASTER-CHECKLIST.md` | What is done, open, blocked, or Mark-only. |
+| Current MindfulText Growth roadmap | `planning/GROWTH-SYSTEM-ORDERED-TASK-MAP.md` | Founder-readable order, dependencies, and decisions. |
+| Current MindfulText Growth execution | `planning/GROWTH-SYSTEM-MASTER-CHECKLIST.md` | Exact tasks, status, gates, and evidence. |
+| Historical Epoch research/run task status | `MASTER-CHECKLIST.md` | What is done, open, blocked, or Mark-only within this historical scope. |
 | Approval or amendment | Linked `DR-*` source record | What Mark decided and the caveats on that decision. |
 | Project navigation | `CONTEXT-MAP.md` | Dependencies, current state, and all supporting artifacts. |
 | Epoch 1 authority | `CHARTER.md` | Lab roles, data rules, lifecycle, and amendments. |
@@ -39,11 +47,10 @@ the document that has authority for each kind of claim.
 | `product/` | Product opportunities and preliminary portfolio ranking. Start at the [Product Opportunity Ledger](product/PRODUCT-IDEAS.md); a `PRO-###` record is not delivery approval. |
 | `portfolio/`, `threads/` | Product roots and coherent learning questions across hypotheses, segments, workflows, runs, evidence, and decisions. Start at [PROD-001](portfolio/PROD-001-MindfulText.md). |
 | `playbooks/` | Reusable commercial core plus segment, ICP, thread, and optional account-level overlays. Historical full playbooks remain in their originating runs. |
-| `graph-explorer/` | Local-only interactive semantic explorer generated from Markdown. Its JSON index is build output, not a second database. |
 | Learning Lab | Local-agent learning work is recorded in its dated [decision records](decisions/2026-07-21-learning-lab-local-agents.md) until a repository folder is created. |
 | [Hierarchy & Data Lineage](EPOCH-1-HIERARCHY-DATA-LINEAGE.md) | Corpus ID grammar, nesting, run-to-artifact lineage, and raw-artifact entry points. This is a reference map, not task-status or approval authority. |
 | `paths/` | Reusable opportunity/test-route cards. Start at the [Path Index](paths/README.md). |
-| `status/` | Current state for Mark and handoff for an incoming agent. |
+| `status/` | Historical Epoch 1 research/run state and handoff; not current Growth execution. |
 | `runs/` | Run cards, prompts, notes, outputs, and traces. Start at the [Run Index](runs/README.md) to see each run and its linked `GH-###` work. |
 | `decisions/` | Dated Mark decisions and the Decision Register. |
 | `checklists/` | Supplementary proposal or topic checklists. The [Gap-Analysis Roadmap & Feature Backlog](checklists/GAP-ANALYSIS-ROADMAP.md) is a de-risking queue; the Master Checklist retains execution authority. |
