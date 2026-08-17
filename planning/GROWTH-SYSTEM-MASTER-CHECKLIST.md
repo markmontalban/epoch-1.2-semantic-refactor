@@ -1,6 +1,8 @@
 # MindfulText Growth System — Master Checklist
 
-Last updated: 2026-08-16 10:57:55 PDT — edited by: Codex
+Last updated: 2026-08-17 15:27:16 PDT — edited by: Claude Dispatch
+
+Current-state reconciliation: 2026-08-17 15:27:16 PDT — edited by: Claude Dispatch
 
 ## Authority
 
@@ -83,7 +85,7 @@ only when its evidence is recorded here.
 
 ## Critical path and status
 
-`W0 → W1 → W2 → W3 public-funnel slice → W4a-L1a → W4a-L2a →
+`W0 → W1 → W2 → W3d → W4a-L1a → W4a-L2a →
 W4a-L2b → W4b-L1a → W4b-L1b → W4b-L1c → W4b-L2a → W4b-L2b →
 W4b-L2c → W4b-L2d → W7-L0a → W7-L1a → W7-L2a → W7-L2b → W7-L2c`.
 W5 and broader W6 are deferred scale work; DR-52 extracts only W7-L0a's narrow
@@ -96,7 +98,7 @@ not a pre-validation dependency.
 | W0 Planning authority | done | Authority and plan directory established |
 | W1 Source/security | done | Authenticated Vercel Preview acceptance passed for the isolated stateless shell on `w1-clean-shell`; no Production or public launch occurred. Legacy credential-history, historical-app scans, and connector parity remain deferred to W11 and the legacy systems must remain unused/inactive |
 | W2 Operations foundation | done | Disposable-database foundation and authenticated `w2-preview` authorization/readiness/log correlation passed; the temporary non-owner Vercel access used for rejection testing was revoked and must not be restored |
-| W3 Growth CRM/API | in progress | W3b — Lead Stage Automation passed source/local and separately authorized disposable-database acceptance; broader public API, provider, public-funnel, and Production work remains unimplemented or separately gated |
+| W3 Growth CRM/API | in progress | W3b — Lead Stage Automation passed source/local and separately authorized disposable-database acceptance; `W3d` — Public Recipient Link Service is open and is the public-funnel dependency of `W4b-L1a`/`W4b-L1b`; broader public API, provider, and Production work remains unimplemented or separately gated |
 | W4 Public beta site | in progress | `W4a-L1a`, `W4a-L2a`, and `W4a-L2b` direction are approved; W4b-L1a now has source/local implementation only; W4b-L1b's masked PostHog/replay boundary is approved and awaits implementation; Preview acceptance and the remaining L2 build stay blocked; L3/L4 remain deferred |
 | W5 n8n foundation | deferred | Resume after commercial commitment or repeated manual notification/reconciliation pain; not a manual L2 beta dependency |
 | W6 Integrations | deferred | Broader provider work resumes after commercial commitment or repeated manual reconciliation pain; DR-52 extracts only the narrow Unipile LinkedIn read/reconciliation slice needed by W7-L0a |
@@ -270,34 +272,15 @@ Authority: [[decisions/2026-08-11-founder-controlled-relationship-pipeline|DR-45
 - [x] Record manual-only source intake, external Zoom transcript references,
   and Mark's unbounded pre-customer raw-source retention choice pending a later
   cleanup policy ([[decisions/2026-08-11-founder-controlled-relationship-pipeline|DR-45]]).
-- [ ] Generate cryptographically random, word-only opaque route handles and
-  serve them through an approved semantic same-domain path such as
-  `/team-alignment/{opaque-word-handle}`; the public path contains no PII,
-  encoded metadata, or digits, and the internal resolver returns
-  presentation/attribution instructions without a person record.
-- [ ] Add recipient-link redirect, pause, revoke, and expiry controls while
-  preserving the public URL; store only a protected lookup representation and
-  never log the raw token or full personalized URL.
-- [ ] Preserve original-invitation attribution and distinguish link opened,
-  probable human engagement, voluntary identification, confirmed identity,
-  and alternate/forwarded identity. None is automatic buyer intent.
-- [ ] Accept exposure, summarized engagement, assessment-status, consent, and
-  call-request writes idempotently. Keep answers and sensitive/free-text
-  assessment content out of Growth Ops unless the visitor knowingly opts to
-  associate an approved response reference or summary.
-- [ ] Add scoped APIs, `Idempotency-Key`, `X-Request-ID`, rate limits, validation,
-  retention fields, and privacy-safe logging.
-- [ ] Keep detailed behavior in PostHog and summarized engagement in CRM.
-- [ ] Keep PII, raw tokens, assessment answers, workforce disclosures, and
-  inferred health information out of PostHog. Make Growth Ops/PostHog and any
-  assessment-provider failure non-blocking or safely recoverable for visitors.
-- [ ] Implement call request: name/work email required; organization/role/note
-  optional; attribution server-side; no qualification gate; manual scheduling;
-  attach it to one canonical lead lifecycle and record its own timeline status.
+The eight recipient-link, engagement-intake, and call-request items formerly
+listed here, and the synthetic-funnel gate that accompanied them, moved to
+`W3d — Public Recipient Link Service` below on 2026-08-17 with no wording
+change. They were not part of the 2026-08-13 W3b acceptance evidence, and
+holding them under a completed heading made them invisible as open work.
 
-Gate: synthetic branded recipient link → matched page → anonymous reflection →
-useful results → optional identity association or call request → manual review
-succeeds without leaking token, PII, or assessment answers.
+Gate: the founder-controlled relationship, timeline, stage, draft-approval, and
+source-archive model passes owner-service synthetic acceptance without leaking
+credentials, sensitive metadata, or unapproved sends.
 
 W3b acceptance completed on 2026-08-13 on the separately authorized disposable
 Neon target `growth-ops-dev / W3b-testing`. The owner-service synthetic workflow
@@ -331,6 +314,62 @@ Dependency: W3b — Lead Stage Automation supplies the founder-controlled lead/t
 approval boundary. This loop stays manual and evidence-led; agents may research
 and draft, but may not contact people or send outreach. Only the three narrow
 trusted-event policy edges may advance automatically.
+
+### W3d — Public Recipient Link Service
+
+Authority: [[decisions/2026-08-13-l2-buyer-learning-funnel|DR-46]] and
+[[decisions/2026-08-14-word-only-opaque-route-handles|DR-54]].
+
+Reconciliation note (2026-08-17): these eight items were recorded on 2026-08-14
+under the `W3b` heading with no identifiers. Because `W3b` is marked complete,
+they were not visible as open work, and `W4b-L1a` was later marked complete in
+commit `89b0fe7` after its prerequisite text — "Needs W4a-L1a, W3 public-funnel
+contract, and implementation authorization" — was replaced by its evidence
+sentence rather than satisfied. Wording below is verbatim; only stable
+identifiers were added. `W3d` is the record previously called the "W3
+public-funnel slice" and gates `W4b-L1a` and `W4b-L1b`. The `W3d` identifier is
+provisional pending Mark's confirmation.
+
+- [ ] **W3d-1** Generate cryptographically random, word-only opaque route handles and
+  serve them through an approved semantic same-domain path such as
+  `/team-alignment/{opaque-word-handle}`; the public path contains no PII,
+  encoded metadata, or digits, and the internal resolver returns
+  presentation/attribution instructions without a person record.
+- [ ] **W3d-2** Add recipient-link redirect, pause, revoke, and expiry controls while
+  preserving the public URL; store only a protected lookup representation and
+  never log the raw token or full personalized URL.
+- [ ] **W3d-3** Preserve original-invitation attribution and distinguish link opened,
+  probable human engagement, voluntary identification, confirmed identity,
+  and alternate/forwarded identity. None is automatic buyer intent.
+- [ ] **W3d-4** Accept exposure, summarized engagement, assessment-status, consent, and
+  call-request writes idempotently. Keep answers and sensitive/free-text
+  assessment content out of Growth Ops unless the visitor knowingly opts to
+  associate an approved response reference or summary.
+- [ ] **W3d-5** Add scoped APIs, `Idempotency-Key`, `X-Request-ID`, rate limits, validation,
+  retention fields, and privacy-safe logging.
+- [ ] **W3d-6** Keep detailed behavior in PostHog and summarized engagement in CRM.
+- [ ] **W3d-7** Keep PII, raw tokens, assessment answers, workforce disclosures, and
+  inferred health information out of PostHog. Make Growth Ops/PostHog and any
+  assessment-provider failure non-blocking or safely recoverable for visitors.
+- [ ] **W3d-8** Implement call request: name/work email required; organization/role/note
+  optional; attribution server-side; no qualification gate; manual scheduling;
+  attach it to one canonical lead lifecycle and record its own timeline status.
+
+Current state (2026-08-17, source/local inspection only): `W3d-1` is partly
+implemented. Handle generation, the approved slug vocabulary, the semantic
+public path, keyed-hash storage, and the generic not-found response exist at
+`growth-ops` commit `dd9df14` and `mindfultext-web` commit `dd4a2ea`. Nothing
+persists an issued handle: `recipient_routes` is only ever read, and
+`generateRecipientPath` is referenced only from `tests/public-routes.test.ts`,
+so no servable recipient link can currently be produced. `W3d-2` through
+`W3d-8` are unimplemented. The `paused`, `revoked`, and `expires_at` states
+that `W4b-L1a` reports handling are honored on read but cannot yet be set, so
+that behavior is unexercised. No database target, credential, Preview,
+deployment, or collection is involved in this observation.
+
+Gate: synthetic branded recipient link → matched page → anonymous reflection →
+useful results → optional identity association or call request → manual review
+succeeds without leaking token, PII, or assessment answers.
 
 ## W4 — Public beta funnel
 
@@ -370,8 +409,8 @@ Mark can perform the action or interpret the strategic signal.
 
 | ID | Checklist task | Mode | Status / gate |
 | --- | --- | --- | --- |
-| W4b-L1a | [x] Implement the stateless branded semantic-path experience such as `/team-alignment/{opaque-word-handle}` through server-side Growth Ops resolution, with generic safe handling for invalid, paused, revoked, and expired links. | Agent | Source/local implementation passed Growth Ops tests/typecheck and `mindfultext-web` tests/typecheck/build on 2026-08-14. No database migration run, credential, Preview, deployment, collection, or external send occurred; W4b-L1b is next. |
-| W4b-L1b | [ ] Record link opened separately from probable human engagement and meaningful scroll; preview/scanner requests remain weak evidence. | Agent | [[decisions/2026-08-16-w4b-l1b-masked-analytics-replay\|DR-55]] approves the recipient-page-only PostHog/replay boundary: private invitation linkage, active-time buckets, scroll, CTA/return/error signals, and a notice alongside the cookie notice. No reflection/result/contact replay, raw inputs, AI analysis, export, network/console capture, deployment, or public collection. |
+| W4b-L1a | [x] Implement the stateless branded semantic-path experience such as `/team-alignment/{opaque-word-handle}` through server-side Growth Ops resolution, with generic safe handling for invalid, paused, revoked, and expired links. | Agent | Source/local implementation passed Growth Ops tests/typecheck and `mindfultext-web` tests/typecheck/build on 2026-08-14. No database migration run, credential, Preview, deployment, collection, or external send occurred. **Reconciliation 2026-08-17:** the prior prerequisite text ("Needs W4a-L1a, W3 public-funnel contract, and implementation authorization") was replaced rather than satisfied when this box was checked in commit `89b0fe7`. `W3d` remains open; the paused/revoked/expired handling claimed here cannot be exercised until `W3d-1` and `W3d-2` exist; and implementation authorization for this row is unrecorded. The completion claim is retained as accurate for the path, resolver, and generic unavailable response only. |
+| W4b-L1b | [ ] Record link opened separately from probable human engagement and meaningful scroll; preview/scanner requests remain weak evidence. | Agent | [[decisions/2026-08-16-w4b-l1b-masked-analytics-replay\|DR-55]] approves the recipient-page-only PostHog/replay boundary: private invitation linkage, active-time buckets, scroll, CTA/return/error signals, and a notice alongside the cookie notice. No reflection/result/contact replay, raw inputs, AI analysis, export, network/console capture, deployment, or public collection. **Depends on `W3d-1` through `W3d-7`:** until `W3d-1` and `W3d-2` exist there is no servable recipient link to measure, so end-to-end verification is not possible. DR-55 approves the provider and measurement boundary only and explicitly withholds code-change authority. |
 | W4b-L1c | [ ] Pass L1 word-handle, lifecycle, forwarding, privacy, mobile, accessibility, logging, outage, and authenticated Preview acceptance. | Agent | L1 technical gate |
 | W4b-L2a | [ ] Implement the anonymous-answer fit reflection with progress, partial-response handling, useful results before identification, and no patient or employee-identifying input. | Agent | Needs W4a-L2a/L2b, accepted L1, and implementation/provider authorization |
 | W4b-L2b | [ ] Record assessment start, partial, completion, and results-viewed events without sending answers, free text, PII, raw tokens, or inferred health information to PostHog. | Agent | Needs W4b-L2a |
@@ -380,6 +419,14 @@ Mark can perform the action or interpret the strategic signal.
 | W4b-L3a | [ ] Add broader stable message experiments and richer conditional journeys. | Agent | **Deferred until W7-L2c confirms buyer intent** |
 | W4b-L3b | [ ] Expand demo, saving, identity association, and conversation optimization. | Agent | **Deferred until W7-L2c confirms buyer intent** |
 | W4b-L4a | [ ] Add LinkedIn aggregate reporting, scaled experimentation, and justified automation connections. | Agent | **Deferred until commercial commitment or repeated operating pain** |
+
+Open question for Mark (raised 2026-08-17, unanswered): `W4b-L1a` was marked
+complete in commit `89b0fe7`, but the Ordered Task Map's Mark-only decisions
+still list "separately authorize `W4b-L1a` through `W4b-L2d`" as required. No
+record of that implementation authorization exists in this checklist, the task
+map, or any dated `DR-*` file. Confirm whether it was given, or whether the
+completed `W4b-L1a` work should be treated as unauthorized and re-approved.
+This is recorded as a question only; no status was changed on its account.
 
 W4 keeps month-one content code/config-managed and excludes practices, audio,
 uploads, public admin, legacy catalog, clinical/patient workflows, and an
