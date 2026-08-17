@@ -1,6 +1,6 @@
 # MindfulText Epoch 1 — Decision Register
 
-Last updated: 2026-08-16 10:57:55 PDT — edited by: Codex
+Last updated: 2026-08-16 11:10:38 PDT — edited by: Codex
 
 This is the canonical index for finding Epoch 1 decisions. It is not an
 approval authority: the linked dated decision-record files retain the exact
@@ -74,7 +74,7 @@ is authoritative even when the decision record describes an earlier state.
 
 ## Maintenance rule
 
-The next available Epoch 1 decision number is `DR-53`. Before creating it,
+The next available Growth decision number is `DR-56`. Before creating it,
 inspect this register and the dated source files, then claim the documentation
 work. Create the full record in a dated file in this `decisions/` folder and
 add one register row in the same change. Do not add `DR-*` headings to this

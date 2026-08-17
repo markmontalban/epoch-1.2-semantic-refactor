@@ -1,6 +1,6 @@
 # MindfulText Growth System — AI Bootstrap Handoff
 
-Last updated: 2026-08-13 21:39:12 PDT — edited by: Codex
+Last updated: 2026-08-16 11:10:38 PDT — edited by: Codex
 
 ## Purpose
 
@@ -34,10 +34,19 @@ or commercial commitment.
   relationship, and evidence record.
 - **mindfultext-web** owns the stateless public experience and calls Growth Ops
   server-side; it does not become a second CRM or content database.
-- **PostHog** owns anonymous behavior and experiment measurement; it receives
-  no assessment answers, sensitive free text, or identity truth.
-- **Formbricks**, if separately approved, may provide the reflection and
-  results while preserving the disclosed anonymous/identified boundary.
+- **PostHog** owns recipient-page behavior and experiment measurement; it
+  receives no assessment answers, sensitive free text, names, raw route
+  handles, or identity truth. Growth Ops privately joins an approved LinkedIn
+  profile and invitation to the word-only route and its engagement evidence;
+  that is invitation-level attribution, not proof that the named person visited.
+- **Small custom reflection** is the approved W4a-L2b direction: borrow the
+  short fixed-choice and immediate-results patterns from Formbricks, without
+  adopting a Formbricks provider. Private opaque invitation attribution remains internal; visitor-facing attribution disclosure and expanded identity association are deferred by DR-49/DR-50.
+- **Limited LinkedIn beta attribution** is prioritized in W7-L0a: use the
+  existing Unipile API LinkedIn connection to privately map a profile/provider
+  ID to its opaque invitation and activity, while retaining forwarded/scanner
+  uncertainty and keeping reflection answers separate. This is the one narrow
+  W6 exception; it authorizes no credentials, API calls, profile ingestion, or outreach.
 - **n8n and providers** are separately approved scale/reconciliation tools;
   they do not own canonical state or gain automatic send authority.
 

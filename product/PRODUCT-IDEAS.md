@@ -1,12 +1,15 @@
 # MindfulText Product Opportunity Ledger
 
-Last updated: 2026-07-29 — recorded by: Codex
+Last updated: 2026-08-13 14:47:51 PDT — edited by: Codex
 
 **Status:** Founder-directed product discovery and prioritization reference.
 `PRO-###` records are proposals, not approved builds, commitments, clinical
-claims, data-handling changes, or live-site changes. The current
+claims, data-handling changes, or live-site changes. The
 [website-modernization playbook](../planning/website-modernization-playbook.md)
-still governs its stated scope and deferrals.
+is historical and superseded; current public-site direction comes from
+[[decisions/2026-08-11-public-site-clean-replacement|DR-42]] and
+[[decisions/2026-08-11-public-site-vercel-hosting|DR-44]], with execution in
+the Growth System authority documents.
 
 ## A. Naming and lifecycle
 
@@ -255,11 +258,11 @@ phrases below are the proposed build triggers.
 
 ### Current hypothesis loop
 
-- **Existing — `expand-growth-hypothesis`:** Develop a selected `GH-###` with
+- **Existing — `epoch-1-growth-hypothesis`:** Develop a selected `GH-###` with
   public research, editable assumptions, paths, evidence gaps, and TAM context.
 - **Build first — `review-research-run`:** Review a completed run, identify
   what improved founder decisions, and stage one testable workflow revision.
-- **Existing — `summarize-mark-doc`:** Compress verbose run or strategy
+- **Existing — `epoch-1-summarize-doc`:** Compress verbose run or strategy
   material into a quick founder re-entry view.
 
 ### Public research and evidence

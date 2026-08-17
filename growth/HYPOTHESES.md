@@ -1,6 +1,6 @@
 # Growth — Hypotheses
 
-Last updated: 2026-07-29 PDT — edited by: Codex
+Last updated: 2026-08-14 PDT — edited by: Codex
 
 One idea per `GH-###`. Fill only what you know; leave the rest blank for the
 agent. `Research: auto` means agent-chosen public research. `Profile tracking`:
@@ -160,3 +160,49 @@ starting thought may leave either field blank; the agent labels new claims
 - Research: auto
 - Profile tracking: discover
 - Status: exploring
+
+### GH-008 — Goals, by MindfulText: human-supported goal follow-through
+
+- Starting thought: **founder-assumption** — Everyone has goals, but many people lose momentum after setting them. “Goals, by MindfulText” could let a person name one meaningful goal and receive AI-guided, human-operated follow-up until they complete it. The human layer matters because knowing that a real person is paying attention may create a different kind of accountability than an app or bot alone.
+- Product: Goals, by MindfulText — an AI-assisted, human-operated goal-support service layered on MindfulText’s text-based experience. The service must define consent, follow-up frequency, escalation boundaries, privacy handling, and what “complete” means before testing.
+- Segment ID:
+- Segment: **agent-hypothesis** — Direct-to-consumer adults pursuing a self-chosen personal, work, health-behavior, or life-admin goal; do not assume one universal goal category or demographic.
+- ICP ID: [[growth/ICP-REGISTRY|ICP-021]]
+- ICP: **agent-hypothesis** — Adults who want accountability for a personally meaningful, nonclinical goal and are willing to share progress with a bounded human-supported service. This is not therapy, crisis support, medical treatment, or a guarantee of goal completion.
+- Vertical / context: Direct-to-consumer behavior support and accountability. Avoid claims about treating mental-health conditions or improving clinical outcomes. Human follow-up must be opt-in, appropriately staffed, and transparent about the role of AI and people.
+- Angle: **founder-assumption** — “Set the goal. We’ll help you keep going.” The differentiator is not goal capture or reminders alone; it is a responsive accountability relationship in which AI handles continuity and humans provide judgment, encouragement, and meaningful attention at defined moments.
+- GTM strategy: **agent-hypothesis** — Test a narrow, manually delivered concierge pilot for one goal class before building a broad platform. Compare AI-only reminders with AI-assisted human follow-up, measuring completion and retention separately from satisfaction or perceived accountability.
+- GTM IDs:
+- Pain: **agent-hypothesis** — People often form intentions without translating them into sustained action; the relevant pain is not “having goals” but losing momentum, failing to plan around obstacles, or lacking trusted accountability. The product must test whether human attention changes behavior enough to justify its operating cost.
+- Signals: **agent-research** — There is no credible universal statistic for the percentage of all goals people set and complete. In a large New Year’s-resolution study, self-reported success declined from 43% at three months to 40% at six months and 19% at two years; this is a specific resolution sample, not a general-goal completion rate ([PLOS ONE study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0234097)). A meta-analysis of 94 studies found that if–then implementation plans improved goal attainment relative to goal intentions alone, supporting the broader intention–action-gap framing but not proving that human follow-up will work ([Gollwitzer & Sheeran meta-analysis](https://www.socmot.uni-konstanz.de/publications/implementation-intentions-and-goal-achievement-meta-analysis-effects-and-processes)).
+- Offer-Outcome: Test whether a person who starts with one clearly defined goal completes more of the agreed goal milestone within a defined period with AI-assisted human follow-up than with AI-only reminders. Track goal-definition completion, first action, weekly continuation, milestone completion, opt-out, user-reported accountability, staff time per member, and willingness to pay separately. Do not claim “we help you complete any goal” until completion is measured by goal type and compared with a baseline.
+- Research: standard | public behavioral-science sources and direct-to-consumer accountability comparables | distinguish goal categories, define completion, test the human-versus-AI mechanism, identify privacy and staffing constraints, and specify the cheapest valid pilot | update Pain, Signals, Evidence strength, Buyer reachability, and Fit / effort | profiles off
+- Profile tracking: off
+- Status: exploring
+
+#### Expansion history
+
+- EXP-20260810-01 — depth: standard; tactic: founder concept expansion plus public research on goal completion and the intention–action gap; profiles: off; outputs: this hypothesis entry; result: replaced the unsupported “almost no one completes goals” claim with a bounded resolution-specific signal and a falsifiable human-accountability mechanism; next question: for which single goal category does human follow-up create enough incremental completion to justify its cost?
+
+### GH-009 — MindfulText in your mental orbit
+
+- Starting thought: **founder-assumption** — A campaign built around the familiar idea that people are shaped by the five people they think about most may invite people to add MindfulText as a small, positive presence in their “mental orbit.” A named campaign shell or sub-brand could make this idea easier to test than a generic MindfulText message.
+- Product: MindfulText, with a campaign-only working name to be tested. Candidate: “Orbit, by MindfulText.” This is not a separate product, company, or promised feature.
+- Segment ID:
+- Segment: Direct-to-consumer adults who are open to a brief, nonclinical mindfulness practice and respond to identity, environment, or daily-cue framing.
+- ICP ID: [[growth/ICP-REGISTRY|ICP-021]]
+- ICP: **agent-hypothesis** — Adults who may want a gentle, repeatable positive cue in their daily attention environment; whether this framing resonates more than a direct mindfulness message is unknown.
+- Vertical / context: Direct-to-consumer brand and message testing. The campaign must not imply that a person literally becomes the average of five people, that MindfulText replaces human relationships, or that it changes mental health, performance, or life outcomes.
+- Angle: **founder-assumption** — “Who is in your mental orbit?” / “Make MindfulText one of the voices you keep close.” Treat the “average of five people” phrase as a culturally familiar creative premise, not a scientific fact or product claim.
+- GTM strategy: **agent-hypothesis** — First test message comprehension and voluntary interest with two or three static, non-collecting concept variants: the Orbit campaign shell, a plainly branded MindfulText version, and a direct-practice control. Only consider a distinct public-facing campaign name if it improves clarity or interest without obscuring MindfulText.
+- GTM IDs:
+- Pain: **agent-hypothesis** — A prospective member may see mindfulness as abstract or easy to defer; a “mental orbit” frame may make a short text-based practice feel more personally relevant. It may also feel manipulative, vague, or overly dependent on external influence.
+- Signals:
+- Offer-Outcome: **agent-hypothesis** — Test whether the Orbit framing produces clearer understanding and more voluntary next-step interest than a direct MindfulText message. Measure message comprehension, positive/negative reaction, preference, and stated next-step interest separately. Do not infer practice benefit, retention, or willingness to pay from attention or sentiment alone.
+- Research: light | public sources on the provenance and criticism of the “five people” saying; DTC mindfulness-brand comparables; test whether a campaign shell improves clarity without displacing the parent brand | update Angle, Signals, Evidence strength, and Fit / effort | profiles off
+- Profile tracking: off
+- Status: exploring
+
+#### Expansion history
+
+- EXP-20260814-01 — depth: intake; tactic: founder campaign concept captured without external research; profiles: off; outputs: this hypothesis entry; result: the creative premise is separated from an evidence claim and the sub-brand is framed as a reversible campaign shell; next question: does “Orbit, by MindfulText” create clearer voluntary interest than direct MindfulText framing while retaining parent-brand recognition?

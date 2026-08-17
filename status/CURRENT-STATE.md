@@ -1,8 +1,14 @@
 # MindfulText Epoch 1 — Current State
 
-Last updated: 2026-07-30 PDT — edited by: Codex
+Last updated: 2026-08-13 12:43:56 PDT — edited by: Codex
 
 This is Mark's compact decision-oriented re-entry summary; use the Master Checklist, not this page, for executable task status.
+
+> Historical-scope notice: this summary remains for the Epoch 1 research/run
+> record. It is not the current MindfulText Growth status view. For current
+> Growth work, use the [[planning/GROWTH-SYSTEM-ORDERED-TASK-MAP|Ordered Task
+> Map]], the [[planning/GROWTH-SYSTEM-MASTER-CHECKLIST|Master Checklist]], and
+> the applicable dated decision record.
 
 ## Current position
 

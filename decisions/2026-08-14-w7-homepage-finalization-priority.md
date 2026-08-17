@@ -1,6 +1,6 @@
 # MindfulText Epoch 1 — Decision Record — 2026-08-14 — W7 homepage finalization priority
 
-Last updated: 2026-08-14 16:25:05 PDT — edited by: Codex
+Last updated: 2026-08-16 11:10:38 PDT — edited by: Codex
 
 **decision_id:** [[decisions/DECISION-REGISTER|DR-53]]
 
@@ -16,9 +16,9 @@ limited to final copy and design tweaks in `mindfultext-web`.
 - Reuse the existing site's visual design and public-site repository.
 - Finalize the approved homepage copy, CTA, and small visual refinements only
   after a bounded founder final-content review.
-- Keep the homepage distinct from the opaque recipient path:
-  `/care-team-fit/{opaque-token}` remains the shared LinkedIn-recipient route,
-  not a separately designed page per lead.
+- Keep the homepage distinct from the opaque recipient path: a semantic
+  word-only path such as `/care-team-fit/{opaque-word-handle}` remains the
+  shared LinkedIn-recipient route, not a separately designed page per lead.
 - Complete authorized Preview acceptance before the separately approved
   collection, deployment, and manual-outreach work of W7-L2a.
 
@@ -29,6 +29,13 @@ product strategy, authorize code changes, credentials, analytics/provider
 activation, public data collection, deployment, Production, LinkedIn outreach,
 or external sends. Those actions remain subject to their separate W4/W7
 implementation and launch approvals.
+
+### Clarification — 2026-08-16
+
+The earlier `opaque-token` shorthand in this record referred only to the
+private invitation lookup. [[decisions/2026-08-14-word-only-opaque-route-handles|DR-54]] controls the visitor-visible URL syntax: a controlled semantic entry
+slug plus a cryptographically random word-only opaque handle. This clarification
+changes no W7-L1a scope, ordering, or approval boundary.
 
 ## Consequences
 

@@ -1,5 +1,11 @@
 # MindfulText Epoch 1 — Master Checklist
 
+> **Historical Epoch 1 research/run tracker.** This is not the current
+> MindfulText Growth execution authority. For current Growth work, use the
+> [[planning/GROWTH-SYSTEM-ORDERED-TASK-MAP|Growth Ordered Task Map]] and
+> [[planning/GROWTH-SYSTEM-MASTER-CHECKLIST|Growth Master Checklist]]. Status
+> and “current evidence” below apply only to this retained historical scope.
+
 Position scheme: top-level sections use `A`, `B`, `C`; checklist items use
 `A1`, `A1a`, `A1b`, etc. Items are named by their visible document position.
 
@@ -7,7 +13,8 @@ Last updated: 2026-07-17 01:12:20 PDT — edited by: Codex
 
 **Last reconciled:** 2026-07-17
 
-This is the Epoch 1 execution tracker; the [context map](CONTEXT-MAP.md) provides the Mark-facing re-entry summary and dependency diagrams.
+This is the retained Epoch 1 research/run execution tracker; the [context
+map](CONTEXT-MAP.md) preserves its re-entry summary and dependency diagrams.
 
 Its reference sources are:
 

@@ -1,6 +1,6 @@
 # MindfulText Epoch 1 — Decision Record — 2026-07-12 — TAM-first market sizing
 
-Last updated: 2026-07-12 23:13:16 PDT — edited by: Codex
+Last updated: 2026-08-13 14:47:51 PDT — edited by: Codex
 
 **Authority:** Mark's direction to make U.S. market sizing part of deeper
 hypothesis analysis, beginning with TAM and adding SAM/SOM only when useful.
@@ -29,4 +29,4 @@ step is needed before doing it.
 
 **Status:** Mark-approved 2026-07-12; applied to the charter, Run 001 workflow
 and packet, scorecard, status/index/checklist, and the personal
-`$expand-growth-hypothesis` skill.
+`$epoch-1-growth-hypothesis` skill.

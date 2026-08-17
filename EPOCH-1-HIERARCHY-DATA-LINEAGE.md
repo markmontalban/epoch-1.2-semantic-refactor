@@ -6,9 +6,12 @@ This document is a guided tour of the Epoch 1 research system and a map back to
 its exact source records. Read the descriptive names first and treat the codes
 as permanent reference handles. The document explains structure and lineage;
 it is **current through `SOC-008` and completed `RUN-011`**, but it is not live
-task status. Use [Current State](status/CURRENT-STATE.md) for Mark's next
-decisions, the [Context Map](CONTEXT-MAP.md) for dependencies, and the [Master
-Checklist](MASTER-CHECKLIST.md) for executable status. It does not convert
+task status. Use [Current State](status/CURRENT-STATE.md) only for the retained
+research/run decisions, the [Context Map](CONTEXT-MAP.md) for historical
+dependencies, and the [Master Checklist](MASTER-CHECKLIST.md) for historical
+position status. Current Growth work lives in the
+[[planning/GROWTH-SYSTEM-ORDERED-TASK-MAP|Growth Ordered Task Map]] and
+[[planning/GROWTH-SYSTEM-MASTER-CHECKLIST|Growth Master Checklist]]. It does not convert
 research into validation, approve a run, or authorize monitoring, publishing,
 outreach, or a market test.
 

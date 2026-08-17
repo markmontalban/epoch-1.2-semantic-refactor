@@ -1,13 +1,15 @@
 # MindfulText Epoch 1 — Context Map & Reference Index
 
-Last updated: 2026-07-17 01:12:20 PDT — edited by: Codex
+Last updated: 2026-08-13 21:50:12 PDT — edited by: Codex
 
-Use this map to understand Epoch 1 dependencies and reopen the authoritative
-sources without treating this index as a competing plan. For Mark's compact
-next-decision view, use [Current State](status/CURRENT-STATE.md); for corpus ID
-grammar and run-to-artifact lineage, use the [Lineage Map](EPOCH-1-HIERARCHY-DATA-LINEAGE.md).
+Use this map to understand historical Epoch 1 dependencies without treating it
+as a competing current plan. For current MindfulText Growth work, use the
+[[planning/GROWTH-SYSTEM-ORDERED-TASK-MAP|Growth Ordered Task Map]] and
+[[planning/GROWTH-SYSTEM-MASTER-CHECKLIST|Growth Master Checklist]]. Use
+[Current State](status/CURRENT-STATE.md) only for the retained research/run
+record; for corpus lineage, use the [Lineage Map](EPOCH-1-HIERARCHY-DATA-LINEAGE.md).
 
-## Current position
+## Historical research position
 
 You are in an expanded learning loop—not a systems build. Market evidence now
 extends through [[runs/run-011/RUN-011-Comedy-Concept|RUN-011]]; social ideas enter through a lightweight ledger and
@@ -15,7 +17,9 @@ become hypotheses, GTM motions, signals, or bounded runs only when their
 decision and evidence justify it. `RUN-011` advanced `SOC-008` only to a
 separately gated manual-baseline decision.
 
-Daily growth work is in `growth/`; re-entry and agent handoff are in `status/`.
+Historical research work is in `growth/`; historical re-entry and handoff are
+in `status/`. Current Growth execution is in the two `planning/GROWTH-SYSTEM-*`
+authority documents.
 The root holds project authorities plus named project-level references such as
 the non-authoritative lineage map. [DR-26](decisions/2026-07-12-folder-organization.md)
 
@@ -168,18 +172,19 @@ the non-authoritative lineage map. [DR-26](decisions/2026-07-12-folder-organizat
 - **Telegram is irrelevant:** no Telegram route, inbound message, or autonomous task creation is part of this experiment.
 - **Revisit only on need:** C4 becomes relevant only if you later want Telegram or autonomous Hermes behavior. [DR-22](decisions/2026-07-12-prototype-run-first.md)
 
-## Re-entry sequence
+## Historical Epoch 1 re-entry sequence
 
-Use these four stops in order to recover the active plan without rereading every historical artifact.
+Use these stops only to recover the earlier research/run plan. They do not
+replace the current Growth authority documents.
 
 ### Establish current status
 
-- **Read the compact summary:** Start with the confirmed facts, open decisions, and current platform state. [Current state](status/CURRENT-STATE.md)
+- **Read the historical summary:** Start with the retained research facts and decisions. [Current state](status/CURRENT-STATE.md)
 - **Separate approval from execution:** Run 001 is approved; it becomes executable when a `GH-###` item exists and Mark names the manual agent/provider. [Run card](runs/run-001/RUN-001-Growth-Path-Ranking.md)
 
 ### Confirm tracker ownership
 
-- **Use positional checklist references:** Treat the master checklist as the current execution record and use its document-position references (`A1`, `B1a`, `C4b`, etc.) when assigning or reporting work. [Master checklist](MASTER-CHECKLIST.md)
+- **Use positional checklist references only for the historical scope:** The root checklist retains document-position references (`A1`, `B1a`, `C4b`, etc.). [Master checklist](MASTER-CHECKLIST.md)
 - **Find decisions through the register:** Use the Decision Register to resolve every `DR-*` identifier to its dated approval source and current checklist mapping. [Decision Register](decisions/DECISION-REGISTER.md)
 - **Check the Mark summary:** Read the short status block before entering the detailed phase-by-phase checklist. [Mark summary](MASTER-CHECKLIST.md)
 
@@ -274,10 +279,12 @@ flowchart LR
 | --- | --- | --- |
 | [Epoch 1 lab folder](.) | Working directory for the current lab scaffold; the planned `Projects/` move is not authorized or present. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/` |
 | [Project entry point](README.md) | Reading order and authority map for agents and Mark. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/README.md` |
-| [Current state](status/CURRENT-STATE.md) | What is true now, what has been verified, and the next approved action. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/status/CURRENT-STATE.md` |
-| [Master checklist](MASTER-CHECKLIST.md) | Canonical status of every position-referenced item (`A1`, `B1a`, `C4b`, etc.). | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/MASTER-CHECKLIST.md` |
+| [Growth Ordered Task Map](planning/GROWTH-SYSTEM-ORDERED-TASK-MAP.md) | Current founder-facing Growth roadmap. | `planning/GROWTH-SYSTEM-ORDERED-TASK-MAP.md` |
+| [Growth Master Checklist](planning/GROWTH-SYSTEM-MASTER-CHECKLIST.md) | Current Growth tasks, status, gates, and evidence. | `planning/GROWTH-SYSTEM-MASTER-CHECKLIST.md` |
+| [Current state](status/CURRENT-STATE.md) | Historical Epoch 1 research/run summary; not current Growth status. | `status/CURRENT-STATE.md` |
+| [Master checklist](MASTER-CHECKLIST.md) | Historical status of position-referenced Epoch 1 research/run items. | `MASTER-CHECKLIST.md` |
 | [Gap-analysis roadmap & feature backlog](checklists/GAP-ANALYSIS-ROADMAP.md) | Proposal-only company de-risking queue: current gaps, smallest proof, and the existing gate each item informs. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/checklists/GAP-ANALYSIS-ROADMAP.md` |
-| [Agent handoff](status/HANDOFF.md) | Concise task handoff, safeguards, and operator context. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/status/HANDOFF.md` |
+| [Agent handoff](status/HANDOFF.md) | Historical Epoch 1 research/run handoff. | `status/HANDOFF.md` |
 | [This context map](CONTEXT-MAP.md) | Dependency diagrams and this reference index. | `/Users/mgzm-studio/AI-Studio/Docs/mindfultext-epoch-1/CONTEXT-MAP.md` |
 
 ### B. Authority, decisions, and planning history
@@ -353,6 +360,8 @@ authority unless the master checklist or dated decision record points to them.
 | [Next-steps brief — archived](/Users/mgzm-studio/AI-Studio/Docs/archive/epoch-1/epoch-1-next-steps-brief-2026-07-10.md) | Historical re-entry briefing; defer to the project entry point and Master Checklist. | `/Users/mgzm-studio/AI-Studio/Docs/archive/epoch-1/epoch-1-next-steps-brief-2026-07-10.md` |
 
 ## Authority rule when sources conflict
+
+For current MindfulText Growth work, the [[planning/GROWTH-SYSTEM-ORDERED-TASK-MAP|Ordered Task Map]] is the founder-facing roadmap, the [[planning/GROWTH-SYSTEM-MASTER-CHECKLIST|Master Checklist]] owns detailed execution state, and dated `DR-*` records own approvals. The following order applies to the historical Epoch 1 research/run scope.
 
 1. `AGENTS.md` governs platform, safety, local Model Ops, and documentation
    policy.

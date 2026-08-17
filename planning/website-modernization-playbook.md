@@ -2,6 +2,14 @@
 
 Last updated: 2026-07-21 — prepared by: Codex
 
+> **Historical and superseded.** This WordPress/Thrive modernization path is
+> retained only as earlier rationale. Do not use it for current website work.
+> [[decisions/2026-08-11-public-site-clean-replacement|DR-42]] and
+> [[decisions/2026-08-11-public-site-vercel-hosting|DR-44]] instead authorize a
+> clean stateless Next.js replacement in `mindfultext-web` on Vercel. Current
+> tasks and status live in the [[planning/GROWTH-SYSTEM-MASTER-CHECKLIST|Growth
+> System Master Checklist]].
+
 ## Purpose
 
 Provide a nimble, pre-seed plan for improving `mindfultext.com` with AI while
@@ -9,7 +17,7 @@ keeping the existing MindfulText application at `dev.mindfultext.com` out of
 scope. This is a working playbook, not approval to make live-site, billing,
 email, DNS, or application changes.
 
-## Operating decision
+## Superseded operating decision
 
 **Keep WordPress for now; replace Thrive incrementally.**
 

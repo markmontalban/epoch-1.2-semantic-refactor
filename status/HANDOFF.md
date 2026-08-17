@@ -1,8 +1,26 @@
 # MindfulText Epoch 1 — Agent Handoff
 
-Last updated: 2026-07-12 22:25:32 PDT — edited by: Codex
+Last updated: 2026-08-13 14:47:51 PDT — edited by: Codex
 
 **Written:** 2026-07-10 (Mark directions update 2026-07-12)
+
+> Historical-scope notice: this handoff describes the July Epoch 1 research/run
+> state. It is not an active MindfulText Growth handoff. For current Growth
+> work, read the [[planning/GROWTH-SYSTEM-ORDERED-TASK-MAP|Ordered Task Map]],
+> then the [[planning/GROWTH-SYSTEM-MASTER-CHECKLIST|Master Checklist]], then
+> the applicable dated decision record.
+
+## Skill direction — 2026-08-13
+
+- Retired `review-and-delegate-tasks`: its personal Codex skill directory was
+  removed because it no longer fits the Growth system.
+- Introduce a Growth task-planning and delegation skill: it gathers only the
+  founder choices that change a task, recommends the smallest bounded plan,
+  and summons subagents only after Mark approves that plan.
+- `epoch-1-consolidate-authority` is installed as an explicit-only personal
+  Codex skill: it reconciles roadmap, execution-status, approval, repository,
+  evidence, and historical authority without treating context or plans as live
+  proof; repository-instruction edits require Mark's separate approval.
 
 ## Start here
 

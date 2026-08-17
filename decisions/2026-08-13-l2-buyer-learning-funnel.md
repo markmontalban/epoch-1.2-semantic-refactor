@@ -1,10 +1,12 @@
 # MindfulText Epoch 1 — Decision Record — 2026-08-13 — L2 buyer-learning funnel
 
-Last updated: 2026-08-13 21:50:12 PDT — edited by: Codex
+Last updated: 2026-08-14 15:03:33 PDT — edited by: Codex
 
 **decision_id:** [[decisions/DECISION-REGISTER|DR-46]]
 
 ## DR-46 — W4 L2 buyer-learning funnel
+
+**Prototype amendment:** [[decisions/2026-08-14-opaque-invitation-attribution-prototype|DR-49]] supersedes this record's visitor-facing invitation-attribution disclosure requirement for the prototype. It retains private opaque-token invitation attribution and all forwarding/scanner uncertainty.
 
 Mark selects **L2 — Learn** as the active development target for the W4 Public
 Beta Funnel. W4 keeps its established `W4a` direction/approval and `W4b`
@@ -46,12 +48,12 @@ duplicate their current task inventory or status.
 - Consider Formbricks for conditional questions, partial responses, and
   results, but require a documented Cloud/self-hosted/custom feasibility and
   data-boundary review before selecting or activating it.
+
+**Later selection:** [[decisions/2026-08-14-w4a-l2b-custom-reflection-direction|DR-50]] selects a small custom, Formbricks-inspired fixed-choice reflection. The Formbricks consideration above is retained as historical context only; no provider is selected for the prototype.
 - The reflection returns useful, non-scored fit guidance before asking for
   identity or a meeting. It must not diagnose a person or team, claim efficacy,
   or manufacture a readiness percentage.
-- State plainly that invitation activity may be associated with the original
-  recipient. Assessment answers do not automatically become named Growth Ops
-  relationship data.
+- In the prototype, retain private invitation-level attribution through the opaque token without a visitor-facing attribution disclosure. Assessment answers do not automatically become named Growth Ops relationship data.
 - When questions could reveal workforce strain, organizational shortcomings,
   or personal mindfulness information, offer an anonymous-answer path. Do not
   collect patient data or employee-identifying details.
@@ -96,6 +98,7 @@ W8 and W9 are technical/post-beta workstreams and do not prove traction.
   in the Growth System Master Checklist, with the Ordered Task Map as its
   synchronized founder-facing view. Contracts, decisions, and handoffs do not
   duplicate the task inventory.
+- [[decisions/2026-08-14-opaque-invitation-attribution-prototype|DR-49]] defers recipient-facing disclosure and broader identity-association UX until significant revenue and a new dated decision; it does not remove private invitation-level attribution.
 
 ## Boundary
 
