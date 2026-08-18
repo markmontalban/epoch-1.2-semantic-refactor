@@ -1,17 +1,18 @@
 # MindfulText Growth System — Ordered Task Map
 
-Last updated: 2026-08-17 20:09:38 PDT — edited by: Cursor
+Last updated: 2026-08-17 20:33:47 PDT — edited by: Cursor
 
-Current-state reconciliation: 2026-08-17 20:09:38 PDT — edited by: Cursor
+Current-state reconciliation: 2026-08-17 20:33:47 PDT — edited by: Cursor
 Role: founder-facing roadmap and current-status snapshot. The synchronized [[planning/GROWTH-SYSTEM-MASTER-CHECKLIST|Growth System Master Checklist]] is the agent execution authority; dated `DR-*` records are approval authority and the decision register is an index only.
 
 ## What changed since the prior map
 
+- 2026-08-17 documentation reconciliation (Mark-approved rows 1–3): removed the leftover “W4b-L1b is the next build task” changelog line so it matches [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md). Public-site `AGENTS.md` / `README.md` were not edited.
 - [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md) confirms W4b-L1a was authorized and built, accepts W4b-L1b laptop-only event recording as done, confirms the W3d identifier, and continues W4b-L2a/L2b/L2c on the laptop. W4b-L1c and W4b-L2d remain private-test gates. PostHog credentials and live replay stay uncreated.
 - The required call-request name field (W3d-8 / W4b-L2c) is now in the laptop-only Growth Ops and public-site forms; 59 Growth Ops tests and 42 public-site tests passed on 2026-08-17. No storage-layout switch was run against any database.
 
 - [DR-55](../decisions/2026-08-16-w4b-l1b-masked-analytics-replay.md) approves W4b-L1b's private invitation-to-engagement linkage and recipient-page-only PostHog replay. Replays are privacy-masked, retained for 30 days, and Mark-only; the purpose notice sits alongside the cookie notice. Reflection/results/contact paths, raw inputs, AI analysis, exports, and raw network/console capture remain excluded.
-- W4b-L1a is now **Confirmed at source/local only**: the semantic word-only recipient path, server-side resolver, generic invalid-link handling, and tests/build are complete. It does not establish a database, credential, Preview, deployment, collection, or public-route acceptance; W4b-L1b is the next build task.
+- W4b-L1a is **Confirmed at source/local only**: the semantic word-only recipient path, server-side resolver, generic invalid-link handling, and tests/build are complete. It does not establish a database, credential, Preview, deployment, collection, or public-route acceptance. W4b-L1b laptop-only event recording is also Confirmed per DR-56; W4b-L1c remains the private-test gate.
 - [DR-54](../decisions/2026-08-14-word-only-opaque-route-handles.md) replaces visitor-visible opaque-token strings with approved semantic entry slugs and cryptographically random word-only opaque handles. The words carry no recipient or campaign meaning, contain no digits, and remain private invitation-level attribution—not proof of visitor identity.
 - [DR-53](../decisions/2026-08-14-w7-homepage-finalization-priority.md) places the existing homepage's final copy and design tweaks at `W7-L1a`, immediately after W7-L0a and before the limited manual LinkedIn batch. It preserves the existing design, requires a later bounded founder final-content approval, and authorizes no new product strategy, collection, deployment, or outreach.
 - [DR-52](../decisions/2026-08-14-w7-unipile-linkedin-attribution.md) corrects the W7 source: use the existing Unipile API LinkedIn connection for the narrow profile/invitation attribution slice. Broader W6 integrations and all LinkedIn sending remain deferred/manual.
