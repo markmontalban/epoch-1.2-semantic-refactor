@@ -1,8 +1,8 @@
 # MindfulText Growth System — Master Checklist
 
-Last updated: 2026-08-17 20:50:24 PDT — edited by: Cursor
+Last updated: 2026-08-17 21:52:41 PDT — edited by: Cursor
 
-Current-state reconciliation: 2026-08-17 20:50:24 PDT — edited by: Cursor
+Current-state reconciliation: 2026-08-17 21:52:41 PDT — edited by: Cursor
 
 ## Authority
 
@@ -374,17 +374,19 @@ was confirmed by Mark on 2026-08-17 ([DR-56](../decisions/2026-08-17-w4b-l1-buil
   attach it to one canonical lead lifecycle and record its own timeline status.
   2026-08-17 laptop-only: required `visitorName` and `workEmail` are now
   implemented in Growth Ops and on the public-site call-request form. 59
-  Growth Ops tests and 42 public-site tests passed. Migration `006` has not
-  been run against any database.
+  Growth Ops tests and 42 public-site tests passed.
 
-Current state (2026-08-17, source/local inspection only): `W3d-1` through
-`W3d-8` are implemented at the laptop-only tier in `growth-ops` (uncommitted;
-migrations `005_w3d_route_lifecycle_and_activity.sql` and
-`006_w4b_l2_reflection_and_call_request.sql`, neither run against any
-database) and in `mindfultext-web` (activity reporter plus reflection /
-call-request UI; uncommitted). This does not pass the W3d synthetic gate
-end-to-end against a database, Preview, or live visitors. No database target,
-credential, Preview, deployment, or collection is involved.
+Current state (2026-08-17): Mark named disposable Neon `growth-ops-dev` /
+`W3b-testing`. Database-reported IDs matched the W3b evidence record
+(`solitary-shape-96086038` / `br-old-math-ay7pd9en`). Forward-only migrate
+with `MIGRATION_TARGET=development` applied; ledger is
+`001_operations_foundation`, `002_job_lease_tokens`,
+`003_w3b_relationship_core`, `004_public_recipient_routes`,
+`005_w3d_route_lifecycle_and_activity`,
+`006_w4b_l2_reflection_and_call_request`. Production Neon was not touched.
+This is disposable-database evidence only. It does not pass authenticated
+Preview acceptance, public collection, or the W3d synthetic visitor gate.
+Site credential issuance remains open.
 
 Gate: synthetic branded recipient link → matched page → anonymous reflection →
 useful results → optional identity association or call request → manual review
