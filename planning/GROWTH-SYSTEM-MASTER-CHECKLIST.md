@@ -1,8 +1,8 @@
 # MindfulText Growth System — Master Checklist
 
-Last updated: 2026-08-17 15:27:16 PDT — edited by: Claude Dispatch
+Last updated: 2026-08-17 20:09:38 PDT — edited by: Cursor
 
-Current-state reconciliation: 2026-08-17 15:27:16 PDT — edited by: Claude Dispatch
+Current-state reconciliation: 2026-08-17 20:09:38 PDT — edited by: Cursor
 
 ## Authority
 
@@ -14,12 +14,7 @@ register]] are approval authority; the register itself is an index only. The
 growth brief is product direction; the backend audit is evidence; workstream
 plans contain implementation detail.
 
-For every Growth change, update this checklist first and update the Ordered
-Task Map in the same change when status, dependency, estimated completion,
-next action, or founder-visible meaning changes. A policy, authority,
-retention, or external-action change requires a dated decision record. The
-pair must carry the same reconciliation timestamp and editor, and evidence
-claims must remain specific to the verification actually performed.
+For every Growth change, update this checklist first and update the Ordered Task Map in the same change when status, dependency, estimated completion, next action, or founder-visible meaning changes. A policy, authority, retention, or external-action change requires a dated decision record. The pair must carry the same reconciliation timestamp and editor, and evidence claims must remain specific to the verification actually performed.
 
 Data policy ([[decisions/2026-08-11-founder-controlled-relationship-pipeline|DR-45]]): product/customer data has its own PII, consent, access, retention, and deletion policy. The owner-reviewed Growth source archive may retain public or authorized lead-generation/outreach material, including raw content, pending a later cleanup policy. It must never retain credentials, authentication tokens, passwords, payment-card data, or private provider exports. This storage rule authorizes no send, provider or n8n activation, database migration, or production deployment.
 
@@ -39,74 +34,84 @@ only when its evidence is recorded here.
 ## Locked decisions
 
 - Clean Next.js 16/React 19 public-site replacement on Vercel from private
-  GitHub repository `mindfultext-web`; port only reviewed visual concepts and
-  carry forward no admin/database/storage application architecture
-  ([[decisions/2026-08-11-public-site-clean-replacement|DR-42]] and
-  [[decisions/2026-08-11-public-site-vercel-hosting|DR-44]]).
+GitHub repository `mindfultext-web`; port only reviewed visual concepts and
+carry forward no admin/database/storage application architecture
+([[decisions/2026-08-11-public-site-clean-replacement|DR-42]] and
+[[decisions/2026-08-11-public-site-vercel-hosting|DR-44]]).
 - New clean owner-only operations app on Vercel Pro, deployed from the canonical
-  private GitHub repository; [[decisions/2026-08-10-growth-ops-owner-auth|DR-41]]
-  locks its application login to Google-only, restricted to Mark's account.
+private GitHub repository; [[decisions/2026-08-10-growth-ops-owner-auth|DR-41]]
+locks its application login to Google-only, restricted to Mark's account.
 - Neon Launch provides separate production and development/test PostgreSQL
-  environments; no prototype data import for MVP.
+environments; no prototype data import for MVP.
 - Existing n8n stays on DigitalOcean, uses scoped APIs, owns no business data,
-  and executes the background/scheduled workflow work against the Growth Ops
-  outbox.
+and executes the background/scheduled workflow work against the Growth Ops
+outbox.
 - The existing `dev.mindfultext.com` connector moves from Replit to a private
-  GitHub repository and separate Vercel project under
-  [[decisions/2026-08-11-dev-connector-vercel-github|DR-43]]. Its delivery
-  responsibilities and external behavior remain unchanged through a separately
-  approved migration/cutover. WordPress hosts audio; `dev.mindfultext.com` owns
-  finalized text, scheduling, messaging, and the linked audio URLs.
+GitHub repository and separate Vercel project under
+[[decisions/2026-08-11-dev-connector-vercel-github|DR-43]]. Its delivery
+responsibilities and external behavior remain unchanged through a separately
+approved migration/cutover. WordPress hosts audio; `dev.mindfultext.com` owns
+finalized text, scheduling, messaging, and the linked audio URLs.
 - Initial buyer audience: community behavioral-health workforce leaders, with
-  CCBHC context as the first research lane rather than the only eligible buyer.
-  Month one has no practices, audio, legacy catalog, content admin, migration,
-  or external-message sending.
+CCBHC context as the first research lane rather than the only eligible buyer.
+Month one has no practices, audio, legacy catalog, content admin, migration,
+or external-message sending.
 - LinkedIn and email outreach remains draft-only in the first phase.
 - Legacy content rule: **never rename, only add**. The corpus remains private.
 - Services and agents receive independent rotatable task-scoped credentials.
 - Mark interprets evidence and makes strategic decisions; the system does not
-  declare a winner for him.
+declare a winner for him.
 - [[decisions/2026-08-13-l2-buyer-learning-funnel|DR-46]] makes L2 the active
-  W4 buyer-learning target, keeps L3/L4 deferred behind W7 evidence, and makes
-  W5/W6 later scale work rather than blockers for the limited manual beta.
+W4 buyer-learning target, keeps L3/L4 deferred behind W7 evidence, and makes
+W5/W6 later scale work rather than blockers for the limited manual beta.
 - [[decisions/2026-08-14-w4a-l1a-recipient-presentation|DR-47]] approves the
-  cautious recipient presentation and “Explore your staff-support fit” CTA.
-  [[decisions/2026-08-14-opaque-invitation-attribution-prototype|DR-49]] retains
-  private opaque invitation attribution but removes visitor-facing attribution
-  disclosure for the prototype; neither record authorizes implementation,
-  collection, deployment, proof publication, analytics/provider activation,
-  or outreach.
+cautious recipient presentation and “Explore your staff-support fit” CTA.
+[[decisions/2026-08-14-opaque-invitation-attribution-prototype|DR-49]] retains
+private opaque invitation attribution but removes visitor-facing attribution
+disclosure for the prototype; neither record authorizes implementation,
+collection, deployment, proof publication, analytics/provider activation,
+or outreach.
 - [[decisions/2026-08-16-w4b-l1b-masked-analytics-replay|DR-55]] approves
   PostHog activation for W4b-L1b's recipient landing page only: private
   invitation-to-engagement linkage, privacy-masked replay, 30-day replay
   retention, Mark-only access, and the short purpose notice alongside the
   cookie notice. Reflection/results/contact paths, AI analysis, replay export,
   and raw network/console capture remain excluded.
+- [[decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue|DR-56]]
+  confirms W4b-L1a was authorized and built, accepts W4b-L1b laptop-only
+  event recording as done, confirms the W3d identifier, and continues
+  W4b-L2a/L2b/L2c on the laptop. It does not authorize W4b-L1c/W4b-L2d
+  private-test or live-site acceptance, PostHog credentials, collection,
+  Production, or outreach.
+
+
 
 ## Critical path and status
 
-`W0 → W1 → W2 → W3d → W4a-L1a → W4a-L2a →
-W4a-L2b → W4b-L1a → W4b-L1b → W4b-L1c → W4b-L2a → W4b-L2b →
-W4b-L2c → W4b-L2d → W7-L0a → W7-L1a → W7-L2a → W7-L2b → W7-L2c`.
+`W0 → W1 → W2 → W3d → W4a-L1a → W4a-L2a → W4a-L2b → W4b-L1a → W4b-L1b → W4b-L1c → W4b-L2a → W4b-L2b → W4b-L2c → W4b-L2d → W7-L0a → W7-L1a → W7-L2a → W7-L2b → W7-L2c`.
 W5 and broader W6 are deferred scale work; DR-52 extracts only W7-L0a's narrow
 Unipile LinkedIn read/reconciliation slice. W8–W10 are post-beta.
 W11 is a post-revenue legacy-security and connector-hardening backlog and is
 not a pre-validation dependency.
 
-| Workstream | Status | Current dependency or blocker |
-| --- | --- | --- |
-| W0 Planning authority | done | Authority and plan directory established |
-| W1 Source/security | done | Authenticated Vercel Preview acceptance passed for the isolated stateless shell on `w1-clean-shell`; no Production or public launch occurred. Legacy credential-history, historical-app scans, and connector parity remain deferred to W11 and the legacy systems must remain unused/inactive |
-| W2 Operations foundation | done | Disposable-database foundation and authenticated `w2-preview` authorization/readiness/log correlation passed; the temporary non-owner Vercel access used for rejection testing was revoked and must not be restored |
-| W3 Growth CRM/API | in progress | W3b — Lead Stage Automation passed source/local and separately authorized disposable-database acceptance; `W3d` — Public Recipient Link Service is open and is the public-funnel dependency of `W4b-L1a`/`W4b-L1b`; broader public API, provider, and Production work remains unimplemented or separately gated |
-| W4 Public beta site | in progress | `W4a-L1a`, `W4a-L2a`, and `W4a-L2b` direction are approved; W4b-L1a now has source/local implementation only; W4b-L1b's masked PostHog/replay boundary is approved and awaits implementation; Preview acceptance and the remaining L2 build stay blocked; L3/L4 remain deferred |
-| W5 n8n foundation | deferred | Resume after commercial commitment or repeated manual notification/reconciliation pain; not a manual L2 beta dependency |
-| W6 Integrations | deferred | Broader provider work resumes after commercial commitment or repeated manual reconciliation pain; DR-52 extracts only the narrow Unipile LinkedIn read/reconciliation slice needed by W7-L0a |
-| W7 Beta rollout | blocked | `W7-L0a` Unipile-backed profile-to-invitation attribution preparation is prioritized; `W7-L1a` finalizes the existing homepage immediately before the bounded launch; the limited manual W7-L2 beta still waits for accepted W4b-L2d plus separate public collection, deployment, and outreach approvals |
-| W8 Legacy catalog | deferred | Begins after beta acceptance |
-| W9 Local-agent drafting | deferred | Begins after W8 |
-| W10 Legacy publishing research | deferred | Separate later decision |
-| W11 Legacy security + connector hardening | deferred | Begins after revenue, or before any legacy system is reused, connected, deployed, or exposed—whichever comes first |
+
+| Workstream                                | Status      | Current dependency or blocker                                                                                                                                                                                                                                                                                                                                                                  |
+| ----------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| W0 Planning authority                     | done        | Authority and plan directory established                                                                                                                                                                                                                                                                                                                                                       |
+| W1 Source/security                        | done        | Authenticated Vercel Preview acceptance passed for the isolated stateless shell on `w1-clean-shell`; no Production or public launch occurred. Legacy credential-history, historical-app scans, and connector parity remain deferred to W11 and the legacy systems must remain unused/inactive                                                                                                  |
+| W2 Operations foundation                  | done        | Disposable-database foundation and authenticated `w2-preview` authorization/readiness/log correlation passed; the temporary non-owner Vercel access used for rejection testing was revoked and must not be restored                                                                                                                                                                            |
+| W3 Growth CRM/API | in progress | W3b — Lead Stage Automation passed source/local and separately authorized disposable-database acceptance; `W3d-1` through `W3d-8` have 2026-08-17 source/local implementation (W3d-8 now includes required visitor name + work email); no database target, credential, Preview, deployment, or collection |
+| W4 Public beta site | in progress | `W4a-L1a`–`W4a-L2b` direction approved; `W4b-L1a` and `W4b-L1b` laptop-only done per [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md); `W4b-L2a`/`L2b`/`L2c` laptop-only in progress; `W4b-L1c` and `W4b-L2d` private-test/live-site gates remain blocked; L3/L4 remain deferred |
+| W5 n8n foundation                         | deferred    | Resume after commercial commitment or repeated manual notification/reconciliation pain; not a manual L2 beta dependency                                                                                                                                                                                                                                                                        |
+| W6 Integrations                           | deferred    | Broader provider work resumes after commercial commitment or repeated manual reconciliation pain; DR-52 extracts only the narrow Unipile LinkedIn read/reconciliation slice needed by W7-L0a                                                                                                                                                                                                   |
+| W7 Beta rollout                           | blocked     | `W7-L0a` Unipile-backed profile-to-invitation attribution preparation is prioritized; `W7-L1a` finalizes the existing homepage immediately before the bounded launch; the limited manual W7-L2 beta still waits for accepted W4b-L2d plus separate public collection, deployment, and outreach approvals                                                                                       |
+| W8 Legacy catalog                         | deferred    | Begins after beta acceptance                                                                                                                                                                                                                                                                                                                                                                   |
+| W9 Local-agent drafting                   | deferred    | Begins after W8                                                                                                                                                                                                                                                                                                                                                                                |
+| W10 Legacy publishing research            | deferred    | Separate later decision                                                                                                                                                                                                                                                                                                                                                                        |
+| W11 Legacy security + connector hardening | deferred    | Begins after revenue, or before any legacy system is reused, connected, deployed, or exposed—whichever comes first                                                                                                                                                                                                                                                                             |
+
+
+
 
 ## W0 — Planning authority
 
@@ -244,6 +249,9 @@ implement [[decisions/2026-08-13-l2-buyer-learning-funnel|DR-46]] before W4b:
   outreach draft/observed event, relationship event, recipient route, visit,
   exposure, engagement rollup, call request, stage/history, experiment, and
   payment-reference entities.
+
+
+
 ### W3b — Lead Stage Automation
 
 Authority: [[decisions/2026-08-11-founder-controlled-relationship-pipeline|DR-45]].
@@ -272,6 +280,7 @@ Authority: [[decisions/2026-08-11-founder-controlled-relationship-pipeline|DR-45
 - [x] Record manual-only source intake, external Zoom transcript references,
   and Mark's unbounded pre-customer raw-source retention choice pending a later
   cleanup policy ([[decisions/2026-08-11-founder-controlled-relationship-pipeline|DR-45]]).
+
 The eight recipient-link, engagement-intake, and call-request items formerly
 listed here, and the synthetic-funnel gate that accompanied them, moved to
 `W3d — Public Recipient Link Service` below on 2026-08-17 with no wording
@@ -301,14 +310,16 @@ visit is demand. It is the operational follow-through for
 `Reach` and later stages require their own bounded founder approval before any
 external contact; no automatic outreach is authorized.
 
-| Stage | System | Output | Decision |
-| --- | --- | --- | --- |
-| 1. Tighten | One buyer, moment of pain, alternative, and testable offer | One-page segment proposition | Is this specific enough to ask about? |
-| 2. Qualify | Founder-defined hypothesis cohort, current context, role hypothesis, and disqualifiers | Prioritized working queue drawn from the cohort | Who is worth contacting now? |
-| 3. Reach | Personalized manual outreach with one learning ask | Reply/no-reply/objection log | Does the problem earn attention? |
-| 4. Learn | Structured 20–30-minute discovery conversations | Tagged notes and verbatim-safe evidence | Is pain real, owned, urgent, and addressable? |
-| 5. Convert | Concrete next step: pilot-design call, introduction, or pricing discussion | Intent or commitment signal | Is there actual commercial pull? |
-| 6. Decide | Weekly synthesis against the scorecard | Advance/revise/park memo | What changes next week? |
+
+| Stage      | System                                                                                 | Output                                          | Decision                                      |
+| ---------- | -------------------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------- |
+| 1. Tighten | One buyer, moment of pain, alternative, and testable offer                             | One-page segment proposition                    | Is this specific enough to ask about?         |
+| 2. Qualify | Founder-defined hypothesis cohort, current context, role hypothesis, and disqualifiers | Prioritized working queue drawn from the cohort | Who is worth contacting now?                  |
+| 3. Reach   | Personalized manual outreach with one learning ask                                     | Reply/no-reply/objection log                    | Does the problem earn attention?              |
+| 4. Learn   | Structured 20–30-minute discovery conversations                                        | Tagged notes and verbatim-safe evidence         | Is pain real, owned, urgent, and addressable? |
+| 5. Convert | Concrete next step: pilot-design call, introduction, or pricing discussion             | Intent or commitment signal                     | Is there actual commercial pull?              |
+| 6. Decide  | Weekly synthesis against the scorecard                                                 | Advance/revise/park memo                        | What changes next week?                       |
+
 
 Dependency: W3b — Lead Stage Automation supplies the founder-controlled lead/timeline record and
 approval boundary. This loop stays manual and evidence-led; agents may research
@@ -327,45 +338,49 @@ commit `89b0fe7` after its prerequisite text — "Needs W4a-L1a, W3 public-funne
 contract, and implementation authorization" — was replaced by its evidence
 sentence rather than satisfied. Wording below is verbatim; only stable
 identifiers were added. `W3d` is the record previously called the "W3
-public-funnel slice" and gates `W4b-L1a` and `W4b-L1b`. The `W3d` identifier is
-provisional pending Mark's confirmation.
+public-funnel slice" and gates `W4b-L1a` and `W4b-L1b`. The `W3d` identifier
+was confirmed by Mark on 2026-08-17 ([DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md)).
 
-- [ ] **W3d-1** Generate cryptographically random, word-only opaque route handles and
+- [x] **W3d-1** Generate cryptographically random, word-only opaque route handles and
   serve them through an approved semantic same-domain path such as
   `/team-alignment/{opaque-word-handle}`; the public path contains no PII,
   encoded metadata, or digits, and the internal resolver returns
   presentation/attribution instructions without a person record.
-- [ ] **W3d-2** Add recipient-link redirect, pause, revoke, and expiry controls while
+- [x] **W3d-2** Add recipient-link redirect, pause, revoke, and expiry controls while
   preserving the public URL; store only a protected lookup representation and
   never log the raw token or full personalized URL.
-- [ ] **W3d-3** Preserve original-invitation attribution and distinguish link opened,
+- [x] **W3d-3** Preserve original-invitation attribution and distinguish link opened,
   probable human engagement, voluntary identification, confirmed identity,
   and alternate/forwarded identity. None is automatic buyer intent.
-- [ ] **W3d-4** Accept exposure, summarized engagement, assessment-status, consent, and
+- [x] **W3d-4** Accept exposure, summarized engagement, assessment-status, consent, and
   call-request writes idempotently. Keep answers and sensitive/free-text
   assessment content out of Growth Ops unless the visitor knowingly opts to
   associate an approved response reference or summary.
-- [ ] **W3d-5** Add scoped APIs, `Idempotency-Key`, `X-Request-ID`, rate limits, validation,
+- [x] **W3d-5** Add scoped APIs, `Idempotency-Key`, `X-Request-ID`, rate limits, validation,
   retention fields, and privacy-safe logging.
-- [ ] **W3d-6** Keep detailed behavior in PostHog and summarized engagement in CRM.
-- [ ] **W3d-7** Keep PII, raw tokens, assessment answers, workforce disclosures, and
+- [x] **W3d-6** Keep detailed behavior in PostHog and summarized engagement in CRM.
+  Laptop-only: summarized engagement is written in Growth Ops; recipient-page
+  signals are reported from `mindfultext-web`. PostHog credentials and live
+  replay remain uncreated per DR-55/DR-56.
+- [x] **W3d-7** Keep PII, raw tokens, assessment answers, workforce disclosures, and
   inferred health information out of PostHog. Make Growth Ops/PostHog and any
   assessment-provider failure non-blocking or safely recoverable for visitors.
-- [ ] **W3d-8** Implement call request: name/work email required; organization/role/note
+- [x] **W3d-8** Implement call request: name/work email required; organization/role/note
   optional; attribution server-side; no qualification gate; manual scheduling;
   attach it to one canonical lead lifecycle and record its own timeline status.
+  2026-08-17 laptop-only: required `visitorName` and `workEmail` are now
+  implemented in Growth Ops and on the public-site call-request form. 59
+  Growth Ops tests and 42 public-site tests passed. Migration `006` has not
+  been run against any database.
 
-Current state (2026-08-17, source/local inspection only): `W3d-1` is partly
-implemented. Handle generation, the approved slug vocabulary, the semantic
-public path, keyed-hash storage, and the generic not-found response exist at
-`growth-ops` commit `dd9df14` and `mindfultext-web` commit `dd4a2ea`. Nothing
-persists an issued handle: `recipient_routes` is only ever read, and
-`generateRecipientPath` is referenced only from `tests/public-routes.test.ts`,
-so no servable recipient link can currently be produced. `W3d-2` through
-`W3d-8` are unimplemented. The `paused`, `revoked`, and `expires_at` states
-that `W4b-L1a` reports handling are honored on read but cannot yet be set, so
-that behavior is unexercised. No database target, credential, Preview,
-deployment, or collection is involved in this observation.
+Current state (2026-08-17, source/local inspection only): `W3d-1` through
+`W3d-8` are implemented at the laptop-only tier in `growth-ops` (uncommitted;
+migrations `005_w3d_route_lifecycle_and_activity.sql` and
+`006_w4b_l2_reflection_and_call_request.sql`, neither run against any
+database) and in `mindfultext-web` (activity reporter plus reflection /
+call-request UI; uncommitted). This does not pass the W3d synthetic gate
+end-to-end against a database, Preview, or live visitors. No database target,
+credential, Preview, deployment, or collection is involved.
 
 Gate: synthetic branded recipient link → matched page → anonymous reflection →
 useful results → optional identity association or call request → manual review
@@ -396,37 +411,39 @@ Mark can perform the action or interpret the strategic signal.
 
 ### W4a — direction and founder approval
 
-| ID | Checklist task | Mode | Status / gate |
-| --- | --- | --- | --- |
-| W4a-L0a | [x] Preserve the current static behavioral-health copy prototype and its nonclinical, staff-only, no-outcome-claim boundaries. | Agent | Source/local prototype only; no active path or collection |
-| W4a-L1a | [x] Prepare and approve the branded recipient-path presentation, private opaque invitation attribution, and basic CTA. | Agent → Mark → Agent | Approved in [[decisions/2026-08-14-w4a-l1a-recipient-presentation\|DR-47]] and amended by [[decisions/2026-08-14-opaque-invitation-attribution-prototype\|DR-49]]: no visitor-facing attribution disclosure in the prototype; direction only, no implementation authority |
-| W4a-L2a | [x] Prepare and approve the staff-support fit-reflection promise, question set, useful non-scored results, and prohibited-information rules. | Agent → Mark → Agent | Approved in [[decisions/2026-08-14-w4a-l2a-fit-reflection-direction\|DR-48]]; direction only, no implementation or data-collection authority |
-| W4a-L2b | [x] Choose the reflection approach: small custom, Formbricks-inspired fixed-choice flow; do not use Formbricks Cloud or self-hosted Formbricks in the prototype. | Agent → Mark → Agent | Approved in [[decisions/2026-08-14-w4a-l2b-custom-reflection-direction\|DR-50]]; direction only, with no account, credential, data activation, or implementation authority |
-| W4a-L3a | [ ] Define expanded message experiments, conditional result variants, and post-result conversion hierarchy. | Agent → Mark → Agent | **Deferred until W7-L2c confirms buyer intent** |
-| W4a-L4a | [ ] Define scaled analytics, automation, and provider strategy. | Agent → Mark → Agent | **Deferred until commercial commitment or repeated operating pain** |
+
+| ID      | Checklist task                                                                                                                                                   | Mode                 | Status / gate                                                                                                                                                                                                                                                           |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| W4a-L0a | [x] Preserve the current static behavioral-health copy prototype and its nonclinical, staff-only, no-outcome-claim boundaries.                                   | Agent                | Source/local prototype only; no active path or collection                                                                                                                                                                                                               |
+| W4a-L1a | [x] Prepare and approve the branded recipient-path presentation, private opaque invitation attribution, and basic CTA.                                           | Agent → Mark → Agent | Approved in [[decisions/2026-08-14-w4a-l1a-recipient-presentation|DR-47]] and amended by [[decisions/2026-08-14-opaque-invitation-attribution-prototype|DR-49]]: no visitor-facing attribution disclosure in the prototype; direction only, no implementation authority |
+| W4a-L2a | [x] Prepare and approve the staff-support fit-reflection promise, question set, useful non-scored results, and prohibited-information rules.                     | Agent → Mark → Agent | Approved in [[decisions/2026-08-14-w4a-l2a-fit-reflection-direction|DR-48]]; direction only, no implementation or data-collection authority                                                                                                                             |
+| W4a-L2b | [x] Choose the reflection approach: small custom, Formbricks-inspired fixed-choice flow; do not use Formbricks Cloud or self-hosted Formbricks in the prototype. | Agent → Mark → Agent | Approved in [[decisions/2026-08-14-w4a-l2b-custom-reflection-direction|DR-50]]; direction only, with no account, credential, data activation, or implementation authority                                                                                               |
+| W4a-L3a | [ ] Define expanded message experiments, conditional result variants, and post-result conversion hierarchy.                                                      | Agent → Mark → Agent | **Deferred until W7-L2c confirms buyer intent**                                                                                                                                                                                                                         |
+| W4a-L4a | [ ] Define scaled analytics, automation, and provider strategy.                                                                                                  | Agent → Mark → Agent | **Deferred until commercial commitment or repeated operating pain**                                                                                                                                                                                                     |
+
+
+
 
 ### W4b — implementation and acceptance
 
-| ID | Checklist task | Mode | Status / gate |
-| --- | --- | --- | --- |
-| W4b-L1a | [x] Implement the stateless branded semantic-path experience such as `/team-alignment/{opaque-word-handle}` through server-side Growth Ops resolution, with generic safe handling for invalid, paused, revoked, and expired links. | Agent | Source/local implementation passed Growth Ops tests/typecheck and `mindfultext-web` tests/typecheck/build on 2026-08-14. No database migration run, credential, Preview, deployment, collection, or external send occurred. **Reconciliation 2026-08-17:** the prior prerequisite text ("Needs W4a-L1a, W3 public-funnel contract, and implementation authorization") was replaced rather than satisfied when this box was checked in commit `89b0fe7`. `W3d` remains open; the paused/revoked/expired handling claimed here cannot be exercised until `W3d-1` and `W3d-2` exist; and implementation authorization for this row is unrecorded. The completion claim is retained as accurate for the path, resolver, and generic unavailable response only. |
-| W4b-L1b | [ ] Record link opened separately from probable human engagement and meaningful scroll; preview/scanner requests remain weak evidence. | Agent | [[decisions/2026-08-16-w4b-l1b-masked-analytics-replay\|DR-55]] approves the recipient-page-only PostHog/replay boundary: private invitation linkage, active-time buckets, scroll, CTA/return/error signals, and a notice alongside the cookie notice. No reflection/result/contact replay, raw inputs, AI analysis, export, network/console capture, deployment, or public collection. **Depends on `W3d-1` through `W3d-7`:** until `W3d-1` and `W3d-2` exist there is no servable recipient link to measure, so end-to-end verification is not possible. DR-55 approves the provider and measurement boundary only and explicitly withholds code-change authority. |
-| W4b-L1c | [ ] Pass L1 word-handle, lifecycle, forwarding, privacy, mobile, accessibility, logging, outage, and authenticated Preview acceptance. | Agent | L1 technical gate |
-| W4b-L2a | [ ] Implement the anonymous-answer fit reflection with progress, partial-response handling, useful results before identification, and no patient or employee-identifying input. | Agent | Needs W4a-L2a/L2b, accepted L1, and implementation/provider authorization |
-| W4b-L2b | [ ] Record assessment start, partial, completion, and results-viewed events without sending answers, free text, PII, raw tokens, or inferred health information to PostHog. | Agent | Needs W4b-L2a |
-| W4b-L2c | [ ] Keep optional post-result identity, save, demo, or conversation choices separate from anonymous answers. Do not add visitor-facing attribution disclosure in the prototype; private opaque invitation attribution remains internal. | Agent | Needs W4b-L2a and approved consent/retention design; recipient-facing disclosure and expanded association work are deferred by [[decisions/2026-08-14-opaque-invitation-attribution-prototype\|DR-49]] |
-| W4b-L2d | [ ] Pass complete L2 contract, anonymous-data separation, consent, forwarded-link, masking, accessibility, mobile, performance, retry/outage, and authenticated Preview acceptance. | Agent | Final L2 technical gate |
-| W4b-L3a | [ ] Add broader stable message experiments and richer conditional journeys. | Agent | **Deferred until W7-L2c confirms buyer intent** |
-| W4b-L3b | [ ] Expand demo, saving, identity association, and conversation optimization. | Agent | **Deferred until W7-L2c confirms buyer intent** |
-| W4b-L4a | [ ] Add LinkedIn aggregate reporting, scaled experimentation, and justified automation connections. | Agent | **Deferred until commercial commitment or repeated operating pain** |
 
-Open question for Mark (raised 2026-08-17, unanswered): `W4b-L1a` was marked
-complete in commit `89b0fe7`, but the Ordered Task Map's Mark-only decisions
-still list "separately authorize `W4b-L1a` through `W4b-L2d`" as required. No
-record of that implementation authorization exists in this checklist, the task
-map, or any dated `DR-*` file. Confirm whether it was given, or whether the
-completed `W4b-L1a` work should be treated as unauthorized and re-approved.
-This is recorded as a question only; no status was changed on its account.
+| ID      | Checklist task                                                                                                                                                                                                                          | Mode  | Status / gate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| W4b-L1a | [x] Implement the stateless branded semantic-path experience such as `/team-alignment/{opaque-word-handle}` through server-side Growth Ops resolution, with generic safe handling for invalid, paused, revoked, and expired links.      | Agent | Laptop-only implementation passed Growth Ops tests/typecheck and `mindfultext-web` tests/typecheck/build on 2026-08-14. [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md) confirms this build was authorized. No database migration run, credential, Preview, deployment, collection, or external send occurred. |
+| W4b-L1b | [x] Record link opened separately from probable human engagement and meaningful scroll; preview/scanner requests remain weak evidence.                                                                                                  | Agent | Laptop-only done per [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md): recipient-page activity reporter plus Growth Ops activity intake, DR-55 purpose notice on the page, 42 public-site tests passed 2026-08-17. PostHog replay remains inert/keyless. No credentials, Preview, deployment, or public collection. |
+| W4b-L1c | [ ] Pass L1 word-handle, lifecycle, forwarding, privacy, mobile, accessibility, logging, outage, and authenticated Preview acceptance.                                                                                                  | Agent | L1 private-test gate; still unauthorized |
+| W4b-L2a | [x] Implement the anonymous-answer fit reflection with progress, partial-response handling, useful results before identification, and no patient or employee-identifying input.                                                         | Agent | Laptop-only implementation in `mindfultext-web` and Growth Ops; 2026-08-17 tests passed (42 public-site, 59 Growth Ops). No deploy, no migration run, no credentials, no real collection. `W4b-L1c` is still unmet, so this is not Preview/live-site acceptance. |
+| W4b-L2b | [x] Record assessment start, partial, completion, and results-viewed events without sending answers, free text, PII, raw tokens, or inferred health information to PostHog.                                                             | Agent | Laptop-only milestone reporter to Growth Ops `/reflection/events`; answers are never stored. PostHog credentials remain uncreated (DR-55/DR-56). |
+| W4b-L2c | [x] Keep optional post-result identity, save, demo, or conversation choices separate from anonymous answers. Do not add visitor-facing attribution disclosure in the prototype; private opaque invitation attribution remains internal. | Agent | Laptop-only call-request path now requires name and work email; answers stay off that payload. Save remains a local acknowledgement only (DR-49). |
+| W4b-L2d | [ ] Pass complete L2 contract, anonymous-data separation, consent, forwarded-link, masking, accessibility, mobile, performance, retry/outage, and authenticated Preview acceptance.                                                     | Agent | Final L2 private-test gate; [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md) authorizes continued laptop work toward this gate, not Preview/live-site acceptance |
+| W4b-L3a | [ ] Add broader stable message experiments and richer conditional journeys.                                                                                                                                                             | Agent | **Deferred until W7-L2c confirms buyer intent**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| W4b-L3b | [ ] Expand demo, saving, identity association, and conversation optimization.                                                                                                                                                           | Agent | **Deferred until W7-L2c confirms buyer intent**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| W4b-L4a | [ ] Add LinkedIn aggregate reporting, scaled experimentation, and justified automation connections.                                                                                                                                     | Agent | **Deferred until commercial commitment or repeated operating pain**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+
+
+Open question closed 2026-08-17: Mark confirmed W4b-L1a was authorized and
+built, and that W4b-L1b laptop-only event recording is done
+([DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md)).
 
 W4 keeps month-one content code/config-managed and excludes practices, audio,
 uploads, public admin, legacy catalog, clinical/patient workflows, and an
@@ -482,15 +499,17 @@ Gate: outreach, replies, calls, and payments join without n8n owning state.
 
 ## W7 — Public beta rollout
 
-| ID | Checklist task | Mode | Status / gate |
-| --- | --- | --- | --- |
-| W7-L0a | [ ] Prepare the private Unipile-LinkedIn-profile-to-invitation attribution record for the limited manual beta: provider/profile identifiers, opaque word-only route handle, invitation metadata, activity classifications, masking/retention, and confidence labels. | Agent → Mark → Agent | Prioritized by [[decisions/2026-08-14-linkedin-profile-invitation-attribution\|DR-51]], [[decisions/2026-08-14-w7-unipile-linkedin-attribution\|DR-52]], and [[decisions/2026-08-14-word-only-opaque-route-handles\|DR-54]]; must be accepted before W7-L2a. Direction/planning only: no credentials, API calls, code, profile ingestion, collection, or outreach authority. |
-| W7-L1a | [ ] Finalize the existing MindfulText homepage's approved final copy and design tweaks in `mindfultext-web`, reusing the existing site design rather than introducing a new product strategy or page system. | Agent → Mark → Agent | Added by [[decisions/2026-08-14-w7-homepage-finalization-priority\|DR-53]]; starts after accepted W7-L0a and before W7-L2a. Requires a bounded founder final-content approval and authorized Preview acceptance; no public launch, new collection, analytics/provider activation, or outreach authority. |
-| W7-L2a | [ ] Prepare a bounded manual LinkedIn batch; separately approve public collection, deployment/Production target, audience, named outreach drafts, and sends; Mark manually sends the approved messages. | Agent → Mark → Agent, then Mark sends | Needs accepted W4b-L2d and W7-L0a; no automatic outreach |
-| W7-L2b | [ ] Synthesize replies, objections, link-open confidence, human-like engagement, reflection progress/results use, voluntary identification, conversations, and requested next steps. | Agent | Evidence distinguishes learning, buyer intent, and commitment |
-| W7-L2c | [ ] Record Mark's advance, revise, or park decision. | Mark | L3 resumes only if Mark confirms buyer intent |
-| W7-L3-gate | [ ] Confirm a concrete organization-participating next step: pilot-design discussion, pricing/budget/procurement question, decision-group introduction, staff-cohort evaluation request, or equivalent. | Mark | **Deferred; explicit L3 resume gate** |
-| W7-L4-gate | [ ] Confirm commercial commitment or repeated manual operating pain: accepted pilot, LOI, agreement, payment, other resource commitment, or a recurring scale problem. | Mark | **Deferred; explicit L4 resume gate** |
+
+| ID         | Checklist task                                                                                                                                                                                                                                                       | Mode                                  | Status / gate                                                                                                                                                                                                                                                                                                                                                             |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| W7-L0a     | [ ] Prepare the private Unipile-LinkedIn-profile-to-invitation attribution record for the limited manual beta: provider/profile identifiers, opaque word-only route handle, invitation metadata, activity classifications, masking/retention, and confidence labels. | Agent → Mark → Agent                  | Prioritized by [[decisions/2026-08-14-linkedin-profile-invitation-attribution|DR-51]], [[decisions/2026-08-14-w7-unipile-linkedin-attribution|DR-52]], and [[decisions/2026-08-14-word-only-opaque-route-handles|DR-54]]; must be accepted before W7-L2a. Direction/planning only: no credentials, API calls, code, profile ingestion, collection, or outreach authority. |
+| W7-L1a     | [ ] Finalize the existing MindfulText homepage's approved final copy and design tweaks in `mindfultext-web`, reusing the existing site design rather than introducing a new product strategy or page system.                                                         | Agent → Mark → Agent                  | Added by [[decisions/2026-08-14-w7-homepage-finalization-priority|DR-53]]; starts after accepted W7-L0a and before W7-L2a. Requires a bounded founder final-content approval and authorized Preview acceptance; no public launch, new collection, analytics/provider activation, or outreach authority.                                                                   |
+| W7-L2a     | [ ] Prepare a bounded manual LinkedIn batch; separately approve public collection, deployment/Production target, audience, named outreach drafts, and sends; Mark manually sends the approved messages.                                                              | Agent → Mark → Agent, then Mark sends | Needs accepted W4b-L2d and W7-L0a; no automatic outreach                                                                                                                                                                                                                                                                                                                  |
+| W7-L2b     | [ ] Synthesize replies, objections, link-open confidence, human-like engagement, reflection progress/results use, voluntary identification, conversations, and requested next steps.                                                                                 | Agent                                 | Evidence distinguishes learning, buyer intent, and commitment                                                                                                                                                                                                                                                                                                             |
+| W7-L2c     | [ ] Record Mark's advance, revise, or park decision.                                                                                                                                                                                                                 | Mark                                  | L3 resumes only if Mark confirms buyer intent                                                                                                                                                                                                                                                                                                                             |
+| W7-L3-gate | [ ] Confirm a concrete organization-participating next step: pilot-design discussion, pricing/budget/procurement question, decision-group introduction, staff-cohort evaluation request, or equivalent.                                                              | Mark                                  | **Deferred; explicit L3 resume gate**                                                                                                                                                                                                                                                                                                                                     |
+| W7-L4-gate | [ ] Confirm commercial commitment or repeated manual operating pain: accepted pilot, LOI, agreement, payment, other resource commitment, or a recurring scale problem.                                                                                               | Mark                                  | **Deferred; explicit L4 resume gate**                                                                                                                                                                                                                                                                                                                                     |
+
 
 Clicks, scrolls, reflection completion, demo use, and positive comments are
 learning signals. They do not independently satisfy W7-L3-gate. W8/W9 are
