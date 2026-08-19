@@ -1,6 +1,6 @@
 # MindfulText Growth System — AI Bootstrap Handoff
 
-Last updated: 2026-08-16 11:10:38 PDT — edited by: Codex
+Last updated: 2026-08-18 17:21:30 PDT — edited by: Cursor
 
 ## Purpose
 
@@ -49,6 +49,10 @@ or commercial commitment.
   W6 exception; it authorizes no credentials, API calls, profile ingestion, or outreach.
 - **n8n and providers** are separately approved scale/reconciliation tools;
   they do not own canonical state or gain automatic send authority.
+- **Prototype tempo:** until records need to be kept, prefer reset-and-realign
+  over multi-environment diagnosis. Private-test is not live, and live is not
+  the working copy until a dated decision says so. See the planning-vault
+  `AGENTS.md` section “Prototype tempo.”
 
 ## Safety and authority boundaries
 
