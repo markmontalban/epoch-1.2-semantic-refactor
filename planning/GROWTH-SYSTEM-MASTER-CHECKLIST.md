@@ -1,8 +1,6 @@
 # MindfulText Growth System — Master Checklist
 
-Last updated: 2026-08-18 17:17:14 PDT — edited by: Cursor
-
-Current-state reconciliation: 2026-08-18 17:17:14 PDT — edited by: Cursor
+Last updated: 2026-08-19 08:32:14 PDT — edited by: Claude Dispatch
 
 ## Authority
 
@@ -14,7 +12,9 @@ register]] are approval authority; the register itself is an index only. The
 growth brief is product direction; the backend audit is evidence; workstream
 plans contain implementation detail.
 
-For every Growth change, update this checklist first and update the Ordered Task Map in the same change when status, dependency, estimated completion, next action, or founder-visible meaning changes. A policy, authority, retention, or external-action change requires a dated decision record. The pair must carry the same reconciliation timestamp and editor, and evidence claims must remain specific to the verification actually performed.
+For every Growth change, update this checklist first. When the change alters status, dependency, next action, or founder-visible meaning, update the Ordered Task Map in the same change. A policy, authority, retention, or external-action change requires a dated decision record. Evidence claims must stay specific to the verification actually performed. The former matching-reconciliation-timestamp-and-editor requirement was retired by [[decisions/2026-08-19-growth-process-right-sizing|DR-58]].
+
+Parked scope lives in [the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md). Nothing there is pending; each block names its resume trigger.
 
 Data policy ([[decisions/2026-08-11-founder-controlled-relationship-pipeline|DR-45]]): product/customer data has its own PII, consent, access, retention, and deletion policy. The owner-reviewed Growth source archive may retain public or authorized lead-generation/outreach material, including raw content, pending a later cleanup policy. It must never retain credentials, authentication tokens, passwords, payment-card data, or private provider exports. This storage rule authorizes no send, provider or n8n activation, database migration, or production deployment.
 
@@ -87,12 +87,23 @@ or outreach.
   migrations `005`/`006` are required for those checks. It does not
   authorize Production, public collection, PostHog credentials, or
   outreach.
+- [[decisions/2026-08-19-growth-process-right-sizing|DR-58]] matches this
+  document's process weight to a solo pre-seed prototype: `W4b-L1c`,
+  `W4b-L2d`, and the W3d synthetic-funnel gate merge into one recorded walk
+  (`W4b-walk`); evidence becomes proportional to consequence; the
+  matching-timestamp rule is retired; the Ordered Task Map uses one
+  four-value status system; and deferred scope moves to
+  [the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md). It authorizes
+  document restructuring only, and reaffirms every privacy, send, and
+  collection boundary.
 
 
 
 ## Critical path and status
 
-`W0 → W1 → W2 → W3d → W4a-L1a → W4a-L2a → W4a-L2b → W4b-L1a → W4b-L1b → W4b-L1c → W4b-L2a → W4b-L2b → W4b-L2c → W4b-L2d → W7-L0a → W7-L1a → W7-L2a → W7-L2b → W7-L2c`.
+`W0 → W1 → W2 → W3d → W4a-L1a → W4a-L2a → W4a-L2b → W4b-L1a → W4b-L1b → W4b-L2a → W4b-L2b → W4b-L2c → W4b-walk → W7-L0a → W7-L1a → W7-L2a → W7-L2b → W7-L2c`.
+`W4b-walk` replaces `W4b-L1c`, `W4b-L2d`, and the W3d synthetic-funnel gate per
+[[decisions/2026-08-19-growth-process-right-sizing|DR-58]].
 W5 and broader W6 are deferred scale work; DR-52 extracts only W7-L0a's narrow
 Unipile LinkedIn read/reconciliation slice. W8–W10 are post-beta.
 W11 is a post-revenue legacy-security and connector-hardening backlog and is
@@ -104,15 +115,15 @@ not a pre-validation dependency.
 | W0 Planning authority                     | done        | Authority and plan directory established                                                                                                                                                                                                                                                                                                                                                       |
 | W1 Source/security                        | done        | Authenticated Vercel Preview acceptance passed for the isolated stateless shell on `w1-clean-shell`; no Production or public launch occurred. Legacy credential-history, historical-app scans, and connector parity remain deferred to W11 and the legacy systems must remain unused/inactive                                                                                                  |
 | W2 Operations foundation                  | done        | Disposable-database foundation and authenticated `w2-preview` authorization/readiness/log correlation passed; the temporary non-owner Vercel access used for rejection testing was revoked and must not be restored                                                                                                                                                                            |
-| W3 Growth CRM/API | in progress | W3b disposable acceptance stands; `W3d-1`–`W3d-8` remain laptop-complete. Growth Ops Preview `w2-preview` `DATABASE_URL` points at disposable `W3b-testing`. Preview-only public-site credential `mindfultext-web-preview-w4b` is hashed there; `mindfultext-web` Preview `w1-clean-shell` has the matching env vars. Public resolve is HTTP 200 (`/care-team-fit`). `W4b-L1c` / `W4b-L2d` remain unchecked pending the short owner walk. No Production credential or collection. |
-| W4 Public beta site | in progress | `W4a-L1a`–`W4a-L2b` direction approved; `W4b-L1a`/`L1b` and `W4b-L2a`/`L2b`/`L2c` laptop-only done per [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md); `W4b-L1c` and `W4b-L2d` private-test authorized by [DR-57](../decisions/2026-08-17-w4b-l1c-l2d-private-test.md) and not yet accepted; L3/L4 remain deferred |
-| W5 n8n foundation                         | deferred    | Resume after commercial commitment or repeated manual notification/reconciliation pain; not a manual L2 beta dependency                                                                                                                                                                                                                                                                        |
-| W6 Integrations                           | deferred    | Broader provider work resumes after commercial commitment or repeated manual reconciliation pain; DR-52 extracts only the narrow Unipile LinkedIn read/reconciliation slice needed by W7-L0a                                                                                                                                                                                                   |
-| W7 Beta rollout                           | blocked     | `W7-L0a` Unipile-backed profile-to-invitation attribution preparation is prioritized; `W7-L1a` finalizes the existing homepage immediately before the bounded launch; the limited manual W7-L2 beta still waits for accepted W4b-L2d plus separate public collection, deployment, and outreach approvals                                                                                       |
-| W8 Legacy catalog                         | deferred    | Begins after beta acceptance                                                                                                                                                                                                                                                                                                                                                                   |
-| W9 Local-agent drafting                   | deferred    | Begins after W8                                                                                                                                                                                                                                                                                                                                                                                |
-| W10 Legacy publishing research            | deferred    | Separate later decision                                                                                                                                                                                                                                                                                                                                                                        |
-| W11 Legacy security + connector hardening | deferred    | Begins after revenue, or before any legacy system is reused, connected, deployed, or exposed—whichever comes first                                                                                                                                                                                                                                                                             |
+| W3 Growth CRM/API | in progress | W3b disposable acceptance stands; `W3d-1`–`W3d-8` remain laptop-complete. Growth Ops Preview `w2-preview` `DATABASE_URL` points at disposable `W3b-testing`. Preview-only public-site credential `mindfultext-web-preview-w4b` is hashed there; `mindfultext-web` Preview `w1-clean-shell` has the matching env vars. Public resolve is HTTP 200 (`/care-team-fit`). Awaiting the single owner walk (`W4b-walk`). No Production credential or collection. |
+| W4 Public beta site | in progress | `W4a-L1a`–`W4a-L2b` direction approved; `W4b-L1a`/`L1b` and `W4b-L2a`/`L2b`/`L2c` laptop-only done per [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md); awaiting the single owner walk (`W4b-walk`), authorized by [DR-57](../decisions/2026-08-17-w4b-l1c-l2d-private-test.md) and merged from `W4b-L1c`/`W4b-L2d` by [DR-58](../decisions/2026-08-19-growth-process-right-sizing.md); L3/L4 remain deferred |
+| W5 n8n foundation                         | deferred    | Resume after commercial commitment or repeated manual notification/reconciliation pain; not a manual L2 beta dependency. Details: [deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md)                                                                                                                                                                                                          |
+| W6 Integrations                           | deferred    | Broader provider work resumes after commercial commitment or repeated manual reconciliation pain; DR-52 extracts only the narrow Unipile LinkedIn read/reconciliation slice needed by W7-L0a. Details: [deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md)                                                                                                                                     |
+| W7 Beta rollout                           | in progress | `W7-L1a` homepage copy was approved by Mark on 2026-08-19 and is implemented laptop-only with call-to-action variation 0 (email link, nothing collected). `W7-L0a` Unipile-backed profile-to-invitation attribution preparation remains prioritized and unbuilt. New call-to-action variations `W7-L1b`–`W7-L1f` were added on 2026-08-19 with provisional identifiers and are not on the path to the first batch. The limited manual W7-L2 beta still waits for a recorded `W4b-walk` plus separate public collection, deployment, and outreach approvals |
+| W8 Legacy catalog                         | deferred    | Begins after beta acceptance. Details: [deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md)                                                                                                                                                                                                                                                                                                   |
+| W9 Local-agent drafting                   | deferred    | Begins after W8. Details: [deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md)                                                                                                                                                                                                                                                                                                                |
+| W10 Legacy publishing research            | deferred    | Separate later decision. Details: [deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md)                                                                                                                                                                                                                                                                                                        |
+| W11 Legacy security + connector hardening | deferred    | Begins after revenue, or before any legacy system is reused, connected, deployed, or exposed—whichever comes first. Details: [deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md)                                                                                                                                                                                                              |
 
 
 
@@ -249,10 +260,11 @@ The first interface is proposed but not frozen. Its public-funnel slice must
 implement [[decisions/2026-08-13-l2-buyer-learning-funnel|DR-46]] before W4b:
 [[planning/workstreams/W3-GROWTH-API-CONTRACT-PROPOSAL|W3 API Contract Proposal]].
 
-- [ ] Implement organization, prospect/identity, campaign/membership/variant,
-  outreach draft/observed event, relationship event, recipient route, visit,
-  exposure, engagement rollup, call request, stage/history, experiment, and
-  payment-reference entities.
+- [x] Core entities exist through W3b (relationships, stages, timeline, drafts)
+  and W3d (recipient routes, visits, engagement, call requests). The remaining
+  entities — campaign/membership/variant, experiment, and payment-reference —
+  are parked in [the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md) until
+  the work that needs them (W6, or W7-L3 and later) is authorized.
 
 
 
@@ -388,9 +400,9 @@ This is disposable-database evidence only. It does not pass authenticated
 Preview acceptance, public collection, or the W3d synthetic visitor gate.
 Site credential issuance remains open.
 
-Gate: synthetic branded recipient link → matched page → anonymous reflection →
-useful results → optional identity association or call request → manual review
-succeeds without leaking token, PII, or assessment answers.
+Gate: satisfied by the single `W4b-walk` acceptance walk (see W4b); no separate
+synthetic-funnel rerun is required. Original gate wording is preserved in
+[the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md).
 
 ## W4 — Public beta funnel
 
@@ -437,36 +449,71 @@ Mark can perform the action or interpret the strategic signal.
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | W4b-L1a | [x] Implement the stateless branded semantic-path experience such as `/team-alignment/{opaque-word-handle}` through server-side Growth Ops resolution, with generic safe handling for invalid, paused, revoked, and expired links.      | Agent | Laptop-only implementation passed Growth Ops tests/typecheck and `mindfultext-web` tests/typecheck/build on 2026-08-14. [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md) confirms this build was authorized. No database migration run, credential, Preview, deployment, collection, or external send occurred. |
 | W4b-L1b | [x] Record link opened separately from probable human engagement and meaningful scroll; preview/scanner requests remain weak evidence.                                                                                                  | Agent | Laptop-only done per [DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md): recipient-page activity reporter plus Growth Ops activity intake, DR-55 purpose notice on the page, 42 public-site tests passed 2026-08-17. PostHog replay remains inert/keyless. No credentials, Preview, deployment, or public collection. |
-| W4b-L1c | [ ] Pass L1 word-handle, lifecycle, forwarding, privacy, mobile, accessibility, logging, outage, and authenticated Preview acceptance.                                                                                                  | Agent | Authorized by [DR-57](../decisions/2026-08-17-w4b-l1c-l2d-private-test.md); not yet accepted. 2026-08-18 17:12 PDT: Growth Ops Preview resolve HTTP 200; public-site invitation page loads on `w1-clean-shell`; dead handle is generic unavailable. Short owner walk still required. No Production. |
+| W4b-walk | [x] One recorded owner walk of the existing private-test link on `w1-clean-shell`: open the link, see the invitation page, complete the reflection, view results, submit a call request, and confirm a dead handle shows the generic unavailable page. Record what happened; screenshots or notes suffice. This single walk is the acceptance evidence for the W3d gate, the former `W4b-L1c`, and the former `W4b-L2d`. | Agent → Mark → Agent | Merged from `W4b-L1c` and `W4b-L2d` by [DR-58](../decisions/2026-08-19-growth-process-right-sizing.md); runs under [DR-57](../decisions/2026-08-17-w4b-l1c-l2d-private-test.md)'s existing private-test authorization. An agent may drive the walk; Mark reviews the record. 2026-08-18 17:12 PDT: Growth Ops Preview resolve HTTP 200; public-site invitation page loads; dead handle is generic unavailable. **Completed 2026-08-19 08:32 PDT** after Mark temporarily disabled Vercel deployment protection on `mindfultext-web` (an earlier 08:03 attempt returned Vercel's `Login – Vercel` page). Evidence below. The nineteen original check categories are preserved in [the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md). No Production, no public collection. |
 | W4b-L2a | [x] Implement the anonymous-answer fit reflection with progress, partial-response handling, useful results before identification, and no patient or employee-identifying input.                                                         | Agent | Laptop-only implementation in `mindfultext-web` and Growth Ops; 2026-08-17 tests passed (42 public-site, 59 Growth Ops). No deploy, no migration run, no credentials, no real collection. `W4b-L1c` is still unmet, so this is not Preview/live-site acceptance. |
 | W4b-L2b | [x] Record assessment start, partial, completion, and results-viewed events without sending answers, free text, PII, raw tokens, or inferred health information to PostHog.                                                             | Agent | Laptop-only milestone reporter to Growth Ops `/reflection/events`; answers are never stored. PostHog credentials remain uncreated (DR-55/DR-56). |
 | W4b-L2c | [x] Keep optional post-result identity, save, demo, or conversation choices separate from anonymous answers. Do not add visitor-facing attribution disclosure in the prototype; private opaque invitation attribution remains internal. | Agent | Laptop-only call-request path now requires name and work email; answers stay off that payload. Save remains a local acknowledgement only (DR-49). |
-| W4b-L2d | [ ] Pass complete L2 contract, anonymous-data separation, consent, forwarded-link, masking, accessibility, mobile, performance, retry/outage, and authenticated Preview acceptance.                                                     | Agent | Laptop polish for cookie notice, forwarding copy, outage copy, and accessibility recorded 2026-08-17 (43 public-site checks, typecheck passed). Authenticated Preview still not accepted. No Production or public collection. |
+| ~~W4b-L2d~~ | Retired — merged into `W4b-walk` above by [DR-58](../decisions/2026-08-19-growth-process-right-sizing.md). Laptop polish for cookie notice, forwarding copy, outage copy, and accessibility was recorded 2026-08-17 (43 public-site checks, typecheck passed). | — | Original wording preserved in [the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md). |
 | W4b-L3a | [ ] Add broader stable message experiments and richer conditional journeys.                                                                                                                                                             | Agent | **Deferred until W7-L2c confirms buyer intent**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | W4b-L3b | [ ] Expand demo, saving, identity association, and conversation optimization.                                                                                                                                                           | Agent | **Deferred until W7-L2c confirms buyer intent**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | W4b-L4a | [ ] Add LinkedIn aggregate reporting, scaled experimentation, and justified automation connections.                                                                                                                                     | Agent | **Deferred until commercial commitment or repeated operating pain**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 
-Open question closed 2026-08-17: Mark confirmed W4b-L1a was authorized and
-built, and that W4b-L1b laptop-only event recording is done
-([DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md)).
-[DR-57](../decisions/2026-08-17-w4b-l1c-l2d-private-test.md) authorizes
-W4b-L1c/W4b-L2d private-test checks. Laptop polish for those gates (cookie
-notice beside the DR-55 purpose notice, visitor-safe forwarding copy, outage
-copy, larger tap targets, focus/retry) is in `mindfultext-web` as of
-2026-08-17 20:50 PDT; 43 public-site tests and typecheck passed. Authenticated
-Preview evidence is not yet accepted. 2026-08-18 17:12 PDT: Preview-only site
-credential and `w1-clean-shell` env vars are in place; Growth Ops Preview public
-resolve is HTTP 200; the invitation page loads and a dead handle shows generic
-unavailable. `W4b-L1c` / `W4b-L2d` remain unchecked pending the short owner walk.
+[DR-56](../decisions/2026-08-17-w4b-l1-build-confirmation-and-l2-continue.md)
+confirmed the W4b-L1a/L1b build and the laptop-only L2 work;
+[DR-57](../decisions/2026-08-17-w4b-l1c-l2d-private-test.md) authorized the
+private test. As of 2026-08-18 the Preview-only site credential and
+`w1-clean-shell` env vars are in place, Growth Ops Preview resolve is HTTP 200,
+and a dead handle shows the generic unavailable page. Only the `W4b-walk` owner
+walk remains. Full history is recoverable in Git.
 
 W4 keeps month-one content code/config-managed and excludes practices, audio,
 uploads, public admin, legacy catalog, clinical/patient workflows, and an
 independent site database. Detailed status lives only in this checklist; no
 parallel W4 workstream plan is created.
 
-Gate: W4b-L2d passes at the authorized Preview/browser evidence tier. That
-technical gate does not establish buyer validation or authorize W7-L2a.
+Gate: `W4b-walk` is recorded at the private-test tier. That technical gate does
+not establish buyer validation or authorize W7-L2a.
+
+### W4b-walk — recorded evidence, 2026-08-19 08:32 PDT
+
+Driven by an agent in a real browser against the throwaway word-only test link
+on `w1-clean-shell`, under [DR-57](../decisions/2026-08-17-w4b-l1c-l2d-private-test.md).
+Mark temporarily disabled Vercel deployment protection for the run.
+
+- **Invitation page loaded.** Title `MindfulText | Staff support for care teams`;
+  headline "A brief, optional staff-support layer for care teams."; CTA "Explore
+  your staff-support fit"; the DR-55 purpose notice, cookie notice, forwarding
+  notice, and "No names. No employee or patient information." all present.
+  Rendering confirmed visually at 1280×900.
+- **Dead link handled safely.** A made-up word-only handle on the same path
+  returned the generic "This page is unavailable" page and leaked no reflection
+  content.
+- **All six reflection questions walked**, in order: the workday moment; what a
+  brief practice could support; what makes it genuinely accessible; whether
+  staff can use it with dignity and real choice; how it sits beside the
+  organization's responsibilities; and what would make a small pilot worth
+  learning from. Progress indicator tracked `QUESTION n OF 6` correctly.
+- **Results rendered and held the boundaries.** Guidance reflected the answers
+  back, stated "This describes a possible use, not a promised outcome," and
+  included a "What leadership still owns" section naming workload, staffing,
+  safety, supervision, pay, and working conditions as leadership's
+  responsibility and never substitutable.
+- **Call request matched `W3d-8`.** Name and work email required; organization,
+  role, and note optional. Submitted with clearly synthetic values
+  (`W4B-WALK TEST — not a real person`, `w4b-walk-test@example.invalid`) against
+  the disposable database; confirmation shown. That synthetic record may be
+  reset at any time.
+- **Privacy observations.** No cookies set; browser storage held only the single
+  on-device marker `mt_route_seen` described in the cookie notice; PostHog was
+  not loaded (credentials remain uncreated); every request went to the site's
+  own origin with zero third-party calls, so the Growth Ops credential never
+  reached the browser; no console errors.
+- **Method caveat.** The browser pane's viewport repeatedly collapsed to 0×0, so
+  the reflection and call-request steps were driven by scripted clicks on the
+  real page rather than pixel clicks. The page, server actions, and responses
+  were genuine; per-category mobile and accessibility checks were not performed
+  and remain retired under [DR-58](../decisions/2026-08-19-growth-process-right-sizing.md).
 
 ## W5 — n8n automation foundation
 
@@ -478,20 +525,8 @@ the limited W7-L2 beta.
 - [x] Retain the 2026-08-11 read-only inventory: healthy public endpoints, 101
   workflows, zero active, documented SQLite/backup baseline, and inactive
   webhook observations.
-- [ ] Verify exact live n8n version, backup cron/restore readiness, and update
-  script through a short read-only host check if current proof is required.
-- [ ] Rotate the inactive inline Zoom secret, reduce read-only agent/MCP scope,
-  and apply Mark's archive/quarantine decision before any workflow activation.
-- [ ] Give n8n one narrow API credential; no DB, legacy credential, or send API.
-- [ ] Standardize workflow ID, source event ID, correlation ID, attempt,
-  timestamp, and outcome.
-- [ ] Add idempotency, bounded retries, terminal failure, founder notification,
-  minimal retention, and result writes to the operations API.
-- [ ] Implement in order: call-request notification; Unipile reply sync;
-  draft-ready notification; calendar reconciliation; Gmail metadata; daily
-  PostHog rollup; Stripe notification; local-analysis coordination.
-
-Gate: repeated, delayed, or failed runs create no duplicate event/action.
+Six open items and the W5 gate are parked in
+[the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md).
 
 Evidence: [[planning/workstreams/W5-N8N-READINESS-EVIDENCE-2026-08-11|W5 n8n readiness evidence]].
 
@@ -502,15 +537,10 @@ W6 is deferred scale work under
 or repeated manual outreach/relationship-reconciliation pain; it is not a
 dependency for the limited W7-L2 beta.
 
-- [ ] Harden Unipile and verified/idempotent ingress; retain provider IDs.
-- [ ] Support editable sequences while all first-phase messages stay draft-only.
-- [ ] Sync Gmail metadata/snippets; fetch bodies only for named scoped jobs; do
-  not continuously summarize.
-- [ ] Reconcile manual Calendar/Zoom appointments to call requests.
-- [ ] Verify Stripe signatures, acknowledge quickly, process asynchronously,
-  and join payments to opportunities/cash-received stage.
-
-Gate: outreach, replies, calls, and payments join without n8n owning state.
+Five open items and the W6 gate are parked in
+[the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md). The narrow Unipile
+LinkedIn read slice that `W7-L0a` needs stays active under DR-52 and is not
+parked.
 
 ## W7 — Public beta rollout
 
@@ -518,8 +548,13 @@ Gate: outreach, replies, calls, and payments join without n8n owning state.
 | ID         | Checklist task                                                                                                                                                                                                                                                       | Mode                                  | Status / gate                                                                                                                                                                                                                                                                                                                                                             |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | W7-L0a     | [ ] Prepare the private Unipile-LinkedIn-profile-to-invitation attribution record for the limited manual beta: provider/profile identifiers, opaque word-only route handle, invitation metadata, activity classifications, masking/retention, and confidence labels. | Agent → Mark → Agent                  | Prioritized by [[decisions/2026-08-14-linkedin-profile-invitation-attribution|DR-51]], [[decisions/2026-08-14-w7-unipile-linkedin-attribution|DR-52]], and [[decisions/2026-08-14-word-only-opaque-route-handles|DR-54]]; must be accepted before W7-L2a. Direction/planning only: no credentials, API calls, code, profile ingestion, collection, or outreach authority. |
-| W7-L1a     | [ ] Finalize the existing MindfulText homepage's approved final copy and design tweaks in `mindfultext-web`, reusing the existing site design rather than introducing a new product strategy or page system.                                                         | Agent → Mark → Agent                  | Added by [[decisions/2026-08-14-w7-homepage-finalization-priority|DR-53]]; starts after accepted W7-L0a and before W7-L2a. Requires a bounded founder final-content approval and authorized Preview acceptance; no public launch, new collection, analytics/provider activation, or outreach authority.                                                                   |
-| W7-L2a     | [ ] Prepare a bounded manual LinkedIn batch; separately approve public collection, deployment/Production target, audience, named outreach drafts, and sends; Mark manually sends the approved messages.                                                              | Agent → Mark → Agent, then Mark sends | Needs accepted W4b-L2d and W7-L0a; no automatic outreach                                                                                                                                                                                                                                                                                                                  |
+| W7-L1a     | [ ] Finalize the existing MindfulText homepage's approved final copy and design tweaks in `mindfultext-web`, reusing the existing site design rather than introducing a new product strategy or page system.                                                         | Agent → Mark → Agent                  | Added by [[decisions/2026-08-14-w7-homepage-finalization-priority|DR-53]]. **In progress:** Mark approved the final copy in conversation on 2026-08-19 and it is implemented laptop-only in `app/page.tsx` with call-to-action variation 0 (an email link to `hello@mindfultext.com`, nothing collected); 43 public-site checks and typecheck passed. Search-engine listing stays blocked per Mark, 2026-08-19. Review packet: `/Users/mgzm-studio/AI-Studio/Projects/mindfultext-web/W7-L1A-HOMEPAGE-COPY-REVIEW.md`. Remaining: confirm `hello@mindfultext.com` is a real mailbox, or the email button sends visitors' messages nowhere. No public launch, new collection, analytics/provider activation, or outreach authority. |
+| W7-L1b     | [ ] Build the way homepage call-to-action variations are presented and compared, so one variation can replace another without redesigning the page.                                                                                                                | Agent                                 | Proposed by Mark on 2026-08-19; identifier provisional until he confirms it. Variation 0 (email link, nothing collected) already exists in `app/page.tsx`. Each variation below still needs its own approval before build.                                                                                                                                                |
+| W7-L1c     | [ ] Variation 1 — a demo request that collects a phone number, stating plainly that MindfulText will not contact the person after the demo unless they ask.                                                                                                        | Agent → Mark → Agent                  | Proposed by Mark on 2026-08-19; identifier provisional. A phone number is new personal-information collection and requires its own dated decision record before any build, plus retention, deletion, and access rules.                                                                                                                                                    |
+| W7-L1d     | [ ] Variation 2 — the same demo request as `W7-L1c` without the no-contact statement, to test whether the reassurance changes response.                                                                                                                            | Agent → Mark → Agent                  | Proposed by Mark on 2026-08-19; identifier provisional. Omitting the reassurance must not change actual behavior: numbers collected under `W7-L1d` receive the same no-contact treatment as `W7-L1c` unless separate consent is recorded. Covered by the same dated decision as `W7-L1c`.                                                                                |
+| W7-L1e     | [ ] Variation 3 — offer the six-question reflection on the homepage itself, with no invitation link required.                                                                                                                                                      | Agent → Mark → Agent                  | Proposed by Mark on 2026-08-19; identifier provisional. Reuses the reflection built for the invited page, but makes the homepage receive answers, so it requires public-collection approval.                                                                                                                                                                             |
+| W7-L1f     | [ ] Variation 4 and beyond — further call-to-action tests, defined once the earlier variations produce results.                                                                                                                                                    | Agent → Mark → Agent                  | Proposed by Mark on 2026-08-19; identifier provisional. Placeholder with no scope defined yet.                                                                                                                                                                                                                                                                           |
+| W7-L2a     | [ ] Prepare a bounded manual LinkedIn batch; separately approve public collection, deployment/Production target, audience, named outreach drafts, and sends; Mark manually sends the approved messages.                                                              | Agent → Mark → Agent, then Mark sends | Needs a recorded `W4b-walk` and accepted W7-L0a; no automatic outreach                                                                                                                                                                                                                                                                                                             |
 | W7-L2b     | [ ] Synthesize replies, objections, link-open confidence, human-like engagement, reflection progress/results use, voluntary identification, conversations, and requested next steps.                                                                                 | Agent                                 | Evidence distinguishes learning, buyer intent, and commitment                                                                                                                                                                                                                                                                                                             |
 | W7-L2c     | [ ] Record Mark's advance, revise, or park decision.                                                                                                                                                                                                                 | Mark                                  | L3 resumes only if Mark confirms buyer intent                                                                                                                                                                                                                                                                                                                             |
 | W7-L3-gate | [ ] Confirm a concrete organization-participating next step: pilot-design discussion, pricing/budget/procurement question, decision-group introduction, staff-cohort evaluation request, or equivalent.                                                              | Mark                                  | **Deferred; explicit L3 resume gate**                                                                                                                                                                                                                                                                                                                                     |
@@ -530,71 +565,55 @@ Clicks, scrolls, reflection completion, demo use, and positive comments are
 learning signals. They do not independently satisfy W7-L3-gate. W8/W9 are
 technical/post-beta workstreams and do not prove buying signal or traction.
 
+Boundary for the `W7-L1c`–`W7-L1f` call-to-action variations: a phone number is
+directly identifying personal information and is a category MindfulText has not
+collected before, so `W7-L1c` and `W7-L1d` need a dated decision record covering
+purpose, retention period, deletion, who may access the numbers, and the message
+sent to the person, before either is built. `W7-L1d` deliberately omits the
+no-contact reassurance to test its effect on response; omitting the sentence
+must never change what actually happens to the number, because contacting
+someone whose page implied otherwise is both a legal exposure under US
+telephone-contact rules and the kind of reputational error this buyer segment
+does not forgive. Numbers collected under `W7-L1d` therefore receive the same
+treatment as `W7-L1c` unless separate consent is recorded.
+
 Gate: W7-L2c records a founder-reviewed evidence decision. A future broader
 beta, main-domain change, payment path, or automated/provider-connected launch
 requires a separate plan and authorization.
 
 ## W8 — Read-only legacy catalog (post-beta)
 
-- [ ] Import verified snapshot locally; preserve padded IDs and names as
-  immutable compatibility data.
-- [ ] Add independent keys/display titles, ordered content data, taxonomy,
-  revisions, provenance, and supersession.
-- [ ] Refresh only through explicit GET endpoints; no proxy or publishing.
-
-Gate: reproducible refresh with zero delivery-state writes.
+Deferred; begins after beta acceptance. Items:
+[deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md).
 
 ## W9 — Local-agent analysis and drafting (post-beta)
 
-- [ ] Add scoped REST/OpenAPI and MCP-compatible read/draft tools.
-- [ ] Keep the Mac harness outbound and named-task scoped.
-- [ ] Generate multiple checked candidates with full provenance; return drafts
-  to operations and notify through n8n.
-- [ ] Prohibit automatic sends and automatic paid-model fallback.
-
-Gate: private, reproducible, attributable drafts with no delivery capability.
+Deferred; begins after W8. Items:
+[deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md).
 
 ## W10 — Legacy publishing research (independent later program)
 
-- [ ] Build a restricted adapter with read-only web credentials and separate
-  disabled-by-default publish credentials.
-- [ ] Validate one minimal create in an isolated organization, exact payload,
-  sendability, targeting/linkage/actions/media/attribution.
-- [ ] Add frozen revisions, idempotency, ambiguous-response reconciliation, and
-  recipient-impact preview.
-- [ ] Require a separate production-readiness decision; continue prohibiting
-  rename/update/archive/journey mutation/subscription launch until validated.
-
-Gate: no production publisher before isolated evidence resolves recipient risk.
+Deferred; separate later program. Production publishing,
+rename/update/archive/journey mutation, and subscription launch remain
+prohibited until its archived validation sequence is completed. Items:
+[deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md).
 
 ## W11 — Legacy security and connector hardening (post-revenue)
 
-This is intentionally outside the pre-validation and first-revenue critical
-path. Keeping the clean public shell and validation workflow isolated is the
-current control; deferral is not permission to reconnect an old system.
+Deferred; starts after revenue, or before any legacy system is reused,
+connected, deployed, or exposed — whichever comes first. **Deferral is not
+permission to reconnect an old system;** no legacy system returns to use until
+its archived inventory, rotation, scan, clean-boundary, and acceptance items are
+completed. Items: [deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md).
 
-- [ ] Inventory original ZIP/Git history by credential category without
-  retaining or printing secret values.
-- [ ] Rotate or revoke exposed and uncertain credentials only for systems that
-  will be reused; record owner, date, session invalidation, and scoped smoke
-  result without secret values.
-- [ ] Retain current dependency/security scans for any historical Replit app
-  proposed for reuse; otherwise keep that prototype non-deployed.
-- [ ] Build and verify clean connector source, synthetic parity, monitoring,
-  rollback, and scoped service authentication before Preview configuration or
-  traffic cutover.
-- [ ] Obtain separate approval before credentials, external configuration,
-  deployment, DNS, or traffic changes.
+## Completion evidence
 
-Trigger: start after MindfulText generates revenue, or earlier if Mark proposes
-reusing, connecting, deploying, or exposing any legacy system. The earlier
-trigger wins.
+Record what was actually done and checked — the commands run, tests passed, or
+walk performed — specific enough that a later reader can trust or rerun it.
 
-Gate: no legacy system returns to use until its applicable inventory, rotation,
-scan, clean-boundary, and acceptance evidence is complete.
-
-## Completion evidence required from every task
-
-Automated tests proportional to risk, contract fixtures, authorization-failure
-evidence, retry/failure results, privacy/logging review, deployment/rollback
-notes, and exact evidence suitable for this checklist.
+The full matrix (contract fixtures, authorization-failure evidence, retry
+drills, rollback notes) applies only where a task touches a real person's
+private information, sends or publishes externally, spends money, or cannot be
+undone. Its original wording is preserved in
+[the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md). Retired for all other
+tasks by [[decisions/2026-08-19-growth-process-right-sizing|DR-58]].
