@@ -1,6 +1,6 @@
 # MindfulText Growth System — Master Checklist
 
-Last updated: 2026-08-19 10:07:29 PDT — edited by: Claude Dispatch
+Last updated: 2026-08-19 10:34:46 PDT — edited by: Claude Dispatch
 
 ## Authority
 
@@ -476,6 +476,18 @@ Gate: `W4b-walk` is recorded at the private-test tier. That technical gate does
 not establish buyer validation or authorize W7-L2a.
 
 ### W7-L0a — laptop-only build, 2026-08-19 08:47 PDT
+
+**Scope correction, 2026-08-19 10:34 PDT:** what is built is the storage and
+rules layer only. `src/w7/attribution.ts` states it in its own header — "performs
+no Unipile API call: the caller supplies an already-resolved public profile" —
+and a repository-wide search finds no Unipile client, no `UNIPILE_*` environment
+variable, and no network call in `src/w7/`. `src/w3b/domain.ts` still reports
+the Unipile adapter as `configured: false`. **No credential is required for
+`W7-L0a` to be used, and there is currently nowhere to put one.** For a small
+hand-sent batch, profiles are entered by hand through the owner screens (not yet
+built). A Unipile connection is a later convenience needing its own approval; if
+one is ever added, its key belongs in a local `.env.local`, which `.gitignore`
+already excludes via `.env*`, and never in a document, a commit, or chat.
 
 Built under Mark's in-conversation authorization, implementing
 [[decisions/2026-08-14-linkedin-profile-invitation-attribution|DR-51]],

@@ -1,6 +1,6 @@
 # MindfulText Growth System — Ordered Task Map
 
-Last updated: 2026-08-19 10:07:29 PDT — edited by: Claude Dispatch
+Last updated: 2026-08-19 10:34:46 PDT — edited by: Claude Dispatch
 
 Role: the roadmap Mark reads. The [Growth System Master Checklist](GROWTH-SYSTEM-MASTER-CHECKLIST.md)
 is where agents take their instructions; dated `DR-*` records hold approvals and
@@ -70,8 +70,8 @@ The `W` identifiers stay stable so evidence and history keep matching.
 | W4b-L2b | Recording that someone started, paused, or finished the reflection — never their answers | Done | Nothing. Answers are never stored anywhere | W4b-L2a |
 | W4b-L2c | Keeping the call request separate from the anonymous answers | Done | Nothing. The call request asks for name and work email, and answers are not attached | W4b-L2a, W4a-L2a |
 | W4b-walk | One walk-through of the private test link: open it, read the invitation page, answer the reflection, see results, request a call, and check that a dead link shows a plain unavailable page | Done | Walked 2026-08-19 after Mark briefly unlocked the private test version. Everything worked: the invitation page loaded, all six questions answered, the guidance came back and said plainly that leadership still owns workload, staffing, pay, and supervision, the call request took a name and work email, and a made-up link correctly showed a plain "unavailable" page. No cookies, no analytics account, nothing sent to any outside company. Full record is in [the Master Checklist](GROWTH-SYSTEM-MASTER-CHECKLIST.md) | W4b-L2b, W4b-L2c |
-| W7-L0a | Privately connecting each LinkedIn profile Mark invites to its link, so he can see which invitation drew activity | Waiting on you | Built on the laptop 2026-08-19 after Mark said "build it"; 70 checks pass. It refuses to hold anything LinkedIn shows beyond a public profile — no emails, phone numbers, connections, or posts — and it will not claim a named person visited: once a link looks forwarded or machine-opened, only that person identifying themselves or replying can change the label. Still needed from Mark: the Unipile connection details, and his acceptance. No connection was made and nothing was run against a database | DR-51, DR-52, DR-54, W3d |
-| W7-L1a | The final words on the MindfulText homepage | Done | Confirm `hello@mindfultext.com` is a real mailbox, or messages visitors send will go nowhere. Approved by Mark 2026-08-19; on the laptop only. Wording is in `/Users/mgzm-studio/AI-Studio/Projects/mindfultext-web/W7-L1A-HOMEPAGE-COPY-REVIEW.md` | [DR-53](../decisions/2026-08-14-w7-homepage-finalization-priority.md) |
+| W7-L0a | Privately connecting each LinkedIn profile Mark invites to its link, so he can see which invitation drew activity | Waiting on you | Built on the laptop 2026-08-19 after Mark said "build it"; 70 checks pass. It refuses to hold anything LinkedIn shows beyond a public profile — no emails, phone numbers, connections, or posts — and it will not claim a named person visited: once a link looks forwarded or machine-opened, only that person identifying themselves or replying can change the label. **No Unipile connection is needed to use it.** What is built stores and protects the records; the caller hands it a profile that has already been looked up. So for a small hand-sent batch, Mark can enter each profile himself once the owner screens exist. A Unipile connection only becomes worth building if looking profiles up by hand becomes a chore. Still needed: Mark's acceptance. Nothing was run against a database | DR-51, DR-52, DR-54, W3d |
+| W7-L1a | The final words on the MindfulText homepage | Done | Nothing. Approved by Mark 2026-08-19 and on the laptop only; `hello@mindfultext.com` confirmed as a real mailbox the same day. Wording is in `/Users/mgzm-studio/AI-Studio/Projects/mindfultext-web/W7-L1A-HOMEPAGE-COPY-REVIEW.md` | [DR-53](../decisions/2026-08-14-w7-homepage-finalization-priority.md) |
 | W7-L1b | The way alternative homepage buttons get swapped and compared | Waiting until later | Nothing until Mark confirms the identifier and wants the tests. The current email-link button already works | W7-L1a |
 | W7-L1c | A demo request that collects a phone number and says plainly Mark will not contact the person afterward unless they ask | Waiting on you | Needs its own written decision first — why the number is collected, how long it is kept, how it is deleted, and who can see it. Nothing is built | W7-L1b, a new dated decision |
 | W7-L1d | The same demo request without that reassurance, to test whether saying it changes how many people respond | Waiting on you | Same written decision as `W7-L1c`. Leaving the sentence out must never change what actually happens to a number | W7-L1c |
@@ -92,16 +92,16 @@ The `W` identifiers stay stable so evidence and history keep matching.
 
 ## What can happen next
 
-1. **Give the Unipile connection details for `W7-L0a`** — the who-clicked records are built and pass 70 checks, but nothing can actually read a LinkedIn profile until Mark supplies that connection. Only he can.
-2. **Confirm the homepage email address** — the wording for `W7-L1a` is approved and built; it just needs `hello@mindfultext.com` to be a real mailbox.
-3. **Turn the lock back on** for the private test version of `mindfultext-web` in Vercel, which was opened on 2026-08-19 for the `W4b-walk` walk-through.
-4. **Optional, needs no approval:** the owner screens that let Mark review a batch of invitations can be built now, since they need no Unipile connection.
-5. **Keep everything else waiting on its trigger** — the full list is in [the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md).
+1. **Build the owner screens for `W7-L0a`** — the part Mark uses to enter each invited profile and review a batch. No approval and no Unipile connection needed; this is the last piece before a batch can be prepared.
+2. **Then Mark accepts `W7-L0a`**, which unblocks `W7-L2a`.
+3. **Keep everything else waiting on its trigger** — the full list is in [the deferred archive](GROWTH-SYSTEM-DEFERRED-ARCHIVE.md).
+
+Cleared on 2026-08-19 and no longer pending: `hello@mindfultext.com` is confirmed as a real mailbox, and the Vercel lock on the private test version of `mindfultext-web` is back on after the `W4b-walk` walk-through.
 
 ## Decisions only Mark can make
 
 - **Going live, collecting from the public, and sending the first LinkedIn batch** (`W7-L2a`). These can be approved together in one sitting, but none is assumed.
-- **Supplying the Unipile connection details for `W7-L0a`**, and accepting the build. The code is written and checked, but no connection exists and only Mark can create one.
+- **Accepting the `W7-L0a` build.** No Unipile connection is required — what is built stores and protects the records, and profiles can be entered by hand for a small batch. A Unipile connection is a later convenience, not a dependency, and would need its own approval.
 - **Confirming the identifiers `W7-L1b` through `W7-L1f`**, which an agent proposed, and whether `hello@mindfultext.com` is the right address to publish and exists as a real mailbox.
 - **A written decision before `W7-L1c` or `W7-L1d` collects a phone number**, covering why it is collected, how long it is kept, how it is deleted, who can see it, and what the visitor is told. Because `W7-L1d` deliberately leaves out the reassurance, that decision must state plainly that leaving it out changes nothing about how the number is treated.
 - **At `W7-L2c`, whether the evidence is strong enough** to justify the bigger experiments behind `W7-L3-gate`.
