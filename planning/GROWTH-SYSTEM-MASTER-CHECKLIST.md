@@ -1,6 +1,6 @@
 # MindfulText Growth System — Master Checklist
 
-Last updated: 2026-08-19 08:32:14 PDT — edited by: Claude Dispatch
+Last updated: 2026-08-19 10:07:29 PDT — edited by: Claude Dispatch
 
 ## Authority
 
@@ -475,6 +475,45 @@ parallel W4 workstream plan is created.
 Gate: `W4b-walk` is recorded at the private-test tier. That technical gate does
 not establish buyer validation or authorize W7-L2a.
 
+### W7-L0a — laptop-only build, 2026-08-19 08:47 PDT
+
+Built under Mark's in-conversation authorization, implementing
+[[decisions/2026-08-14-linkedin-profile-invitation-attribution|DR-51]],
+[[decisions/2026-08-14-w7-unipile-linkedin-attribution|DR-52]], and
+[[decisions/2026-08-14-word-only-opaque-route-handles|DR-54]].
+
+- **Schema:** `migrations/007_w7_l0a_invitation_profiles.sql` adds
+  `invitation_profiles`, one row per recipient route, holding the Unipile
+  provider id, public profile URL, display name, public headline/organization,
+  a generated `batch-` reference, an attribution-confidence label, a
+  closed-vocabulary reason, and a mandatory `retain_until`.
+- **Prohibited data is excluded twice** — by the schema's absence of those
+  columns and by an explicit runtime check that rejects any payload carrying an
+  email, phone, connection degree, follower count, posts, messages, summary,
+  experience, education, skills, birthday, or address.
+- **Honest confidence is enforced structurally, not by convention.** A record
+  starts at `invitation_only` claiming nothing. Once forwarding or scanner
+  ambiguity is seen it sits at `forwarded_or_unknown` and cannot climb back to
+  `probable_recipient` on behavioural signals alone — only a visitor
+  identifying themselves or a confirmed reply moves it, exactly as DR-51
+  requires. `alternate_identity` is terminal, so a record cannot be quietly
+  reassigned to the invited person.
+- **Batch references are generated, never typed**, for the same reason
+  `invitation_reference` is in migration 005: a hand-typed label cannot be
+  validated as free of a real person's name.
+- **Evidence export is masked and always caveated.** Exports carry a masked
+  profile slug and initials rather than the raw URL and full name, retain the
+  public organization for review, and every row carries the sentence that this
+  is invitation-level attribution and not proof the named person acted.
+- **Retention is enforced by deletion**, not archiving, and expired rows are
+  excluded from export.
+- **Answer separation is unaffected.** Reflection answers are still never
+  written anywhere (migration 006), so keying attribution to `route_id`
+  creates no path from a person to their answers.
+- **Verification:** 70 `growth-ops` tests pass (11 new) and typecheck is clean.
+  No migration was run against any database, no Unipile credential exists, and
+  no API call was made.
+
 ### W4b-walk — recorded evidence, 2026-08-19 08:32 PDT
 
 Driven by an agent in a real browser against the throwaway word-only test link
@@ -547,7 +586,7 @@ parked.
 
 | ID         | Checklist task                                                                                                                                                                                                                                                       | Mode                                  | Status / gate                                                                                                                                                                                                                                                                                                                                                             |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| W7-L0a     | [ ] Prepare the private Unipile-LinkedIn-profile-to-invitation attribution record for the limited manual beta: provider/profile identifiers, opaque word-only route handle, invitation metadata, activity classifications, masking/retention, and confidence labels. | Agent → Mark → Agent                  | Prioritized by [[decisions/2026-08-14-linkedin-profile-invitation-attribution|DR-51]], [[decisions/2026-08-14-w7-unipile-linkedin-attribution|DR-52]], and [[decisions/2026-08-14-word-only-opaque-route-handles|DR-54]]; must be accepted before W7-L2a. Direction/planning only: no credentials, API calls, code, profile ingestion, collection, or outreach authority. |
+| W7-L0a     | [ ] Prepare the private Unipile-LinkedIn-profile-to-invitation attribution record for the limited manual beta: provider/profile identifiers, opaque word-only route handle, invitation metadata, activity classifications, masking/retention, and confidence labels. | Agent → Mark → Agent                  | Prioritized by [[decisions/2026-08-14-linkedin-profile-invitation-attribution|DR-51]], [[decisions/2026-08-14-w7-unipile-linkedin-attribution|DR-52]], and [[decisions/2026-08-14-word-only-opaque-route-handles|DR-54]]; must be accepted before W7-L2a. **Build authorized by Mark in conversation on 2026-08-19; built laptop-only the same day at 08:47 PDT.** Migration `007_w7_l0a_invitation_profiles.sql` and `src/w7/attribution.ts` in `growth-ops`; 70 tests pass (11 new) and typecheck is clean. No migration was run against any database, no Unipile credential was created, and no API call was made. Still NOT authorized: Unipile credentials, live API calls, real profile ingestion, public collection, deployment, and any outreach or send. Acceptance still required before `W7-L2a`. |
 | W7-L1a     | [ ] Finalize the existing MindfulText homepage's approved final copy and design tweaks in `mindfultext-web`, reusing the existing site design rather than introducing a new product strategy or page system.                                                         | Agent → Mark → Agent                  | Added by [[decisions/2026-08-14-w7-homepage-finalization-priority|DR-53]]. **In progress:** Mark approved the final copy in conversation on 2026-08-19 and it is implemented laptop-only in `app/page.tsx` with call-to-action variation 0 (an email link to `hello@mindfultext.com`, nothing collected); 43 public-site checks and typecheck passed. Search-engine listing stays blocked per Mark, 2026-08-19. Review packet: `/Users/mgzm-studio/AI-Studio/Projects/mindfultext-web/W7-L1A-HOMEPAGE-COPY-REVIEW.md`. Remaining: confirm `hello@mindfultext.com` is a real mailbox, or the email button sends visitors' messages nowhere. No public launch, new collection, analytics/provider activation, or outreach authority. |
 | W7-L1b     | [ ] Build the way homepage call-to-action variations are presented and compared, so one variation can replace another without redesigning the page.                                                                                                                | Agent                                 | Proposed by Mark on 2026-08-19; identifier provisional until he confirms it. Variation 0 (email link, nothing collected) already exists in `app/page.tsx`. Each variation below still needs its own approval before build.                                                                                                                                                |
 | W7-L1c     | [ ] Variation 1 — a demo request that collects a phone number, stating plainly that MindfulText will not contact the person after the demo unless they ask.                                                                                                        | Agent → Mark → Agent                  | Proposed by Mark on 2026-08-19; identifier provisional. A phone number is new personal-information collection and requires its own dated decision record before any build, plus retention, deletion, and access rules.                                                                                                                                                    |
